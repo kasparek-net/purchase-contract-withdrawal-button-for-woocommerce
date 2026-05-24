@@ -1,0 +1,267 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: EUcomply Withdrawal Button 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-24 12:00+0000\n"
+"PO-Revision-Date: 2026-05-24 12:00+0000\n"
+"Last-Translator: Jakub Kašpárek\n"
+"Language-Team: Slovak\n"
+"Language: sk_SK\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Domain: eucomply-withdrawal-button\n"
+
+msgid "EUcomply Withdrawal Button requires WooCommerce to be installed and active."
+msgstr "Plugin EUcomply Withdrawal Button vyžaduje nainštalovaný a aktívny WooCommerce."
+
+msgid "Settings"
+msgstr "Nastavenia"
+
+msgid "Withdraw from purchase contract"
+msgstr "Odstúpiť od kúpnej zmluvy"
+
+msgid "This order is no longer eligible for withdrawal (the cooling-off period has expired, or a withdrawal has already been submitted)."
+msgstr "Pre túto objednávku už nie je možné podať odstúpenie (vypršala lehota alebo už bolo odstúpenie podané)."
+
+msgid "Back to order"
+msgstr "Späť na objednávku"
+
+msgid "Your withdrawal has been submitted. A confirmation has been sent to your email. We will be in touch with return instructions."
+msgstr "Vaše odstúpenie od zmluvy bolo úspešne podané. Potvrdenie sme zaslali na váš email. Čoskoro sa vám ozveme s pokynmi na vrátenie tovaru."
+
+msgid "Withdrawal has been submitted"
+msgstr "Odstúpenie od zmluvy bolo podané"
+
+#. translators: %s: submission date
+msgid "on %s."
+msgstr "dňa %s."
+
+#. translators: %s: admin email address
+msgid "If you have any questions, contact us at %s."
+msgstr "V prípade otázok nás kontaktujte na %s."
+
+msgid "You must be logged in to submit a withdrawal."
+msgstr "Pre podanie odstúpenia musíte byť prihlásení."
+
+msgid "Invalid order."
+msgstr "Neplatná objednávka."
+
+msgid "Security check failed. Please go back and try again."
+msgstr "Bezpečnostná kontrola zlyhala. Vráťte sa a skúste to znova."
+
+msgid "You are not authorized to access this order."
+msgstr "Nemáte oprávnenie k tejto objednávke."
+
+msgid "You must check the confirmation box to submit a withdrawal."
+msgstr "Pre podanie odstúpenia musíte zaškrtnúť potvrdzovacie políčko."
+
+msgid "This order is no longer eligible for withdrawal."
+msgstr "Pre túto objednávku už nie je možné podať odstúpenie."
+
+msgid "Customer submitted a withdrawal from the purchase contract."
+msgstr "Zákazník podal odstúpenie od kúpnej zmluvy."
+
+#. translators: %s: customer-provided reason
+msgid "Reason: %s"
+msgstr "Dôvod: %s"
+
+#. translators: %s: bank account for refund
+msgid "Refund account: %s"
+msgstr "Účet pre vrátenie: %s"
+
+msgid "Customer submitted withdrawal from purchase contract."
+msgstr "Odstúpenie od zmluvy podané zákazníkom."
+
+msgid "Withdrawal confirmation (customer)"
+msgstr "Potvrdenie odstúpenia od zmluvy (zákazník)"
+
+msgid "Sent to the customer after they submit a withdrawal from a purchase contract."
+msgstr "Odoslané zákazníkovi po podaní odstúpenia od kúpnej zmluvy."
+
+msgid "[{site_title}] Withdrawal confirmation — order #{order_number}"
+msgstr "[{site_title}] Potvrdenie odstúpenia od zmluvy — objednávka #{order_number}"
+
+msgid "Withdrawal confirmation"
+msgstr "Potvrdenie odstúpenia od zmluvy"
+
+msgid "If you have any questions about your withdrawal, please reply to this email."
+msgstr "V prípade otázok k vášmu odstúpeniu odpovedzte prosím na tento email."
+
+msgid "Withdrawal notification (admin)"
+msgstr "Oznámenie o odstúpení od zmluvy (admin)"
+
+msgid "Sent to the store administrator when a customer submits a withdrawal."
+msgstr "Odoslané správcovi e-shopu po podaní odstúpenia zákazníkom."
+
+msgid "[{site_title}] New withdrawal request — order #{order_number}"
+msgstr "[{site_title}] Nové odstúpenie od zmluvy — objednávka #{order_number}"
+
+msgid "New withdrawal request"
+msgstr "Nové odstúpenie od zmluvy"
+
+msgid "Enable/Disable"
+msgstr "Zapnúť/Vypnúť"
+
+msgid "Enable this email notification"
+msgstr "Zapnúť túto emailovú notifikáciu"
+
+msgid "Recipient(s)"
+msgstr "Príjemcovia"
+
+#. translators: %s: admin email
+msgid "Enter recipients (comma separated). Defaults to %s."
+msgstr "Zadajte príjemcov (oddelené čiarkou). Predvolené: %s."
+
+msgid "Subject"
+msgstr "Predmet"
+
+msgid "Placeholders: %s"
+msgstr "Zástupné symboly: %s"
+
+msgid "Email heading"
+msgstr "Nadpis emailu"
+
+msgid "Email type"
+msgstr "Typ emailu"
+
+msgid "Choose which format of email to send."
+msgstr "Vyberte formát odosielaného emailu."
+
+msgid "EUcomply Withdrawal Button"
+msgstr "Tlačidlo odstúpenia od zmluvy"
+
+msgid "Withdrawal Button"
+msgstr "Odstúpenie od zmluvy"
+
+#. translators: %s: WooCommerce email settings URL
+msgid "Customer and admin email templates can be customized in %s."
+msgstr "Šablóny zákazníckych a admin emailov je možné upraviť v %s."
+
+msgid "WooCommerce → Settings → Emails"
+msgstr "WooCommerce → Nastavenia → Emaily"
+
+msgid "Cooling-off period (days)"
+msgstr "Lehota na odstúpenie (dni)"
+
+msgid "How long after the reference date (order completion) the withdrawal button stays visible. EU standard is 14 days."
+msgstr "Ako dlho po dátume dokončenia objednávky zostáva tlačidlo viditeľné. EU štandard je 14 dní."
+
+msgid "Eligible order statuses"
+msgstr "Stavy objednávok pre zobrazenie tlačidla"
+
+msgid "The button is shown only for orders in one of these statuses."
+msgstr "Tlačidlo sa zobrazuje len pre objednávky v niektorom z týchto stavov."
+
+msgid "Admin email recipient"
+msgstr "Príjemca admin emailu"
+
+#. translators: %s: admin email
+msgid "Leave empty to use the site admin email (%s)."
+msgstr "Ponechajte prázdne pre použitie hlavného admin emailu (%s)."
+
+msgid "Status after submission"
+msgstr "Stav po podaní odstúpenia"
+
+msgid "Order status applied automatically after the customer submits a withdrawal."
+msgstr "Stav objednávky automaticky nastavený po podaní odstúpenia zákazníkom."
+
+msgid "Withdrawal from purchase contract"
+msgstr "Odstúpenie od kúpnej zmluvy"
+
+#. translators: 1: order number, 2: deadline date
+msgid "Complete the form below to withdraw from purchase contract no. %1$s. The cooling-off period ends on %2$s."
+msgstr "Vyplňte nasledujúci formulár pre odstúpenie od kúpnej zmluvy č. %1$s. Lehota pre odstúpenie vyprší %2$s."
+
+msgid "Order number"
+msgstr "Číslo objednávky"
+
+msgid "Order date"
+msgstr "Dátum objednávky"
+
+msgid "Customer"
+msgstr "Zákazník"
+
+msgid "Address"
+msgstr "Adresa"
+
+msgid "Email"
+msgstr "Email"
+
+msgid "Total"
+msgstr "Celková suma"
+
+msgid "Bank account for refund"
+msgstr "Bankový účet pre vrátenie peňazí"
+
+msgid "(optional — leave empty to refund to the original payment method)"
+msgstr "(voliteľné — ponechajte prázdne pre vrátenie na pôvodnú platobnú metódu)"
+
+msgid "Reason for withdrawal"
+msgstr "Dôvod odstúpenia"
+
+msgid "(optional)"
+msgstr "(nepovinné)"
+
+msgid "I confirm that I am withdrawing from the purchase contract"
+msgstr "Potvrdzujem, že odstupujem od kúpnej zmluvy"
+
+msgid "and I understand that I must return the purchased goods within 14 days of submitting this withdrawal. The refund will be issued after the returned goods are received."
+msgstr "a beriem na vedomie, že zakúpený tovar som povinný/povinná vrátiť do 14 dní od podania tohto odstúpenia. Peniaze budú vrátené po obdržaní vráteného tovaru."
+
+msgid "Confirm withdrawal"
+msgstr "Potvrdiť odstúpenie od zmluvy"
+
+msgid "Cancel"
+msgstr "Zrušiť"
+
+msgid "Hello,"
+msgstr "Dobrý deň,"
+
+#. translators: 1: order number, 2: order date
+msgid "We have received your withdrawal from the purchase contract for order no. %1$s placed on %2$s."
+msgstr "Potvrdzujeme prijatie Vášho odstúpenia od kúpnej zmluvy k objednávke č. %1$s zo dňa %2$s."
+
+msgid "Next steps"
+msgstr "Ďalší postup"
+
+msgid "Next steps:"
+msgstr "Ďalší postup:"
+
+msgid "Please return the goods to our address within 14 days of submitting this withdrawal."
+msgstr "Tovar prosím zašlite späť na našu adresu do 14 dní od podania tohto odstúpenia."
+
+msgid "We recommend shipping with tracking and insurance."
+msgstr "Odporúčame tovar zaslať doporučene a poistené."
+
+#. translators: %s: total amount
+msgid "Once we receive the goods we will refund the paid amount (%s) within 14 days."
+msgstr "Po obdržaní tovaru Vám vrátime zaplatenú sumu (%s) do 14 dní."
+
+msgid "A customer has submitted a withdrawal from a purchase contract."
+msgstr "Zákazník podal odstúpenie od kúpnej zmluvy."
+
+msgid "Order"
+msgstr "Objednávka"
+
+msgid "Phone"
+msgstr "Telefón"
+
+msgid "Completion date"
+msgstr "Dátum dokončenia"
+
+msgid "Refund account"
+msgstr "Účet pre vrátenie"
+
+msgid "Original payment method"
+msgstr "Pôvodná platobná metóda"
+
+msgid "Reason"
+msgstr "Dôvod"
+
+msgid "(not provided)"
+msgstr "(neuvedený)"
+
+msgid "View order:"
+msgstr "Detail objednávky:"

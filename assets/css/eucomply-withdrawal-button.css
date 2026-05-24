@@ -1,0 +1,62 @@
+/* EUcomply Withdrawal Button — frontend styles */
+
+.ewb-button-wrapper {
+    margin-top: 20px;
+}
+
+.ewb-already-submitted-notice {
+    margin-top: 20px;
+    padding: 12px;
+    background: #f0f7ee;
+    border: 1px solid #6c8d56;
+    border-radius: 4px;
+}
+
+.ewb-success-notice {
+    margin-bottom: 20px;
+}
+
+.ewb-form-heading {
+    margin-top: 0;
+}
+
+.ewb-order-summary {
+    margin-bottom: 20px;
+}
+
+.ewb-form .ewb-field {
+    margin: 16px 0;
+}
+
+.ewb-form .ewb-field label {
+    display: block;
+    margin-bottom: 6px;
+}
+
+.ewb-form .ewb-field input[type="text"],
+.ewb-form .ewb-field textarea {
+    width: 100%;
+    max-width: 600px;
+    box-sizing: border-box;
+}
+
+.ewb-confirm-box {
+    margin-top: 20px;
+    padding: 12px;
+    background: #fff8e1;
+    border: 1px solid #e6c200;
+    border-radius: 4px;
+}
+
+.ewb-confirm-box label {
+    display: block;
+    cursor: pointer;
+}
+
+.ewb-actions {
+    margin-top: 24px;
+}
+
+.ewb-actions .ewb-cancel-button {
+    margin-left: 8px;
+}

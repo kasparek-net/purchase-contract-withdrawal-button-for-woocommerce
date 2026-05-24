@@ -1,0 +1,269 @@
+# Copyright (C) 2026 Jakub Kašpárek
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: EUcomply Withdrawal Button 1.0.0\n"
+"Report-Msgid-Bugs-To: https://github.com/jakubkasparek/eucomply-withdrawal-button/issues\n"
+"POT-Creation-Date: 2026-05-24 12:00+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Domain: eucomply-withdrawal-button\n"
+
+msgid "EUcomply Withdrawal Button requires WooCommerce to be installed and active."
+msgstr ""
+
+msgid "Settings"
+msgstr ""
+
+msgid "Withdraw from purchase contract"
+msgstr ""
+
+msgid "This order is no longer eligible for withdrawal (the cooling-off period has expired, or a withdrawal has already been submitted)."
+msgstr ""
+
+msgid "Back to order"
+msgstr ""
+
+msgid "Your withdrawal has been submitted. A confirmation has been sent to your email. We will be in touch with return instructions."
+msgstr ""
+
+msgid "Withdrawal has been submitted"
+msgstr ""
+
+#. translators: %s: submission date
+msgid "on %s."
+msgstr ""
+
+#. translators: %s: admin email address
+msgid "If you have any questions, contact us at %s."
+msgstr ""
+
+msgid "You must be logged in to submit a withdrawal."
+msgstr ""
+
+msgid "Invalid order."
+msgstr ""
+
+msgid "Security check failed. Please go back and try again."
+msgstr ""
+
+msgid "You are not authorized to access this order."
+msgstr ""
+
+msgid "You must check the confirmation box to submit a withdrawal."
+msgstr ""
+
+msgid "This order is no longer eligible for withdrawal."
+msgstr ""
+
+msgid "Customer submitted a withdrawal from the purchase contract."
+msgstr ""
+
+#. translators: %s: customer-provided reason
+msgid "Reason: %s"
+msgstr ""
+
+#. translators: %s: bank account for refund
+msgid "Refund account: %s"
+msgstr ""
+
+msgid "Customer submitted withdrawal from purchase contract."
+msgstr ""
+
+msgid "Withdrawal confirmation (customer)"
+msgstr ""
+
+msgid "Sent to the customer after they submit a withdrawal from a purchase contract."
+msgstr ""
+
+msgid "[{site_title}] Withdrawal confirmation — order #{order_number}"
+msgstr ""
+
+msgid "Withdrawal confirmation"
+msgstr ""
+
+msgid "If you have any questions about your withdrawal, please reply to this email."
+msgstr ""
+
+msgid "Withdrawal notification (admin)"
+msgstr ""
+
+msgid "Sent to the store administrator when a customer submits a withdrawal."
+msgstr ""
+
+msgid "[{site_title}] New withdrawal request — order #{order_number}"
+msgstr ""
+
+msgid "New withdrawal request"
+msgstr ""
+
+msgid "Enable/Disable"
+msgstr ""
+
+msgid "Enable this email notification"
+msgstr ""
+
+msgid "Recipient(s)"
+msgstr ""
+
+#. translators: %s: admin email
+msgid "Enter recipients (comma separated). Defaults to %s."
+msgstr ""
+
+msgid "Subject"
+msgstr ""
+
+msgid "Placeholders: %s"
+msgstr ""
+
+msgid "Email heading"
+msgstr ""
+
+msgid "Email type"
+msgstr ""
+
+msgid "Choose which format of email to send."
+msgstr ""
+
+msgid "EUcomply Withdrawal Button"
+msgstr ""
+
+msgid "Withdrawal Button"
+msgstr ""
+
+#. translators: %s: WooCommerce email settings URL
+msgid "Customer and admin email templates can be customized in %s."
+msgstr ""
+
+msgid "WooCommerce → Settings → Emails"
+msgstr ""
+
+msgid "Cooling-off period (days)"
+msgstr ""
+
+msgid "How long after the reference date (order completion) the withdrawal button stays visible. EU standard is 14 days."
+msgstr ""
+
+msgid "Eligible order statuses"
+msgstr ""
+
+msgid "The button is shown only for orders in one of these statuses."
+msgstr ""
+
+msgid "Admin email recipient"
+msgstr ""
+
+#. translators: %s: admin email
+msgid "Leave empty to use the site admin email (%s)."
+msgstr ""
+
+msgid "Status after submission"
+msgstr ""
+
+msgid "Order status applied automatically after the customer submits a withdrawal."
+msgstr ""
+
+msgid "Withdrawal from purchase contract"
+msgstr ""
+
+#. translators: 1: order number, 2: deadline date
+msgid "Complete the form below to withdraw from purchase contract no. %1$s. The cooling-off period ends on %2$s."
+msgstr ""
+
+msgid "Order number"
+msgstr ""
+
+msgid "Order date"
+msgstr ""
+
+msgid "Customer"
+msgstr ""
+
+msgid "Address"
+msgstr ""
+
+msgid "Email"
+msgstr ""
+
+msgid "Total"
+msgstr ""
+
+msgid "Bank account for refund"
+msgstr ""
+
+msgid "(optional — leave empty to refund to the original payment method)"
+msgstr ""
+
+msgid "Reason for withdrawal"
+msgstr ""
+
+msgid "(optional)"
+msgstr ""
+
+msgid "I confirm that I am withdrawing from the purchase contract"
+msgstr ""
+
+msgid "and I understand that I must return the purchased goods within 14 days of submitting this withdrawal. The refund will be issued after the returned goods are received."
+msgstr ""
+
+msgid "Confirm withdrawal"
+msgstr ""
+
+msgid "Cancel"
+msgstr ""
+
+msgid "Hello,"
+msgstr ""
+
+#. translators: 1: order number, 2: order date
+msgid "We have received your withdrawal from the purchase contract for order no. %1$s placed on %2$s."
+msgstr ""
+
+msgid "Next steps"
+msgstr ""
+
+msgid "Next steps:"
+msgstr ""
+
+msgid "Please return the goods to our address within 14 days of submitting this withdrawal."
+msgstr ""
+
+msgid "We recommend shipping with tracking and insurance."
+msgstr ""
+
+#. translators: %s: total amount
+msgid "Once we receive the goods we will refund the paid amount (%s) within 14 days."
+msgstr ""
+
+msgid "A customer has submitted a withdrawal from a purchase contract."
+msgstr ""
+
+msgid "Order"
+msgstr ""
+
+msgid "Phone"
+msgstr ""
+
+msgid "Completion date"
+msgstr ""
+
+msgid "Refund account"
+msgstr ""
+
+msgid "Original payment method"
+msgstr ""
+
+msgid "Reason"
+msgstr ""
+
+msgid "(not provided)"
+msgstr ""
+
+msgid "View order:"
+msgstr ""
