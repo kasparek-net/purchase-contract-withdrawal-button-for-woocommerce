@@ -2,14 +2,14 @@
 /**
  * Frontend: button rendering, form display, submission handling.
  *
- * @package EUcomplyWithdrawalButton
+ * @package PurchaseContractWithdrawalButtonForWooCommerce
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
 
-class EWB_Frontend {
+class PCWB_Frontend {
 
     public static function init() {
         add_action( 'woocommerce_order_details_after_order_table', [ __CLASS__, 'render_button' ], 20 );
@@ -26,38 +26,38 @@ class EWB_Frontend {
     public static function render_button( $order ) {
         // Don't render on the form / success sub-pages — they're handled by other hooks.
         // phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Read-only routing check on a public page, no side effects.
-        if ( isset( $_GET['ewb'] ) ) {
+        if ( isset( $_GET['pcwb'] ) ) {
             return;
         }
 
-        $requested_at = $order->get_meta( '_ewb_requested_at' );
+        $requested_at = $order->get_meta( '_pcwb_requested_at' );
         if ( $requested_at ) {
             self::render_already_submitted_notice( $requested_at );
             return;
         }
 
-        if ( ! ewb_is_eligible( $order ) ) {
+        if ( ! pcwb_is_eligible( $order ) ) {
             return;
         }
 
-        $url = ewb_get_form_url( $order->get_id() );
+        $url = pcwb_get_form_url( $order->get_id() );
         ?>
-        <p class="ewb-button-wrapper">
-            <a href="<?php echo esc_url( $url ); ?>" class="button ewb-button">
-                <?php esc_html_e( 'Withdraw from purchase contract', 'eucomply-withdrawal-button' ); ?>
+        <p class="pcwb-button-wrapper">
+            <a href="<?php echo esc_url( $url ); ?>" class="button pcwb-button">
+                <?php esc_html_e( 'Withdraw from purchase contract', 'purchase-contract-withdrawal-button-for-woocommerce' ); ?>
             </a>
         </p>
         <?php
     }
 
     /**
-     * Render the form when ?ewb=form is in the URL.
+     * Render the form when ?pcwb=form is in the URL.
      *
      * @param int $order_id Order ID.
      */
     public static function maybe_render_form( $order_id ) {
         // phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Read-only routing check; the underlying submit is nonce-protected.
-        $sub_page = isset( $_GET['ewb'] ) ? sanitize_key( wp_unslash( $_GET['ewb'] ) ) : '';
+        $sub_page = isset( $_GET['pcwb'] ) ? sanitize_key( wp_unslash( $_GET['pcwb'] ) ) : '';
         if ( 'form' !== $sub_page ) {
             return;
         }
@@ -69,20 +69,20 @@ class EWB_Frontend {
 
         $back_url = wc_get_endpoint_url( 'view-order', $order_id, wc_get_page_permalink( 'myaccount' ) );
 
-        if ( ! ewb_is_eligible( $order ) ) {
+        if ( ! pcwb_is_eligible( $order ) ) {
             // Replace default view-order content with a friendly notice.
             remove_all_actions( 'woocommerce_view_order', 10 );
             ?>
-            <p><?php esc_html_e( 'This order is no longer eligible for withdrawal (the cooling-off period has expired, or a withdrawal has already been submitted).', 'eucomply-withdrawal-button' ); ?></p>
-            <p><a href="<?php echo esc_url( $back_url ); ?>" class="button"><?php esc_html_e( 'Back to order', 'eucomply-withdrawal-button' ); ?></a></p>
+            <p><?php esc_html_e( 'This order is no longer eligible for withdrawal (the cooling-off period has expired, or a withdrawal has already been submitted).', 'purchase-contract-withdrawal-button-for-woocommerce' ); ?></p>
+            <p><a href="<?php echo esc_url( $back_url ); ?>" class="button"><?php esc_html_e( 'Back to order', 'purchase-contract-withdrawal-button-for-woocommerce' ); ?></a></p>
             <?php
             return;
         }
 
         remove_all_actions( 'woocommerce_view_order', 10 );
 
-        $reference = ewb_get_period_reference_date( $order );
-        $deadline  = $reference ? $reference->getTimestamp() + ( ewb_get_period_days() * DAY_IN_SECONDS ) : 0;
+        $reference = pcwb_get_period_reference_date( $order );
+        $deadline  = $reference ? $reference->getTimestamp() + ( pcwb_get_period_days() * DAY_IN_SECONDS ) : 0;
 
         wc_get_template(
             'withdrawal-form.php',
@@ -92,23 +92,23 @@ class EWB_Frontend {
                 'deadline' => $deadline,
             ],
             '',
-            EWB_TEMPLATE_PATH
+            PCWB_TEMPLATE_PATH
         );
     }
 
     /**
-     * Show a success notice when ?ewb=success is in the URL.
+     * Show a success notice when ?pcwb=success is in the URL.
      *
      * @param int $order_id Order ID.
      */
     public static function maybe_render_success( $order_id ) {
         // phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Read-only routing check.
-        $sub_page = isset( $_GET['ewb'] ) ? sanitize_key( wp_unslash( $_GET['ewb'] ) ) : '';
+        $sub_page = isset( $_GET['pcwb'] ) ? sanitize_key( wp_unslash( $_GET['pcwb'] ) ) : '';
         if ( 'success' !== $sub_page ) {
             return;
         }
-        echo '<div class="woocommerce-message ewb-success-notice">';
-        echo esc_html__( 'Your withdrawal has been submitted. A confirmation has been sent to your email. We will be in touch with return instructions.', 'eucomply-withdrawal-button' );
+        echo '<div class="woocommerce-message pcwb-success-notice">';
+        echo esc_html__( 'Your withdrawal has been submitted. A confirmation has been sent to your email. We will be in touch with return instructions.', 'purchase-contract-withdrawal-button-for-woocommerce' );
         echo '</div>';
     }
 
@@ -120,17 +120,17 @@ class EWB_Frontend {
     private static function render_already_submitted_notice( $requested_at ) {
         $date = date_i18n( get_option( 'date_format' ), strtotime( $requested_at ) );
         ?>
-        <p class="ewb-already-submitted-notice">
-            <strong><?php esc_html_e( 'Withdrawal has been submitted', 'eucomply-withdrawal-button' ); ?></strong>
+        <p class="pcwb-already-submitted-notice">
+            <strong><?php esc_html_e( 'Withdrawal has been submitted', 'purchase-contract-withdrawal-button-for-woocommerce' ); ?></strong>
             <?php
             /* translators: %s: submission date */
-            printf( ' ' . esc_html__( 'on %s.', 'eucomply-withdrawal-button' ), esc_html( $date ) );
+            printf( ' ' . esc_html__( 'on %s.', 'purchase-contract-withdrawal-button-for-woocommerce' ), esc_html( $date ) );
             ?>
             <?php
-            $admin_email = ewb_get_admin_recipient();
+            $admin_email = pcwb_get_admin_recipient();
             if ( $admin_email ) {
                 /* translators: %s: admin email address */
-                printf( ' ' . esc_html__( 'If you have any questions, contact us at %s.', 'eucomply-withdrawal-button' ), '<a href="mailto:' . esc_attr( $admin_email ) . '">' . esc_html( $admin_email ) . '</a>' );
+                printf( ' ' . esc_html__( 'If you have any questions, contact us at %s.', 'purchase-contract-withdrawal-button-for-woocommerce' ), '<a href="mailto:' . esc_attr( $admin_email ) . '">' . esc_html( $admin_email ) . '</a>' );
             }
             ?>
         </p>
@@ -143,71 +143,71 @@ class EWB_Frontend {
     public static function handle_submit() {
         // Gate: only process our submission; nonce is verified below.
         // phpcs:ignore WordPress.Security.NonceVerification.Missing -- Gate; full nonce verification follows after extracting the order ID.
-        if ( empty( $_POST['ewb_submit'] ) ) {
+        if ( empty( $_POST['pcwb_submit'] ) ) {
             return;
         }
 
         if ( ! is_user_logged_in() ) {
-            wp_die( esc_html__( 'You must be logged in to submit a withdrawal.', 'eucomply-withdrawal-button' ), '', [ 'response' => 403 ] );
+            wp_die( esc_html__( 'You must be logged in to submit a withdrawal.', 'purchase-contract-withdrawal-button-for-woocommerce' ), '', [ 'response' => 403 ] );
         }
 
         // The order ID is required to construct the nonce action name, so it must be read before the nonce is verified.
         // phpcs:ignore WordPress.Security.NonceVerification.Missing -- Nonce is verified on the next statement.
         $order_id = isset( $_POST['order_id'] ) ? absint( wp_unslash( $_POST['order_id'] ) ) : 0;
         if ( ! $order_id ) {
-            wp_die( esc_html__( 'Invalid order.', 'eucomply-withdrawal-button' ), '', [ 'response' => 400 ] );
+            wp_die( esc_html__( 'Invalid order.', 'purchase-contract-withdrawal-button-for-woocommerce' ), '', [ 'response' => 400 ] );
         }
 
-        $nonce = isset( $_POST['ewb_nonce'] ) ? sanitize_text_field( wp_unslash( $_POST['ewb_nonce'] ) ) : '';
-        if ( ! wp_verify_nonce( $nonce, 'ewb_submit_' . $order_id ) ) {
-            wp_die( esc_html__( 'Security check failed. Please go back and try again.', 'eucomply-withdrawal-button' ), '', [ 'response' => 403 ] );
+        $nonce = isset( $_POST['pcwb_nonce'] ) ? sanitize_text_field( wp_unslash( $_POST['pcwb_nonce'] ) ) : '';
+        if ( ! wp_verify_nonce( $nonce, 'pcwb_submit_' . $order_id ) ) {
+            wp_die( esc_html__( 'Security check failed. Please go back and try again.', 'purchase-contract-withdrawal-button-for-woocommerce' ), '', [ 'response' => 403 ] );
         }
 
         $order = wc_get_order( $order_id );
         if ( ! $order || $order->get_customer_id() !== get_current_user_id() ) {
-            wp_die( esc_html__( 'You are not authorized to access this order.', 'eucomply-withdrawal-button' ), '', [ 'response' => 403 ] );
+            wp_die( esc_html__( 'You are not authorized to access this order.', 'purchase-contract-withdrawal-button-for-woocommerce' ), '', [ 'response' => 403 ] );
         }
 
         if ( empty( $_POST['confirm'] ) ) {
-            wp_die( esc_html__( 'You must check the confirmation box to submit a withdrawal.', 'eucomply-withdrawal-button' ), '', [ 'response' => 400 ] );
+            wp_die( esc_html__( 'You must check the confirmation box to submit a withdrawal.', 'purchase-contract-withdrawal-button-for-woocommerce' ), '', [ 'response' => 400 ] );
         }
 
-        if ( ! ewb_is_eligible( $order ) ) {
-            wp_die( esc_html__( 'This order is no longer eligible for withdrawal.', 'eucomply-withdrawal-button' ), '', [ 'response' => 400 ] );
+        if ( ! pcwb_is_eligible( $order ) ) {
+            wp_die( esc_html__( 'This order is no longer eligible for withdrawal.', 'purchase-contract-withdrawal-button-for-woocommerce' ), '', [ 'response' => 400 ] );
         }
 
         $reason  = isset( $_POST['reason'] ) ? sanitize_textarea_field( wp_unslash( $_POST['reason'] ) ) : '';
         $account = isset( $_POST['refund_account'] ) ? sanitize_text_field( wp_unslash( $_POST['refund_account'] ) ) : '';
         $now     = current_time( 'mysql' );
 
-        $order->update_meta_data( '_ewb_requested_at', $now );
-        $order->update_meta_data( '_ewb_reason', $reason );
-        $order->update_meta_data( '_ewb_refund_account', $account );
+        $order->update_meta_data( '_pcwb_requested_at', $now );
+        $order->update_meta_data( '_pcwb_reason', $reason );
+        $order->update_meta_data( '_pcwb_refund_account', $account );
 
-        $note  = __( 'Customer submitted a withdrawal from the purchase contract.', 'eucomply-withdrawal-button' ) . "\n";
+        $note  = __( 'Customer submitted a withdrawal from the purchase contract.', 'purchase-contract-withdrawal-button-for-woocommerce' ) . "\n";
         if ( $reason ) {
             /* translators: %s: customer-provided reason */
-            $note .= sprintf( __( 'Reason: %s', 'eucomply-withdrawal-button' ), $reason ) . "\n";
+            $note .= sprintf( __( 'Reason: %s', 'purchase-contract-withdrawal-button-for-woocommerce' ), $reason ) . "\n";
         }
         if ( $account ) {
             /* translators: %s: bank account for refund */
-            $note .= sprintf( __( 'Refund account: %s', 'eucomply-withdrawal-button' ), $account ) . "\n";
+            $note .= sprintf( __( 'Refund account: %s', 'purchase-contract-withdrawal-button-for-woocommerce' ), $account ) . "\n";
         }
         $order->add_order_note( $note );
 
-        $new_status = apply_filters( 'ewb_new_status', get_option( 'ewb_new_status', 'on-hold' ), $order );
-        $order->update_status( $new_status, __( 'Customer submitted withdrawal from purchase contract.', 'eucomply-withdrawal-button' ) );
+        $new_status = apply_filters( 'pcwb_new_status', get_option( 'pcwb_new_status', 'on-hold' ), $order );
+        $order->update_status( $new_status, __( 'Customer submitted withdrawal from purchase contract.', 'purchase-contract-withdrawal-button-for-woocommerce' ) );
         $order->save();
 
-        do_action( 'ewb_after_submit', $order, $reason, $account );
+        do_action( 'pcwb_after_submit', $order, $reason, $account );
 
         // Trigger WC_Email instances.
         WC()->mailer();
-        do_action( 'ewb_customer_withdrawal_email', $order, $reason, $account );
-        do_action( 'ewb_admin_withdrawal_email', $order, $reason, $account );
+        do_action( 'pcwb_customer_withdrawal_email', $order, $reason, $account );
+        do_action( 'pcwb_admin_withdrawal_email', $order, $reason, $account );
 
         $back_url = add_query_arg(
-            [ 'ewb' => 'success' ],
+            [ 'pcwb' => 'success' ],
             wc_get_endpoint_url( 'view-order', $order_id, wc_get_page_permalink( 'myaccount' ) )
         );
         wp_safe_redirect( $back_url );

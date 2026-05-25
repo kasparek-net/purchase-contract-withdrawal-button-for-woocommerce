@@ -1,10 +1,10 @@
-=== EUcomply Withdrawal Button ===
+=== Purchase Contract Withdrawal Button for WooCommerce ===
 Contributors: jakubkasparek
 Tags: woocommerce, withdrawal, refund, gdpr, eu
 Requires at least: 6.0
 Tested up to: 7.0
 Requires PHP: 7.4
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -12,7 +12,7 @@ Adds a withdrawal button to WooCommerce My Account orders. Two-step submission w
 
 == Description ==
 
-EUcomply Withdrawal Button adds a clearly-labeled "Withdraw from purchase contract" button to each customer's order detail page in WooCommerce My Account. It implements the two-step submission process required by EU consumer law: the customer clicks the button, reviews their order details, optionally provides a refund bank account and reason, and then explicitly confirms.
+Purchase Contract Withdrawal Button for WooCommerce adds a clearly-labeled "Withdraw from purchase contract" button to each customer's order detail page in WooCommerce My Account. It implements the two-step submission process required by EU consumer law: the customer clicks the button, reviews their order details, optionally provides a refund bank account and reason, and then explicitly confirms.
 
 After submission:
 
@@ -42,11 +42,11 @@ The plugin is not legal advice. Merchants remain responsible for ensuring their 
 
 = Filters and actions =
 
-* `ewb_eligible_statuses` — array of statuses where the button is shown
-* `ewb_period_days` — cooling-off period override
-* `ewb_new_status` — order status applied after submission
-* `ewb_admin_recipient` — admin email recipient override
-* `ewb_after_submit` ($order, $reason, $account) — fires after a successful submission
+* `pcwb_eligible_statuses` — array of statuses where the button is shown
+* `pcwb_period_days` — cooling-off period override
+* `pcwb_new_status` — order status applied after submission
+* `pcwb_admin_recipient` — admin email recipient override
+* `pcwb_after_submit` ($order, $reason, $account) — fires after a successful submission
 
 == Installation ==
 
@@ -89,10 +89,18 @@ The plugin only stores data the customer has explicitly submitted (reason, refun
 
 == Changelog ==
 
+= 1.0.1 =
+* Renamed plugin and slug to comply with WP.org plugin naming guidelines.
+* Fixed: replaced `esc_url_raw` with `esc_url` for displayed URL in plain text admin notification.
+* Updated function/class prefix to `pcwb_` / `PCWB_` for collision safety.
+
 = 1.0.0 =
 * Initial release.
 
 == Upgrade Notice ==
+
+= 1.0.1 =
+Naming and security cleanup per WP.org review.
 
 = 1.0.0 =
 First release.

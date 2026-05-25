@@ -2,7 +2,7 @@
 /**
  * Customer withdrawal confirmation email.
  *
- * @package EUcomplyWithdrawalButton
+ * @package PurchaseContractWithdrawalButtonForWooCommerce
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -13,17 +13,17 @@ if ( ! class_exists( 'WC_Email' ) ) {
     return;
 }
 
-class EWB_Email_Customer extends WC_Email {
+class PCWB_Email_Customer extends WC_Email {
 
     public function __construct() {
-        $this->id             = 'ewb_customer_withdrawal';
+        $this->id             = 'pcwb_customer_withdrawal';
         $this->customer_email = true;
-        $this->title          = __( 'Withdrawal confirmation (customer)', 'eucomply-withdrawal-button' );
-        $this->description    = __( 'Sent to the customer after they submit a withdrawal from a purchase contract.', 'eucomply-withdrawal-button' );
+        $this->title          = __( 'Withdrawal confirmation (customer)', 'purchase-contract-withdrawal-button-for-woocommerce' );
+        $this->description    = __( 'Sent to the customer after they submit a withdrawal from a purchase contract.', 'purchase-contract-withdrawal-button-for-woocommerce' );
 
         $this->template_html  = 'emails/customer-withdrawal-confirmation.php';
         $this->template_plain = 'emails/plain/customer-withdrawal-confirmation.php';
-        $this->template_base  = EWB_TEMPLATE_PATH;
+        $this->template_base  = PCWB_TEMPLATE_PATH;
 
         $this->placeholders = [
             '{site_title}'   => $this->get_blogname(),
@@ -31,17 +31,17 @@ class EWB_Email_Customer extends WC_Email {
             '{order_date}'   => '',
         ];
 
-        add_action( 'ewb_customer_withdrawal_email', [ $this, 'trigger' ], 10, 3 );
+        add_action( 'pcwb_customer_withdrawal_email', [ $this, 'trigger' ], 10, 3 );
 
         parent::__construct();
     }
 
     public function get_default_subject() {
-        return __( '[{site_title}] Withdrawal confirmation — order #{order_number}', 'eucomply-withdrawal-button' );
+        return __( '[{site_title}] Withdrawal confirmation — order #{order_number}', 'purchase-contract-withdrawal-button-for-woocommerce' );
     }
 
     public function get_default_heading() {
-        return __( 'Withdrawal confirmation', 'eucomply-withdrawal-button' );
+        return __( 'Withdrawal confirmation', 'purchase-contract-withdrawal-button-for-woocommerce' );
     }
 
     /**
@@ -98,6 +98,6 @@ class EWB_Email_Customer extends WC_Email {
     }
 
     public function get_default_additional_content() {
-        return __( 'If you have any questions about your withdrawal, please reply to this email.', 'eucomply-withdrawal-button' );
+        return __( 'If you have any questions about your withdrawal, please reply to this email.', 'purchase-contract-withdrawal-button-for-woocommerce' );
     }
 }

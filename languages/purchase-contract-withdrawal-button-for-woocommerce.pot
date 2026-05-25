@@ -2,8 +2,8 @@
 # This file is distributed under the GPLv2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: EUcomply Withdrawal Button 1.0.0\n"
-"Report-Msgid-Bugs-To: https://github.com/jakubkasparek/eucomply-withdrawal-button/issues\n"
+"Project-Id-Version: Purchase Contract Withdrawal Button for WooCommerce 1.0.0\n"
+"Report-Msgid-Bugs-To: https://github.com/jakubkasparek/purchase-contract-withdrawal-button-for-woocommerce/issues\n"
 "POT-Creation-Date: 2026-05-24 12:00+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -13,9 +13,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Domain: eucomply-withdrawal-button\n"
+"X-Domain: purchase-contract-withdrawal-button-for-woocommerce\n"
 
-msgid "EUcomply Withdrawal Button requires WooCommerce to be installed and active."
+msgid "Purchase Contract Withdrawal Button for WooCommerce requires WooCommerce to be installed and active."
 msgstr ""
 
 msgid "Settings"
@@ -131,7 +131,7 @@ msgstr ""
 msgid "Choose which format of email to send."
 msgstr ""
 
-msgid "EUcomply Withdrawal Button"
+msgid "Purchase Contract Withdrawal Button for WooCommerce"
 msgstr ""
 
 msgid "Withdrawal Button"

@@ -2,7 +2,7 @@
 /**
  * Admin withdrawal notification — HTML.
  *
- * @package EUcomplyWithdrawalButton
+ * @package PurchaseContractWithdrawalButtonForWooCommerce
  * @version 1.0.0
  *
  * @var WC_Order $order
@@ -19,37 +19,37 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 do_action( 'woocommerce_email_header', $email_heading, $email ); ?>
 
-<p><?php esc_html_e( 'A customer has submitted a withdrawal from a purchase contract.', 'eucomply-withdrawal-button' ); ?></p>
+<p><?php esc_html_e( 'A customer has submitted a withdrawal from a purchase contract.', 'purchase-contract-withdrawal-button-for-woocommerce' ); ?></p>
 
 <table cellspacing="0" cellpadding="6" style="width:100%;border:1px solid #e5e5e5;">
     <tr>
-        <th><?php esc_html_e( 'Order', 'eucomply-withdrawal-button' ); ?></th>
+        <th><?php esc_html_e( 'Order', 'purchase-contract-withdrawal-button-for-woocommerce' ); ?></th>
         <td>
             <a href="<?php echo esc_url( $order->get_edit_order_url() ); ?>">#<?php echo esc_html( $order->get_order_number() ); ?></a>
         </td>
     </tr>
     <tr>
-        <th><?php esc_html_e( 'Customer', 'eucomply-withdrawal-button' ); ?></th>
+        <th><?php esc_html_e( 'Customer', 'purchase-contract-withdrawal-button-for-woocommerce' ); ?></th>
         <td><?php echo esc_html( $order->get_formatted_billing_full_name() ); ?></td>
     </tr>
     <tr>
-        <th><?php esc_html_e( 'Email', 'eucomply-withdrawal-button' ); ?></th>
+        <th><?php esc_html_e( 'Email', 'purchase-contract-withdrawal-button-for-woocommerce' ); ?></th>
         <td><?php echo esc_html( $order->get_billing_email() ); ?></td>
     </tr>
     <tr>
-        <th><?php esc_html_e( 'Phone', 'eucomply-withdrawal-button' ); ?></th>
+        <th><?php esc_html_e( 'Phone', 'purchase-contract-withdrawal-button-for-woocommerce' ); ?></th>
         <td><?php echo esc_html( $order->get_billing_phone() ); ?></td>
     </tr>
     <tr>
-        <th><?php esc_html_e( 'Address', 'eucomply-withdrawal-button' ); ?></th>
+        <th><?php esc_html_e( 'Address', 'purchase-contract-withdrawal-button-for-woocommerce' ); ?></th>
         <td><?php echo wp_kses_post( $order->get_formatted_billing_address() ); ?></td>
     </tr>
     <tr>
-        <th><?php esc_html_e( 'Total', 'eucomply-withdrawal-button' ); ?></th>
+        <th><?php esc_html_e( 'Total', 'purchase-contract-withdrawal-button-for-woocommerce' ); ?></th>
         <td><?php echo wp_kses_post( wc_price( $order->get_total() ) ); ?></td>
     </tr>
     <tr>
-        <th><?php esc_html_e( 'Completion date', 'eucomply-withdrawal-button' ); ?></th>
+        <th><?php esc_html_e( 'Completion date', 'purchase-contract-withdrawal-button-for-woocommerce' ); ?></th>
         <td>
             <?php
             $completed = $order->get_date_completed();
@@ -58,12 +58,12 @@ do_action( 'woocommerce_email_header', $email_heading, $email ); ?>
         </td>
     </tr>
     <tr>
-        <th><?php esc_html_e( 'Refund account', 'eucomply-withdrawal-button' ); ?></th>
-        <td><?php echo esc_html( $account ?: __( 'Original payment method', 'eucomply-withdrawal-button' ) ); ?></td>
+        <th><?php esc_html_e( 'Refund account', 'purchase-contract-withdrawal-button-for-woocommerce' ); ?></th>
+        <td><?php echo esc_html( $account ?: __( 'Original payment method', 'purchase-contract-withdrawal-button-for-woocommerce' ) ); ?></td>
     </tr>
     <tr>
-        <th><?php esc_html_e( 'Reason', 'eucomply-withdrawal-button' ); ?></th>
-        <td><?php echo esc_html( $reason ?: __( '(not provided)', 'eucomply-withdrawal-button' ) ); ?></td>
+        <th><?php esc_html_e( 'Reason', 'purchase-contract-withdrawal-button-for-woocommerce' ); ?></th>
+        <td><?php echo esc_html( $reason ?: __( '(not provided)', 'purchase-contract-withdrawal-button-for-woocommerce' ) ); ?></td>
     </tr>
 </table>
 

@@ -1,4 +1,4 @@
-# EUcomply Withdrawal Button
+# Purchase Contract Withdrawal Button for WooCommerce
 
 A WooCommerce plugin that adds a customer-facing "Withdraw from purchase contract" button to the My Account order detail page, with a two-step submission flow, configurable cooling-off period, and automated email confirmation.
 
@@ -27,11 +27,11 @@ Designed to help merchants comply with **EU Directive 2023/2673** — which requ
 
 | Hook | Type | Purpose |
 |------|------|---------|
-| `ewb_period_days` | filter | Override cooling-off period |
-| `ewb_eligible_statuses` | filter | Override list of eligible order statuses |
-| `ewb_new_status` | filter | Order status applied after submission |
-| `ewb_admin_recipient` | filter | Admin email recipient |
-| `ewb_after_submit` | action | Fires after a successful withdrawal: `($order, $reason, $account)` |
+| `pcwb_period_days` | filter | Override cooling-off period |
+| `pcwb_eligible_statuses` | filter | Override list of eligible order statuses |
+| `pcwb_new_status` | filter | Order status applied after submission |
+| `pcwb_admin_recipient` | filter | Admin email recipient |
+| `pcwb_after_submit` | action | Fires after a successful withdrawal: `($order, $reason, $account)` |
 
 ## Disclaimer
 

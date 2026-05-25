@@ -1,10 +1,10 @@
-/* EUcomply Withdrawal Button — frontend styles */
+/* Purchase Contract Withdrawal Button for WooCommerce — frontend styles */
 
-.ewb-button-wrapper {
+.pcwb-button-wrapper {
     margin-top: 20px;
 }
 
-.ewb-already-submitted-notice {
+.pcwb-already-submitted-notice {
     margin-top: 20px;
     padding: 12px;
     background: #f0f7ee;
@@ -12,35 +12,35 @@
     border-radius: 4px;
 }
 
-.ewb-success-notice {
+.pcwb-success-notice {
     margin-bottom: 20px;
 }
 
-.ewb-form-heading {
+.pcwb-form-heading {
     margin-top: 0;
 }
 
-.ewb-order-summary {
+.pcwb-order-summary {
     margin-bottom: 20px;
 }
 
-.ewb-form .ewb-field {
+.pcwb-form .pcwb-field {
     margin: 16px 0;
 }
 
-.ewb-form .ewb-field label {
+.pcwb-form .pcwb-field label {
     display: block;
     margin-bottom: 6px;
 }
 
-.ewb-form .ewb-field input[type="text"],
-.ewb-form .ewb-field textarea {
+.pcwb-form .pcwb-field input[type="text"],
+.pcwb-form .pcwb-field textarea {
     width: 100%;
     max-width: 600px;
     box-sizing: border-box;
 }
 
-.ewb-confirm-box {
+.pcwb-confirm-box {
     margin-top: 20px;
     padding: 12px;
     background: #fff8e1;
@@ -48,15 +48,15 @@
     border-radius: 4px;
 }
 
-.ewb-confirm-box label {
+.pcwb-confirm-box label {
     display: block;
     cursor: pointer;
 }
 
-.ewb-actions {
+.pcwb-actions {
     margin-top: 24px;
 }
 
-.ewb-actions .ewb-cancel-button {
+.pcwb-actions .pcwb-cancel-button {
     margin-left: 8px;
 }

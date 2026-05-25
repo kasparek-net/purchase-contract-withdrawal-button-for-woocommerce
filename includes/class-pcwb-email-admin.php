@@ -2,7 +2,7 @@
 /**
  * Admin notification of a new withdrawal.
  *
- * @package EUcomplyWithdrawalButton
+ * @package PurchaseContractWithdrawalButtonForWooCommerce
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -13,35 +13,35 @@ if ( ! class_exists( 'WC_Email' ) ) {
     return;
 }
 
-class EWB_Email_Admin extends WC_Email {
+class PCWB_Email_Admin extends WC_Email {
 
     public function __construct() {
-        $this->id          = 'ewb_admin_withdrawal';
-        $this->title       = __( 'Withdrawal notification (admin)', 'eucomply-withdrawal-button' );
-        $this->description = __( 'Sent to the store administrator when a customer submits a withdrawal.', 'eucomply-withdrawal-button' );
+        $this->id          = 'pcwb_admin_withdrawal';
+        $this->title       = __( 'Withdrawal notification (admin)', 'purchase-contract-withdrawal-button-for-woocommerce' );
+        $this->description = __( 'Sent to the store administrator when a customer submits a withdrawal.', 'purchase-contract-withdrawal-button-for-woocommerce' );
 
         $this->template_html  = 'emails/admin-withdrawal-notification.php';
         $this->template_plain = 'emails/plain/admin-withdrawal-notification.php';
-        $this->template_base  = EWB_TEMPLATE_PATH;
+        $this->template_base  = PCWB_TEMPLATE_PATH;
 
         $this->placeholders = [
             '{site_title}'   => $this->get_blogname(),
             '{order_number}' => '',
         ];
 
-        add_action( 'ewb_admin_withdrawal_email', [ $this, 'trigger' ], 10, 3 );
+        add_action( 'pcwb_admin_withdrawal_email', [ $this, 'trigger' ], 10, 3 );
 
         parent::__construct();
 
-        $this->recipient = $this->get_option( 'recipient', ewb_get_admin_recipient() );
+        $this->recipient = $this->get_option( 'recipient', pcwb_get_admin_recipient() );
     }
 
     public function get_default_subject() {
-        return __( '[{site_title}] New withdrawal request — order #{order_number}', 'eucomply-withdrawal-button' );
+        return __( '[{site_title}] New withdrawal request — order #{order_number}', 'purchase-contract-withdrawal-button-for-woocommerce' );
     }
 
     public function get_default_heading() {
-        return __( 'New withdrawal request', 'eucomply-withdrawal-button' );
+        return __( 'New withdrawal request', 'purchase-contract-withdrawal-button-for-woocommerce' );
     }
 
     /**
@@ -104,17 +104,17 @@ class EWB_Email_Admin extends WC_Email {
     public function init_form_fields() {
         $this->form_fields = [
             'enabled'    => [
-                'title'   => __( 'Enable/Disable', 'eucomply-withdrawal-button' ),
+                'title'   => __( 'Enable/Disable', 'purchase-contract-withdrawal-button-for-woocommerce' ),
                 'type'    => 'checkbox',
-                'label'   => __( 'Enable this email notification', 'eucomply-withdrawal-button' ),
+                'label'   => __( 'Enable this email notification', 'purchase-contract-withdrawal-button-for-woocommerce' ),
                 'default' => 'yes',
             ],
             'recipient'  => [
-                'title'       => __( 'Recipient(s)', 'eucomply-withdrawal-button' ),
+                'title'       => __( 'Recipient(s)', 'purchase-contract-withdrawal-button-for-woocommerce' ),
                 'type'        => 'text',
                 'description' => sprintf(
                     /* translators: %s: admin email */
-                    __( 'Enter recipients (comma separated). Defaults to %s.', 'eucomply-withdrawal-button' ),
+                    __( 'Enter recipients (comma separated). Defaults to %s.', 'purchase-contract-withdrawal-button-for-woocommerce' ),
                     '<code>' . esc_html( get_option( 'admin_email' ) ) . '</code>'
                 ),
                 'placeholder' => '',
@@ -122,27 +122,27 @@ class EWB_Email_Admin extends WC_Email {
                 'desc_tip'    => true,
             ],
             'subject'    => [
-                'title'       => __( 'Subject', 'eucomply-withdrawal-button' ),
+                'title'       => __( 'Subject', 'purchase-contract-withdrawal-button-for-woocommerce' ),
                 'type'        => 'text',
                 /* translators: %s: list of available placeholders */
-                'description' => sprintf( __( 'Placeholders: %s', 'eucomply-withdrawal-button' ), '<code>{site_title}, {order_number}</code>' ),
+                'description' => sprintf( __( 'Placeholders: %s', 'purchase-contract-withdrawal-button-for-woocommerce' ), '<code>{site_title}, {order_number}</code>' ),
                 'placeholder' => $this->get_default_subject(),
                 'default'     => '',
                 'desc_tip'    => true,
             ],
             'heading'    => [
-                'title'       => __( 'Email heading', 'eucomply-withdrawal-button' ),
+                'title'       => __( 'Email heading', 'purchase-contract-withdrawal-button-for-woocommerce' ),
                 'type'        => 'text',
                 /* translators: %s: list of available placeholders */
-                'description' => sprintf( __( 'Placeholders: %s', 'eucomply-withdrawal-button' ), '<code>{site_title}, {order_number}</code>' ),
+                'description' => sprintf( __( 'Placeholders: %s', 'purchase-contract-withdrawal-button-for-woocommerce' ), '<code>{site_title}, {order_number}</code>' ),
                 'placeholder' => $this->get_default_heading(),
                 'default'     => '',
                 'desc_tip'    => true,
             ],
             'email_type' => [
-                'title'       => __( 'Email type', 'eucomply-withdrawal-button' ),
+                'title'       => __( 'Email type', 'purchase-contract-withdrawal-button-for-woocommerce' ),
                 'type'        => 'select',
-                'description' => __( 'Choose which format of email to send.', 'eucomply-withdrawal-button' ),
+                'description' => __( 'Choose which format of email to send.', 'purchase-contract-withdrawal-button-for-woocommerce' ),
                 'default'     => 'html',
                 'class'       => 'email_type wc-enhanced-select',
                 'options'     => $this->get_email_type_options(),
