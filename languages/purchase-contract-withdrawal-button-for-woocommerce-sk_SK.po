@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Purchase Contract Withdrawal Button for WooCommerce 1.0.0\n"
+"Project-Id-Version: Purchase Contract Withdrawal Button for WooCommerce 1.2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-24 12:00+0000\n"
-"PO-Revision-Date: 2026-05-24 12:00+0000\n"
+"POT-Creation-Date: 2026-05-25 10:00+0000\n"
+"PO-Revision-Date: 2026-05-25 10:00+0000\n"
 "Last-Translator: Jakub Kašpárek\n"
 "Language-Team: Slovak\n"
 "Language: sk_SK\n"
@@ -265,3 +265,175 @@ msgstr "(neuvedený)"
 
 msgid "View order:"
 msgstr "Detail objednávky:"
+
+# === 1.2.0 strings ===
+
+msgid "A withdrawal has already been submitted for this order."
+msgstr "Pre túto objednávku už bolo odstúpenie podané."
+
+msgid "an administrator"
+msgstr "správca"
+
+msgid "Customer (guest) submitted a withdrawal from the purchase contract."
+msgstr "Zákazník (hosť) podal odstúpenie od kúpnej zmluvy."
+
+#. translators: %s: admin display name
+msgid "Withdrawal marked as resolved by %s."
+msgstr "Odstúpenie označené ako vybavené používateľom %s."
+
+#. translators: %s: admin display name
+msgid "Withdrawal submitted on behalf of the customer by %s."
+msgstr "Odstúpenie podané v mene zákazníka používateľom %s."
+
+msgid "The withdrawal form is not currently available. Please contact the store."
+msgstr "Formulár na odstúpenie od zmluvy momentálne nie je k dispozícii. Kontaktujte prosím obchod."
+
+msgid "Your withdrawal has been submitted. A confirmation has been sent to your email."
+msgstr "Vaše odstúpenie bolo podané. Potvrdenie sme zaslali na váš e-mail."
+
+msgid "Your session has expired. Please start the lookup again."
+msgstr "Vaša relácia vypršala. Začnite vyhľadávanie objednávky znova."
+
+msgid "Order not found."
+msgstr "Objednávka nebola nájdená."
+
+msgid "Order number or email is missing or invalid."
+msgstr "Číslo objednávky alebo e-mail chýba alebo sú neplatné."
+
+msgid "We could not find an order with the provided details."
+msgstr "Nepodarilo sa nájsť objednávku so zadanými údajmi."
+
+msgid "Too many attempts. Please wait a few minutes and try again."
+msgstr "Príliš veľa pokusov. Počkajte niekoľko minút a skúste to znova."
+
+msgid "Security check failed. Please try again."
+msgstr "Bezpečnostná kontrola zlyhala. Skúste to prosím znova."
+
+msgid "Enter your order number and the email address used when placing the order to continue."
+msgstr "Pre pokračovanie zadajte číslo objednávky a e-mailovú adresu, ktorú ste použili pri objednávaní."
+
+msgid "Billing email"
+msgstr "Fakturačný e-mail"
+
+msgid "Continue"
+msgstr "Pokračovať"
+
+msgid "Withdrawal cooling-off"
+msgstr "Lehota na odstúpenie"
+
+msgid "Date of delivery"
+msgstr "Dátum doručenia"
+
+msgid "Date the customer received the goods. Used as the reference date for the cooling-off period (leave empty to use the order completion date)."
+msgstr "Dátum, kedy zákazník prevzal tovar. Slúži ako východiskový dátum pre lehotu na odstúpenie (ponechajte prázdne pre použitie dátumu dokončenia objednávky)."
+
+msgid "Cooling-off ends:"
+msgstr "Lehota končí:"
+
+#. translators: %d: number of days remaining
+msgid "%d day remaining"
+msgid_plural "%d days remaining"
+msgstr[0] "zostáva %d deň"
+msgstr[1] "zostávajú %d dni"
+msgstr[2] "zostáva %d dní"
+
+msgid "expired"
+msgstr "vypršala"
+
+msgid "Withdrawal submitted:"
+msgstr "Odstúpenie podané:"
+
+msgid "Resolved:"
+msgstr "Vybavené:"
+
+msgid "Use the Order actions box to mark this withdrawal as resolved."
+msgstr "Použite box Akcie objednávky na označenie odstúpenia ako vybavené."
+
+msgid "guest form"
+msgstr "formulár pre hostí"
+
+msgid "admin"
+msgstr "admin"
+
+msgid "customer account"
+msgstr "zákaznícky účet"
+
+msgid "Mark withdrawal as resolved"
+msgstr "Označiť odstúpenie ako vybavené"
+
+msgid "Submit withdrawal on behalf of customer"
+msgstr "Podať odstúpenie v mene zákazníka"
+
+msgid "Withdrawals"
+msgstr "Odstúpenia od zmluvy"
+
+msgid "Export CSV"
+msgstr "Export CSV"
+
+msgid "Search"
+msgstr "Hľadať"
+
+msgid "All"
+msgstr "Všetky"
+
+msgid "Pending"
+msgstr "Čakajúce"
+
+msgid "Resolved"
+msgstr "Vybavené"
+
+msgid "From"
+msgstr "Od"
+
+msgid "To"
+msgstr "Do"
+
+msgid "Filter"
+msgstr "Filtrovať"
+
+msgid "Submitted"
+msgstr "Podané"
+
+msgid "Source"
+msgstr "Zdroj"
+
+msgid "Status"
+msgstr "Stav"
+
+msgid "Mark as resolved"
+msgstr "Označiť ako vybavené"
+
+msgid "Resolve"
+msgstr "Vybaviť"
+
+msgid "guest"
+msgstr "hosť"
+
+msgid "customer"
+msgstr "zákazník"
+
+#. translators: %d: number of withdrawals resolved
+msgid "%d withdrawal marked as resolved."
+msgid_plural "%d withdrawals marked as resolved."
+msgstr[0] "%d odstúpenie označené ako vybavené."
+msgstr[1] "%d odstúpenia označené ako vybavené."
+msgstr[2] "%d odstúpení označených ako vybavené."
+
+msgid "You do not have permission to do this."
+msgstr "Na túto akciu nemáte oprávnenie."
+
+msgid "This order does not have a pending withdrawal."
+msgstr "Táto objednávka nemá žiadne nevybavené odstúpenie."
+
+msgid "This withdrawal has already been resolved."
+msgstr "Toto odstúpenie už bolo vybavené."
+
+msgid "Guest withdrawal form"
+msgstr "Formulár pre neprihlásených zákazníkov"
+
+msgid "Enable shortcode for non-logged-in customers"
+msgstr "Povoliť shortcode pre neprihlásených zákazníkov"
+
+#. translators: %s: shortcode wrapped in <code>
+msgid "Place %s on any page (e.g. a public landing page). The form will ask for an order number and the billing email, then show the withdrawal form."
+msgstr "Vložte %s na ľubovoľnú stránku (napr. verejnú landing page). Formulár sa zákazníka opýta na číslo objednávky a fakturačný e-mail a potom zobrazí formulár na odstúpenie."

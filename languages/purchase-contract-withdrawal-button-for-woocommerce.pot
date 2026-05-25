@@ -1,18 +1,16 @@
-# Copyright (C) 2026 Jakub Kašpárek
-# This file is distributed under the GPLv2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Purchase Contract Withdrawal Button for WooCommerce 1.0.0\n"
-"Report-Msgid-Bugs-To: https://github.com/jakubkasparek/purchase-contract-withdrawal-button-for-woocommerce/issues\n"
-"POT-Creation-Date: 2026-05-24 12:00+0000\n"
+"Project-Id-Version: Purchase Contract Withdrawal Button for WooCommerce 1.2.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-25 10:00+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: \n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "X-Domain: purchase-contract-withdrawal-button-for-woocommerce\n"
 
 msgid "Purchase Contract Withdrawal Button for WooCommerce requires WooCommerce to be installed and active."
@@ -266,4 +264,176 @@ msgid "(not provided)"
 msgstr ""
 
 msgid "View order:"
+msgstr ""
+
+# === 1.2.0 strings ===
+
+msgid "A withdrawal has already been submitted for this order."
+msgstr ""
+
+msgid "an administrator"
+msgstr ""
+
+msgid "Customer (guest) submitted a withdrawal from the purchase contract."
+msgstr ""
+
+#. translators: %s: admin display name
+msgid "Withdrawal marked as resolved by %s."
+msgstr ""
+
+#. translators: %s: admin display name
+msgid "Withdrawal submitted on behalf of the customer by %s."
+msgstr ""
+
+msgid "The withdrawal form is not currently available. Please contact the store."
+msgstr ""
+
+msgid "Your withdrawal has been submitted. A confirmation has been sent to your email."
+msgstr ""
+
+msgid "Your session has expired. Please start the lookup again."
+msgstr ""
+
+msgid "Order not found."
+msgstr ""
+
+msgid "Order number or email is missing or invalid."
+msgstr ""
+
+msgid "We could not find an order with the provided details."
+msgstr ""
+
+msgid "Too many attempts. Please wait a few minutes and try again."
+msgstr ""
+
+msgid "Security check failed. Please try again."
+msgstr ""
+
+msgid "Enter your order number and the email address used when placing the order to continue."
+msgstr ""
+
+msgid "Billing email"
+msgstr ""
+
+msgid "Continue"
+msgstr ""
+
+msgid "Withdrawal cooling-off"
+msgstr ""
+
+msgid "Date of delivery"
+msgstr ""
+
+msgid "Date the customer received the goods. Used as the reference date for the cooling-off period (leave empty to use the order completion date)."
+msgstr ""
+
+msgid "Cooling-off ends:"
+msgstr ""
+
+#. translators: %d: number of days remaining
+msgid "%d day remaining"
+msgid_plural "%d days remaining"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+msgid "expired"
+msgstr ""
+
+msgid "Withdrawal submitted:"
+msgstr ""
+
+msgid "Resolved:"
+msgstr ""
+
+msgid "Use the Order actions box to mark this withdrawal as resolved."
+msgstr ""
+
+msgid "guest form"
+msgstr ""
+
+msgid "admin"
+msgstr ""
+
+msgid "customer account"
+msgstr ""
+
+msgid "Mark withdrawal as resolved"
+msgstr ""
+
+msgid "Submit withdrawal on behalf of customer"
+msgstr ""
+
+msgid "Withdrawals"
+msgstr ""
+
+msgid "Export CSV"
+msgstr ""
+
+msgid "Search"
+msgstr ""
+
+msgid "All"
+msgstr ""
+
+msgid "Pending"
+msgstr ""
+
+msgid "Resolved"
+msgstr ""
+
+msgid "From"
+msgstr ""
+
+msgid "To"
+msgstr ""
+
+msgid "Filter"
+msgstr ""
+
+msgid "Submitted"
+msgstr ""
+
+msgid "Source"
+msgstr ""
+
+msgid "Status"
+msgstr ""
+
+msgid "Mark as resolved"
+msgstr ""
+
+msgid "Resolve"
+msgstr ""
+
+msgid "guest"
+msgstr ""
+
+msgid "customer"
+msgstr ""
+
+#. translators: %d: number of withdrawals resolved
+msgid "%d withdrawal marked as resolved."
+msgid_plural "%d withdrawals marked as resolved."
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+msgid "You do not have permission to do this."
+msgstr ""
+
+msgid "This order does not have a pending withdrawal."
+msgstr ""
+
+msgid "This withdrawal has already been resolved."
+msgstr ""
+
+msgid "Guest withdrawal form"
+msgstr ""
+
+msgid "Enable shortcode for non-logged-in customers"
+msgstr ""
+
+#. translators: %s: shortcode wrapped in <code>
+msgid "Place %s on any page (e.g. a public landing page). The form will ask for an order number and the billing email, then show the withdrawal form."
 msgstr ""
