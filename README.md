@@ -1,3 +1,5 @@
+<img src=".wordpress-org/banner-1544x500.png" alt="Purchase Contract Withdrawal Button for WooCommerce" width="100%">
+
 # Purchase Contract Withdrawal Button for WooCommerce
 
 A WooCommerce plugin that adds a customer-facing "Withdraw from purchase contract" button to the My Account order detail page, with a two-step submission flow, configurable cooling-off period, and automated email confirmation.
@@ -32,6 +34,20 @@ Designed to help merchants comply with **EU Directive 2023/2673** — which requ
 | `pcwb_new_status` | filter | Order status applied after submission |
 | `pcwb_admin_recipient` | filter | Admin email recipient |
 | `pcwb_after_submit` | action | Fires after a successful withdrawal: `($order, $reason, $account)` |
+
+## Screenshots
+
+### Customer view — button on the order detail page
+
+<img src=".wordpress-org/screenshot-1.png" alt="Withdraw from purchase contract button in My Account → Order detail" width="100%">
+
+### Customer view — withdrawal form
+
+<img src=".wordpress-org/screenshot-2.png" alt="Two-step withdrawal form with confirmation checkbox" width="100%">
+
+### Admin view — settings page
+
+<img src=".wordpress-org/screenshot-3.png" alt="Settings page under WooCommerce → Withdrawal Button" width="100%">
 
 ## Disclaimer
 
