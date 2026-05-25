@@ -12,18 +12,56 @@ if ( ! defined( 'ABSPATH' ) ) {
 class PCWB_Frontend {
 
     public static function init() {
-        add_action( 'woocommerce_order_details_after_order_table', [ __CLASS__, 'render_button' ], 20 );
+        $position = (string) get_option( 'pcwb_button_position', 'after_order_table' );
+        $positions = PCWB_Settings::get_positions();
+        $hook = $positions[ $position ]['hook'] ?? 'woocommerce_order_details_after_order_table';
+
+        // Orders list action uses a different signature.
+        if ( 'woocommerce_my_account_my_orders_actions' === $hook ) {
+            add_filter( 'woocommerce_my_account_my_orders_actions', [ __CLASS__, 'add_orders_list_action' ], 20, 2 );
+        } else {
+            add_action( $hook, [ __CLASS__, 'render_button' ], 20 );
+        }
+
         add_action( 'woocommerce_view_order', [ __CLASS__, 'maybe_render_form' ], 5, 1 );
         add_action( 'woocommerce_view_order', [ __CLASS__, 'maybe_render_success' ], 1, 1 );
         add_action( 'template_redirect', [ __CLASS__, 'handle_submit' ] );
     }
 
     /**
+     * Add an action button in the My Account orders list.
+     *
+     * @param array    $actions Existing actions.
+     * @param WC_Order $order   The order.
+     * @return array
+     */
+    public static function add_orders_list_action( $actions, $order ) {
+        if ( $order->get_meta( '_pcwb_requested_at' ) ) {
+            return $actions;
+        }
+        if ( ! pcwb_is_eligible( $order ) ) {
+            return $actions;
+        }
+        $actions['pcwb_withdrawal'] = [
+            'url'  => pcwb_get_form_url( $order->get_id() ),
+            'name' => __( 'Withdraw', 'purchase-contract-withdrawal-button-for-woocommerce' ),
+        ];
+        return $actions;
+    }
+
+    /**
      * Render the button (or the "already submitted" notice) on the order detail page.
      *
-     * @param WC_Order $order Order being viewed.
+     * @param WC_Order|int $order Order or order ID — different WC hooks pass different types.
      */
     public static function render_button( $order ) {
+        if ( ! $order instanceof WC_Order ) {
+            $order = wc_get_order( $order );
+        }
+        if ( ! $order ) {
+            return;
+        }
+
         // Don't render on the form / success sub-pages — they're handled by other hooks.
         // phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Read-only routing check on a public page, no side effects.
         if ( isset( $_GET['pcwb'] ) ) {

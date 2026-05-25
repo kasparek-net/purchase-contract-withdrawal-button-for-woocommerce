@@ -4,7 +4,7 @@ Tags: woocommerce, withdrawal, refund, gdpr, eu
 Requires at least: 6.0
 Tested up to: 7.0
 Requires PHP: 7.4
-Stable tag: 1.0.1
+Stable tag: 1.1.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -89,6 +89,11 @@ The plugin only stores data the customer has explicitly submitted (reason, refun
 
 == Changelog ==
 
+= 1.1.0 =
+* New: configurable button position (after order table, before order table, top of view-order page, or orders list row action).
+* New: Custom CSS field in settings — inject styles for the withdrawal button and form without touching theme files.
+* New filter: `pcwb_button_positions` to register additional hooks.
+
 = 1.0.1 =
 * Renamed plugin and slug to comply with WP.org plugin naming guidelines.
 * Fixed: replaced `esc_url_raw` with `esc_url` for displayed URL in plain text admin notification.
@@ -98,6 +103,9 @@ The plugin only stores data the customer has explicitly submitted (reason, refun
 * Initial release.
 
 == Upgrade Notice ==
+
+= 1.1.0 =
+Adds configurable button position and a Custom CSS field in settings.
 
 = 1.0.1 =
 Naming and security cleanup per WP.org review.

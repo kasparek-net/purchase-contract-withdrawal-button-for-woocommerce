@@ -64,6 +64,69 @@ class PCWB_Settings {
                 'default'           => 'on-hold',
             ]
         );
+        register_setting(
+            'pcwb_settings',
+            'pcwb_button_position',
+            [
+                'type'              => 'string',
+                'sanitize_callback' => [ __CLASS__, 'sanitize_position' ],
+                'default'           => 'after_order_table',
+            ]
+        );
+        register_setting(
+            'pcwb_settings',
+            'pcwb_custom_css',
+            [
+                'type'              => 'string',
+                'sanitize_callback' => [ __CLASS__, 'sanitize_css' ],
+                'default'           => '',
+            ]
+        );
+    }
+
+    /**
+     * Available button positions.
+     *
+     * @return array<string,array<string,string>>
+     */
+    public static function get_positions() {
+        return apply_filters( 'pcwb_button_positions', [
+            'after_order_table'  => [
+                'hook'  => 'woocommerce_order_details_after_order_table',
+                'label' => __( 'Order detail — below the order table (default)', 'purchase-contract-withdrawal-button-for-woocommerce' ),
+            ],
+            'before_order_table' => [
+                'hook'  => 'woocommerce_order_details_before_order_table',
+                'label' => __( 'Order detail — above the order table', 'purchase-contract-withdrawal-button-for-woocommerce' ),
+            ],
+            'view_order_top'     => [
+                'hook'  => 'woocommerce_view_order',
+                'label' => __( 'Order detail — top of the page', 'purchase-contract-withdrawal-button-for-woocommerce' ),
+            ],
+            'orders_list_action' => [
+                'hook'  => 'woocommerce_my_account_my_orders_actions',
+                'label' => __( 'Orders list — as a row action button', 'purchase-contract-withdrawal-button-for-woocommerce' ),
+            ],
+        ] );
+    }
+
+    public static function sanitize_position( $value ) {
+        $positions = self::get_positions();
+        return isset( $positions[ $value ] ) ? $value : 'after_order_table';
+    }
+
+    /**
+     * Allow safe CSS only. Strip any tags like </style> or scripts, length-limited.
+     */
+    public static function sanitize_css( $value ) {
+        $value = (string) $value;
+        // Strip any HTML tags — CSS shouldn't contain them.
+        $value = wp_strip_all_tags( $value );
+        // Cap length to a sane maximum (8 KB).
+        if ( strlen( $value ) > 8192 ) {
+            $value = substr( $value, 0, 8192 );
+        }
+        return $value;
     }
 
     public static function sanitize_statuses( $value ) {
@@ -80,11 +143,14 @@ class PCWB_Settings {
             return;
         }
 
-        $period      = (int) get_option( 'pcwb_period_days', 14 );
-        $statuses    = (array) get_option( 'pcwb_eligible_statuses', [ 'completed' ] );
-        $recipient   = (string) get_option( 'pcwb_admin_recipient', '' );
-        $new_status  = (string) get_option( 'pcwb_new_status', 'on-hold' );
+        $period       = (int) get_option( 'pcwb_period_days', 14 );
+        $statuses     = (array) get_option( 'pcwb_eligible_statuses', [ 'completed' ] );
+        $recipient    = (string) get_option( 'pcwb_admin_recipient', '' );
+        $new_status   = (string) get_option( 'pcwb_new_status', 'on-hold' );
+        $position     = (string) get_option( 'pcwb_button_position', 'after_order_table' );
+        $custom_css   = (string) get_option( 'pcwb_custom_css', '' );
         $all_statuses = wc_get_order_statuses();
+        $positions    = self::get_positions();
         ?>
         <div class="wrap">
             <h1><?php esc_html_e( 'Purchase Contract Withdrawal Button for WooCommerce', 'purchase-contract-withdrawal-button-for-woocommerce' ); ?></h1>
@@ -162,6 +228,41 @@ class PCWB_Settings {
                                 <?php endforeach; ?>
                             </select>
                             <p class="description"><?php esc_html_e( 'Order status applied automatically after the customer submits a withdrawal.', 'purchase-contract-withdrawal-button-for-woocommerce' ); ?></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            <label for="pcwb_button_position"><?php esc_html_e( 'Button position', 'purchase-contract-withdrawal-button-for-woocommerce' ); ?></label>
+                        </th>
+                        <td>
+                            <select id="pcwb_button_position" name="pcwb_button_position">
+                                <?php foreach ( $positions as $key => $cfg ) : ?>
+                                    <option value="<?php echo esc_attr( $key ); ?>" <?php selected( $position, $key ); ?>>
+                                        <?php echo esc_html( $cfg['label'] ); ?>
+                                    </option>
+                                <?php endforeach; ?>
+                            </select>
+                            <p class="description"><?php esc_html_e( 'Where the withdrawal button appears in the customer view.', 'purchase-contract-withdrawal-button-for-woocommerce' ); ?></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            <label for="pcwb_custom_css"><?php esc_html_e( 'Custom button CSS', 'purchase-contract-withdrawal-button-for-woocommerce' ); ?></label>
+                        </th>
+                        <td>
+                            <textarea id="pcwb_custom_css" name="pcwb_custom_css" rows="8" class="large-text code" placeholder=".pcwb-button { background: #8b6bae; color: #f3ebd9; }
+.pcwb-button:hover { background: #6c4e8e; }"><?php echo esc_textarea( $custom_css ); ?></textarea>
+                            <p class="description">
+                                <?php
+                                printf(
+                                    /* translators: 1: button class, 2: form class */
+                                    esc_html__( 'Optional CSS injected on the My Account page. Available selectors include %1$s, %2$s, and the various form classes (see plugin %3$s file).', 'purchase-contract-withdrawal-button-for-woocommerce' ),
+                                    '<code>.pcwb-button</code>',
+                                    '<code>.pcwb-form</code>',
+                                    '<code>assets/css/purchase-contract-withdrawal-button-for-woocommerce.css</code>'
+                                );
+                                ?>
+                            </p>
                         </td>
                     </tr>
                 </table>

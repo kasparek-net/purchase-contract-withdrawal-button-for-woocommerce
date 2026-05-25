@@ -3,7 +3,7 @@
  * Plugin Name: Purchase Contract Withdrawal Button for WooCommerce
  * Plugin URI: https://github.com/kasparek-net/purchase-contract-withdrawal-button-for-woocommerce
  * Description: Adds a "Withdraw from purchase contract" button to the order detail page in My Account. Two-step process with nonce, configurable cooling-off period, automated email confirmation. Designed to comply with EU Directive 2023/2673 — required in the Czech Republic from 19 June 2026 (§ 1830a Civil Code), with the same legal basis applicable across the EU.
- * Version: 1.0.1
+ * Version: 1.1.0
  * Requires at least: 6.0
  * Requires PHP: 7.4
  * Author: Jakub Kašpárek
@@ -22,7 +22,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
 
-define( 'PCWB_VERSION', '1.0.1' );
+define( 'PCWB_VERSION', '1.1.0' );
 define( 'PCWB_PLUGIN_FILE', __FILE__ );
 define( 'PCWB_PLUGIN_PATH', plugin_dir_path( __FILE__ ) );
 define( 'PCWB_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
@@ -88,12 +88,17 @@ function pcwb_register_email_classes( $email_classes ) {
  */
 function pcwb_enqueue_styles() {
     if ( function_exists( 'is_account_page' ) && is_account_page() ) {
+        $handle = 'purchase-contract-withdrawal-button-for-woocommerce';
         wp_enqueue_style(
-            'purchase-contract-withdrawal-button-for-woocommerce',
+            $handle,
             PCWB_PLUGIN_URL . 'assets/css/purchase-contract-withdrawal-button-for-woocommerce.css',
             [],
             PCWB_VERSION
         );
+        $custom = (string) get_option( 'pcwb_custom_css', '' );
+        if ( $custom !== '' ) {
+            wp_add_inline_style( $handle, $custom );
+        }
     }
 }
 

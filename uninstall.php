@@ -14,6 +14,8 @@ delete_option( 'pcwb_period_days' );
 delete_option( 'pcwb_eligible_statuses' );
 delete_option( 'pcwb_admin_recipient' );
 delete_option( 'pcwb_new_status' );
+delete_option( 'pcwb_button_position' );
+delete_option( 'pcwb_custom_css' );
 
 delete_option( 'woocommerce_pcwb_customer_withdrawal_settings' );
 delete_option( 'woocommerce_pcwb_admin_withdrawal_settings' );
