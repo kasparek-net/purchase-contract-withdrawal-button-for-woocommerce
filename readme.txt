@@ -4,7 +4,7 @@ Tags: woocommerce, withdrawal, refund, gdpr, eu
 Requires at least: 6.0
 Tested up to: 7.0
 Requires PHP: 7.4
-Stable tag: 1.1.0
+Stable tag: 1.2.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -32,21 +32,27 @@ The plugin is not legal advice. Merchants remain responsible for ensuring their 
 = Features =
 
 * **Two-step submission** — button click → form with details → explicit confirmation
+* **Guest shortcode** — optional `[pcwb_withdrawal_form]` for non-logged-in customers (order number + billing email lookup, rate-limited)
 * **Configurable cooling-off period** — default 14 days, adjustable per store
+* **Date of delivery meta box** — admin can record when the goods were received; the cooling-off period then runs from that date (legally correct under EU law)
 * **Configurable eligible statuses** — choose which order statuses show the button
 * **Configurable post-submission status** — typically On hold or Processing
 * **WooCommerce email integration** — customer + admin emails as native WC_Email classes
+* **Admin overview** — dedicated "Withdrawals" screen under WooCommerce: filter by pending/resolved, search, CSV export, bulk "Mark as resolved"
+* **Order actions** — admins can submit a withdrawal on behalf of the customer (e.g. phone request) and mark requests resolved from the order edit screen
 * **Translatable** — full text domain, .pot included, Czech and Slovak translations bundled
-* **Theme-overridable templates** — copy `templates/withdrawal-form.php` into your theme to customize
+* **Theme-overridable templates** — copy `templates/withdrawal-form.php` or `templates/guest-lookup.php` into your theme to customize
 * **HPOS-compatible** — works with WooCommerce's High-Performance Order Storage
 
 = Filters and actions =
 
 * `pcwb_eligible_statuses` — array of statuses where the button is shown
 * `pcwb_period_days` — cooling-off period override
+* `pcwb_period_reference_date` ($date, $order) — override the cooling-off reference date
 * `pcwb_new_status` — order status applied after submission
 * `pcwb_admin_recipient` — admin email recipient override
-* `pcwb_after_submit` ($order, $reason, $account) — fires after a successful submission
+* `pcwb_after_submit` ($order, $reason, $account, $source) — fires after a successful submission (source = customer|guest|admin)
+* `pcwb_after_resolve` ($order, $resolved_by_user_id) — fires when an admin marks a withdrawal resolved
 
 == Installation ==
 
@@ -83,11 +89,22 @@ The plugin only stores data the customer has explicitly submitted (reason, refun
 
 == Screenshots ==
 
-1. The "Withdraw from purchase contract" button on the order detail page.
-2. The two-step submission form.
-3. The settings page under WooCommerce → Withdrawal Button.
+1. Withdrawals admin overview — filter by pending/resolved, search, date range, bulk actions, CSV export, per-row Resolve.
+2. Order edit screen with the "Withdrawal cooling-off" meta box — set the date of delivery, see the cooling-off deadline and submission details.
+3. Order actions dropdown — submit a withdrawal on behalf of the customer, or mark an existing one as resolved.
+4. Guest lookup form rendered by the [pcwb_withdrawal_form] shortcode on a public page — order number + billing email.
+5. Guest withdrawal form after successful lookup — pre-filled order summary, optional refund account and reason, explicit confirmation.
 
 == Changelog ==
+
+= 1.2.0 =
+* New: optional `[pcwb_withdrawal_form]` shortcode for non-logged-in customers (order number + email lookup with rate limiting, short-lived submission token).
+* New: dedicated "Withdrawals" admin screen under WooCommerce — list, filter (pending/resolved/all), date range, search, bulk "Mark as resolved", and CSV export.
+* New: "Withdrawal cooling-off" order meta box — enter the date the goods were delivered to make the cooling-off period start from the legally correct moment.
+* New: order actions — "Submit withdrawal on behalf of customer" and "Mark withdrawal as resolved".
+* New filter: `pcwb_period_reference_date` to override the reference date programmatically.
+* New action: `pcwb_after_resolve` ($order, $resolved_by) fires when a withdrawal is marked resolved.
+* Internal: `PCWB_Frontend::do_submit()` and `::resolve()` are now reusable across customer, guest and admin flows.
 
 = 1.1.0 =
 * New: configurable button position (after order table, before order table, top of view-order page, or orders list row action).
@@ -103,6 +120,9 @@ The plugin only stores data the customer has explicitly submitted (reason, refun
 * Initial release.
 
 == Upgrade Notice ==
+
+= 1.2.0 =
+Adds a guest shortcode for non-logged-in customers, a dedicated Withdrawals admin screen with CSV export, a date-of-delivery meta box, and order actions for resolving and submitting on behalf.
 
 = 1.1.0 =
 Adds configurable button position and a Custom CSS field in settings.

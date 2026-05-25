@@ -6,16 +6,21 @@
  * yourtheme/purchase-contract-withdrawal-button-for-woocommerce/withdrawal-form.php
  *
  * @package PurchaseContractWithdrawalButtonForWooCommerce
- * @version 1.0.0
+ * @version 1.2.0
  *
  * @var WC_Order $order
  * @var string   $back_url
  * @var int      $deadline Unix timestamp of the cooling-off deadline.
+ * @var bool     $is_guest Optional. True when the form is rendered for a guest. Default false.
+ * @var string   $guest_token Optional. Short-lived token issued during guest lookup.
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
+
+$is_guest    = ! empty( $is_guest );
+$guest_token = isset( $guest_token ) ? (string) $guest_token : '';
 ?>
 <h2 class="pcwb-form-heading"><?php esc_html_e( 'Withdrawal from purchase contract', 'purchase-contract-withdrawal-button-for-woocommerce' ); ?></h2>
 
@@ -30,10 +35,14 @@ if ( ! defined( 'ABSPATH' ) ) {
     ?>
 </p>
 
-<form method="post" action="" class="pcwb-form">
+<form method="post" action="" class="pcwb-form<?php echo $is_guest ? ' pcwb-guest-form' : ''; ?>">
     <?php wp_nonce_field( 'pcwb_submit_' . $order->get_id(), 'pcwb_nonce' ); ?>
     <input type="hidden" name="pcwb_submit" value="1">
     <input type="hidden" name="order_id" value="<?php echo esc_attr( $order->get_id() ); ?>">
+    <?php if ( $is_guest ) : ?>
+        <input type="hidden" name="pcwb_guest" value="submit">
+        <input type="hidden" name="pcwb_guest_token" value="<?php echo esc_attr( $guest_token ); ?>">
+    <?php endif; ?>
 
     <table class="shop_table pcwb-order-summary">
         <tr>

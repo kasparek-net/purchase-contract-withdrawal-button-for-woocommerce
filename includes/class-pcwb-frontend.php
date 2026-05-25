@@ -176,12 +176,17 @@ class PCWB_Frontend {
     }
 
     /**
-     * Handle POST submission.
+     * Handle POST submission from a logged-in customer (My Account flow).
      */
     public static function handle_submit() {
         // Gate: only process our submission; nonce is verified below.
         // phpcs:ignore WordPress.Security.NonceVerification.Missing -- Gate; full nonce verification follows after extracting the order ID.
         if ( empty( $_POST['pcwb_submit'] ) ) {
+            return;
+        }
+
+        // phpcs:ignore WordPress.Security.NonceVerification.Missing -- Routing gate for the guest flow; handled by PCWB_Guest.
+        if ( ! empty( $_POST['pcwb_guest'] ) ) {
             return;
         }
 
@@ -210,19 +215,55 @@ class PCWB_Frontend {
             wp_die( esc_html__( 'You must check the confirmation box to submit a withdrawal.', 'purchase-contract-withdrawal-button-for-woocommerce' ), '', [ 'response' => 400 ] );
         }
 
-        if ( ! pcwb_is_eligible( $order ) ) {
-            wp_die( esc_html__( 'This order is no longer eligible for withdrawal.', 'purchase-contract-withdrawal-button-for-woocommerce' ), '', [ 'response' => 400 ] );
-        }
-
         $reason  = isset( $_POST['reason'] ) ? sanitize_textarea_field( wp_unslash( $_POST['reason'] ) ) : '';
         $account = isset( $_POST['refund_account'] ) ? sanitize_text_field( wp_unslash( $_POST['refund_account'] ) ) : '';
-        $now     = current_time( 'mysql' );
+
+        $result = self::do_submit( $order, $reason, $account, 'customer' );
+        if ( is_wp_error( $result ) ) {
+            wp_die( esc_html( $result->get_error_message() ), '', [ 'response' => 400 ] );
+        }
+
+        $back_url = add_query_arg(
+            [ 'pcwb' => 'success' ],
+            wc_get_endpoint_url( 'view-order', $order_id, wc_get_page_permalink( 'myaccount' ) )
+        );
+        wp_safe_redirect( $back_url );
+        exit;
+    }
+
+    /**
+     * Shared submission pipeline used by customer, guest, and admin flows.
+     *
+     * @param WC_Order $order    Order being withdrawn.
+     * @param string   $reason   Optional reason.
+     * @param string   $account  Optional refund account.
+     * @param string   $source   One of: customer, guest, admin.
+     * @param int      $admin_id Admin user ID when $source = admin.
+     * @return true|WP_Error
+     */
+    public static function do_submit( WC_Order $order, $reason = '', $account = '', $source = 'customer', $admin_id = 0 ) {
+        if ( $order->get_meta( '_pcwb_requested_at' ) ) {
+            return new WP_Error( 'already_submitted', __( 'A withdrawal has already been submitted for this order.', 'purchase-contract-withdrawal-button-for-woocommerce' ) );
+        }
+
+        if ( 'admin' !== $source && ! pcwb_is_eligible( $order ) ) {
+            return new WP_Error( 'not_eligible', __( 'This order is no longer eligible for withdrawal.', 'purchase-contract-withdrawal-button-for-woocommerce' ) );
+        }
+
+        $now    = current_time( 'mysql' );
+        $reason = (string) $reason;
+        $account = (string) $account;
 
         $order->update_meta_data( '_pcwb_requested_at', $now );
         $order->update_meta_data( '_pcwb_reason', $reason );
         $order->update_meta_data( '_pcwb_refund_account', $account );
+        $order->update_meta_data( '_pcwb_source', $source );
+        if ( 'admin' === $source && $admin_id > 0 ) {
+            $order->update_meta_data( '_pcwb_submitted_by', $admin_id );
+        }
 
-        $note  = __( 'Customer submitted a withdrawal from the purchase contract.', 'purchase-contract-withdrawal-button-for-woocommerce' ) . "\n";
+        $intro = self::submission_intro( $source, $admin_id );
+        $note  = $intro . "\n";
         if ( $reason ) {
             /* translators: %s: customer-provided reason */
             $note .= sprintf( __( 'Reason: %s', 'purchase-contract-withdrawal-button-for-woocommerce' ), $reason ) . "\n";
@@ -234,21 +275,66 @@ class PCWB_Frontend {
         $order->add_order_note( $note );
 
         $new_status = apply_filters( 'pcwb_new_status', get_option( 'pcwb_new_status', 'on-hold' ), $order );
-        $order->update_status( $new_status, __( 'Customer submitted withdrawal from purchase contract.', 'purchase-contract-withdrawal-button-for-woocommerce' ) );
+        $order->update_status( $new_status, $intro );
         $order->save();
 
-        do_action( 'pcwb_after_submit', $order, $reason, $account );
+        do_action( 'pcwb_after_submit', $order, $reason, $account, $source );
 
-        // Trigger WC_Email instances.
         WC()->mailer();
         do_action( 'pcwb_customer_withdrawal_email', $order, $reason, $account );
         do_action( 'pcwb_admin_withdrawal_email', $order, $reason, $account );
 
-        $back_url = add_query_arg(
-            [ 'pcwb' => 'success' ],
-            wc_get_endpoint_url( 'view-order', $order_id, wc_get_page_permalink( 'myaccount' ) )
-        );
-        wp_safe_redirect( $back_url );
-        exit;
+        return true;
+    }
+
+    /**
+     * Mark a previously submitted withdrawal as resolved (refund processed, goods returned, etc.).
+     *
+     * @param WC_Order $order        Order.
+     * @param int      $resolved_by  Admin user ID resolving the request.
+     * @return true|WP_Error
+     */
+    public static function resolve( WC_Order $order, $resolved_by = 0 ) {
+        if ( ! $order->get_meta( '_pcwb_requested_at' ) ) {
+            return new WP_Error( 'not_submitted', __( 'This order does not have a pending withdrawal.', 'purchase-contract-withdrawal-button-for-woocommerce' ) );
+        }
+        if ( $order->get_meta( '_pcwb_resolved_at' ) ) {
+            return new WP_Error( 'already_resolved', __( 'This withdrawal has already been resolved.', 'purchase-contract-withdrawal-button-for-woocommerce' ) );
+        }
+
+        $resolved_by = absint( $resolved_by );
+        $order->update_meta_data( '_pcwb_resolved_at', current_time( 'mysql' ) );
+        if ( $resolved_by > 0 ) {
+            $order->update_meta_data( '_pcwb_resolved_by', $resolved_by );
+        }
+
+        $user = $resolved_by ? get_userdata( $resolved_by ) : null;
+        $name = $user ? $user->display_name : __( 'an administrator', 'purchase-contract-withdrawal-button-for-woocommerce' );
+        /* translators: %s: admin display name */
+        $order->add_order_note( sprintf( __( 'Withdrawal marked as resolved by %s.', 'purchase-contract-withdrawal-button-for-woocommerce' ), $name ) );
+        $order->save();
+
+        do_action( 'pcwb_after_resolve', $order, $resolved_by );
+
+        return true;
+    }
+
+    /**
+     * Build a human-readable intro for the order note / status-change comment.
+     *
+     * @param string $source   One of: customer, guest, admin.
+     * @param int    $admin_id Admin user ID when $source = admin.
+     */
+    private static function submission_intro( $source, $admin_id = 0 ) {
+        if ( 'admin' === $source ) {
+            $user = $admin_id ? get_userdata( $admin_id ) : null;
+            $name = $user ? $user->display_name : __( 'an administrator', 'purchase-contract-withdrawal-button-for-woocommerce' );
+            /* translators: %s: admin display name */
+            return sprintf( __( 'Withdrawal submitted on behalf of the customer by %s.', 'purchase-contract-withdrawal-button-for-woocommerce' ), $name );
+        }
+        if ( 'guest' === $source ) {
+            return __( 'Customer (guest) submitted a withdrawal from the purchase contract.', 'purchase-contract-withdrawal-button-for-woocommerce' );
+        }
+        return __( 'Customer submitted a withdrawal from the purchase contract.', 'purchase-contract-withdrawal-button-for-woocommerce' );
     }
 }

@@ -34,10 +34,15 @@
 }
 
 .pcwb-form .pcwb-field input[type="text"],
+.pcwb-form .pcwb-field input[type="email"],
 .pcwb-form .pcwb-field textarea {
     width: 100%;
     max-width: 600px;
     box-sizing: border-box;
+}
+
+.pcwb-guest-lookup {
+    margin: 24px 0;
 }
 
 .pcwb-confirm-box {

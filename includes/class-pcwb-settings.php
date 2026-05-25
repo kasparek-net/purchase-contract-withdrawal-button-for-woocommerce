@@ -82,6 +82,15 @@ class PCWB_Settings {
                 'default'           => '',
             ]
         );
+        register_setting(
+            'pcwb_settings',
+            'pcwb_guest_enabled',
+            [
+                'type'              => 'string',
+                'sanitize_callback' => static fn ( $v ) => $v === 'yes' ? 'yes' : 'no',
+                'default'           => 'no',
+            ]
+        );
     }
 
     /**
@@ -149,6 +158,7 @@ class PCWB_Settings {
         $new_status   = (string) get_option( 'pcwb_new_status', 'on-hold' );
         $position     = (string) get_option( 'pcwb_button_position', 'after_order_table' );
         $custom_css   = (string) get_option( 'pcwb_custom_css', '' );
+        $guest_on     = 'yes' === get_option( 'pcwb_guest_enabled', 'no' );
         $all_statuses = wc_get_order_statuses();
         $positions    = self::get_positions();
         ?>
@@ -243,6 +253,26 @@ class PCWB_Settings {
                                 <?php endforeach; ?>
                             </select>
                             <p class="description"><?php esc_html_e( 'Where the withdrawal button appears in the customer view.', 'purchase-contract-withdrawal-button-for-woocommerce' ); ?></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            <?php esc_html_e( 'Guest withdrawal form', 'purchase-contract-withdrawal-button-for-woocommerce' ); ?>
+                        </th>
+                        <td>
+                            <label>
+                                <input type="checkbox" name="pcwb_guest_enabled" value="yes" <?php checked( $guest_on ); ?>>
+                                <?php esc_html_e( 'Enable shortcode for non-logged-in customers', 'purchase-contract-withdrawal-button-for-woocommerce' ); ?>
+                            </label>
+                            <p class="description">
+                                <?php
+                                printf(
+                                    /* translators: %s: shortcode wrapped in <code> */
+                                    esc_html__( 'Place %s on any page (e.g. a public landing page). The form will ask for an order number and the billing email, then show the withdrawal form.', 'purchase-contract-withdrawal-button-for-woocommerce' ),
+                                    '<code>[pcwb_withdrawal_form]</code>'
+                                );
+                                ?>
+                            </p>
                         </td>
                     </tr>
                     <tr>

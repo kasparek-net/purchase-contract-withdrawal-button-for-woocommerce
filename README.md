@@ -10,7 +10,11 @@ Designed to help merchants comply with **EU Directive 2023/2673** — which requ
 
 - Textual button ("Withdraw from purchase contract") on the order detail page in My Account
 - Two-step submission: button → review form → explicit confirmation
-- Configurable cooling-off period (default 14 days, counted from order completion)
+- Optional `[pcwb_withdrawal_form]` shortcode for non-logged-in customers (order number + billing email lookup with rate limiting)
+- Configurable cooling-off period (default 14 days)
+- Date-of-delivery meta box — record when goods were received so the cooling-off period starts from the legally correct moment
+- Dedicated "Withdrawals" admin screen (filters, search, CSV export, bulk resolve)
+- Order actions: "Submit withdrawal on behalf of customer" + "Mark withdrawal as resolved"
 - Configurable eligible order statuses (default: `completed`)
 - Configurable post-submission status (default: `on-hold`)
 - Customer + admin emails as native `WC_Email` classes — customizable in WooCommerce → Settings → Emails
@@ -30,24 +34,34 @@ Designed to help merchants comply with **EU Directive 2023/2673** — which requ
 | Hook | Type | Purpose |
 |------|------|---------|
 | `pcwb_period_days` | filter | Override cooling-off period |
+| `pcwb_period_reference_date` | filter | Override the date from which the cooling-off period is counted: `($date, $order)` |
 | `pcwb_eligible_statuses` | filter | Override list of eligible order statuses |
 | `pcwb_new_status` | filter | Order status applied after submission |
 | `pcwb_admin_recipient` | filter | Admin email recipient |
-| `pcwb_after_submit` | action | Fires after a successful withdrawal: `($order, $reason, $account)` |
+| `pcwb_after_submit` | action | Fires after a successful withdrawal: `($order, $reason, $account, $source)` |
+| `pcwb_after_resolve` | action | Fires when an admin marks a withdrawal resolved: `($order, $resolved_by_user_id)` |
 
 ## Screenshots
 
-### Customer view — button on the order detail page
+### Admin overview — Withdrawals list
 
-<img src=".wordpress-org/screenshot-1.png" alt="Withdraw from purchase contract button in My Account → Order detail" width="100%">
+<img src=".wordpress-org/screenshot-1.png" alt="Withdrawals admin overview with filters, CSV export, per-row resolve" width="100%">
 
-### Customer view — withdrawal form
+### Order edit — cooling-off meta box
 
-<img src=".wordpress-org/screenshot-2.png" alt="Two-step withdrawal form with confirmation checkbox" width="100%">
+<img src=".wordpress-org/screenshot-2.png" alt="Order edit screen with the Withdrawal cooling-off meta box" width="100%">
 
-### Admin view — settings page
+### Order actions — resolve and submit on behalf
 
-<img src=".wordpress-org/screenshot-3.png" alt="Settings page under WooCommerce → Withdrawal Button" width="100%">
+<img src=".wordpress-org/screenshot-3.png" alt="Order actions dropdown showing Mark withdrawal as resolved" width="100%">
+
+### Guest lookup form
+
+<img src=".wordpress-org/screenshot-4.png" alt="Guest lookup form rendered by the [pcwb_withdrawal_form] shortcode" width="100%">
+
+### Guest withdrawal form
+
+<img src=".wordpress-org/screenshot-5.png" alt="Guest withdrawal form after lookup with order summary and confirmation" width="100%">
 
 ## Disclaimer
 
