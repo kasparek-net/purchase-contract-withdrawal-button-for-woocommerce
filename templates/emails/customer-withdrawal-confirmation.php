@@ -5,7 +5,7 @@
  * Override by copying to yourtheme/purchase-contract-withdrawal-button-for-woocommerce/emails/customer-withdrawal-confirmation.php
  *
  * @package PurchaseContractWithdrawalButtonForWooCommerce
- * @version 1.0.0
+ * @version 1.2.2
  *
  * @var WC_Order $order
  * @var string   $email_heading
@@ -19,6 +19,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
 
+// phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedHooknameFound -- WooCommerce core action, intentionally invoked to integrate with WC email template system.
 do_action( 'woocommerce_email_header', $email_heading, $email ); ?>
 
 <p><?php esc_html_e( 'Hello,', 'purchase-contract-withdrawal-button-for-woocommerce' ); ?></p>
@@ -55,4 +56,5 @@ if ( $additional_content ) {
     echo wp_kses_post( wpautop( wptexturize( $additional_content ) ) );
 }
 
+// phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedHooknameFound -- WooCommerce core action, intentionally invoked to integrate with WC email template system.
 do_action( 'woocommerce_email_footer', $email );

@@ -4,7 +4,7 @@ Tags: woocommerce, withdrawal, refund, gdpr, eu
 Requires at least: 6.0
 Tested up to: 7.0
 Requires PHP: 7.4
-Stable tag: 1.2.1
+Stable tag: 1.2.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -97,6 +97,10 @@ The plugin only stores data the customer has explicitly submitted (reason, refun
 
 == Changelog ==
 
+= 1.2.2 =
+* Code quality: addressed Plugin Check warnings — annotated CSV-streaming filesystem calls, admin list-table filter parameters, and intentional WooCommerce email hooks with explanatory `phpcs:ignore` comments.
+* Internal: renamed template-scoped `$completed` variable to `$pcwb_completed` in admin email templates.
+
 = 1.2.1 =
 * Added `Requires Plugins: woocommerce` header to declare WooCommerce as a required dependency (WP 6.5+).
 
@@ -123,6 +127,9 @@ The plugin only stores data the customer has explicitly submitted (reason, refun
 * Initial release.
 
 == Upgrade Notice ==
+
+= 1.2.2 =
+Code quality improvements addressing Plugin Check feedback. No functional changes.
 
 = 1.2.1 =
 Declares WooCommerce as a required plugin dependency (WP 6.5+).

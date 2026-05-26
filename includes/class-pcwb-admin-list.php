@@ -158,6 +158,7 @@ class PCWB_Admin_List extends WP_List_Table {
         $ids = wc_get_orders( [
             'limit'        => 9999,
             'return'       => 'ids',
+            // phpcs:ignore WordPress.DB.SlowDBQuery.slow_db_query_meta_key -- Required to list orders flagged as withdrawn; volume is bounded by withdrawal requests.
             'meta_key'     => '_pcwb_requested_at',
             'meta_compare' => 'EXISTS',
         ] );
@@ -196,8 +197,10 @@ class PCWB_Admin_List extends WP_List_Table {
             'paged'        => $paged,
             'orderby'      => 'meta_value',
             'order'        => 'DESC',
+            // phpcs:ignore WordPress.DB.SlowDBQuery.slow_db_query_meta_key -- Required to list orders flagged as withdrawn.
             'meta_key'     => '_pcwb_requested_at',
             'meta_compare' => 'EXISTS',
+            // phpcs:ignore WordPress.DB.SlowDBQuery.slow_db_query_meta_query -- Required to filter orders by withdrawal status; bounded volume.
             'meta_query'   => [
                 [
                     'key'     => '_pcwb_requested_at',
@@ -356,7 +359,9 @@ class PCWB_Admin_List extends WP_List_Table {
         header( 'Content-Type: text/csv; charset=utf-8' );
         header( 'Content-Disposition: attachment; filename=pcwb-withdrawals-' . gmdate( 'Y-m-d' ) . '.csv' );
 
+        // phpcs:ignore WordPress.WP.AlternativeFunctions.file_system_operations_fopen -- Streaming CSV to php://output; WP_Filesystem cannot stream to the HTTP response.
         $out = fopen( 'php://output', 'w' );
+        // phpcs:ignore WordPress.WP.AlternativeFunctions.file_system_operations_fputcsv -- Writing CSV row to php://output stream.
         fputcsv( $out, [
             'Order',
             'Submitted',
@@ -373,6 +378,7 @@ class PCWB_Admin_List extends WP_List_Table {
 
         if ( is_array( $orders ) ) {
             foreach ( $orders as $order ) {
+                // phpcs:ignore WordPress.WP.AlternativeFunctions.file_system_operations_fputcsv -- Writing CSV row to php://output stream.
                 fputcsv( $out, [
                     $order->get_order_number(),
                     (string) $order->get_meta( '_pcwb_requested_at' ),
@@ -388,24 +394,29 @@ class PCWB_Admin_List extends WP_List_Table {
                 ] );
             }
         }
+        // phpcs:ignore WordPress.WP.AlternativeFunctions.file_system_operations_fclose -- Closing php://output stream.
         fclose( $out );
         exit;
     }
 
     private static function current_state() {
+        // phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Read-only admin list filter parameter; access already gated by 'manage_woocommerce' capability.
         return isset( $_GET['state'] ) ? sanitize_key( wp_unslash( $_GET['state'] ) ) : '';
     }
 
     private static function current_search() {
+        // phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Read-only admin list search parameter; access already gated by 'manage_woocommerce' capability.
         return isset( $_GET['s'] ) ? sanitize_text_field( wp_unslash( $_GET['s'] ) ) : '';
     }
 
     private static function current_from() {
+        // phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Read-only admin list filter parameter; access already gated by 'manage_woocommerce' capability.
         $from = isset( $_GET['from'] ) ? sanitize_text_field( wp_unslash( $_GET['from'] ) ) : '';
         return preg_match( '/^\d{4}-\d{2}-\d{2}$/', $from ) ? $from : '';
     }
 
     private static function current_to() {
+        // phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Read-only admin list filter parameter; access already gated by 'manage_woocommerce' capability.
         $to = isset( $_GET['to'] ) ? sanitize_text_field( wp_unslash( $_GET['to'] ) ) : '';
         return preg_match( '/^\d{4}-\d{2}-\d{2}$/', $to ) ? $to : '';
     }

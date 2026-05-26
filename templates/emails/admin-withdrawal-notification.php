@@ -3,7 +3,7 @@
  * Admin withdrawal notification — HTML.
  *
  * @package PurchaseContractWithdrawalButtonForWooCommerce
- * @version 1.0.0
+ * @version 1.2.2
  *
  * @var WC_Order $order
  * @var string   $reason
@@ -17,6 +17,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
 
+// phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedHooknameFound -- WooCommerce core action, intentionally invoked to integrate with WC email template system.
 do_action( 'woocommerce_email_header', $email_heading, $email ); ?>
 
 <p><?php esc_html_e( 'A customer has submitted a withdrawal from a purchase contract.', 'purchase-contract-withdrawal-button-for-woocommerce' ); ?></p>
@@ -52,8 +53,8 @@ do_action( 'woocommerce_email_header', $email_heading, $email ); ?>
         <th><?php esc_html_e( 'Completion date', 'purchase-contract-withdrawal-button-for-woocommerce' ); ?></th>
         <td>
             <?php
-            $completed = $order->get_date_completed();
-            echo esc_html( $completed ? wc_format_datetime( $completed ) : '—' );
+            $pcwb_completed = $order->get_date_completed();
+            echo esc_html( $pcwb_completed ? wc_format_datetime( $pcwb_completed ) : '—' );
             ?>
         </td>
     </tr>
@@ -72,4 +73,5 @@ if ( $additional_content ) {
     echo wp_kses_post( wpautop( wptexturize( $additional_content ) ) );
 }
 
+// phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedHooknameFound -- WooCommerce core action, intentionally invoked to integrate with WC email template system.
 do_action( 'woocommerce_email_footer', $email );

@@ -3,7 +3,7 @@
  * Customer withdrawal confirmation — plain text.
  *
  * @package PurchaseContractWithdrawalButtonForWooCommerce
- * @version 1.0.0
+ * @version 1.2.2
  *
  * @var WC_Order $order
  * @var string   $email_heading
@@ -41,4 +41,5 @@ if ( $additional_content ) {
 }
 
 echo "\n----------\n\n";
+// phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedHooknameFound -- WooCommerce core filter, intentionally applied to match WC email footer behaviour.
 echo wp_kses_post( apply_filters( 'woocommerce_email_footer_text', get_option( 'woocommerce_email_footer_text' ) ) );

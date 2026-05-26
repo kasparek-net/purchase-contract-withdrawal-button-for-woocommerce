@@ -3,7 +3,7 @@
  * Admin withdrawal notification — plain text.
  *
  * @package PurchaseContractWithdrawalButtonForWooCommerce
- * @version 1.0.0
+ * @version 1.2.2
  *
  * @var WC_Order $order
  * @var string   $reason
@@ -27,8 +27,8 @@ echo esc_html__( 'Phone', 'purchase-contract-withdrawal-button-for-woocommerce' 
 echo esc_html__( 'Address', 'purchase-contract-withdrawal-button-for-woocommerce' ) . ': ' . esc_html( wp_strip_all_tags( $order->get_formatted_billing_address() ) ) . "\n";
 echo esc_html__( 'Total', 'purchase-contract-withdrawal-button-for-woocommerce' ) . ': ' . esc_html( wp_strip_all_tags( wc_price( $order->get_total() ) ) ) . "\n";
 
-$completed = $order->get_date_completed();
-echo esc_html__( 'Completion date', 'purchase-contract-withdrawal-button-for-woocommerce' ) . ': ' . esc_html( $completed ? wc_format_datetime( $completed ) : '—' ) . "\n";
+$pcwb_completed = $order->get_date_completed();
+echo esc_html__( 'Completion date', 'purchase-contract-withdrawal-button-for-woocommerce' ) . ': ' . esc_html( $pcwb_completed ? wc_format_datetime( $pcwb_completed ) : '—' ) . "\n";
 
 echo esc_html__( 'Refund account', 'purchase-contract-withdrawal-button-for-woocommerce' ) . ': ' . esc_html( $account ?: __( 'Original payment method', 'purchase-contract-withdrawal-button-for-woocommerce' ) ) . "\n";
 echo esc_html__( 'Reason', 'purchase-contract-withdrawal-button-for-woocommerce' ) . ': ' . esc_html( $reason ?: __( '(not provided)', 'purchase-contract-withdrawal-button-for-woocommerce' ) ) . "\n\n";

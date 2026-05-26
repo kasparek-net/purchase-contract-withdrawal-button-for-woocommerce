@@ -6,7 +6,7 @@
  * yourtheme/purchase-contract-withdrawal-button-for-woocommerce/withdrawal-form.php
  *
  * @package PurchaseContractWithdrawalButtonForWooCommerce
- * @version 1.2.0
+ * @version 1.2.2
  *
  * @var WC_Order $order
  * @var string   $back_url
@@ -19,8 +19,10 @@ if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
 
+// phpcs:disable WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound -- Template-scoped variables passed by wc_get_template(), not globals.
 $is_guest    = ! empty( $is_guest );
 $guest_token = isset( $guest_token ) ? (string) $guest_token : '';
+// phpcs:enable WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound
 ?>
 <h2 class="pcwb-form-heading"><?php esc_html_e( 'Withdrawal from purchase contract', 'purchase-contract-withdrawal-button-for-woocommerce' ); ?></h2>
 
