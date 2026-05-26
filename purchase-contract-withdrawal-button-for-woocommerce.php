@@ -3,9 +3,10 @@
  * Plugin Name: Purchase Contract Withdrawal Button for WooCommerce
  * Plugin URI: https://github.com/kasparek-net/purchase-contract-withdrawal-button-for-woocommerce
  * Description: Adds a "Withdraw from purchase contract" button for logged-in customers and an optional shortcode-based form for guests. Centralised admin overview of withdrawal requests, CSV export, configurable cooling-off period and reference date, automated emails. Designed to comply with EU Directive 2023/2673 — required in the Czech Republic from 19 June 2026 (§ 1830a Civil Code).
- * Version: 1.2.0
+ * Version: 1.2.1
  * Requires at least: 6.0
  * Requires PHP: 7.4
+ * Requires Plugins: woocommerce
  * Author: Jakub Kašpárek
  * Author URI: https://github.com/kasparek-net
  * License: GPLv2 or later
@@ -22,7 +23,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
 
-define( 'PCWB_VERSION', '1.2.0' );
+define( 'PCWB_VERSION', '1.2.1' );
 define( 'PCWB_PLUGIN_FILE', __FILE__ );
 define( 'PCWB_PLUGIN_PATH', plugin_dir_path( __FILE__ ) );
 define( 'PCWB_PLUGIN_URL', plugin_dir_url( __FILE__ ) );

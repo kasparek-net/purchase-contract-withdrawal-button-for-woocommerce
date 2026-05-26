@@ -4,7 +4,7 @@ Tags: woocommerce, withdrawal, refund, gdpr, eu
 Requires at least: 6.0
 Tested up to: 7.0
 Requires PHP: 7.4
-Stable tag: 1.2.0
+Stable tag: 1.2.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -97,6 +97,9 @@ The plugin only stores data the customer has explicitly submitted (reason, refun
 
 == Changelog ==
 
+= 1.2.1 =
+* Added `Requires Plugins: woocommerce` header to declare WooCommerce as a required dependency (WP 6.5+).
+
 = 1.2.0 =
 * New: optional `[pcwb_withdrawal_form]` shortcode for non-logged-in customers (order number + email lookup with rate limiting, short-lived submission token).
 * New: dedicated "Withdrawals" admin screen under WooCommerce — list, filter (pending/resolved/all), date range, search, bulk "Mark as resolved", and CSV export.
@@ -120,6 +123,9 @@ The plugin only stores data the customer has explicitly submitted (reason, refun
 * Initial release.
 
 == Upgrade Notice ==
+
+= 1.2.1 =
+Declares WooCommerce as a required plugin dependency (WP 6.5+).
 
 = 1.2.0 =
 Adds a guest shortcode for non-logged-in customers, a dedicated Withdrawals admin screen with CSV export, a date-of-delivery meta box, and order actions for resolving and submitting on behalf.
