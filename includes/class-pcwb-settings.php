@@ -75,22 +75,17 @@ class PCWB_Settings {
         );
         register_setting(
             'pcwb_settings',
-            'pcwb_custom_css',
-            [
-                'type'              => 'string',
-                'sanitize_callback' => [ __CLASS__, 'sanitize_css' ],
-                'default'           => '',
-            ]
-        );
-        register_setting(
-            'pcwb_settings',
             'pcwb_guest_enabled',
             [
                 'type'              => 'string',
-                'sanitize_callback' => static fn ( $v ) => $v === 'yes' ? 'yes' : 'no',
+                'sanitize_callback' => [ __CLASS__, 'sanitize_yes_no' ],
                 'default'           => 'no',
             ]
         );
+    }
+
+    public static function sanitize_yes_no( $value ) {
+        return 'yes' === $value ? 'yes' : 'no';
     }
 
     /**
@@ -124,20 +119,6 @@ class PCWB_Settings {
         return isset( $positions[ $value ] ) ? $value : 'after_order_table';
     }
 
-    /**
-     * Allow safe CSS only. Strip any tags like </style> or scripts, length-limited.
-     */
-    public static function sanitize_css( $value ) {
-        $value = (string) $value;
-        // Strip any HTML tags — CSS shouldn't contain them.
-        $value = wp_strip_all_tags( $value );
-        // Cap length to a sane maximum (8 KB).
-        if ( strlen( $value ) > 8192 ) {
-            $value = substr( $value, 0, 8192 );
-        }
-        return $value;
-    }
-
     public static function sanitize_statuses( $value ) {
         if ( ! is_array( $value ) ) {
             return [ 'completed' ];
@@ -157,7 +138,6 @@ class PCWB_Settings {
         $recipient    = (string) get_option( 'pcwb_admin_recipient', '' );
         $new_status   = (string) get_option( 'pcwb_new_status', 'on-hold' );
         $position     = (string) get_option( 'pcwb_button_position', 'after_order_table' );
-        $custom_css   = (string) get_option( 'pcwb_custom_css', '' );
         $guest_on     = 'yes' === get_option( 'pcwb_guest_enabled', 'no' );
         $all_statuses = wc_get_order_statuses();
         $positions    = self::get_positions();
@@ -270,26 +250,6 @@ class PCWB_Settings {
                                     /* translators: %s: shortcode wrapped in <code> */
                                     esc_html__( 'Place %s on any page (e.g. a public landing page). The form will ask for an order number and the billing email, then show the withdrawal form.', 'purchase-contract-withdrawal-button-for-woocommerce' ),
                                     '<code>[pcwb_withdrawal_form]</code>'
-                                );
-                                ?>
-                            </p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">
-                            <label for="pcwb_custom_css"><?php esc_html_e( 'Custom button CSS', 'purchase-contract-withdrawal-button-for-woocommerce' ); ?></label>
-                        </th>
-                        <td>
-                            <textarea id="pcwb_custom_css" name="pcwb_custom_css" rows="8" class="large-text code" placeholder=".pcwb-button { background: #8b6bae; color: #f3ebd9; }
-.pcwb-button:hover { background: #6c4e8e; }"><?php echo esc_textarea( $custom_css ); ?></textarea>
-                            <p class="description">
-                                <?php
-                                printf(
-                                    /* translators: 1: button class, 2: form class */
-                                    esc_html__( 'Optional CSS injected on the My Account page. Available selectors include %1$s, %2$s, and the various form classes (see plugin %3$s file).', 'purchase-contract-withdrawal-button-for-woocommerce' ),
-                                    '<code>.pcwb-button</code>',
-                                    '<code>.pcwb-form</code>',
-                                    '<code>assets/css/purchase-contract-withdrawal-button-for-woocommerce.css</code>'
                                 );
                                 ?>
                             </p>
