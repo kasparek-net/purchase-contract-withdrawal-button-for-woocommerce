@@ -1,0 +1,437 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Purchase Contract Withdrawal Button for WooCommerce 1.3.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-25 10:00+0000\n"
+"PO-Revision-Date: 2026-05-29 12:00+0000\n"
+"Last-Translator: Jakub Kašpárek\n"
+"Language-Team: French\n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Domain: purchase-contract-withdrawal-button-for-woocommerce\n"
+
+msgid "Purchase Contract Withdrawal Button for WooCommerce requires WooCommerce to be installed and active."
+msgstr "L’extension Purchase Contract Withdrawal Button for WooCommerce nécessite que WooCommerce soit installé et activé."
+
+msgid "Settings"
+msgstr "Réglages"
+
+msgid "Withdraw from purchase contract"
+msgstr "Se rétracter du contrat d’achat"
+
+msgid "This order is no longer eligible for withdrawal (the cooling-off period has expired, or a withdrawal has already been submitted)."
+msgstr "Cette commande n’est plus éligible à la rétractation (le délai de rétractation est expiré ou une rétractation a déjà été soumise)."
+
+msgid "Back to order"
+msgstr "Retour à la commande"
+
+msgid "Your withdrawal has been submitted. A confirmation has been sent to your email. We will be in touch with return instructions."
+msgstr "Votre rétractation a bien été soumise. Une confirmation a été envoyée à votre adresse e-mail. Nous vous contacterons avec les instructions de retour."
+
+msgid "Withdrawal has been submitted"
+msgstr "La rétractation a été soumise"
+
+#. translators: %s: submission date
+msgid "on %s."
+msgstr "le %s."
+
+#. translators: %s: admin email address
+msgid "If you have any questions, contact us at %s."
+msgstr "Pour toute question, contactez-nous à %s."
+
+msgid "You must be logged in to submit a withdrawal."
+msgstr "Vous devez être connecté pour soumettre une rétractation."
+
+msgid "Invalid order."
+msgstr "Commande invalide."
+
+msgid "Security check failed. Please go back and try again."
+msgstr "Échec du contrôle de sécurité. Veuillez revenir en arrière et réessayer."
+
+msgid "You are not authorized to access this order."
+msgstr "Vous n’êtes pas autorisé à accéder à cette commande."
+
+msgid "You must check the confirmation box to submit a withdrawal."
+msgstr "Vous devez cocher la case de confirmation pour soumettre une rétractation."
+
+msgid "This order is no longer eligible for withdrawal."
+msgstr "Cette commande n’est plus éligible à la rétractation."
+
+msgid "Customer submitted a withdrawal from the purchase contract."
+msgstr "Le client a soumis une rétractation du contrat d’achat."
+
+#. translators: %s: customer-provided reason
+msgid "Reason: %s"
+msgstr "Motif : %s"
+
+#. translators: %s: bank account for refund
+msgid "Refund account: %s"
+msgstr "Compte pour le remboursement : %s"
+
+msgid "Customer submitted withdrawal from purchase contract."
+msgstr "Rétractation du contrat d’achat soumise par le client."
+
+msgid "Withdrawal confirmation (customer)"
+msgstr "Confirmation de rétractation (client)"
+
+msgid "Sent to the customer after they submit a withdrawal from a purchase contract."
+msgstr "Envoyé au client après qu’il a soumis une rétractation d’un contrat d’achat."
+
+msgid "[{site_title}] Withdrawal confirmation — order #{order_number}"
+msgstr "[{site_title}] Confirmation de rétractation — commande #{order_number}"
+
+msgid "Withdrawal confirmation"
+msgstr "Confirmation de rétractation"
+
+msgid "If you have any questions about your withdrawal, please reply to this email."
+msgstr "Pour toute question concernant votre rétractation, veuillez répondre à cet e-mail."
+
+msgid "Withdrawal notification (admin)"
+msgstr "Notification de rétractation (admin)"
+
+msgid "Sent to the store administrator when a customer submits a withdrawal."
+msgstr "Envoyé à l’administrateur de la boutique lorsqu’un client soumet une rétractation."
+
+msgid "[{site_title}] New withdrawal request — order #{order_number}"
+msgstr "[{site_title}] Nouvelle demande de rétractation — commande #{order_number}"
+
+msgid "New withdrawal request"
+msgstr "Nouvelle demande de rétractation"
+
+msgid "Enable/Disable"
+msgstr "Activer/Désactiver"
+
+msgid "Enable this email notification"
+msgstr "Activer cette notification e-mail"
+
+msgid "Recipient(s)"
+msgstr "Destinataire(s)"
+
+#. translators: %s: admin email
+msgid "Enter recipients (comma separated). Defaults to %s."
+msgstr "Saisissez les destinataires (séparés par une virgule). Par défaut : %s."
+
+msgid "Subject"
+msgstr "Sujet"
+
+msgid "Placeholders: %s"
+msgstr "Variables : %s"
+
+msgid "Email heading"
+msgstr "Titre de l’e-mail"
+
+msgid "Email type"
+msgstr "Type d’e-mail"
+
+msgid "Choose which format of email to send."
+msgstr "Choisissez le format de l’e-mail à envoyer."
+
+msgid "Purchase Contract Withdrawal Button for WooCommerce"
+msgstr "Bouton de rétractation du contrat d’achat"
+
+msgid "Withdrawal Button"
+msgstr "Bouton de rétractation"
+
+#. translators: %s: WooCommerce email settings URL
+msgid "Customer and admin email templates can be customized in %s."
+msgstr "Les modèles d’e-mails client et administrateur peuvent être personnalisés dans %s."
+
+msgid "WooCommerce → Settings → Emails"
+msgstr "WooCommerce → Réglages → E-mails"
+
+msgid "Cooling-off period (days)"
+msgstr "Délai de rétractation (jours)"
+
+msgid "How long after the reference date (order completion) the withdrawal button stays visible. EU standard is 14 days."
+msgstr "Durée pendant laquelle le bouton de rétractation reste visible après la date de référence (finalisation de la commande). Le standard européen est de 14 jours."
+
+msgid "Eligible order statuses"
+msgstr "Statuts de commande éligibles"
+
+msgid "The button is shown only for orders in one of these statuses."
+msgstr "Le bouton n’est affiché que pour les commandes dans l’un de ces statuts."
+
+msgid "Admin email recipient"
+msgstr "Destinataire de l’e-mail administrateur"
+
+#. translators: %s: admin email
+msgid "Leave empty to use the site admin email (%s)."
+msgstr "Laissez vide pour utiliser l’e-mail de l’administrateur du site (%s)."
+
+msgid "Status after submission"
+msgstr "Statut après soumission"
+
+msgid "Order status applied automatically after the customer submits a withdrawal."
+msgstr "Statut de la commande appliqué automatiquement après la soumission de la rétractation par le client."
+
+msgid "Withdrawal from purchase contract"
+msgstr "Rétractation du contrat d’achat"
+
+#. translators: 1: order number, 2: deadline date
+msgid "Complete the form below to withdraw from purchase contract no. %1$s. The cooling-off period ends on %2$s."
+msgstr "Complétez le formulaire ci-dessous pour vous rétracter du contrat d’achat n° %1$s. Le délai de rétractation expire le %2$s."
+
+msgid "Order number"
+msgstr "Numéro de commande"
+
+msgid "Order date"
+msgstr "Date de la commande"
+
+msgid "Customer"
+msgstr "Client"
+
+msgid "Address"
+msgstr "Adresse"
+
+msgid "Email"
+msgstr "E-mail"
+
+msgid "Total"
+msgstr "Total"
+
+msgid "Bank account for refund"
+msgstr "Compte bancaire pour le remboursement"
+
+msgid "(optional — leave empty to refund to the original payment method)"
+msgstr "(facultatif — laissez vide pour rembourser sur le moyen de paiement initial)"
+
+msgid "Reason for withdrawal"
+msgstr "Motif de la rétractation"
+
+msgid "(optional)"
+msgstr "(facultatif)"
+
+msgid "I confirm that I am withdrawing from the purchase contract"
+msgstr "Je confirme que je me rétracte du contrat d’achat"
+
+msgid "and I understand that I must return the purchased goods within 14 days of submitting this withdrawal. The refund will be issued after the returned goods are received."
+msgstr "et je comprends que je dois retourner les biens achetés dans un délai de 14 jours à compter de la soumission de cette rétractation. Le remboursement sera effectué après réception des biens retournés."
+
+msgid "Confirm withdrawal"
+msgstr "Confirmer la rétractation"
+
+msgid "Cancel"
+msgstr "Annuler"
+
+msgid "Hello,"
+msgstr "Bonjour,"
+
+#. translators: 1: order number, 2: order date
+msgid "We have received your withdrawal from the purchase contract for order no. %1$s placed on %2$s."
+msgstr "Nous avons bien reçu votre rétractation du contrat d’achat pour la commande n° %1$s passée le %2$s."
+
+msgid "Next steps"
+msgstr "Prochaines étapes"
+
+msgid "Next steps:"
+msgstr "Prochaines étapes :"
+
+msgid "Please return the goods to our address within 14 days of submitting this withdrawal."
+msgstr "Veuillez retourner les biens à notre adresse dans un délai de 14 jours à compter de la soumission de cette rétractation."
+
+msgid "We recommend shipping with tracking and insurance."
+msgstr "Nous recommandons un envoi avec suivi et assurance."
+
+#. translators: %s: total amount
+msgid "Once we receive the goods we will refund the paid amount (%s) within 14 days."
+msgstr "Dès réception des biens, nous vous rembourserons le montant payé (%s) sous 14 jours."
+
+msgid "A customer has submitted a withdrawal from a purchase contract."
+msgstr "Un client a soumis une rétractation d’un contrat d’achat."
+
+msgid "Order"
+msgstr "Commande"
+
+msgid "Phone"
+msgstr "Téléphone"
+
+msgid "Completion date"
+msgstr "Date de finalisation"
+
+msgid "Refund account"
+msgstr "Compte de remboursement"
+
+msgid "Original payment method"
+msgstr "Moyen de paiement initial"
+
+msgid "Reason"
+msgstr "Motif"
+
+msgid "(not provided)"
+msgstr "(non renseigné)"
+
+msgid "View order:"
+msgstr "Voir la commande :"
+
+# === 1.2.0 strings ===
+
+msgid "A withdrawal has already been submitted for this order."
+msgstr "Une rétractation a déjà été soumise pour cette commande."
+
+msgid "an administrator"
+msgstr "un administrateur"
+
+msgid "Customer (guest) submitted a withdrawal from the purchase contract."
+msgstr "Le client (invité) a soumis une rétractation du contrat d’achat."
+
+#. translators: %s: admin display name
+msgid "Withdrawal marked as resolved by %s."
+msgstr "Rétractation marquée comme traitée par %s."
+
+#. translators: %s: admin display name
+msgid "Withdrawal submitted on behalf of the customer by %s."
+msgstr "Rétractation soumise au nom du client par %s."
+
+msgid "The withdrawal form is not currently available. Please contact the store."
+msgstr "Le formulaire de rétractation n’est pas disponible actuellement. Veuillez contacter la boutique."
+
+msgid "Your withdrawal has been submitted. A confirmation has been sent to your email."
+msgstr "Votre rétractation a été soumise. Une confirmation a été envoyée à votre adresse e-mail."
+
+msgid "Your session has expired. Please start the lookup again."
+msgstr "Votre session a expiré. Veuillez recommencer la recherche."
+
+msgid "Order not found."
+msgstr "Commande introuvable."
+
+msgid "Order number or email is missing or invalid."
+msgstr "Le numéro de commande ou l’e-mail est manquant ou invalide."
+
+msgid "We could not find an order with the provided details."
+msgstr "Nous n’avons pas pu trouver de commande avec les informations fournies."
+
+msgid "Too many attempts. Please wait a few minutes and try again."
+msgstr "Trop de tentatives. Veuillez patienter quelques minutes et réessayer."
+
+msgid "Security check failed. Please try again."
+msgstr "Échec du contrôle de sécurité. Veuillez réessayer."
+
+msgid "Enter your order number and the email address used when placing the order to continue."
+msgstr "Saisissez votre numéro de commande et l’adresse e-mail utilisée lors de la commande pour continuer."
+
+msgid "Billing email"
+msgstr "E-mail de facturation"
+
+msgid "Continue"
+msgstr "Continuer"
+
+msgid "Withdrawal cooling-off"
+msgstr "Délai de rétractation"
+
+msgid "Date of delivery"
+msgstr "Date de livraison"
+
+msgid "Date the customer received the goods. Used as the reference date for the cooling-off period (leave empty to use the order completion date)."
+msgstr "Date à laquelle le client a reçu les biens. Sert de date de référence pour le délai de rétractation (laissez vide pour utiliser la date de finalisation de la commande)."
+
+msgid "Cooling-off ends:"
+msgstr "Fin du délai :"
+
+#. translators: %d: number of days remaining
+msgid "%d day remaining"
+msgid_plural "%d days remaining"
+msgstr[0] "%d jour restant"
+msgstr[1] "%d jours restants"
+
+msgid "expired"
+msgstr "expiré"
+
+msgid "Withdrawal submitted:"
+msgstr "Rétractation soumise :"
+
+msgid "Resolved:"
+msgstr "Traitée :"
+
+msgid "Use the Order actions box to mark this withdrawal as resolved."
+msgstr "Utilisez la boîte Actions de commande pour marquer cette rétractation comme traitée."
+
+msgid "guest form"
+msgstr "formulaire invité"
+
+msgid "admin"
+msgstr "admin"
+
+msgid "customer account"
+msgstr "compte client"
+
+msgid "Mark withdrawal as resolved"
+msgstr "Marquer la rétractation comme traitée"
+
+msgid "Submit withdrawal on behalf of customer"
+msgstr "Soumettre la rétractation au nom du client"
+
+msgid "Withdrawals"
+msgstr "Rétractations"
+
+msgid "Export CSV"
+msgstr "Exporter en CSV"
+
+msgid "Search"
+msgstr "Rechercher"
+
+msgid "All"
+msgstr "Toutes"
+
+msgid "Pending"
+msgstr "En attente"
+
+msgid "Resolved"
+msgstr "Traitées"
+
+msgid "From"
+msgstr "Du"
+
+msgid "To"
+msgstr "Au"
+
+msgid "Filter"
+msgstr "Filtrer"
+
+msgid "Submitted"
+msgstr "Soumise"
+
+msgid "Source"
+msgstr "Source"
+
+msgid "Status"
+msgstr "Statut"
+
+msgid "Mark as resolved"
+msgstr "Marquer comme traitée"
+
+msgid "Resolve"
+msgstr "Traiter"
+
+msgid "guest"
+msgstr "invité"
+
+msgid "customer"
+msgstr "client"
+
+#. translators: %d: number of withdrawals resolved
+msgid "%d withdrawal marked as resolved."
+msgid_plural "%d withdrawals marked as resolved."
+msgstr[0] "%d rétractation marquée comme traitée."
+msgstr[1] "%d rétractations marquées comme traitées."
+
+msgid "You do not have permission to do this."
+msgstr "Vous n’avez pas l’autorisation d’effectuer cette action."
+
+msgid "This order does not have a pending withdrawal."
+msgstr "Cette commande n’a pas de rétractation en attente."
+
+msgid "This withdrawal has already been resolved."
+msgstr "Cette rétractation a déjà été traitée."
+
+msgid "Guest withdrawal form"
+msgstr "Formulaire de rétractation pour invités"
+
+msgid "Enable shortcode for non-logged-in customers"
+msgstr "Activer le shortcode pour les clients non connectés"
+
+#. translators: %s: shortcode wrapped in <code>
+msgid "Place %s on any page (e.g. a public landing page). The form will ask for an order number and the billing email, then show the withdrawal form."
+msgstr "Placez %s sur n’importe quelle page (par ex. une page d’atterrissage publique). Le formulaire demandera un numéro de commande et l’e-mail de facturation, puis affichera le formulaire de rétractation."

@@ -1,0 +1,443 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Purchase Contract Withdrawal Button for WooCommerce 1.3.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-25 10:00+0000\n"
+"PO-Revision-Date: 2026-05-29 12:00+0000\n"
+"Last-Translator: Jakub Kašpárek\n"
+"Language-Team: Irish\n"
+"Language: ga\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=5; plural=(n==1 ? 0 : n==2 ? 1 : n<7 ? 2 : n<11 ? 3 : 4);\n"
+"X-Domain: purchase-contract-withdrawal-button-for-woocommerce\n"
+
+msgid "Purchase Contract Withdrawal Button for WooCommerce requires WooCommerce to be installed and active."
+msgstr "Tá WooCommerce suiteáilte agus gníomhach ag teastáil ón mbreiseán Purchase Contract Withdrawal Button for WooCommerce."
+
+msgid "Settings"
+msgstr "Socruithe"
+
+msgid "Withdraw from purchase contract"
+msgstr "Tarraing siar ón gconradh ceannaigh"
+
+msgid "This order is no longer eligible for withdrawal (the cooling-off period has expired, or a withdrawal has already been submitted)."
+msgstr "Níl an t-ordú seo incháilithe le haghaidh tarraingt siar a thuilleadh (tá an tréimhse machnaimh thart, nó cuireadh tarraingt siar isteach cheana féin)."
+
+msgid "Back to order"
+msgstr "Ar ais chuig an ordú"
+
+msgid "Your withdrawal has been submitted. A confirmation has been sent to your email. We will be in touch with return instructions."
+msgstr "Cuireadh do tharraingt siar isteach. Seoladh deimhniú chuig do ríomhphost. Beimid i dteagmháil leat le treoracha tuairisceáin."
+
+msgid "Withdrawal has been submitted"
+msgstr "Cuireadh an tarraingt siar isteach"
+
+#. translators: %s: submission date
+msgid "on %s."
+msgstr "ar %s."
+
+#. translators: %s: admin email address
+msgid "If you have any questions, contact us at %s."
+msgstr "Má tá aon cheist agat, déan teagmháil linn ag %s."
+
+msgid "You must be logged in to submit a withdrawal."
+msgstr "Caithfidh tú a bheith logáilte isteach chun tarraingt siar a chur isteach."
+
+msgid "Invalid order."
+msgstr "Ordú neamhbhailí."
+
+msgid "Security check failed. Please go back and try again."
+msgstr "Theip ar an seiceáil slándála. Téigh ar ais agus déan iarracht arís."
+
+msgid "You are not authorized to access this order."
+msgstr "Níl tú údaraithe an t-ordú seo a rochtain."
+
+msgid "You must check the confirmation box to submit a withdrawal."
+msgstr "Caithfidh tú an bosca deimhnithe a thiceáil chun tarraingt siar a chur isteach."
+
+msgid "This order is no longer eligible for withdrawal."
+msgstr "Níl an t-ordú seo incháilithe le haghaidh tarraingt siar a thuilleadh."
+
+msgid "Customer submitted a withdrawal from the purchase contract."
+msgstr "Chuir an custaiméir tarraingt siar ón gconradh ceannaigh isteach."
+
+#. translators: %s: customer-provided reason
+msgid "Reason: %s"
+msgstr "Cúis: %s"
+
+#. translators: %s: bank account for refund
+msgid "Refund account: %s"
+msgstr "Cuntas aisíocaíochta: %s"
+
+msgid "Customer submitted withdrawal from purchase contract."
+msgstr "Chuir an custaiméir tarraingt siar ón gconradh ceannaigh isteach."
+
+msgid "Withdrawal confirmation (customer)"
+msgstr "Deimhniú tarraingthe siar (custaiméir)"
+
+msgid "Sent to the customer after they submit a withdrawal from a purchase contract."
+msgstr "Seolta chuig an gcustaiméir tar éis dóibh tarraingt siar ó chonradh ceannaigh a chur isteach."
+
+msgid "[{site_title}] Withdrawal confirmation — order #{order_number}"
+msgstr "[{site_title}] Deimhniú tarraingthe siar — ordú #{order_number}"
+
+msgid "Withdrawal confirmation"
+msgstr "Deimhniú tarraingthe siar"
+
+msgid "If you have any questions about your withdrawal, please reply to this email."
+msgstr "Má tá aon cheist agat faoi do tharraingt siar, freagair an ríomhphost seo le do thoil."
+
+msgid "Withdrawal notification (admin)"
+msgstr "Fógra tarraingthe siar (riarthóir)"
+
+msgid "Sent to the store administrator when a customer submits a withdrawal."
+msgstr "Seolta chuig riarthóir an tsiopa nuair a chuireann custaiméir tarraingt siar isteach."
+
+msgid "[{site_title}] New withdrawal request — order #{order_number}"
+msgstr "[{site_title}] Iarratas nua tarraingthe siar — ordú #{order_number}"
+
+msgid "New withdrawal request"
+msgstr "Iarratas nua tarraingthe siar"
+
+msgid "Enable/Disable"
+msgstr "Cumasaigh/Díchumasaigh"
+
+msgid "Enable this email notification"
+msgstr "Cumasaigh an fógra ríomhphoist seo"
+
+msgid "Recipient(s)"
+msgstr "Faighteoir(í)"
+
+#. translators: %s: admin email
+msgid "Enter recipients (comma separated). Defaults to %s."
+msgstr "Iontráil faighteoirí (scartha le camóga). Réamhshocrú: %s."
+
+msgid "Subject"
+msgstr "Ábhar"
+
+msgid "Placeholders: %s"
+msgstr "Áitcoinnitheoirí: %s"
+
+msgid "Email heading"
+msgstr "Ceannteideal ríomhphoist"
+
+msgid "Email type"
+msgstr "Cineál ríomhphoist"
+
+msgid "Choose which format of email to send."
+msgstr "Roghnaigh cén fhormáid ríomhphoist le seoladh."
+
+msgid "Purchase Contract Withdrawal Button for WooCommerce"
+msgstr "Cnaipe Tarraingthe Siar ó Chonradh Ceannaigh"
+
+msgid "Withdrawal Button"
+msgstr "Cnaipe Tarraingthe Siar"
+
+#. translators: %s: WooCommerce email settings URL
+msgid "Customer and admin email templates can be customized in %s."
+msgstr "Is féidir teimpléid ríomhphoist do chustaiméirí agus riarthóirí a shaincheapadh i %s."
+
+msgid "WooCommerce → Settings → Emails"
+msgstr "WooCommerce → Socruithe → Ríomhphoist"
+
+msgid "Cooling-off period (days)"
+msgstr "Tréimhse machnaimh (laethanta)"
+
+msgid "How long after the reference date (order completion) the withdrawal button stays visible. EU standard is 14 days."
+msgstr "Cá fhad tar éis an dáta tagartha (críochnú an ordaithe) a fhanann an cnaipe tarraingthe siar le feiceáil. Is é 14 lá an caighdeán AE."
+
+msgid "Eligible order statuses"
+msgstr "Stádais ordaithe incháilithe"
+
+msgid "The button is shown only for orders in one of these statuses."
+msgstr "Taispeántar an cnaipe d'orduithe i gceann de na stádais seo amháin."
+
+msgid "Admin email recipient"
+msgstr "Faighteoir ríomhphoist riarthóra"
+
+#. translators: %s: admin email
+msgid "Leave empty to use the site admin email (%s)."
+msgstr "Fág folamh chun ríomhphost riarthóra an tsuímh a úsáid (%s)."
+
+msgid "Status after submission"
+msgstr "Stádas tar éis tíolacadh"
+
+msgid "Order status applied automatically after the customer submits a withdrawal."
+msgstr "Stádas ordaithe a chuirtear i bhfeidhm go huathoibríoch tar éis don chustaiméir tarraingt siar a chur isteach."
+
+msgid "Withdrawal from purchase contract"
+msgstr "Tarraingt siar ón gconradh ceannaigh"
+
+#. translators: 1: order number, 2: deadline date
+msgid "Complete the form below to withdraw from purchase contract no. %1$s. The cooling-off period ends on %2$s."
+msgstr "Líon isteach an fhoirm thíos chun tarraingt siar ón gconradh ceannaigh uimh. %1$s. Críochnaíonn an tréimhse machnaimh ar %2$s."
+
+msgid "Order number"
+msgstr "Uimhir ordaithe"
+
+msgid "Order date"
+msgstr "Dáta ordaithe"
+
+msgid "Customer"
+msgstr "Custaiméir"
+
+msgid "Address"
+msgstr "Seoladh"
+
+msgid "Email"
+msgstr "Ríomhphost"
+
+msgid "Total"
+msgstr "Iomlán"
+
+msgid "Bank account for refund"
+msgstr "Cuntas bainc don aisíocaíocht"
+
+msgid "(optional — leave empty to refund to the original payment method)"
+msgstr "(roghnach — fág folamh chun aisíoc a dhéanamh leis an modh íocaíochta bunaidh)"
+
+msgid "Reason for withdrawal"
+msgstr "Cúis le tarraingt siar"
+
+msgid "(optional)"
+msgstr "(roghnach)"
+
+msgid "I confirm that I am withdrawing from the purchase contract"
+msgstr "Deimhním go bhfuilim ag tarraingt siar ón gconradh ceannaigh"
+
+msgid "and I understand that I must return the purchased goods within 14 days of submitting this withdrawal. The refund will be issued after the returned goods are received."
+msgstr "agus tuigim go gcaithfidh mé na hearraí ceannaithe a thabhairt ar ais laistigh de 14 lá ó chuirim an tarraingt siar seo isteach. Eiseofar an aisíocaíocht tar éis na hearraí tugtha ar ais a fháil."
+
+msgid "Confirm withdrawal"
+msgstr "Deimhnigh an tarraingt siar"
+
+msgid "Cancel"
+msgstr "Cealaigh"
+
+msgid "Hello,"
+msgstr "Dia duit,"
+
+#. translators: 1: order number, 2: order date
+msgid "We have received your withdrawal from the purchase contract for order no. %1$s placed on %2$s."
+msgstr "Fuaireamar do tharraingt siar ón gconradh ceannaigh don ordú uimh. %1$s a rinneadh ar %2$s."
+
+msgid "Next steps"
+msgstr "Na chéad chéimeanna eile"
+
+msgid "Next steps:"
+msgstr "Na chéad chéimeanna eile:"
+
+msgid "Please return the goods to our address within 14 days of submitting this withdrawal."
+msgstr "Tabhair na hearraí ar ais chuig ár seoladh laistigh de 14 lá ón tarraingt siar seo a chur isteach le do thoil."
+
+msgid "We recommend shipping with tracking and insurance."
+msgstr "Molaimid loingseoireacht le rianú agus árachas."
+
+#. translators: %s: total amount
+msgid "Once we receive the goods we will refund the paid amount (%s) within 14 days."
+msgstr "Nuair a fhaighimid na hearraí déanfaimid an méid íoctha (%s) a aisíoc laistigh de 14 lá."
+
+msgid "A customer has submitted a withdrawal from a purchase contract."
+msgstr "Chuir custaiméir tarraingt siar ó chonradh ceannaigh isteach."
+
+msgid "Order"
+msgstr "Ordú"
+
+msgid "Phone"
+msgstr "Fón"
+
+msgid "Completion date"
+msgstr "Dáta críochnaithe"
+
+msgid "Refund account"
+msgstr "Cuntas aisíocaíochta"
+
+msgid "Original payment method"
+msgstr "Modh íocaíochta bunaidh"
+
+msgid "Reason"
+msgstr "Cúis"
+
+msgid "(not provided)"
+msgstr "(níor soláthraíodh)"
+
+msgid "View order:"
+msgstr "Féach ar an ordú:"
+
+# === 1.2.0 strings ===
+
+msgid "A withdrawal has already been submitted for this order."
+msgstr "Cuireadh tarraingt siar isteach don ordú seo cheana féin."
+
+msgid "an administrator"
+msgstr "riarthóir"
+
+msgid "Customer (guest) submitted a withdrawal from the purchase contract."
+msgstr "Chuir custaiméir (aoi) tarraingt siar ón gconradh ceannaigh isteach."
+
+#. translators: %s: admin display name
+msgid "Withdrawal marked as resolved by %s."
+msgstr "Mharcáil %s an tarraingt siar mar réitithe."
+
+#. translators: %s: admin display name
+msgid "Withdrawal submitted on behalf of the customer by %s."
+msgstr "Chuir %s tarraingt siar isteach thar ceann an chustaiméara."
+
+msgid "The withdrawal form is not currently available. Please contact the store."
+msgstr "Níl an fhoirm tarraingthe siar ar fáil faoi láthair. Téigh i dteagmháil leis an siopa le do thoil."
+
+msgid "Your withdrawal has been submitted. A confirmation has been sent to your email."
+msgstr "Cuireadh do tharraingt siar isteach. Seoladh deimhniú chuig do ríomhphost."
+
+msgid "Your session has expired. Please start the lookup again."
+msgstr "Tá do sheisiún imithe in éag. Cuir tús leis an gcuardach arís le do thoil."
+
+msgid "Order not found."
+msgstr "Níor aimsíodh an t-ordú."
+
+msgid "Order number or email is missing or invalid."
+msgstr "Tá uimhir an ordaithe nó an ríomhphost ar iarraidh nó neamhbhailí."
+
+msgid "We could not find an order with the provided details."
+msgstr "Níorbh fhéidir linn ordú a aimsiú leis na sonraí a tugadh."
+
+msgid "Too many attempts. Please wait a few minutes and try again."
+msgstr "An iomarca iarrachtaí. Fan cúpla nóiméad agus déan iarracht arís le do thoil."
+
+msgid "Security check failed. Please try again."
+msgstr "Theip ar an seiceáil slándála. Déan iarracht arís le do thoil."
+
+msgid "Enter your order number and the email address used when placing the order to continue."
+msgstr "Iontráil uimhir an ordaithe agus an seoladh ríomhphoist a úsáideadh agus an t-ordú á dhéanamh chun leanúint ar aghaidh."
+
+msgid "Billing email"
+msgstr "Ríomhphost billeála"
+
+msgid "Continue"
+msgstr "Lean ar aghaidh"
+
+msgid "Withdrawal cooling-off"
+msgstr "Tréimhse machnaimh"
+
+msgid "Date of delivery"
+msgstr "Dáta seachadta"
+
+msgid "Date the customer received the goods. Used as the reference date for the cooling-off period (leave empty to use the order completion date)."
+msgstr "An dáta a fuair an custaiméir na hearraí. Úsáidte mar dháta tagartha don tréimhse machnaimh (fág folamh chun dáta críochnaithe an ordaithe a úsáid)."
+
+msgid "Cooling-off ends:"
+msgstr "Críochnaíonn an tréimhse machnaimh:"
+
+#. translators: %d: number of days remaining
+msgid "%d day remaining"
+msgid_plural "%d days remaining"
+msgstr[0] "%d lá fágtha"
+msgstr[1] "%d lá fágtha"
+msgstr[2] "%d lá fágtha"
+msgstr[3] "%d lá fágtha"
+msgstr[4] "%d lá fágtha"
+
+msgid "expired"
+msgstr "imithe in éag"
+
+msgid "Withdrawal submitted:"
+msgstr "Tarraingt siar curtha isteach:"
+
+msgid "Resolved:"
+msgstr "Réitithe:"
+
+msgid "Use the Order actions box to mark this withdrawal as resolved."
+msgstr "Úsáid an bosca Gníomhartha Ordaithe chun an tarraingt siar seo a mharcáil mar réitithe."
+
+msgid "guest form"
+msgstr "foirm aoi"
+
+msgid "admin"
+msgstr "riarthóir"
+
+msgid "customer account"
+msgstr "cuntas custaiméara"
+
+msgid "Mark withdrawal as resolved"
+msgstr "Marcáil an tarraingt siar mar réitithe"
+
+msgid "Submit withdrawal on behalf of customer"
+msgstr "Cuir tarraingt siar isteach thar ceann an chustaiméara"
+
+msgid "Withdrawals"
+msgstr "Tarraingtí Siar"
+
+msgid "Export CSV"
+msgstr "Easpórtáil CSV"
+
+msgid "Search"
+msgstr "Cuardaigh"
+
+msgid "All"
+msgstr "Gach ceann"
+
+msgid "Pending"
+msgstr "Ar feitheamh"
+
+msgid "Resolved"
+msgstr "Réitithe"
+
+msgid "From"
+msgstr "Ó"
+
+msgid "To"
+msgstr "Go"
+
+msgid "Filter"
+msgstr "Scag"
+
+msgid "Submitted"
+msgstr "Curtha isteach"
+
+msgid "Source"
+msgstr "Foinse"
+
+msgid "Status"
+msgstr "Stádas"
+
+msgid "Mark as resolved"
+msgstr "Marcáil mar réitithe"
+
+msgid "Resolve"
+msgstr "Réitigh"
+
+msgid "guest"
+msgstr "aoi"
+
+msgid "customer"
+msgstr "custaiméir"
+
+#. translators: %d: number of withdrawals resolved
+msgid "%d withdrawal marked as resolved."
+msgid_plural "%d withdrawals marked as resolved."
+msgstr[0] "%d tarraingt siar marcáilte mar réitithe."
+msgstr[1] "%d tharraingt siar marcáilte mar réitithe."
+msgstr[2] "%d tharraingt siar marcáilte mar réitithe."
+msgstr[3] "%d dtarraingt siar marcáilte mar réitithe."
+msgstr[4] "%d tarraingt siar marcáilte mar réitithe."
+
+msgid "You do not have permission to do this."
+msgstr "Níl cead agat é seo a dhéanamh."
+
+msgid "This order does not have a pending withdrawal."
+msgstr "Níl tarraingt siar ar feitheamh ag an ordú seo."
+
+msgid "This withdrawal has already been resolved."
+msgstr "Réitíodh an tarraingt siar seo cheana féin."
+
+msgid "Guest withdrawal form"
+msgstr "Foirm tarraingthe siar d'aíonna"
+
+msgid "Enable shortcode for non-logged-in customers"
+msgstr "Cumasaigh gearrchód do chustaiméirí nach bhfuil logáilte isteach"
+
+#. translators: %s: shortcode wrapped in <code>
+msgid "Place %s on any page (e.g. a public landing page). The form will ask for an order number and the billing email, then show the withdrawal form."
+msgstr "Cuir %s ar leathanach ar bith (m.sh. leathanach poiblí tuirlingthe). Iarrfaidh an fhoirm uimhir an ordaithe agus an ríomhphost billeála, agus ansin taispeánfaidh sí an fhoirm tarraingthe siar."

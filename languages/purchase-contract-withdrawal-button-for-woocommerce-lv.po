@@ -1,0 +1,439 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Purchase Contract Withdrawal Button for WooCommerce 1.3.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-25 10:00+0000\n"
+"PO-Revision-Date: 2026-05-29 12:00+0000\n"
+"Last-Translator: Jakub Kašpárek\n"
+"Language-Team: Latvian\n"
+"Language: lv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : 2);\n"
+"X-Domain: purchase-contract-withdrawal-button-for-woocommerce\n"
+
+msgid "Purchase Contract Withdrawal Button for WooCommerce requires WooCommerce to be installed and active."
+msgstr "Spraudnim Purchase Contract Withdrawal Button for WooCommerce ir nepieciešams instalēts un aktīvs WooCommerce."
+
+msgid "Settings"
+msgstr "Iestatījumi"
+
+msgid "Withdraw from purchase contract"
+msgstr "Atteikties no pirkuma līguma"
+
+msgid "This order is no longer eligible for withdrawal (the cooling-off period has expired, or a withdrawal has already been submitted)."
+msgstr "Šim pasūtījumam atteikšanās vairs nav iespējama (atteikuma termiņš ir beidzies vai atteikšanās jau ir iesniegta)."
+
+msgid "Back to order"
+msgstr "Atpakaļ uz pasūtījumu"
+
+msgid "Your withdrawal has been submitted. A confirmation has been sent to your email. We will be in touch with return instructions."
+msgstr "Jūsu atteikšanās no līguma ir veiksmīgi iesniegta. Apstiprinājumu nosūtījām uz jūsu e-pastu. Drīz sazināsimies ar instrukcijām preču atgriešanai."
+
+msgid "Withdrawal has been submitted"
+msgstr "Atteikšanās no līguma ir iesniegta"
+
+#. translators: %s: submission date
+msgid "on %s."
+msgstr "%s."
+
+#. translators: %s: admin email address
+msgid "If you have any questions, contact us at %s."
+msgstr "Ja jums ir jautājumi, sazinieties ar mums pa %s."
+
+msgid "You must be logged in to submit a withdrawal."
+msgstr "Lai iesniegtu atteikšanos, jums jābūt pieslēgtam."
+
+msgid "Invalid order."
+msgstr "Nederīgs pasūtījums."
+
+msgid "Security check failed. Please go back and try again."
+msgstr "Drošības pārbaude neizdevās. Atgriezieties atpakaļ un mēģiniet vēlreiz."
+
+msgid "You are not authorized to access this order."
+msgstr "Jums nav atļaujas piekļūt šim pasūtījumam."
+
+msgid "You must check the confirmation box to submit a withdrawal."
+msgstr "Lai iesniegtu atteikšanos, jums jāatzīmē apstiprinājuma lodziņš."
+
+msgid "This order is no longer eligible for withdrawal."
+msgstr "Šim pasūtījumam atteikšanās vairs nav iespējama."
+
+msgid "Customer submitted a withdrawal from the purchase contract."
+msgstr "Klients iesniedza atteikšanos no pirkuma līguma."
+
+#. translators: %s: customer-provided reason
+msgid "Reason: %s"
+msgstr "Iemesls: %s"
+
+#. translators: %s: bank account for refund
+msgid "Refund account: %s"
+msgstr "Atmaksas konts: %s"
+
+msgid "Customer submitted withdrawal from purchase contract."
+msgstr "Klients iesniedza atteikšanos no pirkuma līguma."
+
+msgid "Withdrawal confirmation (customer)"
+msgstr "Atteikšanās apstiprinājums (klientam)"
+
+msgid "Sent to the customer after they submit a withdrawal from a purchase contract."
+msgstr "Tiek nosūtīts klientam pēc atteikšanās no pirkuma līguma iesniegšanas."
+
+msgid "[{site_title}] Withdrawal confirmation — order #{order_number}"
+msgstr "[{site_title}] Atteikšanās apstiprinājums — pasūtījums #{order_number}"
+
+msgid "Withdrawal confirmation"
+msgstr "Atteikšanās apstiprinājums"
+
+msgid "If you have any questions about your withdrawal, please reply to this email."
+msgstr "Ja jums ir jautājumi par atteikšanos, lūdzu, atbildiet uz šo e-pastu."
+
+msgid "Withdrawal notification (admin)"
+msgstr "Paziņojums par atteikšanos (administratoram)"
+
+msgid "Sent to the store administrator when a customer submits a withdrawal."
+msgstr "Tiek nosūtīts veikala administratoram, kad klients iesniedz atteikšanos."
+
+msgid "[{site_title}] New withdrawal request — order #{order_number}"
+msgstr "[{site_title}] Jauns atteikšanās pieprasījums — pasūtījums #{order_number}"
+
+msgid "New withdrawal request"
+msgstr "Jauns atteikšanās pieprasījums"
+
+msgid "Enable/Disable"
+msgstr "Ieslēgt/Izslēgt"
+
+msgid "Enable this email notification"
+msgstr "Ieslēgt šo e-pasta paziņojumu"
+
+msgid "Recipient(s)"
+msgstr "Saņēmējs(-i)"
+
+#. translators: %s: admin email
+msgid "Enter recipients (comma separated). Defaults to %s."
+msgstr "Ievadiet saņēmējus (atdalītus ar komatu). Noklusējuma: %s."
+
+msgid "Subject"
+msgstr "Temats"
+
+msgid "Placeholders: %s"
+msgstr "Vietturi: %s"
+
+msgid "Email heading"
+msgstr "E-pasta virsraksts"
+
+msgid "Email type"
+msgstr "E-pasta veids"
+
+msgid "Choose which format of email to send."
+msgstr "Izvēlieties nosūtāmā e-pasta formātu."
+
+msgid "Purchase Contract Withdrawal Button for WooCommerce"
+msgstr "Atteikšanās no pirkuma līguma poga"
+
+msgid "Withdrawal Button"
+msgstr "Atteikšanās poga"
+
+#. translators: %s: WooCommerce email settings URL
+msgid "Customer and admin email templates can be customized in %s."
+msgstr "Klientu un administratora e-pasta veidnes var pielāgot sadaļā %s."
+
+msgid "WooCommerce → Settings → Emails"
+msgstr "WooCommerce → Iestatījumi → E-pasti"
+
+msgid "Cooling-off period (days)"
+msgstr "Atteikuma termiņš (dienas)"
+
+msgid "How long after the reference date (order completion) the withdrawal button stays visible. EU standard is 14 days."
+msgstr "Cik ilgi pēc atskaites datuma (pasūtījuma izpildes) atteikšanās poga paliek redzama. ES standarts ir 14 dienas."
+
+msgid "Eligible order statuses"
+msgstr "Atbilstošie pasūtījumu statusi"
+
+msgid "The button is shown only for orders in one of these statuses."
+msgstr "Poga tiek rādīta tikai pasūtījumiem, kas atrodas vienā no šiem statusiem."
+
+msgid "Admin email recipient"
+msgstr "Administratora e-pasta saņēmējs"
+
+#. translators: %s: admin email
+msgid "Leave empty to use the site admin email (%s)."
+msgstr "Atstājiet tukšu, lai izmantotu vietnes administratora e-pastu (%s)."
+
+msgid "Status after submission"
+msgstr "Statuss pēc iesniegšanas"
+
+msgid "Order status applied automatically after the customer submits a withdrawal."
+msgstr "Pasūtījuma statuss, kas tiek piemērots automātiski pēc tam, kad klients iesniedz atteikšanos."
+
+msgid "Withdrawal from purchase contract"
+msgstr "Atteikšanās no pirkuma līguma"
+
+#. translators: 1: order number, 2: deadline date
+msgid "Complete the form below to withdraw from purchase contract no. %1$s. The cooling-off period ends on %2$s."
+msgstr "Aizpildiet zemāk esošo veidlapu, lai atteiktos no pirkuma līguma nr. %1$s. Atteikuma termiņš beidzas %2$s."
+
+msgid "Order number"
+msgstr "Pasūtījuma numurs"
+
+msgid "Order date"
+msgstr "Pasūtījuma datums"
+
+msgid "Customer"
+msgstr "Klients"
+
+msgid "Address"
+msgstr "Adrese"
+
+msgid "Email"
+msgstr "E-pasts"
+
+msgid "Total"
+msgstr "Kopā"
+
+msgid "Bank account for refund"
+msgstr "Bankas konts naudas atmaksai"
+
+msgid "(optional — leave empty to refund to the original payment method)"
+msgstr "(neobligāti — atstājiet tukšu, lai atmaksu veiktu uz sākotnējo maksājuma metodi)"
+
+msgid "Reason for withdrawal"
+msgstr "Atteikšanās iemesls"
+
+msgid "(optional)"
+msgstr "(neobligāti)"
+
+msgid "I confirm that I am withdrawing from the purchase contract"
+msgstr "Apstiprinu, ka atsakos no pirkuma līguma"
+
+msgid "and I understand that I must return the purchased goods within 14 days of submitting this withdrawal. The refund will be issued after the returned goods are received."
+msgstr "un saprotu, ka iegādātās preces man jāatgriež 14 dienu laikā no šīs atteikšanās iesniegšanas. Nauda tiks atmaksāta pēc atgriezto preču saņemšanas."
+
+msgid "Confirm withdrawal"
+msgstr "Apstiprināt atteikšanos"
+
+msgid "Cancel"
+msgstr "Atcelt"
+
+msgid "Hello,"
+msgstr "Sveiki,"
+
+#. translators: 1: order number, 2: order date
+msgid "We have received your withdrawal from the purchase contract for order no. %1$s placed on %2$s."
+msgstr "Mēs esam saņēmuši jūsu atteikšanos no pirkuma līguma pasūtījumam nr. %1$s, kas veikts %2$s."
+
+msgid "Next steps"
+msgstr "Nākamie soļi"
+
+msgid "Next steps:"
+msgstr "Nākamie soļi:"
+
+msgid "Please return the goods to our address within 14 days of submitting this withdrawal."
+msgstr "Lūdzu, atgrieziet preces uz mūsu adresi 14 dienu laikā no šīs atteikšanās iesniegšanas."
+
+msgid "We recommend shipping with tracking and insurance."
+msgstr "Iesakām sūtīt ar izsekošanu un apdrošināšanu."
+
+#. translators: %s: total amount
+msgid "Once we receive the goods we will refund the paid amount (%s) within 14 days."
+msgstr "Pēc preču saņemšanas mēs atmaksāsim samaksāto summu (%s) 14 dienu laikā."
+
+msgid "A customer has submitted a withdrawal from a purchase contract."
+msgstr "Klients iesniedza atteikšanos no pirkuma līguma."
+
+msgid "Order"
+msgstr "Pasūtījums"
+
+msgid "Phone"
+msgstr "Tālrunis"
+
+msgid "Completion date"
+msgstr "Izpildes datums"
+
+msgid "Refund account"
+msgstr "Atmaksas konts"
+
+msgid "Original payment method"
+msgstr "Sākotnējā maksājuma metode"
+
+msgid "Reason"
+msgstr "Iemesls"
+
+msgid "(not provided)"
+msgstr "(nav norādīts)"
+
+msgid "View order:"
+msgstr "Skatīt pasūtījumu:"
+
+# === 1.2.0 strings ===
+
+msgid "A withdrawal has already been submitted for this order."
+msgstr "Šim pasūtījumam atteikšanās jau ir iesniegta."
+
+msgid "an administrator"
+msgstr "administrators"
+
+msgid "Customer (guest) submitted a withdrawal from the purchase contract."
+msgstr "Klients (viesis) iesniedza atteikšanos no pirkuma līguma."
+
+#. translators: %s: admin display name
+msgid "Withdrawal marked as resolved by %s."
+msgstr "Atteikšanos kā atrisinātu atzīmēja %s."
+
+#. translators: %s: admin display name
+msgid "Withdrawal submitted on behalf of the customer by %s."
+msgstr "Atteikšanos klienta vārdā iesniedza %s."
+
+msgid "The withdrawal form is not currently available. Please contact the store."
+msgstr "Atteikšanās veidlapa pašlaik nav pieejama. Lūdzu, sazinieties ar veikalu."
+
+msgid "Your withdrawal has been submitted. A confirmation has been sent to your email."
+msgstr "Jūsu atteikšanās ir iesniegta. Apstiprinājumu nosūtījām uz jūsu e-pastu."
+
+msgid "Your session has expired. Please start the lookup again."
+msgstr "Jūsu sesijas laiks ir beidzies. Lūdzu, sāciet meklēšanu no jauna."
+
+msgid "Order not found."
+msgstr "Pasūtījums nav atrasts."
+
+msgid "Order number or email is missing or invalid."
+msgstr "Trūkst pasūtījuma numura vai e-pasta, vai arī tie ir nederīgi."
+
+msgid "We could not find an order with the provided details."
+msgstr "Mēs nevarējām atrast pasūtījumu pēc norādītajiem datiem."
+
+msgid "Too many attempts. Please wait a few minutes and try again."
+msgstr "Pārāk daudz mēģinājumu. Lūdzu, uzgaidiet dažas minūtes un mēģiniet vēlreiz."
+
+msgid "Security check failed. Please try again."
+msgstr "Drošības pārbaude neizdevās. Lūdzu, mēģiniet vēlreiz."
+
+msgid "Enter your order number and the email address used when placing the order to continue."
+msgstr "Lai turpinātu, ievadiet pasūtījuma numuru un e-pasta adresi, ko izmantojāt pasūtījuma veikšanā."
+
+msgid "Billing email"
+msgstr "Norēķinu e-pasts"
+
+msgid "Continue"
+msgstr "Turpināt"
+
+msgid "Withdrawal cooling-off"
+msgstr "Atteikuma termiņš"
+
+msgid "Date of delivery"
+msgstr "Piegādes datums"
+
+msgid "Date the customer received the goods. Used as the reference date for the cooling-off period (leave empty to use the order completion date)."
+msgstr "Datums, kad klients saņēma preces. Tiek izmantots kā atteikuma termiņa atskaites datums (atstājiet tukšu, lai izmantotu pasūtījuma izpildes datumu)."
+
+msgid "Cooling-off ends:"
+msgstr "Atteikuma termiņš beidzas:"
+
+#. translators: %d: number of days remaining
+msgid "%d day remaining"
+msgid_plural "%d days remaining"
+msgstr[0] "atlikusi %d diena"
+msgstr[1] "atlikušas %d dienas"
+msgstr[2] "atlikušas %d dienu"
+
+msgid "expired"
+msgstr "beidzies"
+
+msgid "Withdrawal submitted:"
+msgstr "Atteikšanās iesniegta:"
+
+msgid "Resolved:"
+msgstr "Atrisināts:"
+
+msgid "Use the Order actions box to mark this withdrawal as resolved."
+msgstr "Izmantojiet sadaļu „Pasūtījuma darbības”, lai atzīmētu šo atteikšanos kā atrisinātu."
+
+msgid "guest form"
+msgstr "viesu veidlapa"
+
+msgid "admin"
+msgstr "administrators"
+
+msgid "customer account"
+msgstr "klienta konts"
+
+msgid "Mark withdrawal as resolved"
+msgstr "Atzīmēt atteikšanos kā atrisinātu"
+
+msgid "Submit withdrawal on behalf of customer"
+msgstr "Iesniegt atteikšanos klienta vārdā"
+
+msgid "Withdrawals"
+msgstr "Atteikšanās"
+
+msgid "Export CSV"
+msgstr "Eksportēt CSV"
+
+msgid "Search"
+msgstr "Meklēt"
+
+msgid "All"
+msgstr "Visi"
+
+msgid "Pending"
+msgstr "Gaida"
+
+msgid "Resolved"
+msgstr "Atrisināti"
+
+msgid "From"
+msgstr "No"
+
+msgid "To"
+msgstr "Līdz"
+
+msgid "Filter"
+msgstr "Filtrēt"
+
+msgid "Submitted"
+msgstr "Iesniegts"
+
+msgid "Source"
+msgstr "Avots"
+
+msgid "Status"
+msgstr "Statuss"
+
+msgid "Mark as resolved"
+msgstr "Atzīmēt kā atrisinātu"
+
+msgid "Resolve"
+msgstr "Atrisināt"
+
+msgid "guest"
+msgstr "viesis"
+
+msgid "customer"
+msgstr "klients"
+
+#. translators: %d: number of withdrawals resolved
+msgid "%d withdrawal marked as resolved."
+msgid_plural "%d withdrawals marked as resolved."
+msgstr[0] "%d atteikšanās atzīmēta kā atrisināta."
+msgstr[1] "%d atteikšanās atzīmētas kā atrisinātas."
+msgstr[2] "%d atteikšanos atzīmētas kā atrisinātas."
+
+msgid "You do not have permission to do this."
+msgstr "Jums nav atļaujas veikt šo darbību."
+
+msgid "This order does not have a pending withdrawal."
+msgstr "Šim pasūtījumam nav neatrisinātas atteikšanās."
+
+msgid "This withdrawal has already been resolved."
+msgstr "Šī atteikšanās jau ir atrisināta."
+
+msgid "Guest withdrawal form"
+msgstr "Viesu atteikšanās veidlapa"
+
+msgid "Enable shortcode for non-logged-in customers"
+msgstr "Iespējot īsumkodu nepieslēgtajiem klientiem"
+
+#. translators: %s: shortcode wrapped in <code>
+msgid "Place %s on any page (e.g. a public landing page). The form will ask for an order number and the billing email, then show the withdrawal form."
+msgstr "Ievietojiet %s jebkurā lapā (piem., publiskā galvenajā lapā). Veidlapa lūgs pasūtījuma numuru un norēķinu e-pastu un pēc tam parādīs atteikšanās veidlapu."

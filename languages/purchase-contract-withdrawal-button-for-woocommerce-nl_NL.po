@@ -1,0 +1,437 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Purchase Contract Withdrawal Button for WooCommerce 1.3.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-25 10:00+0000\n"
+"PO-Revision-Date: 2026-05-29 12:00+0000\n"
+"Last-Translator: Jakub Kašpárek\n"
+"Language-Team: Dutch\n"
+"Language: nl_NL\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Domain: purchase-contract-withdrawal-button-for-woocommerce\n"
+
+msgid "Purchase Contract Withdrawal Button for WooCommerce requires WooCommerce to be installed and active."
+msgstr "Purchase Contract Withdrawal Button for WooCommerce vereist dat WooCommerce is geïnstalleerd en actief is."
+
+msgid "Settings"
+msgstr "Instellingen"
+
+msgid "Withdraw from purchase contract"
+msgstr "Herroeping van koopovereenkomst"
+
+msgid "This order is no longer eligible for withdrawal (the cooling-off period has expired, or a withdrawal has already been submitted)."
+msgstr "Voor deze bestelling kan geen herroeping meer worden ingediend (de herroepingstermijn is verstreken of er is al een herroeping ingediend)."
+
+msgid "Back to order"
+msgstr "Terug naar bestelling"
+
+msgid "Your withdrawal has been submitted. A confirmation has been sent to your email. We will be in touch with return instructions."
+msgstr "Uw herroeping is ingediend. Een bevestiging is verzonden naar uw e-mailadres. Wij nemen contact met u op met retourinstructies."
+
+msgid "Withdrawal has been submitted"
+msgstr "Herroeping is ingediend"
+
+#. translators: %s: submission date
+msgid "on %s."
+msgstr "op %s."
+
+#. translators: %s: admin email address
+msgid "If you have any questions, contact us at %s."
+msgstr "Heeft u vragen? Neem contact met ons op via %s."
+
+msgid "You must be logged in to submit a withdrawal."
+msgstr "U moet ingelogd zijn om een herroeping in te dienen."
+
+msgid "Invalid order."
+msgstr "Ongeldige bestelling."
+
+msgid "Security check failed. Please go back and try again."
+msgstr "Beveiligingscontrole mislukt. Ga terug en probeer het opnieuw."
+
+msgid "You are not authorized to access this order."
+msgstr "U bent niet bevoegd om deze bestelling te bekijken."
+
+msgid "You must check the confirmation box to submit a withdrawal."
+msgstr "U moet het bevestigingsvakje aanvinken om een herroeping in te dienen."
+
+msgid "This order is no longer eligible for withdrawal."
+msgstr "Voor deze bestelling kan geen herroeping meer worden ingediend."
+
+msgid "Customer submitted a withdrawal from the purchase contract."
+msgstr "Klant heeft een herroeping van de koopovereenkomst ingediend."
+
+#. translators: %s: customer-provided reason
+msgid "Reason: %s"
+msgstr "Reden: %s"
+
+#. translators: %s: bank account for refund
+msgid "Refund account: %s"
+msgstr "Rekening voor terugbetaling: %s"
+
+msgid "Customer submitted withdrawal from purchase contract."
+msgstr "Klant heeft herroeping van koopovereenkomst ingediend."
+
+msgid "Withdrawal confirmation (customer)"
+msgstr "Herroepingsbevestiging (klant)"
+
+msgid "Sent to the customer after they submit a withdrawal from a purchase contract."
+msgstr "Verzonden naar de klant na het indienen van een herroeping van de koopovereenkomst."
+
+msgid "[{site_title}] Withdrawal confirmation — order #{order_number}"
+msgstr "[{site_title}] Herroepingsbevestiging — bestelling #{order_number}"
+
+msgid "Withdrawal confirmation"
+msgstr "Herroepingsbevestiging"
+
+msgid "If you have any questions about your withdrawal, please reply to this email."
+msgstr "Heeft u vragen over uw herroeping? Beantwoord dan deze e-mail."
+
+msgid "Withdrawal notification (admin)"
+msgstr "Herroepingsmelding (beheerder)"
+
+msgid "Sent to the store administrator when a customer submits a withdrawal."
+msgstr "Verzonden naar de winkelbeheerder wanneer een klant een herroeping indient."
+
+msgid "[{site_title}] New withdrawal request — order #{order_number}"
+msgstr "[{site_title}] Nieuw herroepingsverzoek — bestelling #{order_number}"
+
+msgid "New withdrawal request"
+msgstr "Nieuw herroepingsverzoek"
+
+msgid "Enable/Disable"
+msgstr "In-/uitschakelen"
+
+msgid "Enable this email notification"
+msgstr "Schakel deze e-mailmelding in"
+
+msgid "Recipient(s)"
+msgstr "Ontvanger(s)"
+
+#. translators: %s: admin email
+msgid "Enter recipients (comma separated). Defaults to %s."
+msgstr "Voer ontvangers in (door komma's gescheiden). Standaard: %s."
+
+msgid "Subject"
+msgstr "Onderwerp"
+
+msgid "Placeholders: %s"
+msgstr "Tijdelijke aanduidingen: %s"
+
+msgid "Email heading"
+msgstr "E-mailkop"
+
+msgid "Email type"
+msgstr "E-mailtype"
+
+msgid "Choose which format of email to send."
+msgstr "Kies het formaat van de te verzenden e-mail."
+
+msgid "Purchase Contract Withdrawal Button for WooCommerce"
+msgstr "Herroepingsknop voor koopovereenkomst"
+
+msgid "Withdrawal Button"
+msgstr "Herroepingsknop"
+
+#. translators: %s: WooCommerce email settings URL
+msgid "Customer and admin email templates can be customized in %s."
+msgstr "Klant- en beheerder-e-mailsjablonen kunnen worden aangepast in %s."
+
+msgid "WooCommerce → Settings → Emails"
+msgstr "WooCommerce → Instellingen → E-mails"
+
+msgid "Cooling-off period (days)"
+msgstr "Herroepingstermijn (dagen)"
+
+msgid "How long after the reference date (order completion) the withdrawal button stays visible. EU standard is 14 days."
+msgstr "Hoe lang na de referentiedatum (afronding van de bestelling) de herroepingsknop zichtbaar blijft. EU-standaard is 14 dagen."
+
+msgid "Eligible order statuses"
+msgstr "Bestelstatussen voor weergave"
+
+msgid "The button is shown only for orders in one of these statuses."
+msgstr "De knop wordt alleen weergegeven voor bestellingen in een van deze statussen."
+
+msgid "Admin email recipient"
+msgstr "Ontvanger beheerder-e-mail"
+
+#. translators: %s: admin email
+msgid "Leave empty to use the site admin email (%s)."
+msgstr "Laat leeg om het beheerder-e-mailadres van de site (%s) te gebruiken."
+
+msgid "Status after submission"
+msgstr "Status na indiening"
+
+msgid "Order status applied automatically after the customer submits a withdrawal."
+msgstr "Bestelstatus die automatisch wordt toegepast nadat de klant een herroeping heeft ingediend."
+
+msgid "Withdrawal from purchase contract"
+msgstr "Herroeping van koopovereenkomst"
+
+#. translators: 1: order number, 2: deadline date
+msgid "Complete the form below to withdraw from purchase contract no. %1$s. The cooling-off period ends on %2$s."
+msgstr "Vul onderstaand formulier in om de koopovereenkomst nr. %1$s te herroepen. De herroepingstermijn eindigt op %2$s."
+
+msgid "Order number"
+msgstr "Bestelnummer"
+
+msgid "Order date"
+msgstr "Besteldatum"
+
+msgid "Customer"
+msgstr "Klant"
+
+msgid "Address"
+msgstr "Adres"
+
+msgid "Email"
+msgstr "E-mail"
+
+msgid "Total"
+msgstr "Totaal"
+
+msgid "Bank account for refund"
+msgstr "Bankrekening voor terugbetaling"
+
+msgid "(optional — leave empty to refund to the original payment method)"
+msgstr "(optioneel — laat leeg om terug te betalen via de oorspronkelijke betaalmethode)"
+
+msgid "Reason for withdrawal"
+msgstr "Reden voor herroeping"
+
+msgid "(optional)"
+msgstr "(optioneel)"
+
+msgid "I confirm that I am withdrawing from the purchase contract"
+msgstr "Ik bevestig dat ik de koopovereenkomst herroep"
+
+msgid "and I understand that I must return the purchased goods within 14 days of submitting this withdrawal. The refund will be issued after the returned goods are received."
+msgstr "en ik begrijp dat ik de gekochte goederen binnen 14 dagen na indiening van deze herroeping moet retourneren. De terugbetaling wordt uitgevoerd na ontvangst van de geretourneerde goederen."
+
+msgid "Confirm withdrawal"
+msgstr "Herroeping bevestigen"
+
+msgid "Cancel"
+msgstr "Annuleren"
+
+msgid "Hello,"
+msgstr "Hallo,"
+
+#. translators: 1: order number, 2: order date
+msgid "We have received your withdrawal from the purchase contract for order no. %1$s placed on %2$s."
+msgstr "Wij hebben uw herroeping van de koopovereenkomst voor bestelling nr. %1$s, geplaatst op %2$s, ontvangen."
+
+msgid "Next steps"
+msgstr "Volgende stappen"
+
+msgid "Next steps:"
+msgstr "Volgende stappen:"
+
+msgid "Please return the goods to our address within 14 days of submitting this withdrawal."
+msgstr "Retourneer de goederen binnen 14 dagen na indiening van deze herroeping naar ons adres."
+
+msgid "We recommend shipping with tracking and insurance."
+msgstr "Wij raden aan om met track & trace en verzekerd te verzenden."
+
+#. translators: %s: total amount
+msgid "Once we receive the goods we will refund the paid amount (%s) within 14 days."
+msgstr "Zodra wij de goederen ontvangen, betalen wij het betaalde bedrag (%s) binnen 14 dagen terug."
+
+msgid "A customer has submitted a withdrawal from a purchase contract."
+msgstr "Een klant heeft een herroeping van een koopovereenkomst ingediend."
+
+msgid "Order"
+msgstr "Bestelling"
+
+msgid "Phone"
+msgstr "Telefoon"
+
+msgid "Completion date"
+msgstr "Datum van afronding"
+
+msgid "Refund account"
+msgstr "Rekening voor terugbetaling"
+
+msgid "Original payment method"
+msgstr "Oorspronkelijke betaalmethode"
+
+msgid "Reason"
+msgstr "Reden"
+
+msgid "(not provided)"
+msgstr "(niet opgegeven)"
+
+msgid "View order:"
+msgstr "Bestelling bekijken:"
+
+# === 1.2.0 strings ===
+
+msgid "A withdrawal has already been submitted for this order."
+msgstr "Voor deze bestelling is al een herroeping ingediend."
+
+msgid "an administrator"
+msgstr "een beheerder"
+
+msgid "Customer (guest) submitted a withdrawal from the purchase contract."
+msgstr "Klant (gast) heeft een herroeping van de koopovereenkomst ingediend."
+
+#. translators: %s: admin display name
+msgid "Withdrawal marked as resolved by %s."
+msgstr "Herroeping gemarkeerd als afgehandeld door %s."
+
+#. translators: %s: admin display name
+msgid "Withdrawal submitted on behalf of the customer by %s."
+msgstr "Herroeping ingediend namens de klant door %s."
+
+msgid "The withdrawal form is not currently available. Please contact the store."
+msgstr "Het herroepingsformulier is momenteel niet beschikbaar. Neem contact op met de winkel."
+
+msgid "Your withdrawal has been submitted. A confirmation has been sent to your email."
+msgstr "Uw herroeping is ingediend. Een bevestiging is verzonden naar uw e-mailadres."
+
+msgid "Your session has expired. Please start the lookup again."
+msgstr "Uw sessie is verlopen. Begin het zoeken opnieuw."
+
+msgid "Order not found."
+msgstr "Bestelling niet gevonden."
+
+msgid "Order number or email is missing or invalid."
+msgstr "Bestelnummer of e-mailadres ontbreekt of is ongeldig."
+
+msgid "We could not find an order with the provided details."
+msgstr "Wij konden geen bestelling vinden met de opgegeven gegevens."
+
+msgid "Too many attempts. Please wait a few minutes and try again."
+msgstr "Te veel pogingen. Wacht enkele minuten en probeer het opnieuw."
+
+msgid "Security check failed. Please try again."
+msgstr "Beveiligingscontrole mislukt. Probeer het opnieuw."
+
+msgid "Enter your order number and the email address used when placing the order to continue."
+msgstr "Voer uw bestelnummer en het e-mailadres dat u bij de bestelling heeft gebruikt in om door te gaan."
+
+msgid "Billing email"
+msgstr "Factuur-e-mailadres"
+
+msgid "Continue"
+msgstr "Doorgaan"
+
+msgid "Withdrawal cooling-off"
+msgstr "Herroepingstermijn"
+
+msgid "Date of delivery"
+msgstr "Leveringsdatum"
+
+msgid "Date the customer received the goods. Used as the reference date for the cooling-off period (leave empty to use the order completion date)."
+msgstr "Datum waarop de klant de goederen heeft ontvangen. Wordt gebruikt als referentiedatum voor de herroepingstermijn (laat leeg om de datum van afronding van de bestelling te gebruiken)."
+
+msgid "Cooling-off ends:"
+msgstr "Herroepingstermijn eindigt:"
+
+#. translators: %d: number of days remaining
+msgid "%d day remaining"
+msgid_plural "%d days remaining"
+msgstr[0] "nog %d dag"
+msgstr[1] "nog %d dagen"
+
+msgid "expired"
+msgstr "verstreken"
+
+msgid "Withdrawal submitted:"
+msgstr "Herroeping ingediend:"
+
+msgid "Resolved:"
+msgstr "Afgehandeld:"
+
+msgid "Use the Order actions box to mark this withdrawal as resolved."
+msgstr "Gebruik het vak Bestellingsacties om deze herroeping als afgehandeld te markeren."
+
+msgid "guest form"
+msgstr "gastformulier"
+
+msgid "admin"
+msgstr "beheerder"
+
+msgid "customer account"
+msgstr "klantaccount"
+
+msgid "Mark withdrawal as resolved"
+msgstr "Herroeping als afgehandeld markeren"
+
+msgid "Submit withdrawal on behalf of customer"
+msgstr "Herroeping namens klant indienen"
+
+msgid "Withdrawals"
+msgstr "Herroepingen"
+
+msgid "Export CSV"
+msgstr "CSV exporteren"
+
+msgid "Search"
+msgstr "Zoeken"
+
+msgid "All"
+msgstr "Alle"
+
+msgid "Pending"
+msgstr "In behandeling"
+
+msgid "Resolved"
+msgstr "Afgehandeld"
+
+msgid "From"
+msgstr "Van"
+
+msgid "To"
+msgstr "Tot"
+
+msgid "Filter"
+msgstr "Filteren"
+
+msgid "Submitted"
+msgstr "Ingediend"
+
+msgid "Source"
+msgstr "Bron"
+
+msgid "Status"
+msgstr "Status"
+
+msgid "Mark as resolved"
+msgstr "Markeren als afgehandeld"
+
+msgid "Resolve"
+msgstr "Afhandelen"
+
+msgid "guest"
+msgstr "gast"
+
+msgid "customer"
+msgstr "klant"
+
+#. translators: %d: number of withdrawals resolved
+msgid "%d withdrawal marked as resolved."
+msgid_plural "%d withdrawals marked as resolved."
+msgstr[0] "%d herroeping gemarkeerd als afgehandeld."
+msgstr[1] "%d herroepingen gemarkeerd als afgehandeld."
+
+msgid "You do not have permission to do this."
+msgstr "U heeft geen toestemming om dit te doen."
+
+msgid "This order does not have a pending withdrawal."
+msgstr "Deze bestelling heeft geen openstaande herroeping."
+
+msgid "This withdrawal has already been resolved."
+msgstr "Deze herroeping is al afgehandeld."
+
+msgid "Guest withdrawal form"
+msgstr "Herroepingsformulier voor gasten"
+
+msgid "Enable shortcode for non-logged-in customers"
+msgstr "Shortcode inschakelen voor niet-ingelogde klanten"
+
+#. translators: %s: shortcode wrapped in <code>
+msgid "Place %s on any page (e.g. a public landing page). The form will ask for an order number and the billing email, then show the withdrawal form."
+msgstr "Plaats %s op een willekeurige pagina (bijv. een openbare landingspagina). Het formulier vraagt om een bestelnummer en het factuur-e-mailadres en toont vervolgens het herroepingsformulier."

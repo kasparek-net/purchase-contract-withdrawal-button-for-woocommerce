@@ -1,0 +1,437 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Purchase Contract Withdrawal Button for WooCommerce 1.3.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-25 10:00+0000\n"
+"PO-Revision-Date: 2026-05-29 12:00+0000\n"
+"Last-Translator: Jakub Kašpárek\n"
+"Language-Team: Greek\n"
+"Language: el\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Domain: purchase-contract-withdrawal-button-for-woocommerce\n"
+
+msgid "Purchase Contract Withdrawal Button for WooCommerce requires WooCommerce to be installed and active."
+msgstr "Το πρόσθετο Purchase Contract Withdrawal Button for WooCommerce απαιτεί το WooCommerce να είναι εγκατεστημένο και ενεργό."
+
+msgid "Settings"
+msgstr "Ρυθμίσεις"
+
+msgid "Withdraw from purchase contract"
+msgstr "Υπαναχώρηση από τη σύμβαση πώλησης"
+
+msgid "This order is no longer eligible for withdrawal (the cooling-off period has expired, or a withdrawal has already been submitted)."
+msgstr "Αυτή η παραγγελία δεν είναι πλέον επιλέξιμη για υπαναχώρηση (η περίοδος υπαναχώρησης έχει λήξει ή έχει ήδη υποβληθεί υπαναχώρηση)."
+
+msgid "Back to order"
+msgstr "Επιστροφή στην παραγγελία"
+
+msgid "Your withdrawal has been submitted. A confirmation has been sent to your email. We will be in touch with return instructions."
+msgstr "Η υπαναχώρησή σας έχει υποβληθεί. Μια επιβεβαίωση έχει σταλεί στο email σας. Θα επικοινωνήσουμε μαζί σας με οδηγίες επιστροφής."
+
+msgid "Withdrawal has been submitted"
+msgstr "Η υπαναχώρηση έχει υποβληθεί"
+
+#. translators: %s: submission date
+msgid "on %s."
+msgstr "στις %s."
+
+#. translators: %s: admin email address
+msgid "If you have any questions, contact us at %s."
+msgstr "Εάν έχετε ερωτήσεις, επικοινωνήστε μαζί μας στο %s."
+
+msgid "You must be logged in to submit a withdrawal."
+msgstr "Πρέπει να είστε συνδεδεμένοι για να υποβάλετε υπαναχώρηση."
+
+msgid "Invalid order."
+msgstr "Μη έγκυρη παραγγελία."
+
+msgid "Security check failed. Please go back and try again."
+msgstr "Ο έλεγχος ασφαλείας απέτυχε. Επιστρέψτε και δοκιμάστε ξανά."
+
+msgid "You are not authorized to access this order."
+msgstr "Δεν έχετε εξουσιοδότηση πρόσβασης σε αυτήν την παραγγελία."
+
+msgid "You must check the confirmation box to submit a withdrawal."
+msgstr "Πρέπει να επιλέξετε το πλαίσιο επιβεβαίωσης για να υποβάλετε υπαναχώρηση."
+
+msgid "This order is no longer eligible for withdrawal."
+msgstr "Αυτή η παραγγελία δεν είναι πλέον επιλέξιμη για υπαναχώρηση."
+
+msgid "Customer submitted a withdrawal from the purchase contract."
+msgstr "Ο πελάτης υπέβαλε υπαναχώρηση από τη σύμβαση πώλησης."
+
+#. translators: %s: customer-provided reason
+msgid "Reason: %s"
+msgstr "Λόγος: %s"
+
+#. translators: %s: bank account for refund
+msgid "Refund account: %s"
+msgstr "Λογαριασμός επιστροφής χρημάτων: %s"
+
+msgid "Customer submitted withdrawal from purchase contract."
+msgstr "Ο πελάτης υπέβαλε υπαναχώρηση από τη σύμβαση πώλησης."
+
+msgid "Withdrawal confirmation (customer)"
+msgstr "Επιβεβαίωση υπαναχώρησης (πελάτης)"
+
+msgid "Sent to the customer after they submit a withdrawal from a purchase contract."
+msgstr "Αποστέλλεται στον πελάτη μετά την υποβολή υπαναχώρησης από σύμβαση πώλησης."
+
+msgid "[{site_title}] Withdrawal confirmation — order #{order_number}"
+msgstr "[{site_title}] Επιβεβαίωση υπαναχώρησης — παραγγελία #{order_number}"
+
+msgid "Withdrawal confirmation"
+msgstr "Επιβεβαίωση υπαναχώρησης"
+
+msgid "If you have any questions about your withdrawal, please reply to this email."
+msgstr "Εάν έχετε ερωτήσεις σχετικά με την υπαναχώρησή σας, απαντήστε σε αυτό το email."
+
+msgid "Withdrawal notification (admin)"
+msgstr "Ειδοποίηση υπαναχώρησης (διαχειριστής)"
+
+msgid "Sent to the store administrator when a customer submits a withdrawal."
+msgstr "Αποστέλλεται στον διαχειριστή του καταστήματος όταν ο πελάτης υποβάλλει υπαναχώρηση."
+
+msgid "[{site_title}] New withdrawal request — order #{order_number}"
+msgstr "[{site_title}] Νέο αίτημα υπαναχώρησης — παραγγελία #{order_number}"
+
+msgid "New withdrawal request"
+msgstr "Νέο αίτημα υπαναχώρησης"
+
+msgid "Enable/Disable"
+msgstr "Ενεργοποίηση/Απενεργοποίηση"
+
+msgid "Enable this email notification"
+msgstr "Ενεργοποίηση αυτής της ειδοποίησης email"
+
+msgid "Recipient(s)"
+msgstr "Παραλήπτες"
+
+#. translators: %s: admin email
+msgid "Enter recipients (comma separated). Defaults to %s."
+msgstr "Εισαγάγετε παραλήπτες (διαχωρισμένους με κόμμα). Προεπιλογή: %s."
+
+msgid "Subject"
+msgstr "Θέμα"
+
+msgid "Placeholders: %s"
+msgstr "Σύμβολα κράτησης θέσης: %s"
+
+msgid "Email heading"
+msgstr "Επικεφαλίδα email"
+
+msgid "Email type"
+msgstr "Τύπος email"
+
+msgid "Choose which format of email to send."
+msgstr "Επιλέξτε ποια μορφή email θα αποσταλεί."
+
+msgid "Purchase Contract Withdrawal Button for WooCommerce"
+msgstr "Κουμπί υπαναχώρησης από σύμβαση πώλησης"
+
+msgid "Withdrawal Button"
+msgstr "Κουμπί υπαναχώρησης"
+
+#. translators: %s: WooCommerce email settings URL
+msgid "Customer and admin email templates can be customized in %s."
+msgstr "Τα πρότυπα email πελάτη και διαχειριστή μπορούν να προσαρμοστούν στο %s."
+
+msgid "WooCommerce → Settings → Emails"
+msgstr "WooCommerce → Ρυθμίσεις → Email"
+
+msgid "Cooling-off period (days)"
+msgstr "Περίοδος υπαναχώρησης (ημέρες)"
+
+msgid "How long after the reference date (order completion) the withdrawal button stays visible. EU standard is 14 days."
+msgstr "Πόσο καιρό μετά την ημερομηνία αναφοράς (ολοκλήρωση παραγγελίας) παραμένει ορατό το κουμπί υπαναχώρησης. Το πρότυπο της ΕΕ είναι 14 ημέρες."
+
+msgid "Eligible order statuses"
+msgstr "Επιλέξιμες καταστάσεις παραγγελιών"
+
+msgid "The button is shown only for orders in one of these statuses."
+msgstr "Το κουμπί εμφανίζεται μόνο για παραγγελίες σε μία από αυτές τις καταστάσεις."
+
+msgid "Admin email recipient"
+msgstr "Παραλήπτης email διαχειριστή"
+
+#. translators: %s: admin email
+msgid "Leave empty to use the site admin email (%s)."
+msgstr "Αφήστε κενό για να χρησιμοποιηθεί το email διαχειριστή του ιστότοπου (%s)."
+
+msgid "Status after submission"
+msgstr "Κατάσταση μετά την υποβολή"
+
+msgid "Order status applied automatically after the customer submits a withdrawal."
+msgstr "Κατάσταση παραγγελίας που εφαρμόζεται αυτόματα μετά την υποβολή υπαναχώρησης από τον πελάτη."
+
+msgid "Withdrawal from purchase contract"
+msgstr "Υπαναχώρηση από τη σύμβαση πώλησης"
+
+#. translators: 1: order number, 2: deadline date
+msgid "Complete the form below to withdraw from purchase contract no. %1$s. The cooling-off period ends on %2$s."
+msgstr "Συμπληρώστε την παρακάτω φόρμα για να υπαναχωρήσετε από τη σύμβαση πώλησης αρ. %1$s. Η περίοδος υπαναχώρησης λήγει στις %2$s."
+
+msgid "Order number"
+msgstr "Αριθμός παραγγελίας"
+
+msgid "Order date"
+msgstr "Ημερομηνία παραγγελίας"
+
+msgid "Customer"
+msgstr "Πελάτης"
+
+msgid "Address"
+msgstr "Διεύθυνση"
+
+msgid "Email"
+msgstr "Email"
+
+msgid "Total"
+msgstr "Σύνολο"
+
+msgid "Bank account for refund"
+msgstr "Τραπεζικός λογαριασμός για επιστροφή χρημάτων"
+
+msgid "(optional — leave empty to refund to the original payment method)"
+msgstr "(προαιρετικό — αφήστε κενό για επιστροφή χρημάτων στην αρχική μέθοδο πληρωμής)"
+
+msgid "Reason for withdrawal"
+msgstr "Λόγος υπαναχώρησης"
+
+msgid "(optional)"
+msgstr "(προαιρετικό)"
+
+msgid "I confirm that I am withdrawing from the purchase contract"
+msgstr "Επιβεβαιώνω ότι υπαναχωρώ από τη σύμβαση πώλησης"
+
+msgid "and I understand that I must return the purchased goods within 14 days of submitting this withdrawal. The refund will be issued after the returned goods are received."
+msgstr "και κατανοώ ότι πρέπει να επιστρέψω τα αγορασμένα προϊόντα εντός 14 ημερών από την υποβολή αυτής της υπαναχώρησης. Η επιστροφή χρημάτων θα γίνει μετά την παραλαβή των επιστρεφόμενων προϊόντων."
+
+msgid "Confirm withdrawal"
+msgstr "Επιβεβαίωση υπαναχώρησης"
+
+msgid "Cancel"
+msgstr "Ακύρωση"
+
+msgid "Hello,"
+msgstr "Γεια σας,"
+
+#. translators: 1: order number, 2: order date
+msgid "We have received your withdrawal from the purchase contract for order no. %1$s placed on %2$s."
+msgstr "Λάβαμε την υπαναχώρησή σας από τη σύμβαση πώλησης για την παραγγελία αρ. %1$s που πραγματοποιήθηκε στις %2$s."
+
+msgid "Next steps"
+msgstr "Επόμενα βήματα"
+
+msgid "Next steps:"
+msgstr "Επόμενα βήματα:"
+
+msgid "Please return the goods to our address within 14 days of submitting this withdrawal."
+msgstr "Παρακαλούμε επιστρέψτε τα προϊόντα στη διεύθυνσή μας εντός 14 ημερών από την υποβολή αυτής της υπαναχώρησης."
+
+msgid "We recommend shipping with tracking and insurance."
+msgstr "Συνιστούμε αποστολή με παρακολούθηση και ασφάλιση."
+
+#. translators: %s: total amount
+msgid "Once we receive the goods we will refund the paid amount (%s) within 14 days."
+msgstr "Μόλις παραλάβουμε τα προϊόντα, θα επιστρέψουμε το καταβληθέν ποσό (%s) εντός 14 ημερών."
+
+msgid "A customer has submitted a withdrawal from a purchase contract."
+msgstr "Ένας πελάτης υπέβαλε υπαναχώρηση από σύμβαση πώλησης."
+
+msgid "Order"
+msgstr "Παραγγελία"
+
+msgid "Phone"
+msgstr "Τηλέφωνο"
+
+msgid "Completion date"
+msgstr "Ημερομηνία ολοκλήρωσης"
+
+msgid "Refund account"
+msgstr "Λογαριασμός επιστροφής χρημάτων"
+
+msgid "Original payment method"
+msgstr "Αρχική μέθοδος πληρωμής"
+
+msgid "Reason"
+msgstr "Λόγος"
+
+msgid "(not provided)"
+msgstr "(δεν παρέχεται)"
+
+msgid "View order:"
+msgstr "Προβολή παραγγελίας:"
+
+# === 1.2.0 strings ===
+
+msgid "A withdrawal has already been submitted for this order."
+msgstr "Έχει ήδη υποβληθεί υπαναχώρηση για αυτήν την παραγγελία."
+
+msgid "an administrator"
+msgstr "διαχειριστής"
+
+msgid "Customer (guest) submitted a withdrawal from the purchase contract."
+msgstr "Ο πελάτης (επισκέπτης) υπέβαλε υπαναχώρηση από τη σύμβαση πώλησης."
+
+#. translators: %s: admin display name
+msgid "Withdrawal marked as resolved by %s."
+msgstr "Η υπαναχώρηση επισημάνθηκε ως επιλυμένη από τον/την %s."
+
+#. translators: %s: admin display name
+msgid "Withdrawal submitted on behalf of the customer by %s."
+msgstr "Η υπαναχώρηση υποβλήθηκε εκ μέρους του πελάτη από τον/την %s."
+
+msgid "The withdrawal form is not currently available. Please contact the store."
+msgstr "Η φόρμα υπαναχώρησης δεν είναι διαθέσιμη αυτήν τη στιγμή. Επικοινωνήστε με το κατάστημα."
+
+msgid "Your withdrawal has been submitted. A confirmation has been sent to your email."
+msgstr "Η υπαναχώρησή σας έχει υποβληθεί. Μια επιβεβαίωση έχει σταλεί στο email σας."
+
+msgid "Your session has expired. Please start the lookup again."
+msgstr "Η συνεδρία σας έληξε. Ξεκινήστε ξανά την αναζήτηση."
+
+msgid "Order not found."
+msgstr "Η παραγγελία δεν βρέθηκε."
+
+msgid "Order number or email is missing or invalid."
+msgstr "Ο αριθμός παραγγελίας ή το email λείπει ή είναι μη έγκυρο."
+
+msgid "We could not find an order with the provided details."
+msgstr "Δεν μπορέσαμε να βρούμε παραγγελία με τα παρεχόμενα στοιχεία."
+
+msgid "Too many attempts. Please wait a few minutes and try again."
+msgstr "Πάρα πολλές προσπάθειες. Περιμένετε μερικά λεπτά και δοκιμάστε ξανά."
+
+msgid "Security check failed. Please try again."
+msgstr "Ο έλεγχος ασφαλείας απέτυχε. Δοκιμάστε ξανά."
+
+msgid "Enter your order number and the email address used when placing the order to continue."
+msgstr "Για να συνεχίσετε, εισαγάγετε τον αριθμό παραγγελίας σας και τη διεύθυνση email που χρησιμοποιήσατε κατά την υποβολή της παραγγελίας."
+
+msgid "Billing email"
+msgstr "Email χρέωσης"
+
+msgid "Continue"
+msgstr "Συνέχεια"
+
+msgid "Withdrawal cooling-off"
+msgstr "Περίοδος υπαναχώρησης"
+
+msgid "Date of delivery"
+msgstr "Ημερομηνία παράδοσης"
+
+msgid "Date the customer received the goods. Used as the reference date for the cooling-off period (leave empty to use the order completion date)."
+msgstr "Ημερομηνία παραλαβής των προϊόντων από τον πελάτη. Χρησιμοποιείται ως ημερομηνία αναφοράς για την περίοδο υπαναχώρησης (αφήστε κενό για χρήση της ημερομηνίας ολοκλήρωσης της παραγγελίας)."
+
+msgid "Cooling-off ends:"
+msgstr "Λήξη περιόδου υπαναχώρησης:"
+
+#. translators: %d: number of days remaining
+msgid "%d day remaining"
+msgid_plural "%d days remaining"
+msgstr[0] "απομένει %d ημέρα"
+msgstr[1] "απομένουν %d ημέρες"
+
+msgid "expired"
+msgstr "έληξε"
+
+msgid "Withdrawal submitted:"
+msgstr "Υπαναχώρηση υποβλήθηκε:"
+
+msgid "Resolved:"
+msgstr "Επιλύθηκε:"
+
+msgid "Use the Order actions box to mark this withdrawal as resolved."
+msgstr "Χρησιμοποιήστε το πλαίσιο Ενέργειες παραγγελίας για να επισημάνετε αυτήν την υπαναχώρηση ως επιλυμένη."
+
+msgid "guest form"
+msgstr "φόρμα επισκέπτη"
+
+msgid "admin"
+msgstr "διαχειριστής"
+
+msgid "customer account"
+msgstr "λογαριασμός πελάτη"
+
+msgid "Mark withdrawal as resolved"
+msgstr "Επισήμανση υπαναχώρησης ως επιλυμένης"
+
+msgid "Submit withdrawal on behalf of customer"
+msgstr "Υποβολή υπαναχώρησης εκ μέρους του πελάτη"
+
+msgid "Withdrawals"
+msgstr "Υπαναχωρήσεις"
+
+msgid "Export CSV"
+msgstr "Εξαγωγή CSV"
+
+msgid "Search"
+msgstr "Αναζήτηση"
+
+msgid "All"
+msgstr "Όλα"
+
+msgid "Pending"
+msgstr "Εκκρεμή"
+
+msgid "Resolved"
+msgstr "Επιλυμένα"
+
+msgid "From"
+msgstr "Από"
+
+msgid "To"
+msgstr "Έως"
+
+msgid "Filter"
+msgstr "Φίλτρο"
+
+msgid "Submitted"
+msgstr "Υποβλήθηκε"
+
+msgid "Source"
+msgstr "Πηγή"
+
+msgid "Status"
+msgstr "Κατάσταση"
+
+msgid "Mark as resolved"
+msgstr "Επισήμανση ως επιλυμένο"
+
+msgid "Resolve"
+msgstr "Επίλυση"
+
+msgid "guest"
+msgstr "επισκέπτης"
+
+msgid "customer"
+msgstr "πελάτης"
+
+#. translators: %d: number of withdrawals resolved
+msgid "%d withdrawal marked as resolved."
+msgid_plural "%d withdrawals marked as resolved."
+msgstr[0] "%d υπαναχώρηση επισημάνθηκε ως επιλυμένη."
+msgstr[1] "%d υπαναχωρήσεις επισημάνθηκαν ως επιλυμένες."
+
+msgid "You do not have permission to do this."
+msgstr "Δεν έχετε άδεια για αυτήν την ενέργεια."
+
+msgid "This order does not have a pending withdrawal."
+msgstr "Αυτή η παραγγελία δεν έχει εκκρεμή υπαναχώρηση."
+
+msgid "This withdrawal has already been resolved."
+msgstr "Αυτή η υπαναχώρηση έχει ήδη επιλυθεί."
+
+msgid "Guest withdrawal form"
+msgstr "Φόρμα υπαναχώρησης για επισκέπτες"
+
+msgid "Enable shortcode for non-logged-in customers"
+msgstr "Ενεργοποίηση shortcode για μη συνδεδεμένους πελάτες"
+
+#. translators: %s: shortcode wrapped in <code>
+msgid "Place %s on any page (e.g. a public landing page). The form will ask for an order number and the billing email, then show the withdrawal form."
+msgstr "Τοποθετήστε το %s σε οποιαδήποτε σελίδα (π.χ. δημόσια σελίδα προορισμού). Η φόρμα θα ζητήσει αριθμό παραγγελίας και email χρέωσης και στη συνέχεια θα εμφανίσει τη φόρμα υπαναχώρησης."

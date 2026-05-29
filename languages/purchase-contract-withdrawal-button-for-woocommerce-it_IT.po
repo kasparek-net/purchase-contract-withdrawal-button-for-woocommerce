@@ -1,0 +1,437 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Purchase Contract Withdrawal Button for WooCommerce 1.3.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-25 10:00+0000\n"
+"PO-Revision-Date: 2026-05-29 12:00+0000\n"
+"Last-Translator: Jakub Kašpárek\n"
+"Language-Team: Italian\n"
+"Language: it_IT\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Domain: purchase-contract-withdrawal-button-for-woocommerce\n"
+
+msgid "Purchase Contract Withdrawal Button for WooCommerce requires WooCommerce to be installed and active."
+msgstr "Il plugin Purchase Contract Withdrawal Button for WooCommerce richiede che WooCommerce sia installato e attivo."
+
+msgid "Settings"
+msgstr "Impostazioni"
+
+msgid "Withdraw from purchase contract"
+msgstr "Recedere dal contratto di acquisto"
+
+msgid "This order is no longer eligible for withdrawal (the cooling-off period has expired, or a withdrawal has already been submitted)."
+msgstr "Per questo ordine non è più possibile esercitare il recesso (il periodo di recesso è scaduto oppure è già stato inviato un recesso)."
+
+msgid "Back to order"
+msgstr "Torna all’ordine"
+
+msgid "Your withdrawal has been submitted. A confirmation has been sent to your email. We will be in touch with return instructions."
+msgstr "Il tuo recesso è stato inviato. Una conferma è stata inviata al tuo indirizzo email. Ti contatteremo con le istruzioni per il reso."
+
+msgid "Withdrawal has been submitted"
+msgstr "Il recesso è stato inviato"
+
+#. translators: %s: submission date
+msgid "on %s."
+msgstr "il %s."
+
+#. translators: %s: admin email address
+msgid "If you have any questions, contact us at %s."
+msgstr "Per qualsiasi domanda, contattaci a %s."
+
+msgid "You must be logged in to submit a withdrawal."
+msgstr "Devi accedere per inviare un recesso."
+
+msgid "Invalid order."
+msgstr "Ordine non valido."
+
+msgid "Security check failed. Please go back and try again."
+msgstr "Controllo di sicurezza non riuscito. Torna indietro e riprova."
+
+msgid "You are not authorized to access this order."
+msgstr "Non sei autorizzato ad accedere a questo ordine."
+
+msgid "You must check the confirmation box to submit a withdrawal."
+msgstr "Devi spuntare la casella di conferma per inviare il recesso."
+
+msgid "This order is no longer eligible for withdrawal."
+msgstr "Per questo ordine non è più possibile esercitare il recesso."
+
+msgid "Customer submitted a withdrawal from the purchase contract."
+msgstr "Il cliente ha inviato un recesso dal contratto di acquisto."
+
+#. translators: %s: customer-provided reason
+msgid "Reason: %s"
+msgstr "Motivo: %s"
+
+#. translators: %s: bank account for refund
+msgid "Refund account: %s"
+msgstr "Conto per il rimborso: %s"
+
+msgid "Customer submitted withdrawal from purchase contract."
+msgstr "Recesso dal contratto di acquisto inviato dal cliente."
+
+msgid "Withdrawal confirmation (customer)"
+msgstr "Conferma di recesso (cliente)"
+
+msgid "Sent to the customer after they submit a withdrawal from a purchase contract."
+msgstr "Inviato al cliente dopo l’invio di un recesso da un contratto di acquisto."
+
+msgid "[{site_title}] Withdrawal confirmation — order #{order_number}"
+msgstr "[{site_title}] Conferma di recesso — ordine #{order_number}"
+
+msgid "Withdrawal confirmation"
+msgstr "Conferma di recesso"
+
+msgid "If you have any questions about your withdrawal, please reply to this email."
+msgstr "Per qualsiasi domanda sul tuo recesso, rispondi a questa email."
+
+msgid "Withdrawal notification (admin)"
+msgstr "Notifica di recesso (admin)"
+
+msgid "Sent to the store administrator when a customer submits a withdrawal."
+msgstr "Inviato all’amministratore del negozio quando un cliente invia un recesso."
+
+msgid "[{site_title}] New withdrawal request — order #{order_number}"
+msgstr "[{site_title}] Nuova richiesta di recesso — ordine #{order_number}"
+
+msgid "New withdrawal request"
+msgstr "Nuova richiesta di recesso"
+
+msgid "Enable/Disable"
+msgstr "Attiva/Disattiva"
+
+msgid "Enable this email notification"
+msgstr "Attiva questa notifica via email"
+
+msgid "Recipient(s)"
+msgstr "Destinatari"
+
+#. translators: %s: admin email
+msgid "Enter recipients (comma separated). Defaults to %s."
+msgstr "Inserisci i destinatari (separati da virgola). Predefinito: %s."
+
+msgid "Subject"
+msgstr "Oggetto"
+
+msgid "Placeholders: %s"
+msgstr "Segnaposto: %s"
+
+msgid "Email heading"
+msgstr "Intestazione dell’email"
+
+msgid "Email type"
+msgstr "Tipo di email"
+
+msgid "Choose which format of email to send."
+msgstr "Scegli il formato dell’email da inviare."
+
+msgid "Purchase Contract Withdrawal Button for WooCommerce"
+msgstr "Pulsante di recesso dal contratto di acquisto"
+
+msgid "Withdrawal Button"
+msgstr "Pulsante di recesso"
+
+#. translators: %s: WooCommerce email settings URL
+msgid "Customer and admin email templates can be customized in %s."
+msgstr "I modelli di email per cliente e amministratore possono essere personalizzati in %s."
+
+msgid "WooCommerce → Settings → Emails"
+msgstr "WooCommerce → Impostazioni → Email"
+
+msgid "Cooling-off period (days)"
+msgstr "Periodo di recesso (giorni)"
+
+msgid "How long after the reference date (order completion) the withdrawal button stays visible. EU standard is 14 days."
+msgstr "Per quanto tempo dopo la data di riferimento (completamento dell’ordine) il pulsante di recesso resta visibile. Lo standard UE è 14 giorni."
+
+msgid "Eligible order statuses"
+msgstr "Stati ordine ammessi"
+
+msgid "The button is shown only for orders in one of these statuses."
+msgstr "Il pulsante viene mostrato solo per gli ordini che si trovano in uno di questi stati."
+
+msgid "Admin email recipient"
+msgstr "Destinatario email amministratore"
+
+#. translators: %s: admin email
+msgid "Leave empty to use the site admin email (%s)."
+msgstr "Lascia vuoto per usare l’email dell’amministratore del sito (%s)."
+
+msgid "Status after submission"
+msgstr "Stato dopo l’invio"
+
+msgid "Order status applied automatically after the customer submits a withdrawal."
+msgstr "Stato dell’ordine applicato automaticamente dopo l’invio del recesso da parte del cliente."
+
+msgid "Withdrawal from purchase contract"
+msgstr "Recesso dal contratto di acquisto"
+
+#. translators: 1: order number, 2: deadline date
+msgid "Complete the form below to withdraw from purchase contract no. %1$s. The cooling-off period ends on %2$s."
+msgstr "Compila il modulo seguente per recedere dal contratto di acquisto n. %1$s. Il periodo di recesso termina il %2$s."
+
+msgid "Order number"
+msgstr "Numero ordine"
+
+msgid "Order date"
+msgstr "Data ordine"
+
+msgid "Customer"
+msgstr "Cliente"
+
+msgid "Address"
+msgstr "Indirizzo"
+
+msgid "Email"
+msgstr "Email"
+
+msgid "Total"
+msgstr "Totale"
+
+msgid "Bank account for refund"
+msgstr "Conto bancario per il rimborso"
+
+msgid "(optional — leave empty to refund to the original payment method)"
+msgstr "(facoltativo — lascia vuoto per rimborsare sul metodo di pagamento originale)"
+
+msgid "Reason for withdrawal"
+msgstr "Motivo del recesso"
+
+msgid "(optional)"
+msgstr "(facoltativo)"
+
+msgid "I confirm that I am withdrawing from the purchase contract"
+msgstr "Confermo di recedere dal contratto di acquisto"
+
+msgid "and I understand that I must return the purchased goods within 14 days of submitting this withdrawal. The refund will be issued after the returned goods are received."
+msgstr "e dichiaro di essere consapevole che devo restituire i beni acquistati entro 14 giorni dall’invio di questo recesso. Il rimborso verrà effettuato dopo la ricezione dei beni restituiti."
+
+msgid "Confirm withdrawal"
+msgstr "Conferma il recesso"
+
+msgid "Cancel"
+msgstr "Annulla"
+
+msgid "Hello,"
+msgstr "Salve,"
+
+#. translators: 1: order number, 2: order date
+msgid "We have received your withdrawal from the purchase contract for order no. %1$s placed on %2$s."
+msgstr "Abbiamo ricevuto il tuo recesso dal contratto di acquisto per l’ordine n. %1$s effettuato il %2$s."
+
+msgid "Next steps"
+msgstr "Prossimi passi"
+
+msgid "Next steps:"
+msgstr "Prossimi passi:"
+
+msgid "Please return the goods to our address within 14 days of submitting this withdrawal."
+msgstr "Restituisci i beni al nostro indirizzo entro 14 giorni dall’invio di questo recesso."
+
+msgid "We recommend shipping with tracking and insurance."
+msgstr "Consigliamo una spedizione con tracciamento e assicurazione."
+
+#. translators: %s: total amount
+msgid "Once we receive the goods we will refund the paid amount (%s) within 14 days."
+msgstr "Una volta ricevuti i beni, ti rimborseremo l’importo pagato (%s) entro 14 giorni."
+
+msgid "A customer has submitted a withdrawal from a purchase contract."
+msgstr "Un cliente ha inviato un recesso da un contratto di acquisto."
+
+msgid "Order"
+msgstr "Ordine"
+
+msgid "Phone"
+msgstr "Telefono"
+
+msgid "Completion date"
+msgstr "Data di completamento"
+
+msgid "Refund account"
+msgstr "Conto per il rimborso"
+
+msgid "Original payment method"
+msgstr "Metodo di pagamento originale"
+
+msgid "Reason"
+msgstr "Motivo"
+
+msgid "(not provided)"
+msgstr "(non indicato)"
+
+msgid "View order:"
+msgstr "Vedi ordine:"
+
+# === 1.2.0 strings ===
+
+msgid "A withdrawal has already been submitted for this order."
+msgstr "Per questo ordine è già stato inviato un recesso."
+
+msgid "an administrator"
+msgstr "un amministratore"
+
+msgid "Customer (guest) submitted a withdrawal from the purchase contract."
+msgstr "Il cliente (ospite) ha inviato un recesso dal contratto di acquisto."
+
+#. translators: %s: admin display name
+msgid "Withdrawal marked as resolved by %s."
+msgstr "Recesso contrassegnato come risolto da %s."
+
+#. translators: %s: admin display name
+msgid "Withdrawal submitted on behalf of the customer by %s."
+msgstr "Recesso inviato per conto del cliente da %s."
+
+msgid "The withdrawal form is not currently available. Please contact the store."
+msgstr "Il modulo di recesso non è attualmente disponibile. Contatta il negozio."
+
+msgid "Your withdrawal has been submitted. A confirmation has been sent to your email."
+msgstr "Il tuo recesso è stato inviato. Una conferma è stata inviata al tuo indirizzo email."
+
+msgid "Your session has expired. Please start the lookup again."
+msgstr "La tua sessione è scaduta. Avvia di nuovo la ricerca."
+
+msgid "Order not found."
+msgstr "Ordine non trovato."
+
+msgid "Order number or email is missing or invalid."
+msgstr "Il numero dell’ordine o l’email sono mancanti o non validi."
+
+msgid "We could not find an order with the provided details."
+msgstr "Non è stato possibile trovare un ordine con i dati forniti."
+
+msgid "Too many attempts. Please wait a few minutes and try again."
+msgstr "Troppi tentativi. Attendi qualche minuto e riprova."
+
+msgid "Security check failed. Please try again."
+msgstr "Controllo di sicurezza non riuscito. Riprova."
+
+msgid "Enter your order number and the email address used when placing the order to continue."
+msgstr "Per continuare, inserisci il tuo numero d’ordine e l’indirizzo email utilizzato al momento dell’ordine."
+
+msgid "Billing email"
+msgstr "Email di fatturazione"
+
+msgid "Continue"
+msgstr "Continua"
+
+msgid "Withdrawal cooling-off"
+msgstr "Periodo di recesso"
+
+msgid "Date of delivery"
+msgstr "Data di consegna"
+
+msgid "Date the customer received the goods. Used as the reference date for the cooling-off period (leave empty to use the order completion date)."
+msgstr "Data in cui il cliente ha ricevuto i beni. Utilizzata come data di riferimento per il periodo di recesso (lascia vuoto per usare la data di completamento dell’ordine)."
+
+msgid "Cooling-off ends:"
+msgstr "Il periodo termina:"
+
+#. translators: %d: number of days remaining
+msgid "%d day remaining"
+msgid_plural "%d days remaining"
+msgstr[0] "%d giorno rimanente"
+msgstr[1] "%d giorni rimanenti"
+
+msgid "expired"
+msgstr "scaduto"
+
+msgid "Withdrawal submitted:"
+msgstr "Recesso inviato:"
+
+msgid "Resolved:"
+msgstr "Risolto:"
+
+msgid "Use the Order actions box to mark this withdrawal as resolved."
+msgstr "Usa il riquadro Azioni ordine per contrassegnare questo recesso come risolto."
+
+msgid "guest form"
+msgstr "modulo ospite"
+
+msgid "admin"
+msgstr "admin"
+
+msgid "customer account"
+msgstr "account cliente"
+
+msgid "Mark withdrawal as resolved"
+msgstr "Contrassegna il recesso come risolto"
+
+msgid "Submit withdrawal on behalf of customer"
+msgstr "Invia il recesso per conto del cliente"
+
+msgid "Withdrawals"
+msgstr "Recessi"
+
+msgid "Export CSV"
+msgstr "Esporta CSV"
+
+msgid "Search"
+msgstr "Cerca"
+
+msgid "All"
+msgstr "Tutti"
+
+msgid "Pending"
+msgstr "In attesa"
+
+msgid "Resolved"
+msgstr "Risolti"
+
+msgid "From"
+msgstr "Dal"
+
+msgid "To"
+msgstr "Al"
+
+msgid "Filter"
+msgstr "Filtra"
+
+msgid "Submitted"
+msgstr "Inviato"
+
+msgid "Source"
+msgstr "Origine"
+
+msgid "Status"
+msgstr "Stato"
+
+msgid "Mark as resolved"
+msgstr "Contrassegna come risolto"
+
+msgid "Resolve"
+msgstr "Risolvi"
+
+msgid "guest"
+msgstr "ospite"
+
+msgid "customer"
+msgstr "cliente"
+
+#. translators: %d: number of withdrawals resolved
+msgid "%d withdrawal marked as resolved."
+msgid_plural "%d withdrawals marked as resolved."
+msgstr[0] "%d recesso contrassegnato come risolto."
+msgstr[1] "%d recessi contrassegnati come risolti."
+
+msgid "You do not have permission to do this."
+msgstr "Non hai i permessi per eseguire questa azione."
+
+msgid "This order does not have a pending withdrawal."
+msgstr "Questo ordine non ha recessi in attesa."
+
+msgid "This withdrawal has already been resolved."
+msgstr "Questo recesso è già stato risolto."
+
+msgid "Guest withdrawal form"
+msgstr "Modulo di recesso per ospiti"
+
+msgid "Enable shortcode for non-logged-in customers"
+msgstr "Abilita lo shortcode per i clienti non connessi"
+
+#. translators: %s: shortcode wrapped in <code>
+msgid "Place %s on any page (e.g. a public landing page). The form will ask for an order number and the billing email, then show the withdrawal form."
+msgstr "Inserisci %s in qualsiasi pagina (ad es. una landing page pubblica). Il modulo chiederà un numero d’ordine e l’email di fatturazione, quindi mostrerà il modulo di recesso."

@@ -1,0 +1,437 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Purchase Contract Withdrawal Button for WooCommerce 1.3.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-25 10:00+0000\n"
+"PO-Revision-Date: 2026-05-29 12:00+0000\n"
+"Last-Translator: Jakub Kašpárek\n"
+"Language-Team: Estonian\n"
+"Language: et\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Domain: purchase-contract-withdrawal-button-for-woocommerce\n"
+
+msgid "Purchase Contract Withdrawal Button for WooCommerce requires WooCommerce to be installed and active."
+msgstr "Purchase Contract Withdrawal Button for WooCommerce nõuab, et WooCommerce oleks paigaldatud ja aktiivne."
+
+msgid "Settings"
+msgstr "Seaded"
+
+msgid "Withdraw from purchase contract"
+msgstr "Tagane ostulepingust"
+
+msgid "This order is no longer eligible for withdrawal (the cooling-off period has expired, or a withdrawal has already been submitted)."
+msgstr "Sellest tellimusest ei saa enam taganeda (taganemisõiguse tähtaeg on möödunud või taganemine on juba esitatud)."
+
+msgid "Back to order"
+msgstr "Tagasi tellimuse juurde"
+
+msgid "Your withdrawal has been submitted. A confirmation has been sent to your email. We will be in touch with return instructions."
+msgstr "Teie taganemisavaldus on esitatud. Kinnitus on saadetud teie e-posti aadressile. Võtame teiega ühendust kauba tagastamise juhistega."
+
+msgid "Withdrawal has been submitted"
+msgstr "Taganemisavaldus on esitatud"
+
+#. translators: %s: submission date
+msgid "on %s."
+msgstr "kuupäeval %s."
+
+#. translators: %s: admin email address
+msgid "If you have any questions, contact us at %s."
+msgstr "Küsimuste korral võtke meiega ühendust aadressil %s."
+
+msgid "You must be logged in to submit a withdrawal."
+msgstr "Taganemisavalduse esitamiseks peate olema sisse logitud."
+
+msgid "Invalid order."
+msgstr "Vigane tellimus."
+
+msgid "Security check failed. Please go back and try again."
+msgstr "Turvakontroll ebaõnnestus. Minge tagasi ja proovige uuesti."
+
+msgid "You are not authorized to access this order."
+msgstr "Teil pole õigust sellele tellimusele juurdepääsuks."
+
+msgid "You must check the confirmation box to submit a withdrawal."
+msgstr "Taganemisavalduse esitamiseks peate märkima kinnituskasti."
+
+msgid "This order is no longer eligible for withdrawal."
+msgstr "Sellest tellimusest ei saa enam taganeda."
+
+msgid "Customer submitted a withdrawal from the purchase contract."
+msgstr "Klient esitas taganemisavalduse ostulepingust."
+
+#. translators: %s: customer-provided reason
+msgid "Reason: %s"
+msgstr "Põhjus: %s"
+
+#. translators: %s: bank account for refund
+msgid "Refund account: %s"
+msgstr "Tagasimakse konto: %s"
+
+msgid "Customer submitted withdrawal from purchase contract."
+msgstr "Klient esitas taganemise ostulepingust."
+
+msgid "Withdrawal confirmation (customer)"
+msgstr "Taganemise kinnitus (klient)"
+
+msgid "Sent to the customer after they submit a withdrawal from a purchase contract."
+msgstr "Saadetakse kliendile pärast ostulepingust taganemise esitamist."
+
+msgid "[{site_title}] Withdrawal confirmation — order #{order_number}"
+msgstr "[{site_title}] Taganemise kinnitus — tellimus #{order_number}"
+
+msgid "Withdrawal confirmation"
+msgstr "Taganemise kinnitus"
+
+msgid "If you have any questions about your withdrawal, please reply to this email."
+msgstr "Kui teil on taganemise kohta küsimusi, vastake palun sellele e-kirjale."
+
+msgid "Withdrawal notification (admin)"
+msgstr "Taganemisteade (administraator)"
+
+msgid "Sent to the store administrator when a customer submits a withdrawal."
+msgstr "Saadetakse e-poe administraatorile, kui klient esitab taganemise."
+
+msgid "[{site_title}] New withdrawal request — order #{order_number}"
+msgstr "[{site_title}] Uus taganemisavaldus — tellimus #{order_number}"
+
+msgid "New withdrawal request"
+msgstr "Uus taganemisavaldus"
+
+msgid "Enable/Disable"
+msgstr "Lülita sisse / välja"
+
+msgid "Enable this email notification"
+msgstr "Luba see e-posti teavitus"
+
+msgid "Recipient(s)"
+msgstr "Saaja(d)"
+
+#. translators: %s: admin email
+msgid "Enter recipients (comma separated). Defaults to %s."
+msgstr "Sisestage saajad (komaga eraldatult). Vaikimisi: %s."
+
+msgid "Subject"
+msgstr "Teema"
+
+msgid "Placeholders: %s"
+msgstr "Asendusmärgid: %s"
+
+msgid "Email heading"
+msgstr "E-kirja pealkiri"
+
+msgid "Email type"
+msgstr "E-kirja tüüp"
+
+msgid "Choose which format of email to send."
+msgstr "Valige, millises vormingus e-kiri saata."
+
+msgid "Purchase Contract Withdrawal Button for WooCommerce"
+msgstr "Ostulepingust taganemise nupp"
+
+msgid "Withdrawal Button"
+msgstr "Taganemise nupp"
+
+#. translators: %s: WooCommerce email settings URL
+msgid "Customer and admin email templates can be customized in %s."
+msgstr "Kliendi ja administraatori e-kirjade malle saab kohandada jaotises %s."
+
+msgid "WooCommerce → Settings → Emails"
+msgstr "WooCommerce → Seaded → E-kirjad"
+
+msgid "Cooling-off period (days)"
+msgstr "Taganemisõiguse tähtaeg (päeva)"
+
+msgid "How long after the reference date (order completion) the withdrawal button stays visible. EU standard is 14 days."
+msgstr "Kui kaua pärast viitekuupäeva (tellimuse täitmist) on taganemise nupp nähtav. EL standard on 14 päeva."
+
+msgid "Eligible order statuses"
+msgstr "Sobivad tellimuse olekud"
+
+msgid "The button is shown only for orders in one of these statuses."
+msgstr "Nupp kuvatakse ainult nendes olekutes tellimuste korral."
+
+msgid "Admin email recipient"
+msgstr "Administraatori e-kirja saaja"
+
+#. translators: %s: admin email
+msgid "Leave empty to use the site admin email (%s)."
+msgstr "Jätke tühjaks, et kasutada saidi administraatori e-posti aadressi (%s)."
+
+msgid "Status after submission"
+msgstr "Olek pärast esitamist"
+
+msgid "Order status applied automatically after the customer submits a withdrawal."
+msgstr "Tellimuse olek, mis määratakse automaatselt pärast kliendi taganemisavalduse esitamist."
+
+msgid "Withdrawal from purchase contract"
+msgstr "Ostulepingust taganemine"
+
+#. translators: 1: order number, 2: deadline date
+msgid "Complete the form below to withdraw from purchase contract no. %1$s. The cooling-off period ends on %2$s."
+msgstr "Täitke allolev vorm, et taganeda ostulepingust nr %1$s. Taganemisõiguse tähtaeg lõpeb %2$s."
+
+msgid "Order number"
+msgstr "Tellimuse number"
+
+msgid "Order date"
+msgstr "Tellimuse kuupäev"
+
+msgid "Customer"
+msgstr "Klient"
+
+msgid "Address"
+msgstr "Aadress"
+
+msgid "Email"
+msgstr "E-post"
+
+msgid "Total"
+msgstr "Kokku"
+
+msgid "Bank account for refund"
+msgstr "Tagasimakse pangakonto"
+
+msgid "(optional — leave empty to refund to the original payment method)"
+msgstr "(valikuline — jätke tühjaks, et tagastada algsele maksemeetodile)"
+
+msgid "Reason for withdrawal"
+msgstr "Taganemise põhjus"
+
+msgid "(optional)"
+msgstr "(valikuline)"
+
+msgid "I confirm that I am withdrawing from the purchase contract"
+msgstr "Kinnitan, et taganen ostulepingust"
+
+msgid "and I understand that I must return the purchased goods within 14 days of submitting this withdrawal. The refund will be issued after the returned goods are received."
+msgstr "ja saan aru, et pean ostetud kauba tagastama 14 päeva jooksul alates selle taganemisavalduse esitamisest. Raha tagastatakse pärast tagastatud kauba kättesaamist."
+
+msgid "Confirm withdrawal"
+msgstr "Kinnita taganemine"
+
+msgid "Cancel"
+msgstr "Tühista"
+
+msgid "Hello,"
+msgstr "Tere,"
+
+#. translators: 1: order number, 2: order date
+msgid "We have received your withdrawal from the purchase contract for order no. %1$s placed on %2$s."
+msgstr "Oleme saanud teie ostulepingust taganemise tellimuse nr %1$s kohta, mis on esitatud %2$s."
+
+msgid "Next steps"
+msgstr "Järgmised sammud"
+
+msgid "Next steps:"
+msgstr "Järgmised sammud:"
+
+msgid "Please return the goods to our address within 14 days of submitting this withdrawal."
+msgstr "Palun tagastage kaup meie aadressile 14 päeva jooksul alates selle taganemisavalduse esitamisest."
+
+msgid "We recommend shipping with tracking and insurance."
+msgstr "Soovitame saata jälgimise ja kindlustusega."
+
+#. translators: %s: total amount
+msgid "Once we receive the goods we will refund the paid amount (%s) within 14 days."
+msgstr "Pärast kauba kättesaamist tagastame makstud summa (%s) 14 päeva jooksul."
+
+msgid "A customer has submitted a withdrawal from a purchase contract."
+msgstr "Klient on esitanud taganemisavalduse ostulepingust."
+
+msgid "Order"
+msgstr "Tellimus"
+
+msgid "Phone"
+msgstr "Telefon"
+
+msgid "Completion date"
+msgstr "Täitmise kuupäev"
+
+msgid "Refund account"
+msgstr "Tagasimakse konto"
+
+msgid "Original payment method"
+msgstr "Algne maksemeetod"
+
+msgid "Reason"
+msgstr "Põhjus"
+
+msgid "(not provided)"
+msgstr "(pole esitatud)"
+
+msgid "View order:"
+msgstr "Vaata tellimust:"
+
+# === 1.2.0 strings ===
+
+msgid "A withdrawal has already been submitted for this order."
+msgstr "Sellele tellimusele on taganemisavaldus juba esitatud."
+
+msgid "an administrator"
+msgstr "administraator"
+
+msgid "Customer (guest) submitted a withdrawal from the purchase contract."
+msgstr "Klient (külaline) esitas taganemisavalduse ostulepingust."
+
+#. translators: %s: admin display name
+msgid "Withdrawal marked as resolved by %s."
+msgstr "Kasutaja %s märkis taganemise lahendatuks."
+
+#. translators: %s: admin display name
+msgid "Withdrawal submitted on behalf of the customer by %s."
+msgstr "Kasutaja %s esitas taganemise kliendi nimel."
+
+msgid "The withdrawal form is not currently available. Please contact the store."
+msgstr "Taganemisvorm ei ole hetkel saadaval. Palun võtke ühendust e-poega."
+
+msgid "Your withdrawal has been submitted. A confirmation has been sent to your email."
+msgstr "Teie taganemisavaldus on esitatud. Kinnitus on saadetud teie e-posti aadressile."
+
+msgid "Your session has expired. Please start the lookup again."
+msgstr "Teie seanss on aegunud. Alustage otsingut uuesti."
+
+msgid "Order not found."
+msgstr "Tellimust ei leitud."
+
+msgid "Order number or email is missing or invalid."
+msgstr "Tellimuse number või e-post puudub või on vigane."
+
+msgid "We could not find an order with the provided details."
+msgstr "Esitatud andmetega tellimust ei leitud."
+
+msgid "Too many attempts. Please wait a few minutes and try again."
+msgstr "Liiga palju katseid. Oodake mõni minut ja proovige uuesti."
+
+msgid "Security check failed. Please try again."
+msgstr "Turvakontroll ebaõnnestus. Proovige uuesti."
+
+msgid "Enter your order number and the email address used when placing the order to continue."
+msgstr "Jätkamiseks sisestage tellimuse number ja tellimuse esitamisel kasutatud e-posti aadress."
+
+msgid "Billing email"
+msgstr "Arvelduse e-post"
+
+msgid "Continue"
+msgstr "Jätka"
+
+msgid "Withdrawal cooling-off"
+msgstr "Taganemisõigus"
+
+msgid "Date of delivery"
+msgstr "Tarne kuupäev"
+
+msgid "Date the customer received the goods. Used as the reference date for the cooling-off period (leave empty to use the order completion date)."
+msgstr "Kuupäev, mil klient kauba kätte sai. Kasutatakse taganemisõiguse viitekuupäevana (jätke tühjaks, et kasutada tellimuse täitmise kuupäeva)."
+
+msgid "Cooling-off ends:"
+msgstr "Taganemisõigus lõpeb:"
+
+#. translators: %d: number of days remaining
+msgid "%d day remaining"
+msgid_plural "%d days remaining"
+msgstr[0] "jäänud %d päev"
+msgstr[1] "jäänud %d päeva"
+
+msgid "expired"
+msgstr "aegunud"
+
+msgid "Withdrawal submitted:"
+msgstr "Taganemine esitatud:"
+
+msgid "Resolved:"
+msgstr "Lahendatud:"
+
+msgid "Use the Order actions box to mark this withdrawal as resolved."
+msgstr "Kasutage kasti Tellimuse toimingud, et märkida see taganemine lahendatuks."
+
+msgid "guest form"
+msgstr "külalise vorm"
+
+msgid "admin"
+msgstr "administraator"
+
+msgid "customer account"
+msgstr "kliendi konto"
+
+msgid "Mark withdrawal as resolved"
+msgstr "Märgi taganemine lahendatuks"
+
+msgid "Submit withdrawal on behalf of customer"
+msgstr "Esita taganemine kliendi nimel"
+
+msgid "Withdrawals"
+msgstr "Taganemised"
+
+msgid "Export CSV"
+msgstr "Ekspordi CSV"
+
+msgid "Search"
+msgstr "Otsi"
+
+msgid "All"
+msgstr "Kõik"
+
+msgid "Pending"
+msgstr "Ootel"
+
+msgid "Resolved"
+msgstr "Lahendatud"
+
+msgid "From"
+msgstr "Alates"
+
+msgid "To"
+msgstr "Kuni"
+
+msgid "Filter"
+msgstr "Filtreeri"
+
+msgid "Submitted"
+msgstr "Esitatud"
+
+msgid "Source"
+msgstr "Allikas"
+
+msgid "Status"
+msgstr "Olek"
+
+msgid "Mark as resolved"
+msgstr "Märgi lahendatuks"
+
+msgid "Resolve"
+msgstr "Lahenda"
+
+msgid "guest"
+msgstr "külaline"
+
+msgid "customer"
+msgstr "klient"
+
+#. translators: %d: number of withdrawals resolved
+msgid "%d withdrawal marked as resolved."
+msgid_plural "%d withdrawals marked as resolved."
+msgstr[0] "%d taganemine märgitud lahendatuks."
+msgstr[1] "%d taganemist märgitud lahendatuks."
+
+msgid "You do not have permission to do this."
+msgstr "Teil pole õigust seda teha."
+
+msgid "This order does not have a pending withdrawal."
+msgstr "Sellel tellimusel ei ole ootel taganemist."
+
+msgid "This withdrawal has already been resolved."
+msgstr "See taganemine on juba lahendatud."
+
+msgid "Guest withdrawal form"
+msgstr "Külaliste taganemisvorm"
+
+msgid "Enable shortcode for non-logged-in customers"
+msgstr "Luba shortcode sisse logimata klientidele"
+
+#. translators: %s: shortcode wrapped in <code>
+msgid "Place %s on any page (e.g. a public landing page). The form will ask for an order number and the billing email, then show the withdrawal form."
+msgstr "Asetage %s mis tahes lehele (nt avalikule maandumislehele). Vorm küsib tellimuse numbrit ja arvelduse e-posti aadressi ning seejärel kuvab taganemisvormi."

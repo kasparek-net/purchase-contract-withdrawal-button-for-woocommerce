@@ -1,0 +1,439 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Purchase Contract Withdrawal Button for WooCommerce 1.3.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-25 10:00+0000\n"
+"PO-Revision-Date: 2026-05-29 12:00+0000\n"
+"Last-Translator: Jakub Kašpárek\n"
+"Language-Team: Romanian\n"
+"Language: ro_RO\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < 20)) ? 1 : 2);\n"
+"X-Domain: purchase-contract-withdrawal-button-for-woocommerce\n"
+
+msgid "Purchase Contract Withdrawal Button for WooCommerce requires WooCommerce to be installed and active."
+msgstr "Pluginul Purchase Contract Withdrawal Button for WooCommerce necesită ca WooCommerce să fie instalat și activ."
+
+msgid "Settings"
+msgstr "Setări"
+
+msgid "Withdraw from purchase contract"
+msgstr "Retrage-te din contractul de cumpărare"
+
+msgid "This order is no longer eligible for withdrawal (the cooling-off period has expired, or a withdrawal has already been submitted)."
+msgstr "Această comandă nu mai este eligibilă pentru retragere (perioada de retragere a expirat sau retragerea a fost deja depusă)."
+
+msgid "Back to order"
+msgstr "Înapoi la comandă"
+
+msgid "Your withdrawal has been submitted. A confirmation has been sent to your email. We will be in touch with return instructions."
+msgstr "Retragerea ta a fost depusă. O confirmare a fost trimisă pe email. Vom reveni cu instrucțiuni privind returul."
+
+msgid "Withdrawal has been submitted"
+msgstr "Retragerea a fost depusă"
+
+#. translators: %s: submission date
+msgid "on %s."
+msgstr "în data de %s."
+
+#. translators: %s: admin email address
+msgid "If you have any questions, contact us at %s."
+msgstr "Dacă ai întrebări, contactează-ne la %s."
+
+msgid "You must be logged in to submit a withdrawal."
+msgstr "Trebuie să fii autentificat pentru a depune o retragere."
+
+msgid "Invalid order."
+msgstr "Comandă nevalidă."
+
+msgid "Security check failed. Please go back and try again."
+msgstr "Verificarea de securitate a eșuat. Întoarce-te și încearcă din nou."
+
+msgid "You are not authorized to access this order."
+msgstr "Nu ești autorizat să accesezi această comandă."
+
+msgid "You must check the confirmation box to submit a withdrawal."
+msgstr "Trebuie să bifezi caseta de confirmare pentru a depune o retragere."
+
+msgid "This order is no longer eligible for withdrawal."
+msgstr "Această comandă nu mai este eligibilă pentru retragere."
+
+msgid "Customer submitted a withdrawal from the purchase contract."
+msgstr "Clientul a depus o retragere din contractul de cumpărare."
+
+#. translators: %s: customer-provided reason
+msgid "Reason: %s"
+msgstr "Motiv: %s"
+
+#. translators: %s: bank account for refund
+msgid "Refund account: %s"
+msgstr "Cont pentru rambursare: %s"
+
+msgid "Customer submitted withdrawal from purchase contract."
+msgstr "Clientul a depus retragerea din contractul de cumpărare."
+
+msgid "Withdrawal confirmation (customer)"
+msgstr "Confirmare retragere (client)"
+
+msgid "Sent to the customer after they submit a withdrawal from a purchase contract."
+msgstr "Trimis clientului după ce depune o retragere din contractul de cumpărare."
+
+msgid "[{site_title}] Withdrawal confirmation — order #{order_number}"
+msgstr "[{site_title}] Confirmare retragere — comanda #{order_number}"
+
+msgid "Withdrawal confirmation"
+msgstr "Confirmare retragere"
+
+msgid "If you have any questions about your withdrawal, please reply to this email."
+msgstr "Dacă ai întrebări despre retragerea ta, te rugăm să răspunzi la acest email."
+
+msgid "Withdrawal notification (admin)"
+msgstr "Notificare retragere (admin)"
+
+msgid "Sent to the store administrator when a customer submits a withdrawal."
+msgstr "Trimis administratorului magazinului atunci când un client depune o retragere."
+
+msgid "[{site_title}] New withdrawal request — order #{order_number}"
+msgstr "[{site_title}] Cerere nouă de retragere — comanda #{order_number}"
+
+msgid "New withdrawal request"
+msgstr "Cerere nouă de retragere"
+
+msgid "Enable/Disable"
+msgstr "Activează/Dezactivează"
+
+msgid "Enable this email notification"
+msgstr "Activează această notificare prin email"
+
+msgid "Recipient(s)"
+msgstr "Destinatari"
+
+#. translators: %s: admin email
+msgid "Enter recipients (comma separated). Defaults to %s."
+msgstr "Introdu destinatarii (separați prin virgulă). Implicit: %s."
+
+msgid "Subject"
+msgstr "Subiect"
+
+msgid "Placeholders: %s"
+msgstr "Substituenți: %s"
+
+msgid "Email heading"
+msgstr "Antet email"
+
+msgid "Email type"
+msgstr "Tip email"
+
+msgid "Choose which format of email to send."
+msgstr "Alege formatul email-ului de trimis."
+
+msgid "Purchase Contract Withdrawal Button for WooCommerce"
+msgstr "Buton de retragere din contractul de cumpărare"
+
+msgid "Withdrawal Button"
+msgstr "Buton retragere"
+
+#. translators: %s: WooCommerce email settings URL
+msgid "Customer and admin email templates can be customized in %s."
+msgstr "Șabloanele de email pentru client și admin pot fi personalizate în %s."
+
+msgid "WooCommerce → Settings → Emails"
+msgstr "WooCommerce → Setări → Emailuri"
+
+msgid "Cooling-off period (days)"
+msgstr "Perioadă de retragere (zile)"
+
+msgid "How long after the reference date (order completion) the withdrawal button stays visible. EU standard is 14 days."
+msgstr "Cât timp după data de referință (finalizarea comenzii) rămâne vizibil butonul de retragere. Standardul UE este de 14 zile."
+
+msgid "Eligible order statuses"
+msgstr "Stări eligibile ale comenzilor"
+
+msgid "The button is shown only for orders in one of these statuses."
+msgstr "Butonul este afișat doar pentru comenzile cu una dintre aceste stări."
+
+msgid "Admin email recipient"
+msgstr "Destinatar email administrator"
+
+#. translators: %s: admin email
+msgid "Leave empty to use the site admin email (%s)."
+msgstr "Lasă gol pentru a folosi emailul principal al administratorului (%s)."
+
+msgid "Status after submission"
+msgstr "Stare după depunere"
+
+msgid "Order status applied automatically after the customer submits a withdrawal."
+msgstr "Starea comenzii aplicată automat după ce clientul depune o retragere."
+
+msgid "Withdrawal from purchase contract"
+msgstr "Retragere din contractul de cumpărare"
+
+#. translators: 1: order number, 2: deadline date
+msgid "Complete the form below to withdraw from purchase contract no. %1$s. The cooling-off period ends on %2$s."
+msgstr "Completează formularul de mai jos pentru a te retrage din contractul de cumpărare nr. %1$s. Perioada de retragere se încheie la %2$s."
+
+msgid "Order number"
+msgstr "Număr comandă"
+
+msgid "Order date"
+msgstr "Data comenzii"
+
+msgid "Customer"
+msgstr "Client"
+
+msgid "Address"
+msgstr "Adresă"
+
+msgid "Email"
+msgstr "Email"
+
+msgid "Total"
+msgstr "Total"
+
+msgid "Bank account for refund"
+msgstr "Cont bancar pentru rambursare"
+
+msgid "(optional — leave empty to refund to the original payment method)"
+msgstr "(opțional — lasă gol pentru rambursare către metoda de plată inițială)"
+
+msgid "Reason for withdrawal"
+msgstr "Motivul retragerii"
+
+msgid "(optional)"
+msgstr "(opțional)"
+
+msgid "I confirm that I am withdrawing from the purchase contract"
+msgstr "Confirm că mă retrag din contractul de cumpărare"
+
+msgid "and I understand that I must return the purchased goods within 14 days of submitting this withdrawal. The refund will be issued after the returned goods are received."
+msgstr "și înțeleg că trebuie să returnez bunurile achiziționate în termen de 14 zile de la depunerea acestei retrageri. Rambursarea va fi efectuată după primirea bunurilor returnate."
+
+msgid "Confirm withdrawal"
+msgstr "Confirmă retragerea"
+
+msgid "Cancel"
+msgstr "Anulează"
+
+msgid "Hello,"
+msgstr "Bună ziua,"
+
+#. translators: 1: order number, 2: order date
+msgid "We have received your withdrawal from the purchase contract for order no. %1$s placed on %2$s."
+msgstr "Am primit retragerea ta din contractul de cumpărare pentru comanda nr. %1$s plasată în data de %2$s."
+
+msgid "Next steps"
+msgstr "Pașii următori"
+
+msgid "Next steps:"
+msgstr "Pașii următori:"
+
+msgid "Please return the goods to our address within 14 days of submitting this withdrawal."
+msgstr "Te rugăm să returnezi bunurile la adresa noastră în termen de 14 zile de la depunerea acestei retrageri."
+
+msgid "We recommend shipping with tracking and insurance."
+msgstr "Recomandăm expedierea cu urmărire și asigurare."
+
+#. translators: %s: total amount
+msgid "Once we receive the goods we will refund the paid amount (%s) within 14 days."
+msgstr "Odată ce primim bunurile, vom rambursa suma plătită (%s) în termen de 14 zile."
+
+msgid "A customer has submitted a withdrawal from a purchase contract."
+msgstr "Un client a depus o retragere dintr-un contract de cumpărare."
+
+msgid "Order"
+msgstr "Comandă"
+
+msgid "Phone"
+msgstr "Telefon"
+
+msgid "Completion date"
+msgstr "Data finalizării"
+
+msgid "Refund account"
+msgstr "Cont rambursare"
+
+msgid "Original payment method"
+msgstr "Metoda de plată inițială"
+
+msgid "Reason"
+msgstr "Motiv"
+
+msgid "(not provided)"
+msgstr "(neprecizat)"
+
+msgid "View order:"
+msgstr "Vezi comanda:"
+
+# === 1.2.0 strings ===
+
+msgid "A withdrawal has already been submitted for this order."
+msgstr "Pentru această comandă a fost deja depusă o retragere."
+
+msgid "an administrator"
+msgstr "un administrator"
+
+msgid "Customer (guest) submitted a withdrawal from the purchase contract."
+msgstr "Clientul (vizitator) a depus o retragere din contractul de cumpărare."
+
+#. translators: %s: admin display name
+msgid "Withdrawal marked as resolved by %s."
+msgstr "Retragerea a fost marcată ca rezolvată de %s."
+
+#. translators: %s: admin display name
+msgid "Withdrawal submitted on behalf of the customer by %s."
+msgstr "Retragerea a fost depusă în numele clientului de %s."
+
+msgid "The withdrawal form is not currently available. Please contact the store."
+msgstr "Formularul de retragere nu este disponibil momentan. Te rugăm să contactezi magazinul."
+
+msgid "Your withdrawal has been submitted. A confirmation has been sent to your email."
+msgstr "Retragerea ta a fost depusă. O confirmare a fost trimisă pe email."
+
+msgid "Your session has expired. Please start the lookup again."
+msgstr "Sesiunea ta a expirat. Te rugăm să reiei căutarea."
+
+msgid "Order not found."
+msgstr "Comanda nu a fost găsită."
+
+msgid "Order number or email is missing or invalid."
+msgstr "Numărul comenzii sau emailul lipsește ori este nevalid."
+
+msgid "We could not find an order with the provided details."
+msgstr "Nu am putut găsi o comandă cu datele furnizate."
+
+msgid "Too many attempts. Please wait a few minutes and try again."
+msgstr "Prea multe încercări. Te rugăm să aștepți câteva minute și să încerci din nou."
+
+msgid "Security check failed. Please try again."
+msgstr "Verificarea de securitate a eșuat. Te rugăm să încerci din nou."
+
+msgid "Enter your order number and the email address used when placing the order to continue."
+msgstr "Pentru a continua, introdu numărul comenzii și adresa de email folosită la plasarea comenzii."
+
+msgid "Billing email"
+msgstr "Email facturare"
+
+msgid "Continue"
+msgstr "Continuă"
+
+msgid "Withdrawal cooling-off"
+msgstr "Perioadă de retragere"
+
+msgid "Date of delivery"
+msgstr "Data livrării"
+
+msgid "Date the customer received the goods. Used as the reference date for the cooling-off period (leave empty to use the order completion date)."
+msgstr "Data la care clientul a primit bunurile. Folosită ca dată de referință pentru perioada de retragere (lasă gol pentru a folosi data finalizării comenzii)."
+
+msgid "Cooling-off ends:"
+msgstr "Perioada se încheie:"
+
+#. translators: %d: number of days remaining
+msgid "%d day remaining"
+msgid_plural "%d days remaining"
+msgstr[0] "a mai rămas %d zi"
+msgstr[1] "au mai rămas %d zile"
+msgstr[2] "au mai rămas %d de zile"
+
+msgid "expired"
+msgstr "expirat"
+
+msgid "Withdrawal submitted:"
+msgstr "Retragere depusă:"
+
+msgid "Resolved:"
+msgstr "Rezolvat:"
+
+msgid "Use the Order actions box to mark this withdrawal as resolved."
+msgstr "Folosește caseta Acțiuni comandă pentru a marca această retragere ca rezolvată."
+
+msgid "guest form"
+msgstr "formular vizitator"
+
+msgid "admin"
+msgstr "admin"
+
+msgid "customer account"
+msgstr "cont client"
+
+msgid "Mark withdrawal as resolved"
+msgstr "Marchează retragerea ca rezolvată"
+
+msgid "Submit withdrawal on behalf of customer"
+msgstr "Depune retragerea în numele clientului"
+
+msgid "Withdrawals"
+msgstr "Retrageri"
+
+msgid "Export CSV"
+msgstr "Export CSV"
+
+msgid "Search"
+msgstr "Caută"
+
+msgid "All"
+msgstr "Toate"
+
+msgid "Pending"
+msgstr "În așteptare"
+
+msgid "Resolved"
+msgstr "Rezolvate"
+
+msgid "From"
+msgstr "De la"
+
+msgid "To"
+msgstr "Până la"
+
+msgid "Filter"
+msgstr "Filtrează"
+
+msgid "Submitted"
+msgstr "Depusă"
+
+msgid "Source"
+msgstr "Sursă"
+
+msgid "Status"
+msgstr "Stare"
+
+msgid "Mark as resolved"
+msgstr "Marchează ca rezolvată"
+
+msgid "Resolve"
+msgstr "Rezolvă"
+
+msgid "guest"
+msgstr "vizitator"
+
+msgid "customer"
+msgstr "client"
+
+#. translators: %d: number of withdrawals resolved
+msgid "%d withdrawal marked as resolved."
+msgid_plural "%d withdrawals marked as resolved."
+msgstr[0] "%d retragere marcată ca rezolvată."
+msgstr[1] "%d retrageri marcate ca rezolvate."
+msgstr[2] "%d de retrageri marcate ca rezolvate."
+
+msgid "You do not have permission to do this."
+msgstr "Nu ai permisiunea de a face acest lucru."
+
+msgid "This order does not have a pending withdrawal."
+msgstr "Această comandă nu are o retragere în așteptare."
+
+msgid "This withdrawal has already been resolved."
+msgstr "Această retragere a fost deja rezolvată."
+
+msgid "Guest withdrawal form"
+msgstr "Formular de retragere pentru vizitatori"
+
+msgid "Enable shortcode for non-logged-in customers"
+msgstr "Activează shortcode-ul pentru clienții neautentificați"
+
+#. translators: %s: shortcode wrapped in <code>
+msgid "Place %s on any page (e.g. a public landing page). The form will ask for an order number and the billing email, then show the withdrawal form."
+msgstr "Plasează %s pe orice pagină (ex. o pagină publică de tip landing). Formularul va cere un număr de comandă și adresa de email de facturare, apoi va afișa formularul de retragere."

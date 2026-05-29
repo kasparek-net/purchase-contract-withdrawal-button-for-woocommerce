@@ -1,0 +1,437 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Purchase Contract Withdrawal Button for WooCommerce 1.3.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-25 10:00+0000\n"
+"PO-Revision-Date: 2026-05-29 12:00+0000\n"
+"Last-Translator: Jakub Kašpárek\n"
+"Language-Team: Finnish\n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Domain: purchase-contract-withdrawal-button-for-woocommerce\n"
+
+msgid "Purchase Contract Withdrawal Button for WooCommerce requires WooCommerce to be installed and active."
+msgstr "Purchase Contract Withdrawal Button for WooCommerce -lisäosa edellyttää, että WooCommerce on asennettu ja käytössä."
+
+msgid "Settings"
+msgstr "Asetukset"
+
+msgid "Withdraw from purchase contract"
+msgstr "Peruuta ostosopimus"
+
+msgid "This order is no longer eligible for withdrawal (the cooling-off period has expired, or a withdrawal has already been submitted)."
+msgstr "Tämän tilauksen peruuttaminen ei ole enää mahdollista (peruuttamisaika on päättynyt tai peruutus on jo tehty)."
+
+msgid "Back to order"
+msgstr "Takaisin tilaukseen"
+
+msgid "Your withdrawal has been submitted. A confirmation has been sent to your email. We will be in touch with return instructions."
+msgstr "Peruutuksesi on lähetetty. Vahvistus on lähetetty sähköpostiisi. Otamme sinuun yhteyttä palautusohjeiden kanssa."
+
+msgid "Withdrawal has been submitted"
+msgstr "Peruutus on lähetetty"
+
+#. translators: %s: submission date
+msgid "on %s."
+msgstr "päivämäärällä %s."
+
+#. translators: %s: admin email address
+msgid "If you have any questions, contact us at %s."
+msgstr "Jos sinulla on kysyttävää, ota yhteyttä osoitteeseen %s."
+
+msgid "You must be logged in to submit a withdrawal."
+msgstr "Sinun on oltava kirjautuneena lähettääksesi peruutuksen."
+
+msgid "Invalid order."
+msgstr "Virheellinen tilaus."
+
+msgid "Security check failed. Please go back and try again."
+msgstr "Turvatarkistus epäonnistui. Palaa takaisin ja yritä uudelleen."
+
+msgid "You are not authorized to access this order."
+msgstr "Sinulla ei ole oikeutta käyttää tätä tilausta."
+
+msgid "You must check the confirmation box to submit a withdrawal."
+msgstr "Sinun on valittava vahvistusruutu lähettääksesi peruutuksen."
+
+msgid "This order is no longer eligible for withdrawal."
+msgstr "Tämän tilauksen peruuttaminen ei ole enää mahdollista."
+
+msgid "Customer submitted a withdrawal from the purchase contract."
+msgstr "Asiakas on peruuttanut ostosopimuksen."
+
+#. translators: %s: customer-provided reason
+msgid "Reason: %s"
+msgstr "Syy: %s"
+
+#. translators: %s: bank account for refund
+msgid "Refund account: %s"
+msgstr "Palautuksen tili: %s"
+
+msgid "Customer submitted withdrawal from purchase contract."
+msgstr "Asiakas on peruuttanut ostosopimuksen."
+
+msgid "Withdrawal confirmation (customer)"
+msgstr "Peruutusvahvistus (asiakas)"
+
+msgid "Sent to the customer after they submit a withdrawal from a purchase contract."
+msgstr "Lähetetään asiakkaalle, kun hän on peruuttanut ostosopimuksen."
+
+msgid "[{site_title}] Withdrawal confirmation — order #{order_number}"
+msgstr "[{site_title}] Peruutusvahvistus — tilaus #{order_number}"
+
+msgid "Withdrawal confirmation"
+msgstr "Peruutusvahvistus"
+
+msgid "If you have any questions about your withdrawal, please reply to this email."
+msgstr "Jos sinulla on kysyttävää peruutuksestasi, vastaa tähän sähköpostiin."
+
+msgid "Withdrawal notification (admin)"
+msgstr "Peruutusilmoitus (ylläpitäjä)"
+
+msgid "Sent to the store administrator when a customer submits a withdrawal."
+msgstr "Lähetetään verkkokaupan ylläpitäjälle, kun asiakas tekee peruutuksen."
+
+msgid "[{site_title}] New withdrawal request — order #{order_number}"
+msgstr "[{site_title}] Uusi peruutuspyyntö — tilaus #{order_number}"
+
+msgid "New withdrawal request"
+msgstr "Uusi peruutuspyyntö"
+
+msgid "Enable/Disable"
+msgstr "Ota käyttöön / Poista käytöstä"
+
+msgid "Enable this email notification"
+msgstr "Ota tämä sähköposti-ilmoitus käyttöön"
+
+msgid "Recipient(s)"
+msgstr "Vastaanottaja(t)"
+
+#. translators: %s: admin email
+msgid "Enter recipients (comma separated). Defaults to %s."
+msgstr "Anna vastaanottajat (pilkulla erotettuina). Oletus: %s."
+
+msgid "Subject"
+msgstr "Aihe"
+
+msgid "Placeholders: %s"
+msgstr "Paikkamerkit: %s"
+
+msgid "Email heading"
+msgstr "Sähköpostin otsikko"
+
+msgid "Email type"
+msgstr "Sähköpostin tyyppi"
+
+msgid "Choose which format of email to send."
+msgstr "Valitse, missä muodossa sähköposti lähetetään."
+
+msgid "Purchase Contract Withdrawal Button for WooCommerce"
+msgstr "Ostosopimuksen peruutuspainike"
+
+msgid "Withdrawal Button"
+msgstr "Peruutuspainike"
+
+#. translators: %s: WooCommerce email settings URL
+msgid "Customer and admin email templates can be customized in %s."
+msgstr "Asiakas- ja ylläpitäjäsähköpostien mallit voi muokata kohdassa %s."
+
+msgid "WooCommerce → Settings → Emails"
+msgstr "WooCommerce → Asetukset → Sähköpostit"
+
+msgid "Cooling-off period (days)"
+msgstr "Peruuttamisaika (päivää)"
+
+msgid "How long after the reference date (order completion) the withdrawal button stays visible. EU standard is 14 days."
+msgstr "Kuinka kauan viitepäivän (tilauksen valmistumisen) jälkeen peruutuspainike pysyy näkyvissä. EU:n standardi on 14 päivää."
+
+msgid "Eligible order statuses"
+msgstr "Sallitut tilauksen tilat"
+
+msgid "The button is shown only for orders in one of these statuses."
+msgstr "Painike näytetään vain tilauksille, jotka ovat jossakin näistä tiloista."
+
+msgid "Admin email recipient"
+msgstr "Ylläpitäjän sähköpostin vastaanottaja"
+
+#. translators: %s: admin email
+msgid "Leave empty to use the site admin email (%s)."
+msgstr "Jätä tyhjäksi käyttääksesi sivuston ylläpitäjän sähköpostia (%s)."
+
+msgid "Status after submission"
+msgstr "Tila peruutuksen jälkeen"
+
+msgid "Order status applied automatically after the customer submits a withdrawal."
+msgstr "Tilauksen tila, joka asetetaan automaattisesti, kun asiakas tekee peruutuksen."
+
+msgid "Withdrawal from purchase contract"
+msgstr "Ostosopimuksen peruuttaminen"
+
+#. translators: 1: order number, 2: deadline date
+msgid "Complete the form below to withdraw from purchase contract no. %1$s. The cooling-off period ends on %2$s."
+msgstr "Täytä alla oleva lomake peruuttaaksesi ostosopimuksen nro %1$s. Peruuttamisaika päättyy %2$s."
+
+msgid "Order number"
+msgstr "Tilausnumero"
+
+msgid "Order date"
+msgstr "Tilauspäivä"
+
+msgid "Customer"
+msgstr "Asiakas"
+
+msgid "Address"
+msgstr "Osoite"
+
+msgid "Email"
+msgstr "Sähköposti"
+
+msgid "Total"
+msgstr "Yhteensä"
+
+msgid "Bank account for refund"
+msgstr "Pankkitili palautusta varten"
+
+msgid "(optional — leave empty to refund to the original payment method)"
+msgstr "(valinnainen — jätä tyhjäksi palauttaaksesi alkuperäiselle maksutavalle)"
+
+msgid "Reason for withdrawal"
+msgstr "Peruutuksen syy"
+
+msgid "(optional)"
+msgstr "(valinnainen)"
+
+msgid "I confirm that I am withdrawing from the purchase contract"
+msgstr "Vahvistan, että peruutan ostosopimuksen"
+
+msgid "and I understand that I must return the purchased goods within 14 days of submitting this withdrawal. The refund will be issued after the returned goods are received."
+msgstr "ja ymmärrän, että minun on palautettava ostetut tavarat 14 päivän kuluessa tämän peruutuksen lähettämisestä. Palautus suoritetaan, kun palautetut tavarat on vastaanotettu."
+
+msgid "Confirm withdrawal"
+msgstr "Vahvista peruutus"
+
+msgid "Cancel"
+msgstr "Peruuta"
+
+msgid "Hello,"
+msgstr "Hei,"
+
+#. translators: 1: order number, 2: order date
+msgid "We have received your withdrawal from the purchase contract for order no. %1$s placed on %2$s."
+msgstr "Olemme vastaanottaneet ostosopimuksen peruutuksesi tilaukselle nro %1$s, joka on tehty %2$s."
+
+msgid "Next steps"
+msgstr "Seuraavat vaiheet"
+
+msgid "Next steps:"
+msgstr "Seuraavat vaiheet:"
+
+msgid "Please return the goods to our address within 14 days of submitting this withdrawal."
+msgstr "Palauta tavarat osoitteeseemme 14 päivän kuluessa tämän peruutuksen lähettämisestä."
+
+msgid "We recommend shipping with tracking and insurance."
+msgstr "Suosittelemme lähettämistä seurannalla ja vakuutuksella."
+
+#. translators: %s: total amount
+msgid "Once we receive the goods we will refund the paid amount (%s) within 14 days."
+msgstr "Kun olemme vastaanottaneet tavarat, palautamme maksetun summan (%s) 14 päivän kuluessa."
+
+msgid "A customer has submitted a withdrawal from a purchase contract."
+msgstr "Asiakas on peruuttanut ostosopimuksen."
+
+msgid "Order"
+msgstr "Tilaus"
+
+msgid "Phone"
+msgstr "Puhelin"
+
+msgid "Completion date"
+msgstr "Valmistumispäivä"
+
+msgid "Refund account"
+msgstr "Palautustili"
+
+msgid "Original payment method"
+msgstr "Alkuperäinen maksutapa"
+
+msgid "Reason"
+msgstr "Syy"
+
+msgid "(not provided)"
+msgstr "(ei annettu)"
+
+msgid "View order:"
+msgstr "Näytä tilaus:"
+
+# === 1.2.0 strings ===
+
+msgid "A withdrawal has already been submitted for this order."
+msgstr "Tälle tilaukselle on jo lähetetty peruutus."
+
+msgid "an administrator"
+msgstr "ylläpitäjä"
+
+msgid "Customer (guest) submitted a withdrawal from the purchase contract."
+msgstr "Asiakas (vieras) on peruuttanut ostosopimuksen."
+
+#. translators: %s: admin display name
+msgid "Withdrawal marked as resolved by %s."
+msgstr "Käyttäjä %s merkitsi peruutuksen ratkaistuksi."
+
+#. translators: %s: admin display name
+msgid "Withdrawal submitted on behalf of the customer by %s."
+msgstr "Käyttäjä %s teki peruutuksen asiakkaan puolesta."
+
+msgid "The withdrawal form is not currently available. Please contact the store."
+msgstr "Peruutuslomake ei ole tällä hetkellä saatavilla. Ota yhteyttä verkkokauppaan."
+
+msgid "Your withdrawal has been submitted. A confirmation has been sent to your email."
+msgstr "Peruutuksesi on lähetetty. Vahvistus on lähetetty sähköpostiisi."
+
+msgid "Your session has expired. Please start the lookup again."
+msgstr "Istuntosi on vanhentunut. Aloita haku uudelleen."
+
+msgid "Order not found."
+msgstr "Tilausta ei löytynyt."
+
+msgid "Order number or email is missing or invalid."
+msgstr "Tilausnumero tai sähköposti puuttuu tai on virheellinen."
+
+msgid "We could not find an order with the provided details."
+msgstr "Annetuilla tiedoilla ei löytynyt tilausta."
+
+msgid "Too many attempts. Please wait a few minutes and try again."
+msgstr "Liian monta yritystä. Odota muutama minuutti ja yritä uudelleen."
+
+msgid "Security check failed. Please try again."
+msgstr "Turvatarkistus epäonnistui. Yritä uudelleen."
+
+msgid "Enter your order number and the email address used when placing the order to continue."
+msgstr "Jatkaaksesi anna tilausnumerosi ja tilauksen tekemisessä käyttämäsi sähköpostiosoite."
+
+msgid "Billing email"
+msgstr "Laskutussähköposti"
+
+msgid "Continue"
+msgstr "Jatka"
+
+msgid "Withdrawal cooling-off"
+msgstr "Peruuttamisaika"
+
+msgid "Date of delivery"
+msgstr "Toimituspäivä"
+
+msgid "Date the customer received the goods. Used as the reference date for the cooling-off period (leave empty to use the order completion date)."
+msgstr "Päivä, jolloin asiakas vastaanotti tavarat. Käytetään peruuttamisajan viitepäivänä (jätä tyhjäksi käyttääksesi tilauksen valmistumispäivää)."
+
+msgid "Cooling-off ends:"
+msgstr "Peruuttamisaika päättyy:"
+
+#. translators: %d: number of days remaining
+msgid "%d day remaining"
+msgid_plural "%d days remaining"
+msgstr[0] "%d päivä jäljellä"
+msgstr[1] "%d päivää jäljellä"
+
+msgid "expired"
+msgstr "päättynyt"
+
+msgid "Withdrawal submitted:"
+msgstr "Peruutus lähetetty:"
+
+msgid "Resolved:"
+msgstr "Ratkaistu:"
+
+msgid "Use the Order actions box to mark this withdrawal as resolved."
+msgstr "Käytä Tilauksen toiminnot -laatikkoa merkitäksesi tämän peruutuksen ratkaistuksi."
+
+msgid "guest form"
+msgstr "vieraslomake"
+
+msgid "admin"
+msgstr "ylläpitäjä"
+
+msgid "customer account"
+msgstr "asiakastili"
+
+msgid "Mark withdrawal as resolved"
+msgstr "Merkitse peruutus ratkaistuksi"
+
+msgid "Submit withdrawal on behalf of customer"
+msgstr "Lähetä peruutus asiakkaan puolesta"
+
+msgid "Withdrawals"
+msgstr "Peruutukset"
+
+msgid "Export CSV"
+msgstr "Vie CSV"
+
+msgid "Search"
+msgstr "Hae"
+
+msgid "All"
+msgstr "Kaikki"
+
+msgid "Pending"
+msgstr "Odottavat"
+
+msgid "Resolved"
+msgstr "Ratkaistut"
+
+msgid "From"
+msgstr "Alkaen"
+
+msgid "To"
+msgstr "Asti"
+
+msgid "Filter"
+msgstr "Suodata"
+
+msgid "Submitted"
+msgstr "Lähetetty"
+
+msgid "Source"
+msgstr "Lähde"
+
+msgid "Status"
+msgstr "Tila"
+
+msgid "Mark as resolved"
+msgstr "Merkitse ratkaistuksi"
+
+msgid "Resolve"
+msgstr "Ratkaise"
+
+msgid "guest"
+msgstr "vieras"
+
+msgid "customer"
+msgstr "asiakas"
+
+#. translators: %d: number of withdrawals resolved
+msgid "%d withdrawal marked as resolved."
+msgid_plural "%d withdrawals marked as resolved."
+msgstr[0] "%d peruutus merkitty ratkaistuksi."
+msgstr[1] "%d peruutusta merkitty ratkaistuiksi."
+
+msgid "You do not have permission to do this."
+msgstr "Sinulla ei ole oikeutta tähän toimintoon."
+
+msgid "This order does not have a pending withdrawal."
+msgstr "Tällä tilauksella ei ole odottavaa peruutusta."
+
+msgid "This withdrawal has already been resolved."
+msgstr "Tämä peruutus on jo ratkaistu."
+
+msgid "Guest withdrawal form"
+msgstr "Peruutuslomake vieraille"
+
+msgid "Enable shortcode for non-logged-in customers"
+msgstr "Ota shortcode käyttöön kirjautumattomille asiakkaille"
+
+#. translators: %s: shortcode wrapped in <code>
+msgid "Place %s on any page (e.g. a public landing page). The form will ask for an order number and the billing email, then show the withdrawal form."
+msgstr "Lisää %s mille tahansa sivulle (esim. julkiselle laskeutumissivulle). Lomake kysyy tilausnumeroa ja laskutussähköpostia ja näyttää sen jälkeen peruutuslomakkeen."

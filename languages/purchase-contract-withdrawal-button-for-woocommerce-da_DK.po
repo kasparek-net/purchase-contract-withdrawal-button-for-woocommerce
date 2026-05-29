@@ -1,0 +1,437 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Purchase Contract Withdrawal Button for WooCommerce 1.3.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-25 10:00+0000\n"
+"PO-Revision-Date: 2026-05-29 12:00+0000\n"
+"Last-Translator: Jakub Kašpárek\n"
+"Language-Team: Danish\n"
+"Language: da_DK\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Domain: purchase-contract-withdrawal-button-for-woocommerce\n"
+
+msgid "Purchase Contract Withdrawal Button for WooCommerce requires WooCommerce to be installed and active."
+msgstr "Purchase Contract Withdrawal Button for WooCommerce kræver, at WooCommerce er installeret og aktiveret."
+
+msgid "Settings"
+msgstr "Indstillinger"
+
+msgid "Withdraw from purchase contract"
+msgstr "Træd tilbage fra købsaftalen"
+
+msgid "This order is no longer eligible for withdrawal (the cooling-off period has expired, or a withdrawal has already been submitted)."
+msgstr "Denne ordre kan ikke længere fortrydes (fortrydelsesfristen er udløbet, eller en fortrydelse er allerede indsendt)."
+
+msgid "Back to order"
+msgstr "Tilbage til ordren"
+
+msgid "Your withdrawal has been submitted. A confirmation has been sent to your email. We will be in touch with return instructions."
+msgstr "Din fortrydelse er indsendt. En bekræftelse er sendt til din e-mail. Vi kontakter dig med returinstruktioner."
+
+msgid "Withdrawal has been submitted"
+msgstr "Fortrydelse er indsendt"
+
+#. translators: %s: submission date
+msgid "on %s."
+msgstr "den %s."
+
+#. translators: %s: admin email address
+msgid "If you have any questions, contact us at %s."
+msgstr "Hvis du har spørgsmål, kontakt os på %s."
+
+msgid "You must be logged in to submit a withdrawal."
+msgstr "Du skal være logget ind for at indsende en fortrydelse."
+
+msgid "Invalid order."
+msgstr "Ugyldig ordre."
+
+msgid "Security check failed. Please go back and try again."
+msgstr "Sikkerhedstjekket mislykkedes. Gå tilbage og prøv igen."
+
+msgid "You are not authorized to access this order."
+msgstr "Du har ikke adgang til denne ordre."
+
+msgid "You must check the confirmation box to submit a withdrawal."
+msgstr "Du skal markere bekræftelsesfeltet for at indsende en fortrydelse."
+
+msgid "This order is no longer eligible for withdrawal."
+msgstr "Denne ordre kan ikke længere fortrydes."
+
+msgid "Customer submitted a withdrawal from the purchase contract."
+msgstr "Kunden har indsendt en fortrydelse af købsaftalen."
+
+#. translators: %s: customer-provided reason
+msgid "Reason: %s"
+msgstr "Årsag: %s"
+
+#. translators: %s: bank account for refund
+msgid "Refund account: %s"
+msgstr "Konto til refundering: %s"
+
+msgid "Customer submitted withdrawal from purchase contract."
+msgstr "Kunden har indsendt fortrydelse af købsaftalen."
+
+msgid "Withdrawal confirmation (customer)"
+msgstr "Fortrydelsesbekræftelse (kunde)"
+
+msgid "Sent to the customer after they submit a withdrawal from a purchase contract."
+msgstr "Sendes til kunden efter indsendelse af en fortrydelse af en købsaftale."
+
+msgid "[{site_title}] Withdrawal confirmation — order #{order_number}"
+msgstr "[{site_title}] Fortrydelsesbekræftelse — ordre #{order_number}"
+
+msgid "Withdrawal confirmation"
+msgstr "Fortrydelsesbekræftelse"
+
+msgid "If you have any questions about your withdrawal, please reply to this email."
+msgstr "Hvis du har spørgsmål om din fortrydelse, så svar venligst på denne e-mail."
+
+msgid "Withdrawal notification (admin)"
+msgstr "Fortrydelsesmeddelelse (admin)"
+
+msgid "Sent to the store administrator when a customer submits a withdrawal."
+msgstr "Sendes til butiksadministratoren, når en kunde indsender en fortrydelse."
+
+msgid "[{site_title}] New withdrawal request — order #{order_number}"
+msgstr "[{site_title}] Ny fortrydelsesanmodning — ordre #{order_number}"
+
+msgid "New withdrawal request"
+msgstr "Ny fortrydelsesanmodning"
+
+msgid "Enable/Disable"
+msgstr "Aktivér/deaktivér"
+
+msgid "Enable this email notification"
+msgstr "Aktivér denne e-mailnotifikation"
+
+msgid "Recipient(s)"
+msgstr "Modtager(e)"
+
+#. translators: %s: admin email
+msgid "Enter recipients (comma separated). Defaults to %s."
+msgstr "Indtast modtagere (adskilt med komma). Standard: %s."
+
+msgid "Subject"
+msgstr "Emne"
+
+msgid "Placeholders: %s"
+msgstr "Pladsholdere: %s"
+
+msgid "Email heading"
+msgstr "E-mailoverskrift"
+
+msgid "Email type"
+msgstr "E-mailtype"
+
+msgid "Choose which format of email to send."
+msgstr "Vælg hvilket format e-mailen skal sendes i."
+
+msgid "Purchase Contract Withdrawal Button for WooCommerce"
+msgstr "Fortrydelsesknap til købsaftale"
+
+msgid "Withdrawal Button"
+msgstr "Fortrydelsesknap"
+
+#. translators: %s: WooCommerce email settings URL
+msgid "Customer and admin email templates can be customized in %s."
+msgstr "Skabeloner for kunde- og administrator-e-mails kan tilpasses i %s."
+
+msgid "WooCommerce → Settings → Emails"
+msgstr "WooCommerce → Indstillinger → E-mails"
+
+msgid "Cooling-off period (days)"
+msgstr "Fortrydelsesfrist (dage)"
+
+msgid "How long after the reference date (order completion) the withdrawal button stays visible. EU standard is 14 days."
+msgstr "Hvor længe efter referencedatoen (ordreafslutning) fortrydelsesknappen er synlig. EU-standard er 14 dage."
+
+msgid "Eligible order statuses"
+msgstr "Berettigede ordrestatusser"
+
+msgid "The button is shown only for orders in one of these statuses."
+msgstr "Knappen vises kun for ordrer i en af disse statusser."
+
+msgid "Admin email recipient"
+msgstr "Modtager af admin-e-mail"
+
+#. translators: %s: admin email
+msgid "Leave empty to use the site admin email (%s)."
+msgstr "Lad være tom for at bruge sitets administrator-e-mail (%s)."
+
+msgid "Status after submission"
+msgstr "Status efter indsendelse"
+
+msgid "Order status applied automatically after the customer submits a withdrawal."
+msgstr "Ordrestatus, der automatisk tildeles, efter at kunden har indsendt en fortrydelse."
+
+msgid "Withdrawal from purchase contract"
+msgstr "Fortrydelse af købsaftale"
+
+#. translators: 1: order number, 2: deadline date
+msgid "Complete the form below to withdraw from purchase contract no. %1$s. The cooling-off period ends on %2$s."
+msgstr "Udfyld formularen nedenfor for at træde tilbage fra købsaftale nr. %1$s. Fortrydelsesfristen udløber den %2$s."
+
+msgid "Order number"
+msgstr "Ordrenummer"
+
+msgid "Order date"
+msgstr "Ordredato"
+
+msgid "Customer"
+msgstr "Kunde"
+
+msgid "Address"
+msgstr "Adresse"
+
+msgid "Email"
+msgstr "E-mail"
+
+msgid "Total"
+msgstr "Total"
+
+msgid "Bank account for refund"
+msgstr "Bankkonto til refundering"
+
+msgid "(optional — leave empty to refund to the original payment method)"
+msgstr "(valgfrit — lad være tom for at refundere til den oprindelige betalingsmetode)"
+
+msgid "Reason for withdrawal"
+msgstr "Årsag til fortrydelse"
+
+msgid "(optional)"
+msgstr "(valgfrit)"
+
+msgid "I confirm that I am withdrawing from the purchase contract"
+msgstr "Jeg bekræfter, at jeg træder tilbage fra købsaftalen"
+
+msgid "and I understand that I must return the purchased goods within 14 days of submitting this withdrawal. The refund will be issued after the returned goods are received."
+msgstr "og jeg forstår, at jeg skal returnere de købte varer inden for 14 dage efter indsendelse af denne fortrydelse. Refunderingen vil ske, efter at de returnerede varer er modtaget."
+
+msgid "Confirm withdrawal"
+msgstr "Bekræft fortrydelse"
+
+msgid "Cancel"
+msgstr "Annullér"
+
+msgid "Hello,"
+msgstr "Hej,"
+
+#. translators: 1: order number, 2: order date
+msgid "We have received your withdrawal from the purchase contract for order no. %1$s placed on %2$s."
+msgstr "Vi har modtaget din fortrydelse af købsaftalen for ordre nr. %1$s afgivet den %2$s."
+
+msgid "Next steps"
+msgstr "Næste skridt"
+
+msgid "Next steps:"
+msgstr "Næste skridt:"
+
+msgid "Please return the goods to our address within 14 days of submitting this withdrawal."
+msgstr "Returnér venligst varerne til vores adresse inden for 14 dage efter indsendelse af denne fortrydelse."
+
+msgid "We recommend shipping with tracking and insurance."
+msgstr "Vi anbefaler forsendelse med sporing og forsikring."
+
+#. translators: %s: total amount
+msgid "Once we receive the goods we will refund the paid amount (%s) within 14 days."
+msgstr "Når vi modtager varerne, refunderer vi det betalte beløb (%s) inden for 14 dage."
+
+msgid "A customer has submitted a withdrawal from a purchase contract."
+msgstr "En kunde har indsendt en fortrydelse af en købsaftale."
+
+msgid "Order"
+msgstr "Ordre"
+
+msgid "Phone"
+msgstr "Telefon"
+
+msgid "Completion date"
+msgstr "Afslutningsdato"
+
+msgid "Refund account"
+msgstr "Konto til refundering"
+
+msgid "Original payment method"
+msgstr "Oprindelig betalingsmetode"
+
+msgid "Reason"
+msgstr "Årsag"
+
+msgid "(not provided)"
+msgstr "(ikke angivet)"
+
+msgid "View order:"
+msgstr "Se ordre:"
+
+# === 1.2.0 strings ===
+
+msgid "A withdrawal has already been submitted for this order."
+msgstr "Der er allerede indsendt en fortrydelse for denne ordre."
+
+msgid "an administrator"
+msgstr "en administrator"
+
+msgid "Customer (guest) submitted a withdrawal from the purchase contract."
+msgstr "Kunde (gæst) har indsendt en fortrydelse af købsaftalen."
+
+#. translators: %s: admin display name
+msgid "Withdrawal marked as resolved by %s."
+msgstr "Fortrydelse markeret som behandlet af %s."
+
+#. translators: %s: admin display name
+msgid "Withdrawal submitted on behalf of the customer by %s."
+msgstr "Fortrydelse indsendt på vegne af kunden af %s."
+
+msgid "The withdrawal form is not currently available. Please contact the store."
+msgstr "Fortrydelsesformularen er ikke tilgængelig i øjeblikket. Kontakt venligst butikken."
+
+msgid "Your withdrawal has been submitted. A confirmation has been sent to your email."
+msgstr "Din fortrydelse er indsendt. En bekræftelse er sendt til din e-mail."
+
+msgid "Your session has expired. Please start the lookup again."
+msgstr "Din session er udløbet. Start opslaget forfra."
+
+msgid "Order not found."
+msgstr "Ordren blev ikke fundet."
+
+msgid "Order number or email is missing or invalid."
+msgstr "Ordrenummer eller e-mail mangler eller er ugyldig."
+
+msgid "We could not find an order with the provided details."
+msgstr "Vi kunne ikke finde en ordre med de angivne oplysninger."
+
+msgid "Too many attempts. Please wait a few minutes and try again."
+msgstr "For mange forsøg. Vent et par minutter og prøv igen."
+
+msgid "Security check failed. Please try again."
+msgstr "Sikkerhedstjekket mislykkedes. Prøv igen."
+
+msgid "Enter your order number and the email address used when placing the order to continue."
+msgstr "Indtast dit ordrenummer og den e-mailadresse, du brugte ved afgivelsen af ordren, for at fortsætte."
+
+msgid "Billing email"
+msgstr "Faktureringse-mail"
+
+msgid "Continue"
+msgstr "Fortsæt"
+
+msgid "Withdrawal cooling-off"
+msgstr "Fortrydelsesfrist"
+
+msgid "Date of delivery"
+msgstr "Leveringsdato"
+
+msgid "Date the customer received the goods. Used as the reference date for the cooling-off period (leave empty to use the order completion date)."
+msgstr "Dato hvor kunden modtog varerne. Bruges som referencedato for fortrydelsesfristen (lad være tom for at bruge ordreafslutningsdatoen)."
+
+msgid "Cooling-off ends:"
+msgstr "Fortrydelsesfrist udløber:"
+
+#. translators: %d: number of days remaining
+msgid "%d day remaining"
+msgid_plural "%d days remaining"
+msgstr[0] "%d dag tilbage"
+msgstr[1] "%d dage tilbage"
+
+msgid "expired"
+msgstr "udløbet"
+
+msgid "Withdrawal submitted:"
+msgstr "Fortrydelse indsendt:"
+
+msgid "Resolved:"
+msgstr "Behandlet:"
+
+msgid "Use the Order actions box to mark this withdrawal as resolved."
+msgstr "Brug boksen Ordrehandlinger for at markere denne fortrydelse som behandlet."
+
+msgid "guest form"
+msgstr "gæsteformular"
+
+msgid "admin"
+msgstr "admin"
+
+msgid "customer account"
+msgstr "kundekonto"
+
+msgid "Mark withdrawal as resolved"
+msgstr "Markér fortrydelse som behandlet"
+
+msgid "Submit withdrawal on behalf of customer"
+msgstr "Indsend fortrydelse på vegne af kunden"
+
+msgid "Withdrawals"
+msgstr "Fortrydelser"
+
+msgid "Export CSV"
+msgstr "Eksportér CSV"
+
+msgid "Search"
+msgstr "Søg"
+
+msgid "All"
+msgstr "Alle"
+
+msgid "Pending"
+msgstr "Afventer"
+
+msgid "Resolved"
+msgstr "Behandlet"
+
+msgid "From"
+msgstr "Fra"
+
+msgid "To"
+msgstr "Til"
+
+msgid "Filter"
+msgstr "Filtrér"
+
+msgid "Submitted"
+msgstr "Indsendt"
+
+msgid "Source"
+msgstr "Kilde"
+
+msgid "Status"
+msgstr "Status"
+
+msgid "Mark as resolved"
+msgstr "Markér som behandlet"
+
+msgid "Resolve"
+msgstr "Behandl"
+
+msgid "guest"
+msgstr "gæst"
+
+msgid "customer"
+msgstr "kunde"
+
+#. translators: %d: number of withdrawals resolved
+msgid "%d withdrawal marked as resolved."
+msgid_plural "%d withdrawals marked as resolved."
+msgstr[0] "%d fortrydelse markeret som behandlet."
+msgstr[1] "%d fortrydelser markeret som behandlet."
+
+msgid "You do not have permission to do this."
+msgstr "Du har ikke tilladelse til at gøre dette."
+
+msgid "This order does not have a pending withdrawal."
+msgstr "Denne ordre har ingen afventende fortrydelse."
+
+msgid "This withdrawal has already been resolved."
+msgstr "Denne fortrydelse er allerede behandlet."
+
+msgid "Guest withdrawal form"
+msgstr "Fortrydelsesformular til gæster"
+
+msgid "Enable shortcode for non-logged-in customers"
+msgstr "Aktivér shortcode for kunder, der ikke er logget ind"
+
+#. translators: %s: shortcode wrapped in <code>
+msgid "Place %s on any page (e.g. a public landing page). The form will ask for an order number and the billing email, then show the withdrawal form."
+msgstr "Placér %s på en hvilken som helst side (f.eks. en offentlig landingsside). Formularen beder om et ordrenummer og faktureringse-mailen og viser derefter fortrydelsesformularen."

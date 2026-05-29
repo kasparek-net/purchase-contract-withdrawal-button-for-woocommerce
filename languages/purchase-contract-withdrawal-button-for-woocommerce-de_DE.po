@@ -1,0 +1,437 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Purchase Contract Withdrawal Button for WooCommerce 1.3.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-25 10:00+0000\n"
+"PO-Revision-Date: 2026-05-29 12:00+0000\n"
+"Last-Translator: Jakub Kašpárek\n"
+"Language-Team: German\n"
+"Language: de_DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Domain: purchase-contract-withdrawal-button-for-woocommerce\n"
+
+msgid "Purchase Contract Withdrawal Button for WooCommerce requires WooCommerce to be installed and active."
+msgstr "Das Plugin Purchase Contract Withdrawal Button for WooCommerce erfordert ein installiertes und aktives WooCommerce."
+
+msgid "Settings"
+msgstr "Einstellungen"
+
+msgid "Withdraw from purchase contract"
+msgstr "Vom Kaufvertrag zurücktreten"
+
+msgid "This order is no longer eligible for withdrawal (the cooling-off period has expired, or a withdrawal has already been submitted)."
+msgstr "Für diese Bestellung ist kein Widerruf mehr möglich (die Widerrufsfrist ist abgelaufen oder es wurde bereits ein Widerruf eingereicht)."
+
+msgid "Back to order"
+msgstr "Zurück zur Bestellung"
+
+msgid "Your withdrawal has been submitted. A confirmation has been sent to your email. We will be in touch with return instructions."
+msgstr "Ihr Widerruf wurde übermittelt. Eine Bestätigung wurde an Ihre E-Mail-Adresse gesendet. Wir melden uns in Kürze mit Anweisungen zur Rücksendung."
+
+msgid "Withdrawal has been submitted"
+msgstr "Widerruf wurde übermittelt"
+
+#. translators: %s: submission date
+msgid "on %s."
+msgstr "am %s."
+
+#. translators: %s: admin email address
+msgid "If you have any questions, contact us at %s."
+msgstr "Bei Fragen erreichen Sie uns unter %s."
+
+msgid "You must be logged in to submit a withdrawal."
+msgstr "Sie müssen angemeldet sein, um einen Widerruf einzureichen."
+
+msgid "Invalid order."
+msgstr "Ungültige Bestellung."
+
+msgid "Security check failed. Please go back and try again."
+msgstr "Sicherheitsprüfung fehlgeschlagen. Bitte gehen Sie zurück und versuchen Sie es erneut."
+
+msgid "You are not authorized to access this order."
+msgstr "Sie sind nicht berechtigt, auf diese Bestellung zuzugreifen."
+
+msgid "You must check the confirmation box to submit a withdrawal."
+msgstr "Sie müssen das Bestätigungskästchen aktivieren, um den Widerruf einzureichen."
+
+msgid "This order is no longer eligible for withdrawal."
+msgstr "Für diese Bestellung ist kein Widerruf mehr möglich."
+
+msgid "Customer submitted a withdrawal from the purchase contract."
+msgstr "Der Kunde hat einen Widerruf des Kaufvertrags eingereicht."
+
+#. translators: %s: customer-provided reason
+msgid "Reason: %s"
+msgstr "Grund: %s"
+
+#. translators: %s: bank account for refund
+msgid "Refund account: %s"
+msgstr "Rückerstattungskonto: %s"
+
+msgid "Customer submitted withdrawal from purchase contract."
+msgstr "Widerruf des Kaufvertrags durch den Kunden eingereicht."
+
+msgid "Withdrawal confirmation (customer)"
+msgstr "Widerrufsbestätigung (Kunde)"
+
+msgid "Sent to the customer after they submit a withdrawal from a purchase contract."
+msgstr "Wird an den Kunden gesendet, nachdem er einen Widerruf des Kaufvertrags eingereicht hat."
+
+msgid "[{site_title}] Withdrawal confirmation — order #{order_number}"
+msgstr "[{site_title}] Widerrufsbestätigung — Bestellung #{order_number}"
+
+msgid "Withdrawal confirmation"
+msgstr "Widerrufsbestätigung"
+
+msgid "If you have any questions about your withdrawal, please reply to this email."
+msgstr "Bei Fragen zu Ihrem Widerruf antworten Sie bitte auf diese E-Mail."
+
+msgid "Withdrawal notification (admin)"
+msgstr "Widerrufsbenachrichtigung (Admin)"
+
+msgid "Sent to the store administrator when a customer submits a withdrawal."
+msgstr "Wird an den Shop-Administrator gesendet, wenn ein Kunde einen Widerruf einreicht."
+
+msgid "[{site_title}] New withdrawal request — order #{order_number}"
+msgstr "[{site_title}] Neuer Widerruf — Bestellung #{order_number}"
+
+msgid "New withdrawal request"
+msgstr "Neuer Widerruf"
+
+msgid "Enable/Disable"
+msgstr "Aktivieren/Deaktivieren"
+
+msgid "Enable this email notification"
+msgstr "Diese E-Mail-Benachrichtigung aktivieren"
+
+msgid "Recipient(s)"
+msgstr "Empfänger"
+
+#. translators: %s: admin email
+msgid "Enter recipients (comma separated). Defaults to %s."
+msgstr "Empfänger eingeben (durch Komma getrennt). Standard: %s."
+
+msgid "Subject"
+msgstr "Betreff"
+
+msgid "Placeholders: %s"
+msgstr "Platzhalter: %s"
+
+msgid "Email heading"
+msgstr "E-Mail-Überschrift"
+
+msgid "Email type"
+msgstr "E-Mail-Typ"
+
+msgid "Choose which format of email to send."
+msgstr "Wählen Sie das Format der zu sendenden E-Mail."
+
+msgid "Purchase Contract Withdrawal Button for WooCommerce"
+msgstr "Widerrufsbutton für den Kaufvertrag"
+
+msgid "Withdrawal Button"
+msgstr "Widerrufsbutton"
+
+#. translators: %s: WooCommerce email settings URL
+msgid "Customer and admin email templates can be customized in %s."
+msgstr "Kunden- und Admin-E-Mail-Vorlagen können in %s angepasst werden."
+
+msgid "WooCommerce → Settings → Emails"
+msgstr "WooCommerce → Einstellungen → E-Mails"
+
+msgid "Cooling-off period (days)"
+msgstr "Widerrufsfrist (Tage)"
+
+msgid "How long after the reference date (order completion) the withdrawal button stays visible. EU standard is 14 days."
+msgstr "Wie lange nach dem Stichtag (Bestellabschluss) der Widerrufsbutton sichtbar bleibt. EU-Standard sind 14 Tage."
+
+msgid "Eligible order statuses"
+msgstr "Berechtigte Bestellstatus"
+
+msgid "The button is shown only for orders in one of these statuses."
+msgstr "Der Button wird nur für Bestellungen mit einem dieser Status angezeigt."
+
+msgid "Admin email recipient"
+msgstr "Admin-E-Mail-Empfänger"
+
+#. translators: %s: admin email
+msgid "Leave empty to use the site admin email (%s)."
+msgstr "Leer lassen, um die Admin-E-Mail der Website zu verwenden (%s)."
+
+msgid "Status after submission"
+msgstr "Status nach Einreichung"
+
+msgid "Order status applied automatically after the customer submits a withdrawal."
+msgstr "Bestellstatus, der automatisch nach Einreichung des Widerrufs durch den Kunden gesetzt wird."
+
+msgid "Withdrawal from purchase contract"
+msgstr "Widerruf des Kaufvertrags"
+
+#. translators: 1: order number, 2: deadline date
+msgid "Complete the form below to withdraw from purchase contract no. %1$s. The cooling-off period ends on %2$s."
+msgstr "Füllen Sie das folgende Formular aus, um vom Kaufvertrag Nr. %1$s zurückzutreten. Die Widerrufsfrist endet am %2$s."
+
+msgid "Order number"
+msgstr "Bestellnummer"
+
+msgid "Order date"
+msgstr "Bestelldatum"
+
+msgid "Customer"
+msgstr "Kunde"
+
+msgid "Address"
+msgstr "Adresse"
+
+msgid "Email"
+msgstr "E-Mail"
+
+msgid "Total"
+msgstr "Gesamtbetrag"
+
+msgid "Bank account for refund"
+msgstr "Bankkonto für die Rückerstattung"
+
+msgid "(optional — leave empty to refund to the original payment method)"
+msgstr "(optional — leer lassen, um auf das ursprüngliche Zahlungsmittel zu erstatten)"
+
+msgid "Reason for withdrawal"
+msgstr "Grund für den Widerruf"
+
+msgid "(optional)"
+msgstr "(optional)"
+
+msgid "I confirm that I am withdrawing from the purchase contract"
+msgstr "Ich bestätige, dass ich vom Kaufvertrag zurücktrete"
+
+msgid "and I understand that I must return the purchased goods within 14 days of submitting this withdrawal. The refund will be issued after the returned goods are received."
+msgstr "und nehme zur Kenntnis, dass ich die gekaufte Ware innerhalb von 14 Tagen nach Einreichung dieses Widerrufs zurücksenden muss. Die Rückerstattung erfolgt nach Erhalt der zurückgesendeten Ware."
+
+msgid "Confirm withdrawal"
+msgstr "Widerruf bestätigen"
+
+msgid "Cancel"
+msgstr "Abbrechen"
+
+msgid "Hello,"
+msgstr "Hallo,"
+
+#. translators: 1: order number, 2: order date
+msgid "We have received your withdrawal from the purchase contract for order no. %1$s placed on %2$s."
+msgstr "Wir haben Ihren Widerruf des Kaufvertrags zur Bestellung Nr. %1$s vom %2$s erhalten."
+
+msgid "Next steps"
+msgstr "Nächste Schritte"
+
+msgid "Next steps:"
+msgstr "Nächste Schritte:"
+
+msgid "Please return the goods to our address within 14 days of submitting this withdrawal."
+msgstr "Bitte senden Sie die Ware innerhalb von 14 Tagen nach Einreichung dieses Widerrufs an unsere Adresse zurück."
+
+msgid "We recommend shipping with tracking and insurance."
+msgstr "Wir empfehlen den Versand mit Sendungsverfolgung und Versicherung."
+
+#. translators: %s: total amount
+msgid "Once we receive the goods we will refund the paid amount (%s) within 14 days."
+msgstr "Sobald wir die Ware erhalten haben, erstatten wir den gezahlten Betrag (%s) innerhalb von 14 Tagen zurück."
+
+msgid "A customer has submitted a withdrawal from a purchase contract."
+msgstr "Ein Kunde hat einen Widerruf des Kaufvertrags eingereicht."
+
+msgid "Order"
+msgstr "Bestellung"
+
+msgid "Phone"
+msgstr "Telefon"
+
+msgid "Completion date"
+msgstr "Abschlussdatum"
+
+msgid "Refund account"
+msgstr "Rückerstattungskonto"
+
+msgid "Original payment method"
+msgstr "Ursprüngliches Zahlungsmittel"
+
+msgid "Reason"
+msgstr "Grund"
+
+msgid "(not provided)"
+msgstr "(nicht angegeben)"
+
+msgid "View order:"
+msgstr "Bestellung anzeigen:"
+
+# === 1.2.0 strings ===
+
+msgid "A withdrawal has already been submitted for this order."
+msgstr "Für diese Bestellung wurde bereits ein Widerruf eingereicht."
+
+msgid "an administrator"
+msgstr "ein Administrator"
+
+msgid "Customer (guest) submitted a withdrawal from the purchase contract."
+msgstr "Der Kunde (Gast) hat einen Widerruf des Kaufvertrags eingereicht."
+
+#. translators: %s: admin display name
+msgid "Withdrawal marked as resolved by %s."
+msgstr "Widerruf als erledigt markiert durch %s."
+
+#. translators: %s: admin display name
+msgid "Withdrawal submitted on behalf of the customer by %s."
+msgstr "Widerruf im Namen des Kunden eingereicht durch %s."
+
+msgid "The withdrawal form is not currently available. Please contact the store."
+msgstr "Das Widerrufsformular ist derzeit nicht verfügbar. Bitte kontaktieren Sie den Shop."
+
+msgid "Your withdrawal has been submitted. A confirmation has been sent to your email."
+msgstr "Ihr Widerruf wurde übermittelt. Eine Bestätigung wurde an Ihre E-Mail-Adresse gesendet."
+
+msgid "Your session has expired. Please start the lookup again."
+msgstr "Ihre Sitzung ist abgelaufen. Bitte starten Sie die Suche erneut."
+
+msgid "Order not found."
+msgstr "Bestellung nicht gefunden."
+
+msgid "Order number or email is missing or invalid."
+msgstr "Bestellnummer oder E-Mail fehlt oder ist ungültig."
+
+msgid "We could not find an order with the provided details."
+msgstr "Mit den angegebenen Daten konnte keine Bestellung gefunden werden."
+
+msgid "Too many attempts. Please wait a few minutes and try again."
+msgstr "Zu viele Versuche. Bitte warten Sie einige Minuten und versuchen Sie es erneut."
+
+msgid "Security check failed. Please try again."
+msgstr "Sicherheitsprüfung fehlgeschlagen. Bitte versuchen Sie es erneut."
+
+msgid "Enter your order number and the email address used when placing the order to continue."
+msgstr "Geben Sie Ihre Bestellnummer und die bei der Bestellung verwendete E-Mail-Adresse ein, um fortzufahren."
+
+msgid "Billing email"
+msgstr "Rechnungs-E-Mail"
+
+msgid "Continue"
+msgstr "Weiter"
+
+msgid "Withdrawal cooling-off"
+msgstr "Widerrufsfrist"
+
+msgid "Date of delivery"
+msgstr "Lieferdatum"
+
+msgid "Date the customer received the goods. Used as the reference date for the cooling-off period (leave empty to use the order completion date)."
+msgstr "Datum, an dem der Kunde die Ware erhalten hat. Wird als Stichtag für die Widerrufsfrist verwendet (leer lassen, um das Abschlussdatum der Bestellung zu verwenden)."
+
+msgid "Cooling-off ends:"
+msgstr "Widerrufsfrist endet:"
+
+#. translators: %d: number of days remaining
+msgid "%d day remaining"
+msgid_plural "%d days remaining"
+msgstr[0] "noch %d Tag"
+msgstr[1] "noch %d Tage"
+
+msgid "expired"
+msgstr "abgelaufen"
+
+msgid "Withdrawal submitted:"
+msgstr "Widerruf eingereicht:"
+
+msgid "Resolved:"
+msgstr "Erledigt:"
+
+msgid "Use the Order actions box to mark this withdrawal as resolved."
+msgstr "Verwenden Sie das Feld Bestellaktionen, um diesen Widerruf als erledigt zu markieren."
+
+msgid "guest form"
+msgstr "Gastformular"
+
+msgid "admin"
+msgstr "Admin"
+
+msgid "customer account"
+msgstr "Kundenkonto"
+
+msgid "Mark withdrawal as resolved"
+msgstr "Widerruf als erledigt markieren"
+
+msgid "Submit withdrawal on behalf of customer"
+msgstr "Widerruf im Namen des Kunden einreichen"
+
+msgid "Withdrawals"
+msgstr "Widerrufe"
+
+msgid "Export CSV"
+msgstr "CSV exportieren"
+
+msgid "Search"
+msgstr "Suchen"
+
+msgid "All"
+msgstr "Alle"
+
+msgid "Pending"
+msgstr "Ausstehend"
+
+msgid "Resolved"
+msgstr "Erledigt"
+
+msgid "From"
+msgstr "Von"
+
+msgid "To"
+msgstr "Bis"
+
+msgid "Filter"
+msgstr "Filtern"
+
+msgid "Submitted"
+msgstr "Eingereicht"
+
+msgid "Source"
+msgstr "Quelle"
+
+msgid "Status"
+msgstr "Status"
+
+msgid "Mark as resolved"
+msgstr "Als erledigt markieren"
+
+msgid "Resolve"
+msgstr "Erledigen"
+
+msgid "guest"
+msgstr "Gast"
+
+msgid "customer"
+msgstr "Kunde"
+
+#. translators: %d: number of withdrawals resolved
+msgid "%d withdrawal marked as resolved."
+msgid_plural "%d withdrawals marked as resolved."
+msgstr[0] "%d Widerruf als erledigt markiert."
+msgstr[1] "%d Widerrufe als erledigt markiert."
+
+msgid "You do not have permission to do this."
+msgstr "Sie haben keine Berechtigung für diese Aktion."
+
+msgid "This order does not have a pending withdrawal."
+msgstr "Für diese Bestellung liegt kein ausstehender Widerruf vor."
+
+msgid "This withdrawal has already been resolved."
+msgstr "Dieser Widerruf wurde bereits erledigt."
+
+msgid "Guest withdrawal form"
+msgstr "Widerrufsformular für Gäste"
+
+msgid "Enable shortcode for non-logged-in customers"
+msgstr "Shortcode für nicht angemeldete Kunden aktivieren"
+
+#. translators: %s: shortcode wrapped in <code>
+msgid "Place %s on any page (e.g. a public landing page). The form will ask for an order number and the billing email, then show the withdrawal form."
+msgstr "Fügen Sie %s auf einer beliebigen Seite ein (z. B. einer öffentlichen Landingpage). Das Formular fragt nach einer Bestellnummer und der Rechnungs-E-Mail und zeigt anschließend das Widerrufsformular an."

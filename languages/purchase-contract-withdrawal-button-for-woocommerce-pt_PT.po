@@ -1,0 +1,437 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Purchase Contract Withdrawal Button for WooCommerce 1.3.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-25 10:00+0000\n"
+"PO-Revision-Date: 2026-05-29 12:00+0000\n"
+"Last-Translator: Jakub Kašpárek\n"
+"Language-Team: Portuguese\n"
+"Language: pt_PT\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Domain: purchase-contract-withdrawal-button-for-woocommerce\n"
+
+msgid "Purchase Contract Withdrawal Button for WooCommerce requires WooCommerce to be installed and active."
+msgstr "O Purchase Contract Withdrawal Button for WooCommerce requer o WooCommerce instalado e ativo."
+
+msgid "Settings"
+msgstr "Definições"
+
+msgid "Withdraw from purchase contract"
+msgstr "Resolver o contrato de compra"
+
+msgid "This order is no longer eligible for withdrawal (the cooling-off period has expired, or a withdrawal has already been submitted)."
+msgstr "Esta encomenda já não é elegível para resolução (o período de livre resolução expirou ou já foi submetida uma resolução)."
+
+msgid "Back to order"
+msgstr "Voltar à encomenda"
+
+msgid "Your withdrawal has been submitted. A confirmation has been sent to your email. We will be in touch with return instructions."
+msgstr "A sua resolução foi submetida. Foi enviada uma confirmação para o seu email. Iremos contactá-lo com as instruções de devolução."
+
+msgid "Withdrawal has been submitted"
+msgstr "A resolução foi submetida"
+
+#. translators: %s: submission date
+msgid "on %s."
+msgstr "em %s."
+
+#. translators: %s: admin email address
+msgid "If you have any questions, contact us at %s."
+msgstr "Em caso de dúvidas, contacte-nos em %s."
+
+msgid "You must be logged in to submit a withdrawal."
+msgstr "Tem de iniciar sessão para submeter uma resolução."
+
+msgid "Invalid order."
+msgstr "Encomenda inválida."
+
+msgid "Security check failed. Please go back and try again."
+msgstr "A verificação de segurança falhou. Volte atrás e tente novamente."
+
+msgid "You are not authorized to access this order."
+msgstr "Não tem autorização para aceder a esta encomenda."
+
+msgid "You must check the confirmation box to submit a withdrawal."
+msgstr "Tem de assinalar a caixa de confirmação para submeter uma resolução."
+
+msgid "This order is no longer eligible for withdrawal."
+msgstr "Esta encomenda já não é elegível para resolução."
+
+msgid "Customer submitted a withdrawal from the purchase contract."
+msgstr "O cliente submeteu uma resolução do contrato de compra."
+
+#. translators: %s: customer-provided reason
+msgid "Reason: %s"
+msgstr "Motivo: %s"
+
+#. translators: %s: bank account for refund
+msgid "Refund account: %s"
+msgstr "Conta para reembolso: %s"
+
+msgid "Customer submitted withdrawal from purchase contract."
+msgstr "Resolução do contrato de compra submetida pelo cliente."
+
+msgid "Withdrawal confirmation (customer)"
+msgstr "Confirmação de resolução (cliente)"
+
+msgid "Sent to the customer after they submit a withdrawal from a purchase contract."
+msgstr "Enviado ao cliente após submeter uma resolução do contrato de compra."
+
+msgid "[{site_title}] Withdrawal confirmation — order #{order_number}"
+msgstr "[{site_title}] Confirmação de resolução — encomenda #{order_number}"
+
+msgid "Withdrawal confirmation"
+msgstr "Confirmação de resolução"
+
+msgid "If you have any questions about your withdrawal, please reply to this email."
+msgstr "Se tiver dúvidas sobre a sua resolução, responda a este email."
+
+msgid "Withdrawal notification (admin)"
+msgstr "Notificação de resolução (admin)"
+
+msgid "Sent to the store administrator when a customer submits a withdrawal."
+msgstr "Enviado ao administrador da loja quando um cliente submete uma resolução."
+
+msgid "[{site_title}] New withdrawal request — order #{order_number}"
+msgstr "[{site_title}] Novo pedido de resolução — encomenda #{order_number}"
+
+msgid "New withdrawal request"
+msgstr "Novo pedido de resolução"
+
+msgid "Enable/Disable"
+msgstr "Ativar/Desativar"
+
+msgid "Enable this email notification"
+msgstr "Ativar esta notificação por email"
+
+msgid "Recipient(s)"
+msgstr "Destinatário(s)"
+
+#. translators: %s: admin email
+msgid "Enter recipients (comma separated). Defaults to %s."
+msgstr "Indique os destinatários (separados por vírgula). Predefinição: %s."
+
+msgid "Subject"
+msgstr "Assunto"
+
+msgid "Placeholders: %s"
+msgstr "Marcadores: %s"
+
+msgid "Email heading"
+msgstr "Cabeçalho do email"
+
+msgid "Email type"
+msgstr "Tipo de email"
+
+msgid "Choose which format of email to send."
+msgstr "Escolha o formato do email a enviar."
+
+msgid "Purchase Contract Withdrawal Button for WooCommerce"
+msgstr "Botão de resolução do contrato de compra"
+
+msgid "Withdrawal Button"
+msgstr "Botão de resolução"
+
+#. translators: %s: WooCommerce email settings URL
+msgid "Customer and admin email templates can be customized in %s."
+msgstr "Os modelos de email do cliente e administrador podem ser personalizados em %s."
+
+msgid "WooCommerce → Settings → Emails"
+msgstr "WooCommerce → Definições → Emails"
+
+msgid "Cooling-off period (days)"
+msgstr "Período de livre resolução (dias)"
+
+msgid "How long after the reference date (order completion) the withdrawal button stays visible. EU standard is 14 days."
+msgstr "Quanto tempo após a data de referência (conclusão da encomenda) o botão de resolução permanece visível. O padrão da UE é de 14 dias."
+
+msgid "Eligible order statuses"
+msgstr "Estados de encomenda elegíveis"
+
+msgid "The button is shown only for orders in one of these statuses."
+msgstr "O botão é mostrado apenas em encomendas com um destes estados."
+
+msgid "Admin email recipient"
+msgstr "Destinatário do email de administrador"
+
+#. translators: %s: admin email
+msgid "Leave empty to use the site admin email (%s)."
+msgstr "Deixe em branco para usar o email do administrador do site (%s)."
+
+msgid "Status after submission"
+msgstr "Estado após submissão"
+
+msgid "Order status applied automatically after the customer submits a withdrawal."
+msgstr "Estado da encomenda aplicado automaticamente depois de o cliente submeter uma resolução."
+
+msgid "Withdrawal from purchase contract"
+msgstr "Resolução do contrato de compra"
+
+#. translators: 1: order number, 2: deadline date
+msgid "Complete the form below to withdraw from purchase contract no. %1$s. The cooling-off period ends on %2$s."
+msgstr "Preencha o formulário abaixo para resolver o contrato de compra n.º %1$s. O período de livre resolução termina a %2$s."
+
+msgid "Order number"
+msgstr "Número da encomenda"
+
+msgid "Order date"
+msgstr "Data da encomenda"
+
+msgid "Customer"
+msgstr "Cliente"
+
+msgid "Address"
+msgstr "Morada"
+
+msgid "Email"
+msgstr "Email"
+
+msgid "Total"
+msgstr "Total"
+
+msgid "Bank account for refund"
+msgstr "Conta bancária para reembolso"
+
+msgid "(optional — leave empty to refund to the original payment method)"
+msgstr "(opcional — deixe em branco para reembolsar através do método de pagamento original)"
+
+msgid "Reason for withdrawal"
+msgstr "Motivo da resolução"
+
+msgid "(optional)"
+msgstr "(opcional)"
+
+msgid "I confirm that I am withdrawing from the purchase contract"
+msgstr "Confirmo que estou a resolver o contrato de compra"
+
+msgid "and I understand that I must return the purchased goods within 14 days of submitting this withdrawal. The refund will be issued after the returned goods are received."
+msgstr "e compreendo que tenho de devolver os bens adquiridos no prazo de 14 dias a contar da submissão desta resolução. O reembolso será efetuado após a receção dos bens devolvidos."
+
+msgid "Confirm withdrawal"
+msgstr "Confirmar resolução"
+
+msgid "Cancel"
+msgstr "Cancelar"
+
+msgid "Hello,"
+msgstr "Olá,"
+
+#. translators: 1: order number, 2: order date
+msgid "We have received your withdrawal from the purchase contract for order no. %1$s placed on %2$s."
+msgstr "Recebemos a sua resolução do contrato de compra para a encomenda n.º %1$s efetuada a %2$s."
+
+msgid "Next steps"
+msgstr "Próximos passos"
+
+msgid "Next steps:"
+msgstr "Próximos passos:"
+
+msgid "Please return the goods to our address within 14 days of submitting this withdrawal."
+msgstr "Devolva os bens para a nossa morada no prazo de 14 dias a contar da submissão desta resolução."
+
+msgid "We recommend shipping with tracking and insurance."
+msgstr "Recomendamos o envio com seguimento e seguro."
+
+#. translators: %s: total amount
+msgid "Once we receive the goods we will refund the paid amount (%s) within 14 days."
+msgstr "Após receber os bens, reembolsaremos o valor pago (%s) no prazo de 14 dias."
+
+msgid "A customer has submitted a withdrawal from a purchase contract."
+msgstr "Um cliente submeteu uma resolução de um contrato de compra."
+
+msgid "Order"
+msgstr "Encomenda"
+
+msgid "Phone"
+msgstr "Telefone"
+
+msgid "Completion date"
+msgstr "Data de conclusão"
+
+msgid "Refund account"
+msgstr "Conta para reembolso"
+
+msgid "Original payment method"
+msgstr "Método de pagamento original"
+
+msgid "Reason"
+msgstr "Motivo"
+
+msgid "(not provided)"
+msgstr "(não indicado)"
+
+msgid "View order:"
+msgstr "Ver encomenda:"
+
+# === 1.2.0 strings ===
+
+msgid "A withdrawal has already been submitted for this order."
+msgstr "Já foi submetida uma resolução para esta encomenda."
+
+msgid "an administrator"
+msgstr "um administrador"
+
+msgid "Customer (guest) submitted a withdrawal from the purchase contract."
+msgstr "Cliente (convidado) submeteu uma resolução do contrato de compra."
+
+#. translators: %s: admin display name
+msgid "Withdrawal marked as resolved by %s."
+msgstr "Resolução marcada como tratada por %s."
+
+#. translators: %s: admin display name
+msgid "Withdrawal submitted on behalf of the customer by %s."
+msgstr "Resolução submetida em nome do cliente por %s."
+
+msgid "The withdrawal form is not currently available. Please contact the store."
+msgstr "O formulário de resolução não está disponível de momento. Contacte a loja."
+
+msgid "Your withdrawal has been submitted. A confirmation has been sent to your email."
+msgstr "A sua resolução foi submetida. Foi enviada uma confirmação para o seu email."
+
+msgid "Your session has expired. Please start the lookup again."
+msgstr "A sua sessão expirou. Inicie a pesquisa novamente."
+
+msgid "Order not found."
+msgstr "Encomenda não encontrada."
+
+msgid "Order number or email is missing or invalid."
+msgstr "O número de encomenda ou o email estão em falta ou são inválidos."
+
+msgid "We could not find an order with the provided details."
+msgstr "Não foi possível encontrar uma encomenda com os dados fornecidos."
+
+msgid "Too many attempts. Please wait a few minutes and try again."
+msgstr "Demasiadas tentativas. Aguarde alguns minutos e tente novamente."
+
+msgid "Security check failed. Please try again."
+msgstr "A verificação de segurança falhou. Tente novamente."
+
+msgid "Enter your order number and the email address used when placing the order to continue."
+msgstr "Indique o número da encomenda e o email usado ao efetuar a encomenda para continuar."
+
+msgid "Billing email"
+msgstr "Email de faturação"
+
+msgid "Continue"
+msgstr "Continuar"
+
+msgid "Withdrawal cooling-off"
+msgstr "Período de livre resolução"
+
+msgid "Date of delivery"
+msgstr "Data de entrega"
+
+msgid "Date the customer received the goods. Used as the reference date for the cooling-off period (leave empty to use the order completion date)."
+msgstr "Data em que o cliente recebeu os bens. Utilizada como data de referência para o período de livre resolução (deixe em branco para usar a data de conclusão da encomenda)."
+
+msgid "Cooling-off ends:"
+msgstr "Período termina:"
+
+#. translators: %d: number of days remaining
+msgid "%d day remaining"
+msgid_plural "%d days remaining"
+msgstr[0] "falta %d dia"
+msgstr[1] "faltam %d dias"
+
+msgid "expired"
+msgstr "expirado"
+
+msgid "Withdrawal submitted:"
+msgstr "Resolução submetida:"
+
+msgid "Resolved:"
+msgstr "Tratada:"
+
+msgid "Use the Order actions box to mark this withdrawal as resolved."
+msgstr "Utilize a caixa Ações da encomenda para marcar esta resolução como tratada."
+
+msgid "guest form"
+msgstr "formulário de convidado"
+
+msgid "admin"
+msgstr "admin"
+
+msgid "customer account"
+msgstr "conta de cliente"
+
+msgid "Mark withdrawal as resolved"
+msgstr "Marcar resolução como tratada"
+
+msgid "Submit withdrawal on behalf of customer"
+msgstr "Submeter resolução em nome do cliente"
+
+msgid "Withdrawals"
+msgstr "Resoluções"
+
+msgid "Export CSV"
+msgstr "Exportar CSV"
+
+msgid "Search"
+msgstr "Procurar"
+
+msgid "All"
+msgstr "Tudo"
+
+msgid "Pending"
+msgstr "Pendentes"
+
+msgid "Resolved"
+msgstr "Tratadas"
+
+msgid "From"
+msgstr "De"
+
+msgid "To"
+msgstr "Até"
+
+msgid "Filter"
+msgstr "Filtrar"
+
+msgid "Submitted"
+msgstr "Submetido"
+
+msgid "Source"
+msgstr "Origem"
+
+msgid "Status"
+msgstr "Estado"
+
+msgid "Mark as resolved"
+msgstr "Marcar como tratada"
+
+msgid "Resolve"
+msgstr "Tratar"
+
+msgid "guest"
+msgstr "convidado"
+
+msgid "customer"
+msgstr "cliente"
+
+#. translators: %d: number of withdrawals resolved
+msgid "%d withdrawal marked as resolved."
+msgid_plural "%d withdrawals marked as resolved."
+msgstr[0] "%d resolução marcada como tratada."
+msgstr[1] "%d resoluções marcadas como tratadas."
+
+msgid "You do not have permission to do this."
+msgstr "Não tem permissão para efetuar esta ação."
+
+msgid "This order does not have a pending withdrawal."
+msgstr "Esta encomenda não tem nenhuma resolução pendente."
+
+msgid "This withdrawal has already been resolved."
+msgstr "Esta resolução já foi tratada."
+
+msgid "Guest withdrawal form"
+msgstr "Formulário de resolução para convidados"
+
+msgid "Enable shortcode for non-logged-in customers"
+msgstr "Ativar shortcode para clientes sem sessão iniciada"
+
+#. translators: %s: shortcode wrapped in <code>
+msgid "Place %s on any page (e.g. a public landing page). The form will ask for an order number and the billing email, then show the withdrawal form."
+msgstr "Coloque %s em qualquer página (por exemplo, uma landing page pública). O formulário pedirá o número da encomenda e o email de faturação e, em seguida, mostrará o formulário de resolução."

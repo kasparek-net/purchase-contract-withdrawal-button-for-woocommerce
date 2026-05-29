@@ -1,0 +1,439 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Purchase Contract Withdrawal Button for WooCommerce 1.3.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-25 10:00+0000\n"
+"PO-Revision-Date: 2026-05-29 12:00+0000\n"
+"Last-Translator: Jakub Kašpárek\n"
+"Language-Team: Lithuanian\n"
+"Language: lt_LT\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Domain: purchase-contract-withdrawal-button-for-woocommerce\n"
+
+msgid "Purchase Contract Withdrawal Button for WooCommerce requires WooCommerce to be installed and active."
+msgstr "Įskiepiui „Purchase Contract Withdrawal Button for WooCommerce“ reikalingas įdiegtas ir aktyvus WooCommerce."
+
+msgid "Settings"
+msgstr "Nustatymai"
+
+msgid "Withdraw from purchase contract"
+msgstr "Atsisakyti pirkimo–pardavimo sutarties"
+
+msgid "This order is no longer eligible for withdrawal (the cooling-off period has expired, or a withdrawal has already been submitted)."
+msgstr "Šio užsakymo atsisakyti nebegalima (atsisakymo terminas pasibaigė arba atsisakymas jau pateiktas)."
+
+msgid "Back to order"
+msgstr "Grįžti į užsakymą"
+
+msgid "Your withdrawal has been submitted. A confirmation has been sent to your email. We will be in touch with return instructions."
+msgstr "Jūsų sutarties atsisakymas sėkmingai pateiktas. Patvirtinimą išsiuntėme jūsų el. paštu. Netrukus susisieksime su prekių grąžinimo instrukcijomis."
+
+msgid "Withdrawal has been submitted"
+msgstr "Sutarties atsisakymas pateiktas"
+
+#. translators: %s: submission date
+msgid "on %s."
+msgstr "%s."
+
+#. translators: %s: admin email address
+msgid "If you have any questions, contact us at %s."
+msgstr "Jei turite klausimų, susisiekite su mumis adresu %s."
+
+msgid "You must be logged in to submit a withdrawal."
+msgstr "Norėdami pateikti atsisakymą, turite būti prisijungę."
+
+msgid "Invalid order."
+msgstr "Negaliojantis užsakymas."
+
+msgid "Security check failed. Please go back and try again."
+msgstr "Saugumo patikrinimas nepavyko. Grįžkite atgal ir bandykite dar kartą."
+
+msgid "You are not authorized to access this order."
+msgstr "Neturite teisės pasiekti šio užsakymo."
+
+msgid "You must check the confirmation box to submit a withdrawal."
+msgstr "Norėdami pateikti atsisakymą, turite pažymėti patvirtinimo langelį."
+
+msgid "This order is no longer eligible for withdrawal."
+msgstr "Šio užsakymo atsisakyti nebegalima."
+
+msgid "Customer submitted a withdrawal from the purchase contract."
+msgstr "Klientas pateikė pirkimo–pardavimo sutarties atsisakymą."
+
+#. translators: %s: customer-provided reason
+msgid "Reason: %s"
+msgstr "Priežastis: %s"
+
+#. translators: %s: bank account for refund
+msgid "Refund account: %s"
+msgstr "Sąskaita pinigams grąžinti: %s"
+
+msgid "Customer submitted withdrawal from purchase contract."
+msgstr "Klientas pateikė pirkimo–pardavimo sutarties atsisakymą."
+
+msgid "Withdrawal confirmation (customer)"
+msgstr "Atsisakymo patvirtinimas (klientas)"
+
+msgid "Sent to the customer after they submit a withdrawal from a purchase contract."
+msgstr "Siunčiama klientui po pirkimo–pardavimo sutarties atsisakymo pateikimo."
+
+msgid "[{site_title}] Withdrawal confirmation — order #{order_number}"
+msgstr "[{site_title}] Atsisakymo patvirtinimas — užsakymas #{order_number}"
+
+msgid "Withdrawal confirmation"
+msgstr "Atsisakymo patvirtinimas"
+
+msgid "If you have any questions about your withdrawal, please reply to this email."
+msgstr "Jei turite klausimų dėl savo atsisakymo, atsakykite į šį el. laišką."
+
+msgid "Withdrawal notification (admin)"
+msgstr "Pranešimas apie atsisakymą (administratoriui)"
+
+msgid "Sent to the store administrator when a customer submits a withdrawal."
+msgstr "Siunčiama parduotuvės administratoriui, kai klientas pateikia atsisakymą."
+
+msgid "[{site_title}] New withdrawal request — order #{order_number}"
+msgstr "[{site_title}] Naujas atsisakymo prašymas — užsakymas #{order_number}"
+
+msgid "New withdrawal request"
+msgstr "Naujas atsisakymo prašymas"
+
+msgid "Enable/Disable"
+msgstr "Įjungti/Išjungti"
+
+msgid "Enable this email notification"
+msgstr "Įjungti šį el. pašto pranešimą"
+
+msgid "Recipient(s)"
+msgstr "Gavėjas (-ai)"
+
+#. translators: %s: admin email
+msgid "Enter recipients (comma separated). Defaults to %s."
+msgstr "Įveskite gavėjus (atskirtus kableliais). Numatytasis: %s."
+
+msgid "Subject"
+msgstr "Tema"
+
+msgid "Placeholders: %s"
+msgstr "Vietos žymekliai: %s"
+
+msgid "Email heading"
+msgstr "El. laiško antraštė"
+
+msgid "Email type"
+msgstr "El. laiško tipas"
+
+msgid "Choose which format of email to send."
+msgstr "Pasirinkite siunčiamo el. laiško formatą."
+
+msgid "Purchase Contract Withdrawal Button for WooCommerce"
+msgstr "Pirkimo–pardavimo sutarties atsisakymo mygtukas"
+
+msgid "Withdrawal Button"
+msgstr "Atsisakymo mygtukas"
+
+#. translators: %s: WooCommerce email settings URL
+msgid "Customer and admin email templates can be customized in %s."
+msgstr "Klientų ir administratorių el. laiškų šablonus galima pritaikyti %s."
+
+msgid "WooCommerce → Settings → Emails"
+msgstr "WooCommerce → Nustatymai → El. laiškai"
+
+msgid "Cooling-off period (days)"
+msgstr "Atsisakymo terminas (dienomis)"
+
+msgid "How long after the reference date (order completion) the withdrawal button stays visible. EU standard is 14 days."
+msgstr "Kiek laiko po atskaitos datos (užsakymo įvykdymo) atsisakymo mygtukas išlieka matomas. ES standartas — 14 dienų."
+
+msgid "Eligible order statuses"
+msgstr "Tinkamos užsakymo būsenos"
+
+msgid "The button is shown only for orders in one of these statuses."
+msgstr "Mygtukas rodomas tik užsakymams, esantiems vienoje iš šių būsenų."
+
+msgid "Admin email recipient"
+msgstr "Administratoriaus el. laiško gavėjas"
+
+#. translators: %s: admin email
+msgid "Leave empty to use the site admin email (%s)."
+msgstr "Palikite tuščią, kad būtų naudojamas svetainės administratoriaus el. paštas (%s)."
+
+msgid "Status after submission"
+msgstr "Būsena po pateikimo"
+
+msgid "Order status applied automatically after the customer submits a withdrawal."
+msgstr "Užsakymo būsena, automatiškai pritaikoma po kliento pateikto atsisakymo."
+
+msgid "Withdrawal from purchase contract"
+msgstr "Pirkimo–pardavimo sutarties atsisakymas"
+
+#. translators: 1: order number, 2: deadline date
+msgid "Complete the form below to withdraw from purchase contract no. %1$s. The cooling-off period ends on %2$s."
+msgstr "Užpildykite žemiau esančią formą, kad atsisakytumėte pirkimo–pardavimo sutarties Nr. %1$s. Atsisakymo terminas baigiasi %2$s."
+
+msgid "Order number"
+msgstr "Užsakymo numeris"
+
+msgid "Order date"
+msgstr "Užsakymo data"
+
+msgid "Customer"
+msgstr "Klientas"
+
+msgid "Address"
+msgstr "Adresas"
+
+msgid "Email"
+msgstr "El. paštas"
+
+msgid "Total"
+msgstr "Iš viso"
+
+msgid "Bank account for refund"
+msgstr "Banko sąskaita pinigams grąžinti"
+
+msgid "(optional — leave empty to refund to the original payment method)"
+msgstr "(neprivaloma — palikite tuščią, kad grąžinimas būtų atliktas pirminiu mokėjimo būdu)"
+
+msgid "Reason for withdrawal"
+msgstr "Atsisakymo priežastis"
+
+msgid "(optional)"
+msgstr "(neprivaloma)"
+
+msgid "I confirm that I am withdrawing from the purchase contract"
+msgstr "Patvirtinu, kad atsisakau pirkimo–pardavimo sutarties"
+
+msgid "and I understand that I must return the purchased goods within 14 days of submitting this withdrawal. The refund will be issued after the returned goods are received."
+msgstr "ir suprantu, kad įsigytas prekes turiu grąžinti per 14 dienų nuo šio atsisakymo pateikimo. Pinigai bus grąžinti gavus grąžinamas prekes."
+
+msgid "Confirm withdrawal"
+msgstr "Patvirtinti atsisakymą"
+
+msgid "Cancel"
+msgstr "Atšaukti"
+
+msgid "Hello,"
+msgstr "Sveiki,"
+
+#. translators: 1: order number, 2: order date
+msgid "We have received your withdrawal from the purchase contract for order no. %1$s placed on %2$s."
+msgstr "Gavome jūsų pirkimo–pardavimo sutarties atsisakymą užsakymui Nr. %1$s, pateiktam %2$s."
+
+msgid "Next steps"
+msgstr "Tolesni veiksmai"
+
+msgid "Next steps:"
+msgstr "Tolesni veiksmai:"
+
+msgid "Please return the goods to our address within 14 days of submitting this withdrawal."
+msgstr "Prašome grąžinti prekes mūsų adresu per 14 dienų nuo šio atsisakymo pateikimo."
+
+msgid "We recommend shipping with tracking and insurance."
+msgstr "Rekomenduojame siųsti su sekimu ir draudimu."
+
+#. translators: %s: total amount
+msgid "Once we receive the goods we will refund the paid amount (%s) within 14 days."
+msgstr "Gavę prekes, sumokėtą sumą (%s) grąžinsime per 14 dienų."
+
+msgid "A customer has submitted a withdrawal from a purchase contract."
+msgstr "Klientas pateikė pirkimo–pardavimo sutarties atsisakymą."
+
+msgid "Order"
+msgstr "Užsakymas"
+
+msgid "Phone"
+msgstr "Telefonas"
+
+msgid "Completion date"
+msgstr "Įvykdymo data"
+
+msgid "Refund account"
+msgstr "Sąskaita pinigams grąžinti"
+
+msgid "Original payment method"
+msgstr "Pirminis mokėjimo būdas"
+
+msgid "Reason"
+msgstr "Priežastis"
+
+msgid "(not provided)"
+msgstr "(nenurodyta)"
+
+msgid "View order:"
+msgstr "Peržiūrėti užsakymą:"
+
+# === 1.2.0 strings ===
+
+msgid "A withdrawal has already been submitted for this order."
+msgstr "Šiam užsakymui atsisakymas jau pateiktas."
+
+msgid "an administrator"
+msgstr "administratorius"
+
+msgid "Customer (guest) submitted a withdrawal from the purchase contract."
+msgstr "Klientas (svečias) pateikė pirkimo–pardavimo sutarties atsisakymą."
+
+#. translators: %s: admin display name
+msgid "Withdrawal marked as resolved by %s."
+msgstr "Atsisakymą pažymėjo kaip išspręstą %s."
+
+#. translators: %s: admin display name
+msgid "Withdrawal submitted on behalf of the customer by %s."
+msgstr "Atsisakymą kliento vardu pateikė %s."
+
+msgid "The withdrawal form is not currently available. Please contact the store."
+msgstr "Atsisakymo forma šiuo metu nepasiekiama. Prašome susisiekti su parduotuve."
+
+msgid "Your withdrawal has been submitted. A confirmation has been sent to your email."
+msgstr "Jūsų atsisakymas pateiktas. Patvirtinimą išsiuntėme jūsų el. paštu."
+
+msgid "Your session has expired. Please start the lookup again."
+msgstr "Jūsų sesija pasibaigė. Pradėkite paiešką iš naujo."
+
+msgid "Order not found."
+msgstr "Užsakymas nerastas."
+
+msgid "Order number or email is missing or invalid."
+msgstr "Trūksta užsakymo numerio arba el. pašto, arba jie negaliojantys."
+
+msgid "We could not find an order with the provided details."
+msgstr "Nepavyko rasti užsakymo pagal pateiktus duomenis."
+
+msgid "Too many attempts. Please wait a few minutes and try again."
+msgstr "Per daug bandymų. Palaukite kelias minutes ir bandykite dar kartą."
+
+msgid "Security check failed. Please try again."
+msgstr "Saugumo patikrinimas nepavyko. Bandykite dar kartą."
+
+msgid "Enter your order number and the email address used when placing the order to continue."
+msgstr "Norėdami tęsti, įveskite užsakymo numerį ir el. pašto adresą, naudotą pateikiant užsakymą."
+
+msgid "Billing email"
+msgstr "Sąskaitų el. paštas"
+
+msgid "Continue"
+msgstr "Tęsti"
+
+msgid "Withdrawal cooling-off"
+msgstr "Atsisakymo terminas"
+
+msgid "Date of delivery"
+msgstr "Pristatymo data"
+
+msgid "Date the customer received the goods. Used as the reference date for the cooling-off period (leave empty to use the order completion date)."
+msgstr "Data, kada klientas gavo prekes. Naudojama kaip atsisakymo termino atskaitos data (palikite tuščią, kad būtų naudojama užsakymo įvykdymo data)."
+
+msgid "Cooling-off ends:"
+msgstr "Atsisakymo terminas baigiasi:"
+
+#. translators: %d: number of days remaining
+msgid "%d day remaining"
+msgid_plural "%d days remaining"
+msgstr[0] "liko %d diena"
+msgstr[1] "liko %d dienos"
+msgstr[2] "liko %d dienų"
+
+msgid "expired"
+msgstr "pasibaigė"
+
+msgid "Withdrawal submitted:"
+msgstr "Atsisakymas pateiktas:"
+
+msgid "Resolved:"
+msgstr "Išspręsta:"
+
+msgid "Use the Order actions box to mark this withdrawal as resolved."
+msgstr "Naudokite langelį „Užsakymo veiksmai“, kad pažymėtumėte šį atsisakymą kaip išspręstą."
+
+msgid "guest form"
+msgstr "svečių forma"
+
+msgid "admin"
+msgstr "administratorius"
+
+msgid "customer account"
+msgstr "kliento paskyra"
+
+msgid "Mark withdrawal as resolved"
+msgstr "Pažymėti atsisakymą kaip išspręstą"
+
+msgid "Submit withdrawal on behalf of customer"
+msgstr "Pateikti atsisakymą kliento vardu"
+
+msgid "Withdrawals"
+msgstr "Atsisakymai"
+
+msgid "Export CSV"
+msgstr "Eksportuoti CSV"
+
+msgid "Search"
+msgstr "Ieškoti"
+
+msgid "All"
+msgstr "Visi"
+
+msgid "Pending"
+msgstr "Laukiantys"
+
+msgid "Resolved"
+msgstr "Išspręsti"
+
+msgid "From"
+msgstr "Nuo"
+
+msgid "To"
+msgstr "Iki"
+
+msgid "Filter"
+msgstr "Filtruoti"
+
+msgid "Submitted"
+msgstr "Pateikta"
+
+msgid "Source"
+msgstr "Šaltinis"
+
+msgid "Status"
+msgstr "Būsena"
+
+msgid "Mark as resolved"
+msgstr "Pažymėti kaip išspręstą"
+
+msgid "Resolve"
+msgstr "Spręsti"
+
+msgid "guest"
+msgstr "svečias"
+
+msgid "customer"
+msgstr "klientas"
+
+#. translators: %d: number of withdrawals resolved
+msgid "%d withdrawal marked as resolved."
+msgid_plural "%d withdrawals marked as resolved."
+msgstr[0] "%d atsisakymas pažymėtas kaip išspręstas."
+msgstr[1] "%d atsisakymai pažymėti kaip išspręsti."
+msgstr[2] "%d atsisakymų pažymėta kaip išspręstų."
+
+msgid "You do not have permission to do this."
+msgstr "Neturite teisės atlikti šio veiksmo."
+
+msgid "This order does not have a pending withdrawal."
+msgstr "Šis užsakymas neturi laukiančio atsisakymo."
+
+msgid "This withdrawal has already been resolved."
+msgstr "Šis atsisakymas jau išspręstas."
+
+msgid "Guest withdrawal form"
+msgstr "Svečių atsisakymo forma"
+
+msgid "Enable shortcode for non-logged-in customers"
+msgstr "Įjungti trumpąjį kodą neprisijungusiems klientams"
+
+#. translators: %s: shortcode wrapped in <code>
+msgid "Place %s on any page (e.g. a public landing page). The form will ask for an order number and the billing email, then show the withdrawal form."
+msgstr "Įdėkite %s į bet kurį puslapį (pvz., viešą paskirties puslapį). Forma paprašys užsakymo numerio ir sąskaitų el. pašto, o tada parodys atsisakymo formą."

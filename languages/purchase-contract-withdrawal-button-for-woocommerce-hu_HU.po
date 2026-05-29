@@ -1,0 +1,437 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Purchase Contract Withdrawal Button for WooCommerce 1.3.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-25 10:00+0000\n"
+"PO-Revision-Date: 2026-05-29 12:00+0000\n"
+"Last-Translator: Jakub Kašpárek\n"
+"Language-Team: Hungarian\n"
+"Language: hu_HU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Domain: purchase-contract-withdrawal-button-for-woocommerce\n"
+
+msgid "Purchase Contract Withdrawal Button for WooCommerce requires WooCommerce to be installed and active."
+msgstr "A Purchase Contract Withdrawal Button for WooCommerce bővítményhez telepített és aktív WooCommerce szükséges."
+
+msgid "Settings"
+msgstr "Beállítások"
+
+msgid "Withdraw from purchase contract"
+msgstr "Elállás a vételi szerződéstől"
+
+msgid "This order is no longer eligible for withdrawal (the cooling-off period has expired, or a withdrawal has already been submitted)."
+msgstr "Ehhez a rendeléshez már nem nyújtható be elállás (az elállási idő lejárt, vagy az elállást már benyújtották)."
+
+msgid "Back to order"
+msgstr "Vissza a rendeléshez"
+
+msgid "Your withdrawal has been submitted. A confirmation has been sent to your email. We will be in touch with return instructions."
+msgstr "Elállási nyilatkozatát rögzítettük. A visszaigazolást elküldtük e-mailben. Hamarosan jelentkezünk a visszaküldési útmutatóval."
+
+msgid "Withdrawal has been submitted"
+msgstr "Az elállás benyújtásra került"
+
+#. translators: %s: submission date
+msgid "on %s."
+msgstr "%s."
+
+#. translators: %s: admin email address
+msgid "If you have any questions, contact us at %s."
+msgstr "Ha kérdése van, vegye fel velünk a kapcsolatot a %s címen."
+
+msgid "You must be logged in to submit a withdrawal."
+msgstr "Az elállás benyújtásához be kell jelentkeznie."
+
+msgid "Invalid order."
+msgstr "Érvénytelen rendelés."
+
+msgid "Security check failed. Please go back and try again."
+msgstr "A biztonsági ellenőrzés sikertelen. Lépjen vissza és próbálja újra."
+
+msgid "You are not authorized to access this order."
+msgstr "Nincs jogosultsága ehhez a rendeléshez."
+
+msgid "You must check the confirmation box to submit a withdrawal."
+msgstr "Az elállás benyújtásához be kell jelölnie a megerősítő négyzetet."
+
+msgid "This order is no longer eligible for withdrawal."
+msgstr "Ehhez a rendeléshez már nem nyújtható be elállás."
+
+msgid "Customer submitted a withdrawal from the purchase contract."
+msgstr "A vásárló elállási nyilatkozatot nyújtott be a vételi szerződéstől."
+
+#. translators: %s: customer-provided reason
+msgid "Reason: %s"
+msgstr "Indok: %s"
+
+#. translators: %s: bank account for refund
+msgid "Refund account: %s"
+msgstr "Visszatérítési számla: %s"
+
+msgid "Customer submitted withdrawal from purchase contract."
+msgstr "A vásárló elállási nyilatkozatot nyújtott be a vételi szerződéstől."
+
+msgid "Withdrawal confirmation (customer)"
+msgstr "Elállás visszaigazolása (vásárló)"
+
+msgid "Sent to the customer after they submit a withdrawal from a purchase contract."
+msgstr "Elküldve a vásárlónak az elállási nyilatkozat benyújtása után."
+
+msgid "[{site_title}] Withdrawal confirmation — order #{order_number}"
+msgstr "[{site_title}] Elállás visszaigazolása — rendelés #{order_number}"
+
+msgid "Withdrawal confirmation"
+msgstr "Elállás visszaigazolása"
+
+msgid "If you have any questions about your withdrawal, please reply to this email."
+msgstr "Ha kérdése van az elállással kapcsolatban, válaszoljon erre az e-mailre."
+
+msgid "Withdrawal notification (admin)"
+msgstr "Elállás értesítés (admin)"
+
+msgid "Sent to the store administrator when a customer submits a withdrawal."
+msgstr "Elküldve a bolt adminisztrátorának, amikor egy vásárló elállási nyilatkozatot nyújt be."
+
+msgid "[{site_title}] New withdrawal request — order #{order_number}"
+msgstr "[{site_title}] Új elállási kérelem — rendelés #{order_number}"
+
+msgid "New withdrawal request"
+msgstr "Új elállási kérelem"
+
+msgid "Enable/Disable"
+msgstr "Engedélyezés/Letiltás"
+
+msgid "Enable this email notification"
+msgstr "Ezen e-mail értesítés engedélyezése"
+
+msgid "Recipient(s)"
+msgstr "Címzettek"
+
+#. translators: %s: admin email
+msgid "Enter recipients (comma separated). Defaults to %s."
+msgstr "Adja meg a címzetteket (vesszővel elválasztva). Alapértelmezett: %s."
+
+msgid "Subject"
+msgstr "Tárgy"
+
+msgid "Placeholders: %s"
+msgstr "Helyettesítő szimbólumok: %s"
+
+msgid "Email heading"
+msgstr "E-mail fejléc"
+
+msgid "Email type"
+msgstr "E-mail típusa"
+
+msgid "Choose which format of email to send."
+msgstr "Válassza ki a küldendő e-mail formátumát."
+
+msgid "Purchase Contract Withdrawal Button for WooCommerce"
+msgstr "Vételi szerződéstől elállás gomb"
+
+msgid "Withdrawal Button"
+msgstr "Elállás gomb"
+
+#. translators: %s: WooCommerce email settings URL
+msgid "Customer and admin email templates can be customized in %s."
+msgstr "A vásárlói és admin e-mail sablonok itt testre szabhatók: %s."
+
+msgid "WooCommerce → Settings → Emails"
+msgstr "WooCommerce → Beállítások → E-mailek"
+
+msgid "Cooling-off period (days)"
+msgstr "Elállási idő (napok)"
+
+msgid "How long after the reference date (order completion) the withdrawal button stays visible. EU standard is 14 days."
+msgstr "Mennyi ideig marad látható az elállás gomb a referenciadátum (rendelés teljesítése) után. Az EU szabvány 14 nap."
+
+msgid "Eligible order statuses"
+msgstr "Jogosult rendelésállapotok"
+
+msgid "The button is shown only for orders in one of these statuses."
+msgstr "A gomb csak az alábbi állapotok egyikében lévő rendeléseknél jelenik meg."
+
+msgid "Admin email recipient"
+msgstr "Admin e-mail címzettje"
+
+#. translators: %s: admin email
+msgid "Leave empty to use the site admin email (%s)."
+msgstr "Hagyja üresen a fő admin e-mail (%s) használatához."
+
+msgid "Status after submission"
+msgstr "Állapot a benyújtás után"
+
+msgid "Order status applied automatically after the customer submits a withdrawal."
+msgstr "A rendelés állapota, amelyet automatikusan beállítunk az elállás benyújtása után."
+
+msgid "Withdrawal from purchase contract"
+msgstr "Elállás a vételi szerződéstől"
+
+#. translators: 1: order number, 2: deadline date
+msgid "Complete the form below to withdraw from purchase contract no. %1$s. The cooling-off period ends on %2$s."
+msgstr "Töltse ki az alábbi űrlapot a %1$s. számú vételi szerződéstől való elálláshoz. Az elállási idő lejár: %2$s."
+
+msgid "Order number"
+msgstr "Rendelésszám"
+
+msgid "Order date"
+msgstr "Rendelés dátuma"
+
+msgid "Customer"
+msgstr "Vásárló"
+
+msgid "Address"
+msgstr "Cím"
+
+msgid "Email"
+msgstr "E-mail"
+
+msgid "Total"
+msgstr "Végösszeg"
+
+msgid "Bank account for refund"
+msgstr "Visszatérítéshez használt bankszámla"
+
+msgid "(optional — leave empty to refund to the original payment method)"
+msgstr "(opcionális — hagyja üresen, ha az eredeti fizetési módra szeretné a visszatérítést)"
+
+msgid "Reason for withdrawal"
+msgstr "Elállás indoka"
+
+msgid "(optional)"
+msgstr "(opcionális)"
+
+msgid "I confirm that I am withdrawing from the purchase contract"
+msgstr "Megerősítem, hogy elállok a vételi szerződéstől"
+
+msgid "and I understand that I must return the purchased goods within 14 days of submitting this withdrawal. The refund will be issued after the returned goods are received."
+msgstr "és tudomásul veszem, hogy a megvásárolt árut a jelen elállás benyújtásától számított 14 napon belül vissza kell küldenem. A visszatérítést a visszaküldött áru beérkezése után teljesítjük."
+
+msgid "Confirm withdrawal"
+msgstr "Elállás megerősítése"
+
+msgid "Cancel"
+msgstr "Mégse"
+
+msgid "Hello,"
+msgstr "Tisztelt Vásárlónk,"
+
+#. translators: 1: order number, 2: order date
+msgid "We have received your withdrawal from the purchase contract for order no. %1$s placed on %2$s."
+msgstr "Megerősítjük, hogy megkaptuk az Ön elállási nyilatkozatát a %2$s napon leadott %1$s. számú rendelés vételi szerződésétől."
+
+msgid "Next steps"
+msgstr "További teendők"
+
+msgid "Next steps:"
+msgstr "További teendők:"
+
+msgid "Please return the goods to our address within 14 days of submitting this withdrawal."
+msgstr "Kérjük, az árut a jelen elállás benyújtásától számított 14 napon belül küldje vissza a címünkre."
+
+msgid "We recommend shipping with tracking and insurance."
+msgstr "Javasoljuk a nyomon követhető és biztosított szállítást."
+
+#. translators: %s: total amount
+msgid "Once we receive the goods we will refund the paid amount (%s) within 14 days."
+msgstr "Az áru beérkezését követően a kifizetett összeget (%s) 14 napon belül visszatérítjük."
+
+msgid "A customer has submitted a withdrawal from a purchase contract."
+msgstr "Egy vásárló elállási nyilatkozatot nyújtott be a vételi szerződéstől."
+
+msgid "Order"
+msgstr "Rendelés"
+
+msgid "Phone"
+msgstr "Telefon"
+
+msgid "Completion date"
+msgstr "Teljesítés dátuma"
+
+msgid "Refund account"
+msgstr "Visszatérítési számla"
+
+msgid "Original payment method"
+msgstr "Eredeti fizetési mód"
+
+msgid "Reason"
+msgstr "Indok"
+
+msgid "(not provided)"
+msgstr "(nincs megadva)"
+
+msgid "View order:"
+msgstr "Rendelés megtekintése:"
+
+# === 1.2.0 strings ===
+
+msgid "A withdrawal has already been submitted for this order."
+msgstr "Ehhez a rendeléshez már benyújtottak elállást."
+
+msgid "an administrator"
+msgstr "egy adminisztrátor"
+
+msgid "Customer (guest) submitted a withdrawal from the purchase contract."
+msgstr "A vásárló (vendég) elállási nyilatkozatot nyújtott be a vételi szerződéstől."
+
+#. translators: %s: admin display name
+msgid "Withdrawal marked as resolved by %s."
+msgstr "Az elállást elintézettnek jelölte: %s."
+
+#. translators: %s: admin display name
+msgid "Withdrawal submitted on behalf of the customer by %s."
+msgstr "Az elállást a vásárló nevében benyújtotta: %s."
+
+msgid "The withdrawal form is not currently available. Please contact the store."
+msgstr "Az elállási űrlap jelenleg nem érhető el. Kérjük, vegye fel a kapcsolatot a bolttal."
+
+msgid "Your withdrawal has been submitted. A confirmation has been sent to your email."
+msgstr "Elállási nyilatkozatát rögzítettük. A visszaigazolást elküldtük e-mailben."
+
+msgid "Your session has expired. Please start the lookup again."
+msgstr "A munkamenete lejárt. Kezdje újra a rendeléskeresést."
+
+msgid "Order not found."
+msgstr "A rendelés nem található."
+
+msgid "Order number or email is missing or invalid."
+msgstr "A rendelésszám vagy az e-mail hiányzik vagy érvénytelen."
+
+msgid "We could not find an order with the provided details."
+msgstr "A megadott adatokkal nem találtunk rendelést."
+
+msgid "Too many attempts. Please wait a few minutes and try again."
+msgstr "Túl sok próbálkozás. Várjon néhány percet, majd próbálja újra."
+
+msgid "Security check failed. Please try again."
+msgstr "A biztonsági ellenőrzés sikertelen. Kérjük, próbálja újra."
+
+msgid "Enter your order number and the email address used when placing the order to continue."
+msgstr "A folytatáshoz adja meg a rendelésszámot és a rendelés leadásakor használt e-mail címet."
+
+msgid "Billing email"
+msgstr "Számlázási e-mail cím"
+
+msgid "Continue"
+msgstr "Folytatás"
+
+msgid "Withdrawal cooling-off"
+msgstr "Elállási idő"
+
+msgid "Date of delivery"
+msgstr "Kézbesítés dátuma"
+
+msgid "Date the customer received the goods. Used as the reference date for the cooling-off period (leave empty to use the order completion date)."
+msgstr "Az a dátum, amikor a vásárló átvette az árut. Az elállási idő referenciadátumaként szolgál (hagyja üresen a rendelés teljesítési dátumának használatához)."
+
+msgid "Cooling-off ends:"
+msgstr "Az elállási idő lejár:"
+
+#. translators: %d: number of days remaining
+msgid "%d day remaining"
+msgid_plural "%d days remaining"
+msgstr[0] "%d nap van hátra"
+msgstr[1] "%d nap van hátra"
+
+msgid "expired"
+msgstr "lejárt"
+
+msgid "Withdrawal submitted:"
+msgstr "Elállás benyújtva:"
+
+msgid "Resolved:"
+msgstr "Elintézve:"
+
+msgid "Use the Order actions box to mark this withdrawal as resolved."
+msgstr "Használja a Rendelés műveletek dobozt az elállás elintézettként való jelöléséhez."
+
+msgid "guest form"
+msgstr "vendég űrlap"
+
+msgid "admin"
+msgstr "admin"
+
+msgid "customer account"
+msgstr "vásárlói fiók"
+
+msgid "Mark withdrawal as resolved"
+msgstr "Elállás megjelölése elintézettként"
+
+msgid "Submit withdrawal on behalf of customer"
+msgstr "Elállás benyújtása a vásárló nevében"
+
+msgid "Withdrawals"
+msgstr "Elállások"
+
+msgid "Export CSV"
+msgstr "CSV exportálás"
+
+msgid "Search"
+msgstr "Keresés"
+
+msgid "All"
+msgstr "Összes"
+
+msgid "Pending"
+msgstr "Függőben"
+
+msgid "Resolved"
+msgstr "Elintézett"
+
+msgid "From"
+msgstr "Tól"
+
+msgid "To"
+msgstr "Ig"
+
+msgid "Filter"
+msgstr "Szűrés"
+
+msgid "Submitted"
+msgstr "Benyújtva"
+
+msgid "Source"
+msgstr "Forrás"
+
+msgid "Status"
+msgstr "Állapot"
+
+msgid "Mark as resolved"
+msgstr "Megjelölés elintézettként"
+
+msgid "Resolve"
+msgstr "Elintézés"
+
+msgid "guest"
+msgstr "vendég"
+
+msgid "customer"
+msgstr "vásárló"
+
+#. translators: %d: number of withdrawals resolved
+msgid "%d withdrawal marked as resolved."
+msgid_plural "%d withdrawals marked as resolved."
+msgstr[0] "%d elállás megjelölve elintézettként."
+msgstr[1] "%d elállás megjelölve elintézettként."
+
+msgid "You do not have permission to do this."
+msgstr "Nincs jogosultsága ehhez a művelethez."
+
+msgid "This order does not have a pending withdrawal."
+msgstr "Ehhez a rendeléshez nincs függőben lévő elállás."
+
+msgid "This withdrawal has already been resolved."
+msgstr "Ez az elállás már elintézésre került."
+
+msgid "Guest withdrawal form"
+msgstr "Vendég elállási űrlap"
+
+msgid "Enable shortcode for non-logged-in customers"
+msgstr "Shortcode engedélyezése nem bejelentkezett vásárlóknak"
+
+#. translators: %s: shortcode wrapped in <code>
+msgid "Place %s on any page (e.g. a public landing page). The form will ask for an order number and the billing email, then show the withdrawal form."
+msgstr "Helyezze el a %s elemet bármely oldalon (pl. nyilvános landing page). Az űrlap rendelésszámot és számlázási e-mail címet kér, majd megjeleníti az elállási űrlapot."

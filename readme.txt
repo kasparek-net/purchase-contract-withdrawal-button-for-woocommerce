@@ -4,7 +4,7 @@ Tags: woocommerce, withdrawal, refund, gdpr, eu
 Requires at least: 6.0
 Tested up to: 7.0
 Requires PHP: 7.4
-Stable tag: 1.2.3
+Stable tag: 1.3.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -40,7 +40,7 @@ The plugin is not legal advice. Merchants remain responsible for ensuring their 
 * **WooCommerce email integration** — customer + admin emails as native WC_Email classes
 * **Admin overview** — dedicated "Withdrawals" screen under WooCommerce: filter by pending/resolved, search, CSV export, bulk "Mark as resolved"
 * **Order actions** — admins can submit a withdrawal on behalf of the customer (e.g. phone request) and mark requests resolved from the order edit screen
-* **Translatable** — full text domain, .pot included, Czech and Slovak translations bundled
+* **Translatable** — full text domain, .pot included, all 24 official EU languages bundled (Bulgarian, Croatian, Czech, Danish, Dutch, English, Estonian, Finnish, French, German, Greek, Hungarian, Irish, Italian, Latvian, Lithuanian, Maltese, Polish, Portuguese, Romanian, Slovak, Slovenian, Spanish, Swedish)
 * **Theme-overridable templates** — copy `templates/withdrawal-form.php` or `templates/guest-lookup.php` into your theme to customize
 * **HPOS-compatible** — works with WooCommerce's High-Performance Order Storage
 
@@ -97,6 +97,9 @@ The plugin only stores data the customer has explicitly submitted (reason, refun
 
 == Changelog ==
 
+= 1.3.0 =
+* New: bundled translations for all 24 official EU languages — Bulgarian, Croatian, Danish, Dutch, Estonian, Finnish, French, German, Greek, Hungarian, Irish, Italian, Latvian, Lithuanian, Maltese, Polish, Portuguese, Romanian, Slovenian, Spanish, Swedish (in addition to existing Czech and Slovak). Native-quality review via translate.wordpress.org is welcome and will override the bundled files automatically.
+
 = 1.2.3 =
 * Removed: "Custom button CSS" textarea setting and the `pcwb_custom_css` option. WordPress.org guidelines do not allow plugins to accept arbitrary CSS input; the bundled stylesheet remains, and themes can override styles in their own files.
 * Replaced inline arrow-function `sanitize_callback` for `pcwb_guest_enabled` with a named class method.
@@ -131,6 +134,9 @@ The plugin only stores data the customer has explicitly submitted (reason, refun
 * Initial release.
 
 == Upgrade Notice ==
+
+= 1.3.0 =
+Adds bundled translations for all 24 official EU languages, intended for stores serving the EU single market before the 19 June 2026 enforcement date of EU Directive 2023/2673.
 
 = 1.2.3 =
 The "Custom button CSS" setting has been removed per WordPress.org guidelines. Override styles in your theme stylesheet instead.
