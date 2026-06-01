@@ -4,7 +4,7 @@ Tags: woocommerce, withdrawal, refund, gdpr, eu
 Requires at least: 6.0
 Tested up to: 7.0
 Requires PHP: 7.4
-Stable tag: 1.3.0
+Stable tag: 1.3.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -97,6 +97,9 @@ The plugin only stores data the customer has explicitly submitted (reason, refun
 
 == Changelog ==
 
+= 1.3.1 =
+* Lightweight build — the deployed package now ships only compiled `.mo` translation files. The matching `.po` source files remain in the GitHub repository for translators.
+
 = 1.3.0 =
 * New: bundled translations for all 24 official EU languages — Bulgarian, Croatian, Danish, Dutch, Estonian, Finnish, French, German, Greek, Hungarian, Irish, Italian, Latvian, Lithuanian, Maltese, Polish, Portuguese, Romanian, Slovenian, Spanish, Swedish (in addition to existing Czech and Slovak). Native-quality review via translate.wordpress.org is welcome and will override the bundled files automatically.
 
@@ -134,6 +137,9 @@ The plugin only stores data the customer has explicitly submitted (reason, refun
 * Initial release.
 
 == Upgrade Notice ==
+
+= 1.3.1 =
+Halves the deployed package size by shipping only compiled translations.
 
 = 1.3.0 =
 Adds bundled translations for all 24 official EU languages, intended for stores serving the EU single market before the 19 June 2026 enforcement date of EU Directive 2023/2673.
