@@ -147,6 +147,13 @@ class PCWB_Admin_Order {
      * Read POST data and write it to the order.
      */
     private static function persist_meta_box( WC_Order $order ) {
+        // Guard against re-entry: $order->save() below fires woocommerce_update_order,
+        // which re-enters this method via save_meta_box_hpos() and would otherwise recurse infinitely.
+        static $saving = false;
+        if ( $saving ) {
+            return;
+        }
+
         $nonce = isset( $_POST['pcwb_meta_box_nonce'] ) ? sanitize_text_field( wp_unslash( $_POST['pcwb_meta_box_nonce'] ) ) : '';
         if ( ! wp_verify_nonce( $nonce, 'pcwb_meta_box' ) ) {
             return;
@@ -156,15 +163,21 @@ class PCWB_Admin_Order {
         }
 
         $raw = isset( $_POST['pcwb_delivered_at'] ) ? sanitize_text_field( wp_unslash( $_POST['pcwb_delivered_at'] ) ) : '';
-        if ( $raw === '' ) {
-            $order->delete_meta_data( '_pcwb_delivered_at' );
-            $order->save();
-            return;
-        }
 
-        if ( preg_match( '/^\d{4}-\d{2}-\d{2}$/', $raw ) ) {
-            $order->update_meta_data( '_pcwb_delivered_at', $raw . ' 00:00:00' );
-            $order->save();
+        $saving = true;
+        try {
+            if ( $raw === '' ) {
+                $order->delete_meta_data( '_pcwb_delivered_at' );
+                $order->save();
+                return;
+            }
+
+            if ( preg_match( '/^\d{4}-\d{2}-\d{2}$/', $raw ) ) {
+                $order->update_meta_data( '_pcwb_delivered_at', $raw . ' 00:00:00' );
+                $order->save();
+            }
+        } finally {
+            $saving = false;
         }
     }
 

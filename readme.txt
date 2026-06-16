@@ -4,7 +4,7 @@ Tags: woocommerce, withdrawal, refund, gdpr, eu
 Requires at least: 6.0
 Tested up to: 7.0
 Requires PHP: 7.4
-Stable tag: 1.3.1
+Stable tag: 1.3.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -97,6 +97,9 @@ The plugin only stores data the customer has explicitly submitted (reason, refun
 
 == Changelog ==
 
+= 1.3.2 =
+* Fixed: changing an order's status (or otherwise saving an order from the edit screen) could trigger an HTTP 500 / fatal error. The cooling-off meta box saved the order inside the `woocommerce_update_order` hook, which re-entered the same save handler and caused infinite recursion. Added a re-entry guard.
+
 = 1.3.1 =
 * Lightweight build — the deployed package now ships only compiled `.mo` translation files. The matching `.po` source files remain in the GitHub repository for translators.
 
@@ -137,6 +140,9 @@ The plugin only stores data the customer has explicitly submitted (reason, refun
 * Initial release.
 
 == Upgrade Notice ==
+
+= 1.3.2 =
+Fixes a fatal error (HTTP 500) when changing an order's status. All users should update.
 
 = 1.3.1 =
 Halves the deployed package size by shipping only compiled translations.
