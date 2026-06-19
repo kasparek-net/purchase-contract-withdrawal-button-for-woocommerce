@@ -15,6 +15,13 @@ if ( ! class_exists( 'WP_List_Table' ) ) {
 
 class PCWB_Admin_List extends WP_List_Table {
 
+    /**
+     * State counts for the views row, computed in prepare_items().
+     *
+     * @var array
+     */
+    private $state_counts = [ '' => 0, 'pending' => 0, 'resolved' => 0 ];
+
     public function __construct() {
         parent::__construct( [
             'singular' => 'withdrawal',
@@ -27,6 +34,7 @@ class PCWB_Admin_List extends WP_List_Table {
         add_action( 'admin_menu', [ __CLASS__, 'menu' ], 20 );
         add_action( 'admin_post_pcwb_export_csv', [ __CLASS__, 'export_csv' ] );
         add_action( 'admin_post_pcwb_resolve', [ __CLASS__, 'handle_resolve' ] );
+        add_action( 'admin_post_pcwb_delete', [ __CLASS__, 'handle_delete' ] );
     }
 
     public static function menu() {
@@ -104,13 +112,14 @@ class PCWB_Admin_List extends WP_List_Table {
     public function get_bulk_actions() {
         return [
             'resolve' => __( 'Mark as resolved', 'purchase-contract-withdrawal-button-for-woocommerce' ),
+            'delete'  => __( 'Delete withdrawal record', 'purchase-contract-withdrawal-button-for-woocommerce' ),
         ];
     }
 
     public function get_views() {
         $base    = remove_query_arg( [ 'state', 'paged' ] );
         $current = self::current_state();
-        $counts  = $this->get_state_counts();
+        $counts  = $this->state_counts;
         $views   = [];
         $labels  = [
             ''         => __( 'All', 'purchase-contract-withdrawal-button-for-woocommerce' ),
@@ -135,18 +144,33 @@ class PCWB_Admin_List extends WP_List_Table {
     public function prepare_items() {
         $per_page = 20;
         $current  = $this->get_pagenum();
-        $args     = $this->build_query_args( $per_page, $current );
 
-        $query = wc_get_orders( $args );
-        $count_args = $args;
-        unset( $count_args['paged'], $count_args['orderby'], $count_args['order'] );
-        $count_args['return'] = 'ids';
-        $count_args['limit']  = 9999;
-        $all_ids = wc_get_orders( $count_args );
-        $total   = is_array( $all_ids ) ? count( $all_ids ) : 0;
+        // Candidate set: all withdrawals matching search + date range, sorted newest first.
+        // State (All/Pending/Resolved) is filtered in PHP rather than via wc_get_orders
+        // meta_query, which does not reliably narrow by EXISTS/NOT EXISTS across the
+        // CPT and HPOS order stores.
+        $candidates = $this->get_candidate_orders();
+
+        $pending  = 0;
+        $resolved = 0;
+        foreach ( $candidates as $order ) {
+            if ( $order->get_meta( '_pcwb_resolved_at' ) ) {
+                $resolved++;
+            } else {
+                $pending++;
+            }
+        }
+        $this->state_counts = [
+            ''         => count( $candidates ),
+            'pending'  => $pending,
+            'resolved' => $resolved,
+        ];
+
+        $filtered = $this->filter_by_state( $candidates, self::current_state() );
+        $total    = count( $filtered );
 
         $this->_column_headers = [ $this->get_columns(), [], [] ];
-        $this->items = is_array( $query ) ? $query : [];
+        $this->items = array_slice( $filtered, ( $current - 1 ) * $per_page, $per_page );
         $this->set_pagination_args( [
             'total_items' => $total,
             'per_page'    => $per_page,
@@ -154,50 +178,96 @@ class PCWB_Admin_List extends WP_List_Table {
         ] );
     }
 
-    private function get_state_counts() {
-        $ids = wc_get_orders( [
-            'limit'        => 9999,
-            'return'       => 'ids',
-            // phpcs:ignore WordPress.DB.SlowDBQuery.slow_db_query_meta_key -- Required to list orders flagged as withdrawn; volume is bounded by withdrawal requests.
-            'meta_key'     => '_pcwb_requested_at',
-            'meta_compare' => 'EXISTS',
-        ] );
+    /**
+     * Load all withdrawal orders matching the current search + date range,
+     * sorted by submission date descending.
+     *
+     * @return WC_Order[]
+     */
+    private function get_candidate_orders() {
+        $ids = wc_get_orders( $this->build_query_args() );
         $ids = is_array( $ids ) ? $ids : [];
 
-        $pending  = 0;
-        $resolved = 0;
-        foreach ( $ids as $order_id ) {
-            $order = wc_get_order( $order_id );
-            if ( ! $order ) {
+        $orders = [];
+        foreach ( $ids as $id ) {
+            $order = wc_get_order( $id );
+            if ( ! $order || ! $this->in_date_range( $order ) ) {
                 continue;
             }
-            if ( $order->get_meta( '_pcwb_resolved_at' ) ) {
-                $resolved++;
-            } else {
-                $pending++;
-            }
+            $orders[] = $order;
         }
-        return [
-            ''         => count( $ids ),
-            'pending'  => $pending,
-            'resolved' => $resolved,
-        ];
+
+        usort(
+            $orders,
+            static function ( $a, $b ) {
+                return strcmp(
+                    (string) $b->get_meta( '_pcwb_requested_at' ),
+                    (string) $a->get_meta( '_pcwb_requested_at' )
+                );
+            }
+        );
+
+        return $orders;
     }
 
     /**
-     * Build wc_get_orders args from current request.
+     * Filter a list of withdrawal orders by state.
      *
-     * @param int  $per_page Per-page limit.
-     * @param int  $paged    Current page (1-based).
-     * @param bool $ignore_state When true, skip the state filter (for view counts).
+     * @param WC_Order[] $orders Orders to filter.
+     * @param string     $state  '', 'pending', or 'resolved'.
+     * @return WC_Order[]
      */
-    private function build_query_args( $per_page, $paged, $ignore_state = false ) {
+    private function filter_by_state( $orders, $state ) {
+        if ( 'resolved' !== $state && 'pending' !== $state ) {
+            return $orders;
+        }
+        $out = [];
+        foreach ( $orders as $order ) {
+            $is_resolved = (bool) $order->get_meta( '_pcwb_resolved_at' );
+            if ( ( 'resolved' === $state && $is_resolved ) || ( 'pending' === $state && ! $is_resolved ) ) {
+                $out[] = $order;
+            }
+        }
+        return $out;
+    }
+
+    /**
+     * Check whether an order's submission date is within the current date filter.
+     *
+     * @param WC_Order $order Order to test.
+     * @return bool
+     */
+    private function in_date_range( $order ) {
+        $from = self::current_from();
+        $to   = self::current_to();
+        if ( ! $from && ! $to ) {
+            return true;
+        }
+        $requested = (string) $order->get_meta( '_pcwb_requested_at' );
+        if ( '' === $requested ) {
+            return false;
+        }
+        $ts = strtotime( $requested );
+        if ( $from && $ts < strtotime( $from . ' 00:00:00' ) ) {
+            return false;
+        }
+        if ( $to && $ts > strtotime( $to . ' 23:59:59' ) ) {
+            return false;
+        }
+        return true;
+    }
+
+    /**
+     * Build wc_get_orders args for the base withdrawal set (search applied here;
+     * date range and state are filtered in PHP).
+     *
+     * @return array
+     */
+    private function build_query_args() {
         $args = [
-            'limit'        => $per_page,
-            'paged'        => $paged,
-            'orderby'      => 'meta_value',
-            'order'        => 'DESC',
-            // phpcs:ignore WordPress.DB.SlowDBQuery.slow_db_query_meta_key -- Required to list orders flagged as withdrawn.
+            'limit'        => 9999,
+            'return'       => 'ids',
+            // phpcs:ignore WordPress.DB.SlowDBQuery.slow_db_query_meta_key -- Required to list orders flagged as withdrawn; volume is bounded by withdrawal requests.
             'meta_key'     => '_pcwb_requested_at',
             'meta_compare' => 'EXISTS',
             // phpcs:ignore WordPress.DB.SlowDBQuery.slow_db_query_meta_query -- Required to filter orders by withdrawal status; bounded volume.
@@ -209,35 +279,9 @@ class PCWB_Admin_List extends WP_List_Table {
             ],
         ];
 
-        if ( ! $ignore_state ) {
-            $state = self::current_state();
-            if ( 'resolved' === $state ) {
-                $args['meta_query'][] = [
-                    'key'     => '_pcwb_resolved_at',
-                    'compare' => 'EXISTS',
-                ];
-            } elseif ( 'pending' === $state ) {
-                $args['meta_query'][] = [
-                    'key'     => '_pcwb_resolved_at',
-                    'compare' => 'NOT EXISTS',
-                ];
-            }
-        }
-
         $search = self::current_search();
         if ( $search !== '' ) {
             $args['search'] = '*' . $search . '*';
-        }
-
-        $from = self::current_from();
-        $to   = self::current_to();
-        if ( $from || $to ) {
-            $args['meta_query'][] = [
-                'key'     => '_pcwb_requested_at',
-                'value'   => [ $from ? $from . ' 00:00:00' : '0000-00-00 00:00:00', $to ? $to . ' 23:59:59' : '9999-12-31 23:59:59' ],
-                'compare' => 'BETWEEN',
-                'type'    => 'DATETIME',
-            ];
         }
 
         return $args;
@@ -250,8 +294,28 @@ class PCWB_Admin_List extends WP_List_Table {
     public function column_default( $order, $column_name ) {
         switch ( $column_name ) {
             case 'order':
-                $url = $order->get_edit_order_url();
-                return sprintf( '<a href="%s">#%s</a>', esc_url( $url ), esc_html( $order->get_order_number() ) );
+                $url        = $order->get_edit_order_url();
+                $delete_url = wp_nonce_url(
+                    add_query_arg(
+                        [
+                            'action'   => 'pcwb_delete',
+                            'order_id' => $order->get_id(),
+                        ],
+                        admin_url( 'admin-post.php' )
+                    ),
+                    'pcwb_delete_' . $order->get_id()
+                );
+                /* translators: %s: order number */
+                $confirm = esc_attr( sprintf( __( 'Remove the withdrawal record from order #%s? The order itself will NOT be deleted.', 'purchase-contract-withdrawal-button-for-woocommerce' ), $order->get_order_number() ) );
+                $actions = [
+                    'delete' => sprintf(
+                        '<a href="%s" class="submitdelete" onclick="return confirm(\'%s\');">%s</a>',
+                        esc_url( $delete_url ),
+                        $confirm,
+                        esc_html__( 'Delete', 'purchase-contract-withdrawal-button-for-woocommerce' )
+                    ),
+                ];
+                return sprintf( '<a href="%s">#%s</a>', esc_url( $url ), esc_html( $order->get_order_number() ) ) . $this->row_actions( $actions );
             case 'requested_at':
                 $requested = (string) $order->get_meta( '_pcwb_requested_at' );
                 return $requested ? esc_html( date_i18n( get_option( 'date_format' ) . ' ' . get_option( 'time_format' ), strtotime( $requested ) ) ) : '—';
@@ -297,33 +361,46 @@ class PCWB_Admin_List extends WP_List_Table {
     }
 
     public function process_bulk_action() {
-        if ( 'resolve' !== $this->current_action() ) {
+        $action = $this->current_action();
+        if ( 'resolve' !== $action && 'delete' !== $action ) {
             return;
         }
         check_admin_referer( 'bulk-withdrawals' );
         if ( ! current_user_can( 'manage_woocommerce' ) ) {
             return;
         }
-        $ids = isset( $_REQUEST['orders'] ) ? array_map( 'absint', (array) wp_unslash( $_REQUEST['orders'] ) ) : [];
-        $resolved = 0;
+        $ids   = isset( $_REQUEST['orders'] ) ? array_map( 'absint', (array) wp_unslash( $_REQUEST['orders'] ) ) : [];
+        $count = 0;
         foreach ( $ids as $id ) {
             $order = wc_get_order( $id );
-            if ( $order ) {
-                $result = PCWB_Frontend::resolve( $order, get_current_user_id() );
-                if ( true === $result ) {
-                    $resolved++;
-                }
+            if ( ! $order ) {
+                continue;
+            }
+            $result = 'delete' === $action
+                ? PCWB_Frontend::delete_withdrawal( $order )
+                : PCWB_Frontend::resolve( $order, get_current_user_id() );
+            if ( true === $result ) {
+                $count++;
             }
         }
-        if ( $resolved > 0 ) {
-            add_action( 'admin_notices', function () use ( $resolved ) {
+        if ( $count > 0 ) {
+            add_action( 'admin_notices', function () use ( $count, $action ) {
+                if ( 'delete' === $action ) {
+                    $message = sprintf(
+                        /* translators: %d: number of withdrawal records removed */
+                        _n( '%d withdrawal record removed.', '%d withdrawal records removed.', $count, 'purchase-contract-withdrawal-button-for-woocommerce' ),
+                        $count
+                    );
+                } else {
+                    $message = sprintf(
+                        /* translators: %d: number of withdrawals resolved */
+                        _n( '%d withdrawal marked as resolved.', '%d withdrawals marked as resolved.', $count, 'purchase-contract-withdrawal-button-for-woocommerce' ),
+                        $count
+                    );
+                }
                 printf(
                     '<div class="notice notice-success is-dismissible"><p>%s</p></div>',
-                    esc_html( sprintf(
-                        /* translators: %d: number of withdrawals resolved */
-                        _n( '%d withdrawal marked as resolved.', '%d withdrawals marked as resolved.', $resolved, 'purchase-contract-withdrawal-button-for-woocommerce' ),
-                        $resolved
-                    ) )
+                    esc_html( $message )
                 );
             } );
         }
@@ -343,17 +420,28 @@ class PCWB_Admin_List extends WP_List_Table {
         exit;
     }
 
+    public static function handle_delete() {
+        if ( ! current_user_can( 'manage_woocommerce' ) ) {
+            wp_die( esc_html__( 'You do not have permission to do this.', 'purchase-contract-withdrawal-button-for-woocommerce' ), '', [ 'response' => 403 ] );
+        }
+        $order_id = isset( $_GET['order_id'] ) ? absint( $_GET['order_id'] ) : 0;
+        check_admin_referer( 'pcwb_delete_' . $order_id );
+        $order = wc_get_order( $order_id );
+        if ( $order ) {
+            PCWB_Frontend::delete_withdrawal( $order );
+        }
+        wp_safe_redirect( add_query_arg( 'page', 'pcwb-withdrawals', admin_url( 'admin.php' ) ) );
+        exit;
+    }
+
     public static function export_csv() {
         if ( ! current_user_can( 'manage_woocommerce' ) ) {
             wp_die( esc_html__( 'You do not have permission to do this.', 'purchase-contract-withdrawal-button-for-woocommerce' ), '', [ 'response' => 403 ] );
         }
         check_admin_referer( 'pcwb_export_csv' );
 
-        $table = new self();
-        $args  = $table->build_query_args( -1, 1 );
-        $args['paginate'] = false;
-        unset( $args['paged'] );
-        $orders = wc_get_orders( $args );
+        $table  = new self();
+        $orders = $table->filter_by_state( $table->get_candidate_orders(), self::current_state() );
 
         nocache_headers();
         header( 'Content-Type: text/csv; charset=utf-8' );

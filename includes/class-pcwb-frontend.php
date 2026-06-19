@@ -320,6 +320,41 @@ class PCWB_Frontend {
     }
 
     /**
+     * Remove a withdrawal record from an order.
+     *
+     * Deletes all withdrawal-related meta. The order itself is NOT deleted and
+     * its status is left untouched — an administrator can adjust it manually.
+     *
+     * @param WC_Order $order Order to clear.
+     * @return true|WP_Error
+     */
+    public static function delete_withdrawal( WC_Order $order ) {
+        if ( ! $order->get_meta( '_pcwb_requested_at' ) ) {
+            return new WP_Error( 'not_submitted', __( 'This order does not have a withdrawal record.', 'purchase-contract-withdrawal-button-for-woocommerce' ) );
+        }
+
+        $keys = [
+            '_pcwb_requested_at',
+            '_pcwb_reason',
+            '_pcwb_refund_account',
+            '_pcwb_source',
+            '_pcwb_submitted_by',
+            '_pcwb_resolved_at',
+            '_pcwb_resolved_by',
+        ];
+        foreach ( $keys as $key ) {
+            $order->delete_meta_data( $key );
+        }
+
+        $order->add_order_note( __( 'Withdrawal record removed by an administrator. The order itself was not deleted.', 'purchase-contract-withdrawal-button-for-woocommerce' ) );
+        $order->save();
+
+        do_action( 'pcwb_after_delete', $order );
+
+        return true;
+    }
+
+    /**
      * Build a human-readable intro for the order note / status-change comment.
      *
      * @param string $source   One of: customer, guest, admin.

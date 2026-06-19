@@ -4,7 +4,7 @@ Tags: woocommerce, withdrawal, refund, gdpr, eu
 Requires at least: 6.0
 Tested up to: 7.0
 Requires PHP: 7.4
-Stable tag: 1.3.2
+Stable tag: 1.3.3
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -96,6 +96,10 @@ The plugin only stores data the customer has explicitly submitted (reason, refun
 5. Guest withdrawal form after successful lookup — pre-filled order summary, optional refund account and reason, explicit confirmation.
 
 == Changelog ==
+
+= 1.3.3 =
+* Fixed: the All / Pending / Resolved filter on the Withdrawals admin screen always showed every request regardless of the selected tab. State filtering is now applied reliably and works across both the legacy and HPOS order stores.
+* New: withdrawal records can now be deleted from the admin list (row action and bulk action). This removes the withdrawal data from the order; the order itself is not deleted and its status is left unchanged.
 
 = 1.3.2 =
 * Fixed: changing an order's status (or otherwise saving an order from the edit screen) could trigger an HTTP 500 / fatal error. The cooling-off meta box saved the order inside the `woocommerce_update_order` hook, which re-entered the same save handler and caused infinite recursion. Added a re-entry guard.
