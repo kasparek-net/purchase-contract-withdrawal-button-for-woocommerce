@@ -38,7 +38,7 @@ The plugin is not legal advice. Merchants remain responsible for ensuring their 
 * **Configurable eligible statuses** — choose which order statuses show the button
 * **Configurable post-submission status** — typically On hold or Processing
 * **WooCommerce email integration** — customer + admin emails as native WC_Email classes
-* **Admin overview** — dedicated "Withdrawals" screen under WooCommerce: filter by pending/resolved, search, CSV export, bulk "Mark as resolved"
+* **Admin overview** — dedicated "Withdrawals" screen under WooCommerce: filter by pending/resolved, search, date range, CSV export, per-row and bulk "Mark as resolved", and per-row and bulk delete of a withdrawal record (removes the withdrawal data from the order without deleting the order itself)
 * **Order actions** — admins can submit a withdrawal on behalf of the customer (e.g. phone request) and mark requests resolved from the order edit screen
 * **Translatable** — full text domain, .pot included, all 24 official EU languages bundled (Bulgarian, Croatian, Czech, Danish, Dutch, English, Estonian, Finnish, French, German, Greek, Hungarian, Irish, Italian, Latvian, Lithuanian, Maltese, Polish, Portuguese, Romanian, Slovak, Slovenian, Spanish, Swedish)
 * **Theme-overridable templates** — copy `templates/withdrawal-form.php` or `templates/guest-lookup.php` into your theme to customize
@@ -53,6 +53,7 @@ The plugin is not legal advice. Merchants remain responsible for ensuring their 
 * `pcwb_admin_recipient` — admin email recipient override
 * `pcwb_after_submit` ($order, $reason, $account, $source) — fires after a successful submission (source = customer|guest|admin)
 * `pcwb_after_resolve` ($order, $resolved_by_user_id) — fires when an admin marks a withdrawal resolved
+* `pcwb_after_delete` ($order) — fires after an admin removes a withdrawal record from an order
 
 == Installation ==
 
@@ -89,7 +90,7 @@ The plugin only stores data the customer has explicitly submitted (reason, refun
 
 == Screenshots ==
 
-1. Withdrawals admin overview — filter by pending/resolved, search, date range, bulk actions, CSV export, per-row Resolve.
+1. Withdrawals admin overview — filter by pending/resolved, search, date range, bulk actions, CSV export, per-row Resolve and Delete.
 2. Order edit screen with the "Withdrawal cooling-off" meta box — set the date of delivery, see the cooling-off deadline and submission details.
 3. Order actions dropdown — submit a withdrawal on behalf of the customer, or mark an existing one as resolved.
 4. Guest lookup form rendered by the [pcwb_withdrawal_form] shortcode on a public page — order number + billing email.
