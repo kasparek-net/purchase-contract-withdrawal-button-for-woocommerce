@@ -65,3 +65,13 @@
 .pcwb-actions .pcwb-cancel-button {
     margin-left: 8px;
 }
+
+/* Orders list row action: keep the withdrawal button separated from adjacent
+   action buttons ("View", invoice, …) even on themes that strip the default
+   WooCommerce button margins, so the labels don't run together. */
+.woocommerce-orders-table__cell-order-actions a.pcwb_withdrawal,
+.woocommerce-MyAccount-orders a.pcwb_withdrawal,
+td.order-actions a.pcwb_withdrawal {
+    display: inline-block;
+    margin: 0 0 4px 8px;
+}

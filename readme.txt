@@ -4,7 +4,7 @@ Tags: woocommerce, withdrawal, refund, gdpr, eu
 Requires at least: 6.0
 Tested up to: 7.0
 Requires PHP: 7.4
-Stable tag: 1.3.5
+Stable tag: 1.3.6
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -98,6 +98,9 @@ The plugin only stores data the customer has explicitly submitted (reason, refun
 
 == Changelog ==
 
+= 1.3.6 =
+* Fixed: in the My Account orders list, the withdrawal row-action button could visually run into the adjacent action buttons ("View", invoice, …) on themes that remove the default WooCommerce button spacing. The button now keeps a small margin of its own.
+
 = 1.3.5 =
 * Fixed: the row-action / My Account button used the bare word "Withdraw", which could pick up an unrelated translation of that word on some sites (e.g. showing "Cancel" in the local language). The label now carries a translation context so it can only ever resolve to the intended withdrawal wording.
 
@@ -152,6 +155,9 @@ The plugin only stores data the customer has explicitly submitted (reason, refun
 * Initial release.
 
 == Upgrade Notice ==
+
+= 1.3.6 =
+Fixes the withdrawal row-action button running into adjacent buttons on some themes.
 
 = 1.3.5 =
 Fixes the withdrawal button label so it can no longer be mistranslated as "Cancel" on some sites.
