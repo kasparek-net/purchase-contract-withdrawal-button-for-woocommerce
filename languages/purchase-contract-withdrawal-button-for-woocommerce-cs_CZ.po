@@ -437,3 +437,36 @@ msgstr "Povolit shortcode pro nepřihlášené zákazníky"
 #. translators: %s: shortcode wrapped in <code>
 msgid "Place %s on any page (e.g. a public landing page). The form will ask for an order number and the billing email, then show the withdrawal form."
 msgstr "Vložte %s na libovolnou stránku (např. veřejnou landing page). Formulář se zákazníka zeptá na číslo objednávky a fakturační e-mail a poté zobrazí formulář pro odstoupení."
+
+msgid "Withdraw"
+msgstr "Odstoupit"
+
+msgid "Button positions"
+msgstr "Umístění tlačítka"
+
+msgid "Where the withdrawal button appears in the customer view. You can select more than one — e.g. both the order detail and the orders list."
+msgstr "Kde se tlačítko pro odstoupení zobrazí v zákaznickém rozhraní. Můžete vybrat i více možností — např. detail objednávky i seznam objednávek."
+
+msgid "My Account menu tab"
+msgstr "Záložka v Můj účet"
+
+msgid "Add a \"Withdrawal\" tab to the My Account navigation"
+msgstr "Přidat záložku „Odstoupení“ do navigace Můj účet"
+
+msgid "Adds a dedicated page under My Account that lists the customer's orders still within the cooling-off period, each with a withdrawal button."
+msgstr "Přidá do sekce Můj účet samostatnou stránku se seznamem objednávek zákazníka, které jsou stále ve lhůtě pro odstoupení, každou s tlačítkem pro odstoupení."
+
+msgid "Withdrawal"
+msgstr "Odstoupení"
+
+msgid "Below are your orders that are still within the withdrawal (cooling-off) period. You may withdraw from the purchase contract for any of them."
+msgstr "Níže jsou vaše objednávky, které jsou stále ve lhůtě pro odstoupení od smlouvy. U kterékoli z nich můžete od kupní smlouvy odstoupit."
+
+msgid "You have no orders that are currently eligible for withdrawal."
+msgstr "Nemáte žádné objednávky, u kterých lze nyní odstoupit od smlouvy."
+
+msgid "Date"
+msgstr "Datum"
+
+msgid "Withdraw by"
+msgstr "Odstoupit do"

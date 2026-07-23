@@ -3,7 +3,7 @@
  * Plugin Name: Purchase Contract Withdrawal Button for WooCommerce
  * Plugin URI: https://github.com/kasparek-net/purchase-contract-withdrawal-button-for-woocommerce
  * Description: Adds a "Withdraw from purchase contract" button for logged-in customers and an optional shortcode-based form for guests. Centralised admin overview of withdrawal requests, CSV export, configurable cooling-off period and reference date, automated emails. Designed to comply with EU Directive 2023/2673 — required in the Czech Republic from 19 June 2026 (§ 1830a Civil Code).
- * Version: 1.3.3
+ * Version: 1.3.4
  * Requires at least: 6.0
  * Requires PHP: 7.4
  * Requires Plugins: woocommerce
@@ -23,7 +23,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
 
-define( 'PCWB_VERSION', '1.3.3' );
+define( 'PCWB_VERSION', '1.3.4' );
 define( 'PCWB_PLUGIN_FILE', __FILE__ );
 define( 'PCWB_PLUGIN_PATH', plugin_dir_path( __FILE__ ) );
 define( 'PCWB_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
@@ -51,10 +51,14 @@ function pcwb_bootstrap() {
     require_once PCWB_PLUGIN_PATH . 'includes/class-pcwb-frontend.php';
     require_once PCWB_PLUGIN_PATH . 'includes/class-pcwb-settings.php';
     require_once PCWB_PLUGIN_PATH . 'includes/class-pcwb-guest.php';
+    require_once PCWB_PLUGIN_PATH . 'includes/class-pcwb-account.php';
 
     PCWB_Frontend::init();
     PCWB_Settings::init();
     PCWB_Guest::init();
+    PCWB_Account::init();
+
+    pcwb_maybe_flush_rewrite_rules();
 
     if ( is_admin() ) {
         require_once PCWB_PLUGIN_PATH . 'includes/class-pcwb-admin-order.php';
@@ -67,6 +71,35 @@ function pcwb_bootstrap() {
 
     add_action( 'wp_enqueue_scripts', 'pcwb_enqueue_styles' );
 }
+
+/**
+ * Flush rewrite rules once whenever the plugin version or the My Account tab
+ * setting changes, so the endpoint appears/disappears without a manual permalink save.
+ *
+ * Self-healing: a marker option stores "version:tab_state" and the flush runs late
+ * on `init` (after the endpoint is registered) only when that marker no longer matches.
+ * This covers fresh activation, upgrades, and both the add_option and update_option
+ * paths when the toggle is first saved — never flushing on every request.
+ */
+function pcwb_maybe_flush_rewrite_rules() {
+    $marker = PCWB_VERSION . ':' . get_option( 'pcwb_menu_tab_enabled', 'no' );
+    if ( get_option( 'pcwb_rewrite_marker' ) === $marker ) {
+        return;
+    }
+    add_action( 'init', function () use ( $marker ) {
+        flush_rewrite_rules( false );
+        update_option( 'pcwb_rewrite_marker', $marker );
+    }, 99 );
+}
+
+register_activation_hook( __FILE__, function () {
+    add_rewrite_endpoint( 'withdrawal', EP_ROOT | EP_PAGES );
+    flush_rewrite_rules( false );
+} );
+
+register_deactivation_hook( __FILE__, function () {
+    flush_rewrite_rules( false );
+} );
 
 /**
  * Admin notice when WooCommerce is missing.

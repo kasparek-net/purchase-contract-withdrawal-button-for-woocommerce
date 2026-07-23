@@ -4,7 +4,7 @@ Tags: woocommerce, withdrawal, refund, gdpr, eu
 Requires at least: 6.0
 Tested up to: 7.0
 Requires PHP: 7.4
-Stable tag: 1.3.3
+Stable tag: 1.3.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -98,6 +98,10 @@ The plugin only stores data the customer has explicitly submitted (reason, refun
 
 == Changelog ==
 
+= 1.3.4 =
+* New: the button position is now a multi-select — the withdrawal button can appear in more than one place at once (e.g. both on the order detail page and as a row action in the My Account orders list). Existing single-position settings are migrated automatically.
+* New: optional "Withdrawal" tab in the My Account navigation. When enabled, it adds a dedicated page listing the customer's orders still within the cooling-off period, each with a withdrawal button.
+
 = 1.3.3 =
 * Fixed: the All / Pending / Resolved filter on the Withdrawals admin screen always showed every request regardless of the selected tab. State filtering is now applied reliably and works across both the legacy and HPOS order stores.
 * New: withdrawal records can now be deleted from the admin list (row action and bulk action). This removes the withdrawal data from the order; the order itself is not deleted and its status is left unchanged.
@@ -145,6 +149,9 @@ The plugin only stores data the customer has explicitly submitted (reason, refun
 * Initial release.
 
 == Upgrade Notice ==
+
+= 1.3.4 =
+Adds multi-position button placement and an optional My Account "Withdrawal" tab.
 
 = 1.3.2 =
 Fixes a fatal error (HTTP 500) when changing an order's status. All users should update.

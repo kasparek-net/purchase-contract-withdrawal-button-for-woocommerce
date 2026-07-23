@@ -15,6 +15,9 @@ delete_option( 'pcwb_eligible_statuses' );
 delete_option( 'pcwb_admin_recipient' );
 delete_option( 'pcwb_new_status' );
 delete_option( 'pcwb_button_position' );
+delete_option( 'pcwb_button_positions' );
+delete_option( 'pcwb_menu_tab_enabled' );
+delete_option( 'pcwb_rewrite_marker' );
 delete_option( 'pcwb_custom_css' );
 
 delete_option( 'woocommerce_pcwb_customer_withdrawal_settings' );

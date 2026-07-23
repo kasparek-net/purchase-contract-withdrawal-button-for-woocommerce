@@ -12,15 +12,20 @@ if ( ! defined( 'ABSPATH' ) ) {
 class PCWB_Frontend {
 
     public static function init() {
-        $position = (string) get_option( 'pcwb_button_position', 'after_order_table' );
         $positions = PCWB_Settings::get_positions();
-        $hook = $positions[ $position ]['hook'] ?? 'woocommerce_order_details_after_order_table';
 
-        // Orders list action uses a different signature.
-        if ( 'woocommerce_my_account_my_orders_actions' === $hook ) {
-            add_filter( 'woocommerce_my_account_my_orders_actions', [ __CLASS__, 'add_orders_list_action' ], 20, 2 );
-        } else {
-            add_action( $hook, [ __CLASS__, 'render_button' ], 20 );
+        foreach ( PCWB_Settings::get_active_positions() as $key ) {
+            $hook = $positions[ $key ]['hook'] ?? '';
+            if ( '' === $hook ) {
+                continue;
+            }
+
+            // Orders list action uses a different signature.
+            if ( 'woocommerce_my_account_my_orders_actions' === $hook ) {
+                add_filter( 'woocommerce_my_account_my_orders_actions', [ __CLASS__, 'add_orders_list_action' ], 20, 2 );
+            } else {
+                add_action( $hook, [ __CLASS__, 'render_button' ], 20 );
+            }
         }
 
         add_action( 'woocommerce_view_order', [ __CLASS__, 'maybe_render_form' ], 5, 1 );

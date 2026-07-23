@@ -64,6 +64,7 @@ class PCWB_Settings {
                 'default'           => 'on-hold',
             ]
         );
+        // Legacy single-position option, kept registered for backward-compatible migration.
         register_setting(
             'pcwb_settings',
             'pcwb_button_position',
@@ -71,6 +72,24 @@ class PCWB_Settings {
                 'type'              => 'string',
                 'sanitize_callback' => [ __CLASS__, 'sanitize_position' ],
                 'default'           => 'after_order_table',
+            ]
+        );
+        register_setting(
+            'pcwb_settings',
+            'pcwb_button_positions',
+            [
+                'type'              => 'array',
+                'sanitize_callback' => [ __CLASS__, 'sanitize_positions' ],
+                'default'           => [ 'after_order_table' ],
+            ]
+        );
+        register_setting(
+            'pcwb_settings',
+            'pcwb_menu_tab_enabled',
+            [
+                'type'              => 'string',
+                'sanitize_callback' => [ __CLASS__, 'sanitize_yes_no' ],
+                'default'           => 'no',
             ]
         );
         register_setting(
@@ -119,6 +138,39 @@ class PCWB_Settings {
         return isset( $positions[ $value ] ) ? $value : 'after_order_table';
     }
 
+    /**
+     * Sanitize the multi-position selection: keep only known keys, never allow an empty set.
+     *
+     * @param mixed $value Raw submitted value.
+     * @return array
+     */
+    public static function sanitize_positions( $value ) {
+        if ( ! is_array( $value ) ) {
+            return [ 'after_order_table' ];
+        }
+        $valid = array_keys( self::get_positions() );
+        $clean = array_values( array_intersect( $value, $valid ) );
+        return empty( $clean ) ? [ 'after_order_table' ] : $clean;
+    }
+
+    /**
+     * Currently active button positions.
+     *
+     * Reads the multi-position option; falls back to migrating the legacy
+     * single-position scalar for installs upgraded from < 1.3.4.
+     *
+     * @return array<int,string>
+     */
+    public static function get_active_positions() {
+        $stored = get_option( 'pcwb_button_positions', null );
+        if ( is_array( $stored ) ) {
+            return self::sanitize_positions( $stored );
+        }
+
+        $legacy = (string) get_option( 'pcwb_button_position', 'after_order_table' );
+        return isset( self::get_positions()[ $legacy ] ) ? [ $legacy ] : [ 'after_order_table' ];
+    }
+
     public static function sanitize_statuses( $value ) {
         if ( ! is_array( $value ) ) {
             return [ 'completed' ];
@@ -137,7 +189,8 @@ class PCWB_Settings {
         $statuses     = (array) get_option( 'pcwb_eligible_statuses', [ 'completed' ] );
         $recipient    = (string) get_option( 'pcwb_admin_recipient', '' );
         $new_status   = (string) get_option( 'pcwb_new_status', 'on-hold' );
-        $position     = (string) get_option( 'pcwb_button_position', 'after_order_table' );
+        $active_positions = self::get_active_positions();
+        $menu_tab_on  = 'yes' === get_option( 'pcwb_menu_tab_enabled', 'no' );
         $guest_on     = 'yes' === get_option( 'pcwb_guest_enabled', 'no' );
         $all_statuses = wc_get_order_statuses();
         $positions    = self::get_positions();
@@ -222,17 +275,30 @@ class PCWB_Settings {
                     </tr>
                     <tr>
                         <th scope="row">
-                            <label for="pcwb_button_position"><?php esc_html_e( 'Button position', 'purchase-contract-withdrawal-button-for-woocommerce' ); ?></label>
+                            <?php esc_html_e( 'Button positions', 'purchase-contract-withdrawal-button-for-woocommerce' ); ?>
                         </th>
                         <td>
-                            <select id="pcwb_button_position" name="pcwb_button_position">
+                            <fieldset>
                                 <?php foreach ( $positions as $key => $cfg ) : ?>
-                                    <option value="<?php echo esc_attr( $key ); ?>" <?php selected( $position, $key ); ?>>
+                                    <label style="display:block;">
+                                        <input type="checkbox" name="pcwb_button_positions[]" value="<?php echo esc_attr( $key ); ?>" <?php checked( in_array( $key, $active_positions, true ) ); ?>>
                                         <?php echo esc_html( $cfg['label'] ); ?>
-                                    </option>
+                                    </label>
                                 <?php endforeach; ?>
-                            </select>
-                            <p class="description"><?php esc_html_e( 'Where the withdrawal button appears in the customer view.', 'purchase-contract-withdrawal-button-for-woocommerce' ); ?></p>
+                                <p class="description"><?php esc_html_e( 'Where the withdrawal button appears in the customer view. You can select more than one — e.g. both the order detail and the orders list.', 'purchase-contract-withdrawal-button-for-woocommerce' ); ?></p>
+                            </fieldset>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            <?php esc_html_e( 'My Account menu tab', 'purchase-contract-withdrawal-button-for-woocommerce' ); ?>
+                        </th>
+                        <td>
+                            <label>
+                                <input type="checkbox" name="pcwb_menu_tab_enabled" value="yes" <?php checked( $menu_tab_on ); ?>>
+                                <?php esc_html_e( 'Add a "Withdrawal" tab to the My Account navigation', 'purchase-contract-withdrawal-button-for-woocommerce' ); ?>
+                            </label>
+                            <p class="description"><?php esc_html_e( 'Adds a dedicated page under My Account that lists the customer\'s orders still within the cooling-off period, each with a withdrawal button.', 'purchase-contract-withdrawal-button-for-woocommerce' ); ?></p>
                         </td>
                     </tr>
                     <tr>
