@@ -49,7 +49,7 @@ class PCWB_Frontend {
         }
         $actions['pcwb_withdrawal'] = [
             'url'  => pcwb_get_form_url( $order->get_id() ),
-            'name' => __( 'Withdraw', 'purchase-contract-withdrawal-button-for-woocommerce' ),
+            'name' => _x( 'Withdraw', 'withdrawal action button', 'purchase-contract-withdrawal-button-for-woocommerce' ),
         ];
         return $actions;
     }

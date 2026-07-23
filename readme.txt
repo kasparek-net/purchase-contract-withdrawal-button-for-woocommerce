@@ -4,7 +4,7 @@ Tags: woocommerce, withdrawal, refund, gdpr, eu
 Requires at least: 6.0
 Tested up to: 7.0
 Requires PHP: 7.4
-Stable tag: 1.3.4
+Stable tag: 1.3.5
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -98,6 +98,9 @@ The plugin only stores data the customer has explicitly submitted (reason, refun
 
 == Changelog ==
 
+= 1.3.5 =
+* Fixed: the row-action / My Account button used the bare word "Withdraw", which could pick up an unrelated translation of that word on some sites (e.g. showing "Cancel" in the local language). The label now carries a translation context so it can only ever resolve to the intended withdrawal wording.
+
 = 1.3.4 =
 * New: the button position is now a multi-select — the withdrawal button can appear in more than one place at once (e.g. both on the order detail page and as a row action in the My Account orders list). Existing single-position settings are migrated automatically.
 * New: optional "Withdrawal" tab in the My Account navigation. When enabled, it adds a dedicated page listing the customer's orders still within the cooling-off period, each with a withdrawal button.
@@ -149,6 +152,9 @@ The plugin only stores data the customer has explicitly submitted (reason, refun
 * Initial release.
 
 == Upgrade Notice ==
+
+= 1.3.5 =
+Fixes the withdrawal button label so it can no longer be mistranslated as "Cancel" on some sites.
 
 = 1.3.4 =
 Adds multi-position button placement and an optional My Account "Withdrawal" tab.

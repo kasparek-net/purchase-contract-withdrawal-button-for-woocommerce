@@ -122,7 +122,7 @@ class PCWB_Account {
             echo $deadline ? esc_html( date_i18n( get_option( 'date_format' ), $deadline ) ) : '&ndash;';
             echo '</td>';
             echo '<td>';
-            echo '<a href="' . esc_url( pcwb_get_form_url( $order->get_id() ) ) . '" class="button pcwb-button">' . esc_html__( 'Withdraw', 'purchase-contract-withdrawal-button-for-woocommerce' ) . '</a>';
+            echo '<a href="' . esc_url( pcwb_get_form_url( $order->get_id() ) ) . '" class="button pcwb-button">' . esc_html( _x( 'Withdraw', 'withdrawal action button', 'purchase-contract-withdrawal-button-for-woocommerce' ) ) . '</a>';
             echo '</td>';
             echo '</tr>';
         }

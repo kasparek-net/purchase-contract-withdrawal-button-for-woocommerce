@@ -438,6 +438,7 @@ msgstr "Povolit shortcode pro nepřihlášené zákazníky"
 msgid "Place %s on any page (e.g. a public landing page). The form will ask for an order number and the billing email, then show the withdrawal form."
 msgstr "Vložte %s na libovolnou stránku (např. veřejnou landing page). Formulář se zákazníka zeptá na číslo objednávky a fakturační e-mail a poté zobrazí formulář pro odstoupení."
 
+msgctxt "withdrawal action button"
 msgid "Withdraw"
 msgstr "Odstoupit"
 
