@@ -1,8 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Purchase Contract Withdrawal Button for WooCommerce 1.2.0\n"
+"Project-Id-Version: Purchase Contract Withdrawal Button for WooCommerce "
+"1.2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-25 10:00+0000\n"
+"POT-Creation-Date: 2026-07-23 21:55+0200\n"
 "PO-Revision-Date: 2026-05-25 10:00+0000\n"
 "Last-Translator: Jakub Kašpárek\n"
 "Language-Team: Czech\n"
@@ -13,482 +14,760 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "X-Domain: purchase-contract-withdrawal-button-for-woocommerce\n"
 
-msgid "Purchase Contract Withdrawal Button for WooCommerce requires WooCommerce to be installed and active."
-msgstr "Plugin Purchase Contract Withdrawal Button for WooCommerce vyžaduje nainstalovaný a aktivní WooCommerce."
-
-msgid "Settings"
-msgstr "Nastavení"
-
-msgid "Withdraw from purchase contract"
-msgstr "Odstoupit od kupní smlouvy"
-
-msgid "This order is no longer eligible for withdrawal (the cooling-off period has expired, or a withdrawal has already been submitted)."
-msgstr "Pro tuto objednávku již nelze podat odstoupení (vypršela lhůta nebo již bylo odstoupení podáno)."
-
-msgid "Back to order"
-msgstr "Zpět na objednávku"
-
-msgid "Your withdrawal has been submitted. A confirmation has been sent to your email. We will be in touch with return instructions."
-msgstr "Vaše odstoupení od smlouvy bylo úspěšně podáno. Potvrzení jsme zaslali na váš email. Brzy se vám ozveme s pokyny k vrácení zboží."
-
-msgid "Withdrawal has been submitted"
-msgstr "Odstoupení od smlouvy bylo podáno"
-
-#. translators: %s: submission date
-msgid "on %s."
-msgstr "dne %s."
-
-#. translators: %s: admin email address
-msgid "If you have any questions, contact us at %s."
-msgstr "Pokud máte dotaz, kontaktujte nás na %s."
-
-msgid "You must be logged in to submit a withdrawal."
-msgstr "Pro podání odstoupení musíte být přihlášeni."
-
-msgid "Invalid order."
-msgstr "Neplatná objednávka."
-
-msgid "Security check failed. Please go back and try again."
-msgstr "Bezpečnostní kontrola selhala. Vraťte se a zkuste to znovu."
-
-msgid "You are not authorized to access this order."
-msgstr "Nemáte oprávnění k této objednávce."
-
-msgid "You must check the confirmation box to submit a withdrawal."
-msgstr "Pro podání odstoupení musíte zaškrtnout potvrzovací políčko."
-
-msgid "This order is no longer eligible for withdrawal."
-msgstr "Pro tuto objednávku již nelze podat odstoupení."
-
-msgid "Customer submitted a withdrawal from the purchase contract."
-msgstr "Zákazník podal odstoupení od kupní smlouvy."
-
-#. translators: %s: customer-provided reason
-msgid "Reason: %s"
-msgstr "Důvod: %s"
-
-#. translators: %s: bank account for refund
-msgid "Refund account: %s"
-msgstr "Účet pro vrácení: %s"
-
-msgid "Customer submitted withdrawal from purchase contract."
-msgstr "Odstoupení od smlouvy podáno zákazníkem."
-
-msgid "Withdrawal confirmation (customer)"
-msgstr "Potvrzení odstoupení od smlouvy (zákazník)"
-
-msgid "Sent to the customer after they submit a withdrawal from a purchase contract."
-msgstr "Odesláno zákazníkovi po podání odstoupení od kupní smlouvy."
-
-msgid "[{site_title}] Withdrawal confirmation — order #{order_number}"
-msgstr "[{site_title}] Potvrzení odstoupení od smlouvy — objednávka #{order_number}"
-
-msgid "Withdrawal confirmation"
-msgstr "Potvrzení odstoupení od smlouvy"
-
-msgid "If you have any questions about your withdrawal, please reply to this email."
-msgstr "V případě dotazů na vaše odstoupení odpovězte prosím na tento email."
-
-msgid "Withdrawal notification (admin)"
-msgstr "Oznámení o odstoupení od smlouvy (admin)"
-
-msgid "Sent to the store administrator when a customer submits a withdrawal."
-msgstr "Odesláno správci e-shopu po podání odstoupení zákazníkem."
-
-msgid "[{site_title}] New withdrawal request — order #{order_number}"
-msgstr "[{site_title}] Nové odstoupení od smlouvy — objednávka #{order_number}"
-
-msgid "New withdrawal request"
-msgstr "Nové odstoupení od smlouvy"
-
-msgid "Enable/Disable"
-msgstr "Zapnout/Vypnout"
-
-msgid "Enable this email notification"
-msgstr "Zapnout tuto emailovou notifikaci"
-
-msgid "Recipient(s)"
-msgstr "Příjemci"
-
-#. translators: %s: admin email
-msgid "Enter recipients (comma separated). Defaults to %s."
-msgstr "Zadejte příjemce (oddělené čárkou). Výchozí: %s."
-
-msgid "Subject"
-msgstr "Předmět"
-
-msgid "Placeholders: %s"
-msgstr "Zástupné symboly: %s"
-
-msgid "Email heading"
-msgstr "Nadpis emailu"
-
-msgid "Email type"
-msgstr "Typ emailu"
-
-msgid "Choose which format of email to send."
-msgstr "Vyberte formát odesílaného emailu."
-
-msgid "Purchase Contract Withdrawal Button for WooCommerce"
-msgstr "Tlačítko odstoupení od smlouvy"
-
-msgid "Withdrawal Button"
-msgstr "Odstoupení od smlouvy"
-
-#. translators: %s: WooCommerce email settings URL
-msgid "Customer and admin email templates can be customized in %s."
-msgstr "Šablony zákaznických a admin emailů lze upravit v %s."
-
-msgid "WooCommerce → Settings → Emails"
-msgstr "WooCommerce → Nastavení → Emaily"
-
-msgid "Cooling-off period (days)"
-msgstr "Lhůta pro odstoupení (dny)"
-
-msgid "How long after the reference date (order completion) the withdrawal button stays visible. EU standard is 14 days."
-msgstr "Jak dlouho po datu dokončení objednávky zůstane tlačítko viditelné. EU standard je 14 dní."
-
-msgid "Eligible order statuses"
-msgstr "Stavy objednávek pro zobrazení tlačítka"
-
-msgid "The button is shown only for orders in one of these statuses."
-msgstr "Tlačítko se zobrazuje pouze pro objednávky v některém z těchto stavů."
-
-msgid "Admin email recipient"
-msgstr "Příjemce admin emailu"
-
-#. translators: %s: admin email
-msgid "Leave empty to use the site admin email (%s)."
-msgstr "Ponechte prázdné pro použití hlavního admin emailu (%s)."
-
-msgid "Status after submission"
-msgstr "Stav po podání odstoupení"
-
-msgid "Order status applied automatically after the customer submits a withdrawal."
-msgstr "Stav objednávky automaticky nastavený po podání odstoupení zákazníkem."
-
-msgid "Withdrawal from purchase contract"
-msgstr "Odstoupení od kupní smlouvy"
-
-#. translators: 1: order number, 2: deadline date
-msgid "Complete the form below to withdraw from purchase contract no. %1$s. The cooling-off period ends on %2$s."
-msgstr "Vyplňte následující formulář pro odstoupení od kupní smlouvy č. %1$s. Lhůta pro odstoupení vyprší %2$s."
-
-msgid "Order number"
-msgstr "Číslo objednávky"
-
-msgid "Order date"
-msgstr "Datum objednávky"
-
-msgid "Customer"
-msgstr "Zákazník"
-
-msgid "Address"
-msgstr "Adresa"
-
-msgid "Email"
-msgstr "Email"
-
-msgid "Total"
-msgstr "Celková částka"
-
-msgid "Bank account for refund"
-msgstr "Bankovní účet pro vrácení peněz"
-
-msgid "(optional — leave empty to refund to the original payment method)"
-msgstr "(volitelné — ponechte prázdné pro vrácení na původní platební metodu)"
-
-msgid "Reason for withdrawal"
-msgstr "Důvod odstoupení"
-
-msgid "(optional)"
-msgstr "(nepovinné)"
-
-msgid "I confirm that I am withdrawing from the purchase contract"
-msgstr "Potvrzuji, že odstupuji od kupní smlouvy"
-
-msgid "and I understand that I must return the purchased goods within 14 days of submitting this withdrawal. The refund will be issued after the returned goods are received."
-msgstr "a beru na vědomí, že zakoupené zboží jsem povinen/povinna vrátit do 14 dnů od podání tohoto odstoupení. Peníze budou vráceny po obdržení vráceného zboží."
-
-msgid "Confirm withdrawal"
-msgstr "Potvrdit odstoupení od smlouvy"
-
-msgid "Cancel"
-msgstr "Zrušit"
-
-msgid "Hello,"
-msgstr "Dobrý den,"
-
-#. translators: 1: order number, 2: order date
-msgid "We have received your withdrawal from the purchase contract for order no. %1$s placed on %2$s."
-msgstr "Potvrzujeme přijetí Vašeho odstoupení od kupní smlouvy k objednávce č. %1$s ze dne %2$s."
-
-msgid "Next steps"
-msgstr "Další postup"
-
-msgid "Next steps:"
-msgstr "Další postup:"
-
-msgid "Please return the goods to our address within 14 days of submitting this withdrawal."
-msgstr "Zboží prosím zašlete zpět na naši adresu do 14 dnů od podání tohoto odstoupení."
-
-msgid "We recommend shipping with tracking and insurance."
-msgstr "Doporučujeme zboží zaslat doporučeně a pojištěně."
-
-#. translators: %s: total amount
-msgid "Once we receive the goods we will refund the paid amount (%s) within 14 days."
-msgstr "Po obdržení zboží Vám vrátíme zaplacenou částku (%s) do 14 dnů."
-
-msgid "A customer has submitted a withdrawal from a purchase contract."
-msgstr "Zákazník podal odstoupení od kupní smlouvy."
-
+#: includes/class-pcwb-account.php:50
+msgid "Withdrawal"
+msgstr "Odstoupení"
+
+#: includes/class-pcwb-account.php:93
+msgid ""
+"Below are your orders that are still within the withdrawal (cooling-off) "
+"period. You may withdraw from the purchase contract for any of them."
+msgstr ""
+"Níže jsou vaše objednávky, které jsou stále ve lhůtě pro odstoupení od "
+"smlouvy. U kterékoli z nich můžete od kupní smlouvy odstoupit."
+
+#: includes/class-pcwb-account.php:96
+msgid "You have no orders that are currently eligible for withdrawal."
+msgstr "Nemáte žádné objednávky, u kterých lze nyní odstoupit od smlouvy."
+
+#: includes/class-pcwb-account.php:102 includes/class-pcwb-account.php:115
+#: includes/class-pcwb-admin-list.php:101
+#: templates/emails/admin-withdrawal-notification.php:27
+#: templates/emails/plain/admin-withdrawal-notification.php:23
 msgid "Order"
 msgstr "Objednávka"
 
-msgid "Phone"
-msgstr "Telefon"
+#: includes/class-pcwb-account.php:103 includes/class-pcwb-account.php:118
+msgid "Date"
+msgstr "Datum"
 
-msgid "Completion date"
-msgstr "Datum dokončení"
+#: includes/class-pcwb-account.php:104 includes/class-pcwb-account.php:121
+msgid "Withdraw by"
+msgstr "Odstoupit do"
 
-msgid "Refund account"
-msgstr "Účet pro vrácení"
+#: includes/class-pcwb-account.php:125 includes/class-pcwb-frontend.php:52
+msgctxt "withdrawal action button"
+msgid "Withdraw"
+msgstr "Odstoupit"
 
-msgid "Original payment method"
-msgstr "Původní platební metoda"
-
-msgid "Reason"
-msgstr "Důvod"
-
-msgid "(not provided)"
-msgstr "(neuveden)"
-
-msgid "View order:"
-msgstr "Detail objednávky:"
-
-# === 1.2.0 strings ===
-
-msgid "A withdrawal has already been submitted for this order."
-msgstr "Pro tuto objednávku již bylo odstoupení podáno."
-
-msgid "an administrator"
-msgstr "správce"
-
-msgid "Customer (guest) submitted a withdrawal from the purchase contract."
-msgstr "Zákazník (host) podal odstoupení od kupní smlouvy."
-
-#. translators: %s: admin display name
-msgid "Withdrawal marked as resolved by %s."
-msgstr "Odstoupení označeno jako vyřízené uživatelem %s."
-
-#. translators: %s: admin display name
-msgid "Withdrawal submitted on behalf of the customer by %s."
-msgstr "Odstoupení podáno jménem zákazníka uživatelem %s."
-
-msgid "The withdrawal form is not currently available. Please contact the store."
-msgstr "Formulář pro odstoupení od smlouvy není momentálně dostupný. Kontaktujte prosím obchod."
-
-msgid "Your withdrawal has been submitted. A confirmation has been sent to your email."
-msgstr "Vaše odstoupení bylo podáno. Potvrzení jsme zaslali na váš e-mail."
-
-msgid "Your session has expired. Please start the lookup again."
-msgstr "Vaše relace vypršela. Začněte vyhledávání objednávky znovu."
-
-msgid "Order not found."
-msgstr "Objednávka nebyla nalezena."
-
-msgid "Order number or email is missing or invalid."
-msgstr "Číslo objednávky nebo e-mail chybí nebo jsou neplatné."
-
-msgid "We could not find an order with the provided details."
-msgstr "Nepodařilo se najít objednávku se zadanými údaji."
-
-msgid "Too many attempts. Please wait a few minutes and try again."
-msgstr "Příliš mnoho pokusů. Počkejte několik minut a zkuste to znovu."
-
-msgid "Security check failed. Please try again."
-msgstr "Bezpečnostní kontrola selhala. Zkuste to prosím znovu."
-
-msgid "Enter your order number and the email address used when placing the order to continue."
-msgstr "Pro pokračování zadejte číslo objednávky a e-mailovou adresu, kterou jste použili při objednání."
-
-msgid "Billing email"
-msgstr "Fakturační e-mail"
-
-msgid "Continue"
-msgstr "Pokračovat"
-
-msgid "Withdrawal cooling-off"
-msgstr "Lhůta pro odstoupení"
-
-msgid "Date of delivery"
-msgstr "Datum doručení"
-
-msgid "Date the customer received the goods. Used as the reference date for the cooling-off period (leave empty to use the order completion date)."
-msgstr "Datum, kdy zákazník převzal zboží. Slouží jako výchozí datum pro lhůtu odstoupení (ponechte prázdné pro použití data dokončení objednávky)."
-
-msgid "Cooling-off ends:"
-msgstr "Lhůta končí:"
-
-#. translators: %d: number of days remaining
-msgid "%d day remaining"
-msgid_plural "%d days remaining"
-msgstr[0] "zbývá %d den"
-msgstr[1] "zbývají %d dny"
-msgstr[2] "zbývá %d dní"
-
-msgid "expired"
-msgstr "vypršela"
-
-msgid "Withdrawal submitted:"
-msgstr "Odstoupení podáno:"
-
-msgid "Resolved:"
-msgstr "Vyřízeno:"
-
-msgid "Use the Order actions box to mark this withdrawal as resolved."
-msgstr "Použijte box Akce objednávky pro označení odstoupení jako vyřízené."
-
-msgid "guest form"
-msgstr "formulář pro hosty"
-
-msgid "admin"
-msgstr "admin"
-
-msgid "customer account"
-msgstr "zákaznický účet"
-
-msgid "Mark withdrawal as resolved"
-msgstr "Označit odstoupení jako vyřízené"
-
-msgid "Submit withdrawal on behalf of customer"
-msgstr "Podat odstoupení jménem zákazníka"
-
+#: includes/class-pcwb-admin-list.php:43 includes/class-pcwb-admin-list.php:44
+#: includes/class-pcwb-admin-list.php:75
 msgid "Withdrawals"
 msgstr "Odstoupení od smlouvy"
 
+#: includes/class-pcwb-admin-list.php:76
 msgid "Export CSV"
 msgstr "Export CSV"
 
+#: includes/class-pcwb-admin-list.php:82
 msgid "Search"
 msgstr "Hledat"
 
-msgid "All"
-msgstr "Vše"
-
-msgid "Pending"
-msgstr "Čekající"
-
-msgid "Resolved"
-msgstr "Vyřízené"
-
+#: includes/class-pcwb-admin-list.php:84
 msgid "From"
 msgstr "Od"
 
+#: includes/class-pcwb-admin-list.php:87
 msgid "To"
 msgstr "Do"
 
+#: includes/class-pcwb-admin-list.php:90
 msgid "Filter"
 msgstr "Filtrovat"
 
+#: includes/class-pcwb-admin-list.php:102
 msgid "Submitted"
 msgstr "Podáno"
 
+#: includes/class-pcwb-admin-list.php:103
+#: templates/emails/admin-withdrawal-notification.php:33
+#: templates/emails/plain/admin-withdrawal-notification.php:24
+#: templates/withdrawal-form.php:59
+msgid "Customer"
+msgstr "Zákazník"
+
+#: includes/class-pcwb-admin-list.php:104
+#: templates/emails/admin-withdrawal-notification.php:49
+#: templates/emails/plain/admin-withdrawal-notification.php:28
+#: templates/withdrawal-form.php:71
+msgid "Total"
+msgstr "Celková částka"
+
+#: includes/class-pcwb-admin-list.php:105
+#: templates/emails/admin-withdrawal-notification.php:62
+#: templates/emails/plain/admin-withdrawal-notification.php:33
+msgid "Refund account"
+msgstr "Účet pro vrácení"
+
+#: includes/class-pcwb-admin-list.php:106
 msgid "Source"
 msgstr "Zdroj"
 
+#: includes/class-pcwb-admin-list.php:107
 msgid "Status"
 msgstr "Stav"
 
+#: includes/class-pcwb-admin-list.php:108
+#: includes/class-pcwb-admin-list.php:127
+msgid "Resolved"
+msgstr "Vyřízené"
+
+#: includes/class-pcwb-admin-list.php:114
 msgid "Mark as resolved"
 msgstr "Označit jako vyřízené"
 
-msgid "Resolve"
-msgstr "Vyřídit"
+#: includes/class-pcwb-admin-list.php:115
+msgid "Delete withdrawal record"
+msgstr "Smazat záznam o odstoupení"
 
+#: includes/class-pcwb-admin-list.php:125
+msgid "All"
+msgstr "Vše"
+
+#: includes/class-pcwb-admin-list.php:126
+msgid "Pending"
+msgstr "Čekající"
+
+#: includes/class-pcwb-admin-list.php:309
+#, php-format
+msgid ""
+"Remove the withdrawal record from order #%s? The order itself will NOT be "
+"deleted."
+msgstr ""
+"Odstranit záznam o odstoupení z objednávky #%s? Samotná objednávka NEBUDE "
+"smazána."
+
+#: includes/class-pcwb-admin-list.php:315
+msgid "Delete"
+msgstr "Smazat"
+
+#: includes/class-pcwb-admin-list.php:335
 msgid "guest"
 msgstr "host"
 
+#: includes/class-pcwb-admin-list.php:337
+#: includes/class-pcwb-admin-order.php:235
+msgid "admin"
+msgstr "admin"
+
+#: includes/class-pcwb-admin-list.php:339
 msgid "customer"
 msgstr "zákazník"
 
-#. translators: %d: number of withdrawals resolved
+#: includes/class-pcwb-admin-list.php:358
+msgid "Resolve"
+msgstr "Vyřídit"
+
+#: includes/class-pcwb-admin-list.php:391
+#, php-format
+msgid "%d withdrawal record removed."
+msgid_plural "%d withdrawal records removed."
+msgstr[0] "%d záznam o odstoupení byl odstraněn."
+msgstr[1] "%d záznamy o odstoupení byly odstraněny."
+msgstr[2] "%d záznamů o odstoupení bylo odstraněno."
+
+#: includes/class-pcwb-admin-list.php:397
+#, php-format
 msgid "%d withdrawal marked as resolved."
 msgid_plural "%d withdrawals marked as resolved."
 msgstr[0] "%d odstoupení označeno jako vyřízené."
 msgstr[1] "%d odstoupení označena jako vyřízená."
 msgstr[2] "%d odstoupení označeno jako vyřízených."
 
+#: includes/class-pcwb-admin-list.php:411
+#: includes/class-pcwb-admin-list.php:425
+#: includes/class-pcwb-admin-list.php:439
 msgid "You do not have permission to do this."
 msgstr "K této akci nemáte oprávnění."
 
+#: includes/class-pcwb-admin-order.php:39
+msgid "Withdrawal cooling-off"
+msgstr "Lhůta pro odstoupení"
+
+#: includes/class-pcwb-admin-order.php:79
+msgid "Date of delivery"
+msgstr "Datum doručení"
+
+#: includes/class-pcwb-admin-order.php:81
+msgid ""
+"Date the customer received the goods. Used as the reference date for the "
+"cooling-off period (leave empty to use the order completion date)."
+msgstr ""
+"Datum, kdy zákazník převzal zboží. Slouží jako výchozí datum pro lhůtu "
+"odstoupení (ponechte prázdné pro použití data dokončení objednávky)."
+
+#: includes/class-pcwb-admin-order.php:86
+msgid "Cooling-off ends:"
+msgstr "Lhůta končí:"
+
+#: includes/class-pcwb-admin-order.php:92
+#, php-format
+msgid "%d day remaining"
+msgid_plural "%d days remaining"
+msgstr[0] "zbývá %d den"
+msgstr[1] "zbývají %d dny"
+msgstr[2] "zbývá %d dní"
+
+#: includes/class-pcwb-admin-order.php:94
+msgid "expired"
+msgstr "vypršela"
+
+#: includes/class-pcwb-admin-order.php:102
+msgid "Withdrawal submitted:"
+msgstr "Odstoupení podáno:"
+
+#: includes/class-pcwb-admin-order.php:109
+msgid "Resolved:"
+msgstr "Vyřízeno:"
+
+#: includes/class-pcwb-admin-order.php:111
+msgid "Use the Order actions box to mark this withdrawal as resolved."
+msgstr "Použijte box Akce objednávky pro označení odstoupení jako vyřízené."
+
+#: includes/class-pcwb-admin-order.php:197
+msgid "Mark withdrawal as resolved"
+msgstr "Označit odstoupení jako vyřízené"
+
+#: includes/class-pcwb-admin-order.php:200
+msgid "Submit withdrawal on behalf of customer"
+msgstr "Podat odstoupení jménem zákazníka"
+
+#: includes/class-pcwb-admin-order.php:233
+msgid "guest form"
+msgstr "formulář pro hosty"
+
+#: includes/class-pcwb-admin-order.php:237
+msgid "customer account"
+msgstr "zákaznický účet"
+
+#: includes/class-pcwb-email-admin.php:20
+msgid "Withdrawal notification (admin)"
+msgstr "Oznámení o odstoupení od smlouvy (admin)"
+
+#: includes/class-pcwb-email-admin.php:21
+msgid "Sent to the store administrator when a customer submits a withdrawal."
+msgstr "Odesláno správci e-shopu po podání odstoupení zákazníkem."
+
+#: includes/class-pcwb-email-admin.php:40
+msgid "[{site_title}] New withdrawal request — order #{order_number}"
+msgstr "[{site_title}] Nové odstoupení od smlouvy — objednávka #{order_number}"
+
+#: includes/class-pcwb-email-admin.php:44
+msgid "New withdrawal request"
+msgstr "Nové odstoupení od smlouvy"
+
+#: includes/class-pcwb-email-admin.php:107
+msgid "Enable/Disable"
+msgstr "Zapnout/Vypnout"
+
+#: includes/class-pcwb-email-admin.php:109
+msgid "Enable this email notification"
+msgstr "Zapnout tuto emailovou notifikaci"
+
+#: includes/class-pcwb-email-admin.php:113
+msgid "Recipient(s)"
+msgstr "Příjemci"
+
+#: includes/class-pcwb-email-admin.php:117
+#, php-format
+msgid "Enter recipients (comma separated). Defaults to %s."
+msgstr "Zadejte příjemce (oddělené čárkou). Výchozí: %s."
+
+#: includes/class-pcwb-email-admin.php:125
+msgid "Subject"
+msgstr "Předmět"
+
+#: includes/class-pcwb-email-admin.php:128
+#: includes/class-pcwb-email-admin.php:137
+#, php-format
+msgid "Placeholders: %s"
+msgstr "Zástupné symboly: %s"
+
+#: includes/class-pcwb-email-admin.php:134
+msgid "Email heading"
+msgstr "Nadpis emailu"
+
+#: includes/class-pcwb-email-admin.php:143
+msgid "Email type"
+msgstr "Typ emailu"
+
+#: includes/class-pcwb-email-admin.php:145
+msgid "Choose which format of email to send."
+msgstr "Vyberte formát odesílaného emailu."
+
+#: includes/class-pcwb-email-customer.php:21
+msgid "Withdrawal confirmation (customer)"
+msgstr "Potvrzení odstoupení od smlouvy (zákazník)"
+
+#: includes/class-pcwb-email-customer.php:22
+msgid ""
+"Sent to the customer after they submit a withdrawal from a purchase contract."
+msgstr "Odesláno zákazníkovi po podání odstoupení od kupní smlouvy."
+
+#: includes/class-pcwb-email-customer.php:40
+msgid "[{site_title}] Withdrawal confirmation — order #{order_number}"
+msgstr ""
+"[{site_title}] Potvrzení odstoupení od smlouvy — objednávka #{order_number}"
+
+#: includes/class-pcwb-email-customer.php:44
+msgid "Withdrawal confirmation"
+msgstr "Potvrzení odstoupení od smlouvy"
+
+#: includes/class-pcwb-email-customer.php:101
+msgid ""
+"If you have any questions about your withdrawal, please reply to this email."
+msgstr "V případě dotazů na vaše odstoupení odpovězte prosím na tento email."
+
+#: includes/class-pcwb-frontend.php:90 templates/guest-lookup.php:20
+msgid "Withdraw from purchase contract"
+msgstr "Odstoupit od kupní smlouvy"
+
+#: includes/class-pcwb-frontend.php:119
+msgid ""
+"This order is no longer eligible for withdrawal (the cooling-off period has "
+"expired, or a withdrawal has already been submitted)."
+msgstr ""
+"Pro tuto objednávku již nelze podat odstoupení (vypršela lhůta nebo již bylo "
+"odstoupení podáno)."
+
+#: includes/class-pcwb-frontend.php:120
+msgid "Back to order"
+msgstr "Zpět na objednávku"
+
+#: includes/class-pcwb-frontend.php:154
+msgid ""
+"Your withdrawal has been submitted. A confirmation has been sent to your "
+"email. We will be in touch with return instructions."
+msgstr ""
+"Vaše odstoupení od smlouvy bylo úspěšně podáno. Potvrzení jsme zaslali na "
+"váš email. Brzy se vám ozveme s pokyny k vrácení zboží."
+
+#: includes/class-pcwb-frontend.php:167
+msgid "Withdrawal has been submitted"
+msgstr "Odstoupení od smlouvy bylo podáno"
+
+#: includes/class-pcwb-frontend.php:170
+#, php-format
+msgid "on %s."
+msgstr "dne %s."
+
+#: includes/class-pcwb-frontend.php:176
+#, php-format
+msgid "If you have any questions, contact us at %s."
+msgstr "Pokud máte dotaz, kontaktujte nás na %s."
+
+#: includes/class-pcwb-frontend.php:199
+msgid "You must be logged in to submit a withdrawal."
+msgstr "Pro podání odstoupení musíte být přihlášeni."
+
+#: includes/class-pcwb-frontend.php:206 includes/class-pcwb-guest.php:84
+msgid "Invalid order."
+msgstr "Neplatná objednávka."
+
+#: includes/class-pcwb-frontend.php:211 includes/class-pcwb-guest.php:89
+msgid "Security check failed. Please go back and try again."
+msgstr "Bezpečnostní kontrola selhala. Vraťte se a zkuste to znovu."
+
+#: includes/class-pcwb-frontend.php:216
+msgid "You are not authorized to access this order."
+msgstr "Nemáte oprávnění k této objednávce."
+
+#: includes/class-pcwb-frontend.php:220 includes/class-pcwb-guest.php:93
+msgid "You must check the confirmation box to submit a withdrawal."
+msgstr "Pro podání odstoupení musíte zaškrtnout potvrzovací políčko."
+
+# === 1.2.0 strings ===
+#: includes/class-pcwb-frontend.php:251 includes/class-pcwb-guest.php:197
+msgid "A withdrawal has already been submitted for this order."
+msgstr "Pro tuto objednávku již bylo odstoupení podáno."
+
+#: includes/class-pcwb-frontend.php:255 includes/class-pcwb-guest.php:201
+msgid "This order is no longer eligible for withdrawal."
+msgstr "Pro tuto objednávku již nelze podat odstoupení."
+
+#: includes/class-pcwb-frontend.php:274
+#, php-format
+msgid "Reason: %s"
+msgstr "Důvod: %s"
+
+#: includes/class-pcwb-frontend.php:278
+#, php-format
+msgid "Refund account: %s"
+msgstr "Účet pro vrácení: %s"
+
+#: includes/class-pcwb-frontend.php:304
 msgid "This order does not have a pending withdrawal."
 msgstr "Tato objednávka nemá žádné nevyřízené odstoupení."
 
+#: includes/class-pcwb-frontend.php:307
 msgid "This withdrawal has already been resolved."
 msgstr "Toto odstoupení už bylo vyřízeno."
 
-msgid "Guest withdrawal form"
-msgstr "Formulář pro nepřihlášené zákazníky"
+#: includes/class-pcwb-frontend.php:317 includes/class-pcwb-frontend.php:371
+msgid "an administrator"
+msgstr "správce"
 
-msgid "Enable shortcode for non-logged-in customers"
-msgstr "Povolit shortcode pro nepřihlášené zákazníky"
+#: includes/class-pcwb-frontend.php:319
+#, php-format
+msgid "Withdrawal marked as resolved by %s."
+msgstr "Odstoupení označeno jako vyřízené uživatelem %s."
 
-#. translators: %s: shortcode wrapped in <code>
-msgid "Place %s on any page (e.g. a public landing page). The form will ask for an order number and the billing email, then show the withdrawal form."
-msgstr "Vložte %s na libovolnou stránku (např. veřejnou landing page). Formulář se zákazníka zeptá na číslo objednávky a fakturační e-mail a poté zobrazí formulář pro odstoupení."
-
-msgctxt "withdrawal action button"
-msgid "Withdraw"
-msgstr "Odstoupit"
-
-msgid "Button positions"
-msgstr "Umístění tlačítka"
-
-msgid "Where the withdrawal button appears in the customer view. You can select more than one — e.g. both the order detail and the orders list."
-msgstr "Kde se tlačítko pro odstoupení zobrazí v zákaznickém rozhraní. Můžete vybrat i více možností — např. detail objednávky i seznam objednávek."
-
-msgid "My Account menu tab"
-msgstr "Záložka v Můj účet"
-
-msgid "Add a \"Withdrawal\" tab to the My Account navigation"
-msgstr "Přidat záložku „Odstoupení“ do navigace Můj účet"
-
-msgid "Adds a dedicated page under My Account that lists the customer's orders still within the cooling-off period, each with a withdrawal button."
-msgstr "Přidá do sekce Můj účet samostatnou stránku se seznamem objednávek zákazníka, které jsou stále ve lhůtě pro odstoupení, každou s tlačítkem pro odstoupení."
-
-msgid "Withdrawal"
-msgstr "Odstoupení"
-
-msgid "Below are your orders that are still within the withdrawal (cooling-off) period. You may withdraw from the purchase contract for any of them."
-msgstr "Níže jsou vaše objednávky, které jsou stále ve lhůtě pro odstoupení od smlouvy. U kterékoli z nich můžete od kupní smlouvy odstoupit."
-
-msgid "You have no orders that are currently eligible for withdrawal."
-msgstr "Nemáte žádné objednávky, u kterých lze nyní odstoupit od smlouvy."
-
-msgid "Date"
-msgstr "Datum"
-
-msgid "Withdraw by"
-msgstr "Odstoupit do"
-
+#: includes/class-pcwb-frontend.php:338
 msgid "This order does not have a withdrawal record."
 msgstr "Tato objednávka nemá záznam o odstoupení."
 
-msgid "Withdrawal record removed by an administrator. The order itself was not deleted."
-msgstr "Záznam o odstoupení odstranil administrátor. Samotná objednávka nebyla smazána."
+#: includes/class-pcwb-frontend.php:354
+msgid ""
+"Withdrawal record removed by an administrator. The order itself was not "
+"deleted."
+msgstr ""
+"Záznam o odstoupení odstranil administrátor. Samotná objednávka nebyla "
+"smazána."
 
-msgid "Delete withdrawal record"
-msgstr "Smazat záznam o odstoupení"
+#: includes/class-pcwb-frontend.php:373
+#, php-format
+msgid "Withdrawal submitted on behalf of the customer by %s."
+msgstr "Odstoupení podáno jménem zákazníka uživatelem %s."
 
-msgid "Remove the withdrawal record from order #%s? The order itself will NOT be deleted."
-msgstr "Odstranit záznam o odstoupení z objednávky #%s? Samotná objednávka NEBUDE smazána."
+#: includes/class-pcwb-frontend.php:376
+msgid "Customer (guest) submitted a withdrawal from the purchase contract."
+msgstr "Zákazník (host) podal odstoupení od kupní smlouvy."
 
-msgid "Delete"
-msgstr "Smazat"
+#: includes/class-pcwb-frontend.php:378
+msgid "Customer submitted a withdrawal from the purchase contract."
+msgstr "Zákazník podal odstoupení od kupní smlouvy."
 
-msgid "%d withdrawal record removed."
-msgid_plural "%d withdrawal records removed."
-msgstr[0] "%d záznam o odstoupení byl odstraněn."
-msgstr[1] "%d záznamy o odstoupení byly odstraněny."
-msgstr[2] "%d záznamů o odstoupení bylo odstraněno."
+#: includes/class-pcwb-guest.php:35
+msgid ""
+"The withdrawal form is not currently available. Please contact the store."
+msgstr ""
+"Formulář pro odstoupení od smlouvy není momentálně dostupný. Kontaktujte "
+"prosím obchod."
+
+#: includes/class-pcwb-guest.php:44
+msgid ""
+"Your withdrawal has been submitted. A confirmation has been sent to your "
+"email."
+msgstr "Vaše odstoupení bylo podáno. Potvrzení jsme zaslali na váš e-mail."
+
+#: includes/class-pcwb-guest.php:98
+msgid "Your session has expired. Please start the lookup again."
+msgstr "Vaše relace vypršela. Začněte vyhledávání objednávky znovu."
+
+#: includes/class-pcwb-guest.php:103
+msgid "Order not found."
+msgstr "Objednávka nebyla nalezena."
+
+#: includes/class-pcwb-guest.php:176
+msgid "Security check failed. Please try again."
+msgstr "Bezpečnostní kontrola selhala. Zkuste to prosím znovu."
+
+#: includes/class-pcwb-guest.php:180
+msgid "Too many attempts. Please wait a few minutes and try again."
+msgstr "Příliš mnoho pokusů. Počkejte několik minut a zkuste to znovu."
+
+#: includes/class-pcwb-guest.php:185
+msgid "Order number or email is missing or invalid."
+msgstr "Číslo objednávky nebo e-mail chybí nebo jsou neplatné."
+
+#: includes/class-pcwb-guest.php:189
+msgid "We could not find an order with the provided details."
+msgstr "Nepodařilo se najít objednávku se zadanými údaji."
+
+#: includes/class-pcwb-settings.php:22 includes/class-pcwb-settings.php:199
+msgid "Purchase Contract Withdrawal Button for WooCommerce"
+msgstr "Tlačítko odstoupení od smlouvy"
+
+#: includes/class-pcwb-settings.php:23
+msgid "Withdrawal Button"
+msgstr "Odstoupení od smlouvy"
+
+#: includes/class-pcwb-settings.php:119
+msgid "Order detail — below the order table (default)"
+msgstr "Podrobnosti objednávky – pod tabulkou objednávek (výchozí nastavení)"
+
+#: includes/class-pcwb-settings.php:123
+msgid "Order detail — above the order table"
+msgstr "Podrobnosti objednávky – nad tabulkou objednávek"
+
+#: includes/class-pcwb-settings.php:127
+msgid "Order detail — top of the page"
+msgstr "Podrobnosti objednávky – horní část stránky"
+
+#: includes/class-pcwb-settings.php:131
+msgid "Orders list — as a row action button"
+msgstr "Seznam objednávek – jako tlačítko akce pro celý řádek"
+
+#: includes/class-pcwb-settings.php:205
+#, php-format
+msgid "Customer and admin email templates can be customized in %s."
+msgstr "Šablony zákaznických a admin emailů lze upravit v %s."
+
+#: includes/class-pcwb-settings.php:206
+msgid "WooCommerce → Settings → Emails"
+msgstr "WooCommerce → Nastavení → Emaily"
+
+#: includes/class-pcwb-settings.php:216
+msgid "Cooling-off period (days)"
+msgstr "Lhůta pro odstoupení (dny)"
+
+#: includes/class-pcwb-settings.php:220
+msgid ""
+"How long after the reference date (order completion) the withdrawal button "
+"stays visible. EU standard is 14 days."
+msgstr ""
+"Jak dlouho po datu dokončení objednávky zůstane tlačítko viditelné. EU "
+"standard je 14 dní."
+
+#: includes/class-pcwb-settings.php:225
+msgid "Eligible order statuses"
+msgstr "Stavy objednávek pro zobrazení tlačítka"
+
+#: includes/class-pcwb-settings.php:238
+msgid "The button is shown only for orders in one of these statuses."
+msgstr "Tlačítko se zobrazuje pouze pro objednávky v některém z těchto stavů."
+
+#: includes/class-pcwb-settings.php:244
+msgid "Admin email recipient"
+msgstr "Příjemce admin emailu"
+
+#: includes/class-pcwb-settings.php:252
+#, php-format
+msgid "Leave empty to use the site admin email (%s)."
+msgstr "Ponechte prázdné pro použití hlavního admin emailu (%s)."
+
+#: includes/class-pcwb-settings.php:261
+msgid "Status after submission"
+msgstr "Stav po podání odstoupení"
+
+#: includes/class-pcwb-settings.php:273
+msgid ""
+"Order status applied automatically after the customer submits a withdrawal."
+msgstr "Stav objednávky automaticky nastavený po podání odstoupení zákazníkem."
+
+#: includes/class-pcwb-settings.php:278
+msgid "Button positions"
+msgstr "Umístění tlačítka"
+
+#: includes/class-pcwb-settings.php:288
+msgid ""
+"Where the withdrawal button appears in the customer view. You can select "
+"more than one — e.g. both the order detail and the orders list."
+msgstr ""
+"Kde se tlačítko pro odstoupení zobrazí v zákaznickém rozhraní. Můžete vybrat "
+"i více možností — např. detail objednávky i seznam objednávek."
+
+#: includes/class-pcwb-settings.php:294
+msgid "My Account menu tab"
+msgstr "Záložka v Můj účet"
+
+#: includes/class-pcwb-settings.php:299
+msgid "Add a \"Withdrawal\" tab to the My Account navigation"
+msgstr "Přidat záložku „Odstoupení“ do navigace Můj účet"
+
+#: includes/class-pcwb-settings.php:301
+msgid ""
+"Adds a dedicated page under My Account that lists the customer's orders "
+"still within the cooling-off period, each with a withdrawal button."
+msgstr ""
+"Přidá do sekce Můj účet samostatnou stránku se seznamem objednávek "
+"zákazníka, které jsou stále ve lhůtě pro odstoupení, každou s tlačítkem pro "
+"odstoupení."
+
+#: includes/class-pcwb-settings.php:306
+msgid "Guest withdrawal form"
+msgstr "Formulář pro nepřihlášené zákazníky"
+
+#: includes/class-pcwb-settings.php:311
+msgid "Enable shortcode for non-logged-in customers"
+msgstr "Povolit shortcode pro nepřihlášené zákazníky"
+
+#: includes/class-pcwb-settings.php:317
+#, php-format
+msgid ""
+"Place %s on any page (e.g. a public landing page). The form will ask for an "
+"order number and the billing email, then show the withdrawal form."
+msgstr ""
+"Vložte %s na libovolnou stránku (např. veřejnou landing page). Formulář se "
+"zákazníka zeptá na číslo objednávky a fakturační e-mail a poté zobrazí "
+"formulář pro odstoupení."
+
+#: purchase-contract-withdrawal-button-for-woocommerce.php:109
+msgid ""
+"Purchase Contract Withdrawal Button for WooCommerce requires WooCommerce to "
+"be installed and active."
+msgstr ""
+"Plugin Purchase Contract Withdrawal Button for WooCommerce vyžaduje "
+"nainstalovaný a aktivní WooCommerce."
+
+#: purchase-contract-withdrawal-button-for-woocommerce.php:274
+msgid "Settings"
+msgstr "Nastavení"
+
+#: templates/emails/admin-withdrawal-notification.php:23
+#: templates/emails/plain/admin-withdrawal-notification.php:21
+msgid "A customer has submitted a withdrawal from a purchase contract."
+msgstr "Zákazník podal odstoupení od kupní smlouvy."
+
+#: templates/emails/admin-withdrawal-notification.php:37
+#: templates/emails/plain/admin-withdrawal-notification.php:25
+#: templates/withdrawal-form.php:67
+msgid "Email"
+msgstr "Email"
+
+#: templates/emails/admin-withdrawal-notification.php:41
+#: templates/emails/plain/admin-withdrawal-notification.php:26
+msgid "Phone"
+msgstr "Telefon"
+
+#: templates/emails/admin-withdrawal-notification.php:45
+#: templates/emails/plain/admin-withdrawal-notification.php:27
+#: templates/withdrawal-form.php:63
+msgid "Address"
+msgstr "Adresa"
+
+#: templates/emails/admin-withdrawal-notification.php:53
+#: templates/emails/plain/admin-withdrawal-notification.php:31
+msgid "Completion date"
+msgstr "Datum dokončení"
+
+#: templates/emails/admin-withdrawal-notification.php:63
+#: templates/emails/plain/admin-withdrawal-notification.php:33
+msgid "Original payment method"
+msgstr "Původní platební metoda"
+
+#: templates/emails/admin-withdrawal-notification.php:66
+#: templates/emails/plain/admin-withdrawal-notification.php:34
+msgid "Reason"
+msgstr "Důvod"
+
+#: templates/emails/admin-withdrawal-notification.php:67
+#: templates/emails/plain/admin-withdrawal-notification.php:34
+msgid "(not provided)"
+msgstr "(neuveden)"
+
+#: templates/emails/customer-withdrawal-confirmation.php:25
+#: templates/emails/plain/customer-withdrawal-confirmation.php:19
+msgid "Hello,"
+msgstr "Dobrý den,"
+
+#: templates/emails/customer-withdrawal-confirmation.php:31
+#: templates/emails/plain/customer-withdrawal-confirmation.php:23
+#, php-format
+msgid ""
+"We have received your withdrawal from the purchase contract for order no. "
+"%1$s placed on %2$s."
+msgstr ""
+"Potvrzujeme přijetí Vašeho odstoupení od kupní smlouvy k objednávce č. %1$s "
+"ze dne %2$s."
+
+#: templates/emails/customer-withdrawal-confirmation.php:38
+msgid "Next steps"
+msgstr "Další postup"
+
+#: templates/emails/customer-withdrawal-confirmation.php:41
+#: templates/emails/plain/customer-withdrawal-confirmation.php:30
+msgid ""
+"Please return the goods to our address within 14 days of submitting this "
+"withdrawal."
+msgstr ""
+"Zboží prosím zašlete zpět na naši adresu do 14 dnů od podání tohoto "
+"odstoupení."
+
+#: templates/emails/customer-withdrawal-confirmation.php:42
+#: templates/emails/plain/customer-withdrawal-confirmation.php:31
+msgid "We recommend shipping with tracking and insurance."
+msgstr "Doporučujeme zboží zaslat doporučeně a pojištěně."
+
+#: templates/emails/customer-withdrawal-confirmation.php:47
+#: templates/emails/plain/customer-withdrawal-confirmation.php:34
+#, php-format
+msgid ""
+"Once we receive the goods we will refund the paid amount (%s) within 14 days."
+msgstr "Po obdržení zboží Vám vrátíme zaplacenou částku (%s) do 14 dnů."
+
+#: templates/emails/plain/admin-withdrawal-notification.php:36
+msgid "View order:"
+msgstr "Detail objednávky:"
+
+#: templates/emails/plain/customer-withdrawal-confirmation.php:29
+msgid "Next steps:"
+msgstr "Další postup:"
+
+#: templates/guest-lookup.php:23
+msgid ""
+"Enter your order number and the email address used when placing the order to "
+"continue."
+msgstr ""
+"Pro pokračování zadejte číslo objednávky a e-mailovou adresu, kterou jste "
+"použili při objednání."
+
+#: templates/guest-lookup.php:38 templates/withdrawal-form.php:51
+msgid "Order number"
+msgstr "Číslo objednávky"
+
+#: templates/guest-lookup.php:45
+msgid "Billing email"
+msgstr "Fakturační e-mail"
+
+#: templates/guest-lookup.php:52
+msgid "Continue"
+msgstr "Pokračovat"
+
+#: templates/withdrawal-form.php:27
+msgid "Withdrawal from purchase contract"
+msgstr "Odstoupení od kupní smlouvy"
+
+#: templates/withdrawal-form.php:33
+#, php-format
+msgid ""
+"Complete the form below to withdraw from purchase contract no. %1$s. The "
+"cooling-off period ends on %2$s."
+msgstr ""
+"Vyplňte následující formulář pro odstoupení od kupní smlouvy č. %1$s. Lhůta "
+"pro odstoupení vyprší %2$s."
+
+#: templates/withdrawal-form.php:55
+msgid "Order date"
+msgstr "Datum objednávky"
+
+#: templates/withdrawal-form.php:78
+msgid "Bank account for refund"
+msgstr "Bankovní účet pro vrácení peněz"
+
+#: templates/withdrawal-form.php:79
+msgid "(optional — leave empty to refund to the original payment method)"
+msgstr "(volitelné — ponechte prázdné pro vrácení na původní platební metodu)"
+
+#: templates/withdrawal-form.php:86
+msgid "Reason for withdrawal"
+msgstr "Důvod odstoupení"
+
+#: templates/withdrawal-form.php:87
+msgid "(optional)"
+msgstr "(nepovinné)"
+
+#: templates/withdrawal-form.php:95
+msgid "I confirm that I am withdrawing from the purchase contract"
+msgstr "Potvrzuji, že odstupuji od kupní smlouvy"
+
+#: templates/withdrawal-form.php:96
+msgid ""
+"and I understand that I must return the purchased goods within 14 days of "
+"submitting this withdrawal. The refund will be issued after the returned "
+"goods are received."
+msgstr ""
+"a beru na vědomí, že zakoupené zboží jsem povinen/povinna vrátit do 14 dnů "
+"od podání tohoto odstoupení. Peníze budou vráceny po obdržení vráceného "
+"zboží."
+
+#: templates/withdrawal-form.php:102
+msgid "Confirm withdrawal"
+msgstr "Potvrdit odstoupení od smlouvy"
+
+#: templates/withdrawal-form.php:105
+msgid "Cancel"
+msgstr "Zrušit"
+
+#~ msgid "Customer submitted withdrawal from purchase contract."
+#~ msgstr "Odstoupení od smlouvy podáno zákazníkem."
