@@ -471,3 +471,24 @@ msgstr "Datum"
 
 msgid "Withdraw by"
 msgstr "Odstoupit do"
+
+msgid "This order does not have a withdrawal record."
+msgstr "Tato objednávka nemá záznam o odstoupení."
+
+msgid "Withdrawal record removed by an administrator. The order itself was not deleted."
+msgstr "Záznam o odstoupení odstranil administrátor. Samotná objednávka nebyla smazána."
+
+msgid "Delete withdrawal record"
+msgstr "Smazat záznam o odstoupení"
+
+msgid "Remove the withdrawal record from order #%s? The order itself will NOT be deleted."
+msgstr "Odstranit záznam o odstoupení z objednávky #%s? Samotná objednávka NEBUDE smazána."
+
+msgid "Delete"
+msgstr "Smazat"
+
+msgid "%d withdrawal record removed."
+msgid_plural "%d withdrawal records removed."
+msgstr[0] "%d záznam o odstoupení byl odstraněn."
+msgstr[1] "%d záznamy o odstoupení byly odstraněny."
+msgstr[2] "%d záznamů o odstoupení bylo odstraněno."
