@@ -2,9 +2,9 @@
 Contributors: jakubkasparek
 Tags: woocommerce, withdrawal, refund, gdpr, eu
 Requires at least: 6.0
-Tested up to: 7.0
+Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 1.3.6
+Stable tag: 1.3.7
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -98,6 +98,9 @@ The plugin only stores data the customer has explicitly submitted (reason, refun
 
 == Changelog ==
 
+= 1.3.7 =
+* Compatibility: tested with WordPress 7.1.
+
 = 1.3.6 =
 * Fixed: in the My Account orders list, the withdrawal row-action button could visually run into the adjacent action buttons ("View", invoice, …) on themes that remove the default WooCommerce button spacing. The button now keeps a small margin of its own.
 
@@ -155,6 +158,9 @@ The plugin only stores data the customer has explicitly submitted (reason, refun
 * Initial release.
 
 == Upgrade Notice ==
+
+= 1.3.7 =
+Marks compatibility with WordPress 7.1. No functional changes.
 
 = 1.3.6 =
 Fixes the withdrawal row-action button running into adjacent buttons on some themes.
