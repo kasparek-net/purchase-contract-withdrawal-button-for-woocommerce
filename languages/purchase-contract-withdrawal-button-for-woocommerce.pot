@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Purchase Contract Withdrawal Button for WooCommerce\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-23 21:55+0200\n"
+"POT-Creation-Date: 2026-10-18 15:41+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -84,14 +84,14 @@ msgstr ""
 #: includes/class-pcwb-admin-list.php:103
 #: templates/emails/admin-withdrawal-notification.php:33
 #: templates/emails/plain/admin-withdrawal-notification.php:24
-#: templates/withdrawal-form.php:59
+#: templates/withdrawal-form.php:60
 msgid "Customer"
 msgstr ""
 
 #: includes/class-pcwb-admin-list.php:104
 #: templates/emails/admin-withdrawal-notification.php:49
 #: templates/emails/plain/admin-withdrawal-notification.php:28
-#: templates/withdrawal-form.php:71
+#: templates/withdrawal-form.php:72
 msgid "Total"
 msgstr ""
 
@@ -130,6 +130,7 @@ msgstr ""
 msgid "Pending"
 msgstr ""
 
+#. translators: %s: order number
 #: includes/class-pcwb-admin-list.php:309
 #, php-format
 msgid ""
@@ -158,6 +159,7 @@ msgstr ""
 msgid "Resolve"
 msgstr ""
 
+#. translators: %d: number of withdrawal records removed
 #: includes/class-pcwb-admin-list.php:391
 #, php-format
 msgid "%d withdrawal record removed."
@@ -165,6 +167,7 @@ msgid_plural "%d withdrawal records removed."
 msgstr[0] ""
 msgstr[1] ""
 
+#. translators: %d: number of withdrawals resolved
 #: includes/class-pcwb-admin-list.php:397
 #, php-format
 msgid "%d withdrawal marked as resolved."
@@ -196,6 +199,7 @@ msgstr ""
 msgid "Cooling-off ends:"
 msgstr ""
 
+#. translators: %d: number of days remaining
 #: includes/class-pcwb-admin-order.php:92
 #, php-format
 msgid "%d day remaining"
@@ -263,6 +267,7 @@ msgstr ""
 msgid "Recipient(s)"
 msgstr ""
 
+#. translators: %s: admin email
 #: includes/class-pcwb-email-admin.php:117
 #, php-format
 msgid "Enter recipients (comma separated). Defaults to %s."
@@ -272,6 +277,7 @@ msgstr ""
 msgid "Subject"
 msgstr ""
 
+#. translators: %s: list of available placeholders
 #: includes/class-pcwb-email-admin.php:128
 #: includes/class-pcwb-email-admin.php:137
 #, php-format
@@ -336,11 +342,13 @@ msgstr ""
 msgid "Withdrawal has been submitted"
 msgstr ""
 
+#. translators: %s: submission date
 #: includes/class-pcwb-frontend.php:170
 #, php-format
 msgid "on %s."
 msgstr ""
 
+#. translators: %s: admin email address
 #: includes/class-pcwb-frontend.php:176
 #, php-format
 msgid "If you have any questions, contact us at %s."
@@ -374,53 +382,61 @@ msgstr ""
 msgid "This order is no longer eligible for withdrawal."
 msgstr ""
 
-#: includes/class-pcwb-frontend.php:274
+#: includes/class-pcwb-frontend.php:263
+msgid "Please enter the bank account number for the refund."
+msgstr ""
+
+#. translators: %s: customer-provided reason
+#: includes/class-pcwb-frontend.php:278
 #, php-format
 msgid "Reason: %s"
 msgstr ""
 
-#: includes/class-pcwb-frontend.php:278
+#. translators: %s: bank account for refund
+#: includes/class-pcwb-frontend.php:282
 #, php-format
 msgid "Refund account: %s"
 msgstr ""
 
-#: includes/class-pcwb-frontend.php:304
+#: includes/class-pcwb-frontend.php:308
 msgid "This order does not have a pending withdrawal."
 msgstr ""
 
-#: includes/class-pcwb-frontend.php:307
+#: includes/class-pcwb-frontend.php:311
 msgid "This withdrawal has already been resolved."
 msgstr ""
 
-#: includes/class-pcwb-frontend.php:317 includes/class-pcwb-frontend.php:371
+#: includes/class-pcwb-frontend.php:321 includes/class-pcwb-frontend.php:375
 msgid "an administrator"
 msgstr ""
 
-#: includes/class-pcwb-frontend.php:319
+#. translators: %s: admin display name
+#: includes/class-pcwb-frontend.php:323
 #, php-format
 msgid "Withdrawal marked as resolved by %s."
 msgstr ""
 
-#: includes/class-pcwb-frontend.php:338
+#: includes/class-pcwb-frontend.php:342
 msgid "This order does not have a withdrawal record."
 msgstr ""
 
-#: includes/class-pcwb-frontend.php:354
+#: includes/class-pcwb-frontend.php:358
 msgid ""
 "Withdrawal record removed by an administrator. The order itself was not "
 "deleted."
 msgstr ""
 
-#: includes/class-pcwb-frontend.php:373
+#. translators: %s: admin display name
+#: includes/class-pcwb-frontend.php:377
 #, php-format
 msgid "Withdrawal submitted on behalf of the customer by %s."
 msgstr ""
 
-#: includes/class-pcwb-frontend.php:376
+#: includes/class-pcwb-frontend.php:380
 msgid "Customer (guest) submitted a withdrawal from the purchase contract."
 msgstr ""
 
-#: includes/class-pcwb-frontend.php:378
+#: includes/class-pcwb-frontend.php:382
 msgid "Customer submitted a withdrawal from the purchase contract."
 msgstr ""
 
@@ -459,7 +475,7 @@ msgstr ""
 msgid "We could not find an order with the provided details."
 msgstr ""
 
-#: includes/class-pcwb-settings.php:22 includes/class-pcwb-settings.php:199
+#: includes/class-pcwb-settings.php:22 includes/class-pcwb-settings.php:209
 msgid "Purchase Contract Withdrawal Button for WooCommerce"
 msgstr ""
 
@@ -467,100 +483,117 @@ msgstr ""
 msgid "Withdrawal Button"
 msgstr ""
 
-#: includes/class-pcwb-settings.php:119
+#: includes/class-pcwb-settings.php:128
 msgid "Order detail — below the order table (default)"
 msgstr ""
 
-#: includes/class-pcwb-settings.php:123
+#: includes/class-pcwb-settings.php:132
 msgid "Order detail — above the order table"
 msgstr ""
 
-#: includes/class-pcwb-settings.php:127
+#: includes/class-pcwb-settings.php:136
 msgid "Order detail — top of the page"
 msgstr ""
 
-#: includes/class-pcwb-settings.php:131
+#: includes/class-pcwb-settings.php:140
 msgid "Orders list — as a row action button"
 msgstr ""
 
-#: includes/class-pcwb-settings.php:205
+#. translators: %s: WooCommerce email settings URL
+#: includes/class-pcwb-settings.php:215
 #, php-format
 msgid "Customer and admin email templates can be customized in %s."
 msgstr ""
 
-#: includes/class-pcwb-settings.php:206
+#: includes/class-pcwb-settings.php:216
 msgid "WooCommerce → Settings → Emails"
 msgstr ""
 
-#: includes/class-pcwb-settings.php:216
+#: includes/class-pcwb-settings.php:226
 msgid "Cooling-off period (days)"
 msgstr ""
 
-#: includes/class-pcwb-settings.php:220
+#: includes/class-pcwb-settings.php:230
 msgid ""
 "How long after the reference date (order completion) the withdrawal button "
 "stays visible. EU standard is 14 days."
 msgstr ""
 
-#: includes/class-pcwb-settings.php:225
+#: includes/class-pcwb-settings.php:235
 msgid "Eligible order statuses"
 msgstr ""
 
-#: includes/class-pcwb-settings.php:238
+#: includes/class-pcwb-settings.php:248
 msgid "The button is shown only for orders in one of these statuses."
 msgstr ""
 
-#: includes/class-pcwb-settings.php:244
+#: includes/class-pcwb-settings.php:254
 msgid "Admin email recipient"
 msgstr ""
 
-#: includes/class-pcwb-settings.php:252
+#. translators: %s: admin email
+#: includes/class-pcwb-settings.php:262
 #, php-format
 msgid "Leave empty to use the site admin email (%s)."
 msgstr ""
 
-#: includes/class-pcwb-settings.php:261
+#: includes/class-pcwb-settings.php:271
 msgid "Status after submission"
 msgstr ""
 
-#: includes/class-pcwb-settings.php:273
+#: includes/class-pcwb-settings.php:283
 msgid ""
 "Order status applied automatically after the customer submits a withdrawal."
 msgstr ""
 
-#: includes/class-pcwb-settings.php:278
+#: includes/class-pcwb-settings.php:288
 msgid "Button positions"
 msgstr ""
 
-#: includes/class-pcwb-settings.php:288
+#: includes/class-pcwb-settings.php:298
 msgid ""
 "Where the withdrawal button appears in the customer view. You can select "
 "more than one — e.g. both the order detail and the orders list."
 msgstr ""
 
-#: includes/class-pcwb-settings.php:294
+#: includes/class-pcwb-settings.php:304
 msgid "My Account menu tab"
 msgstr ""
 
-#: includes/class-pcwb-settings.php:299
+#: includes/class-pcwb-settings.php:309
 msgid "Add a \"Withdrawal\" tab to the My Account navigation"
 msgstr ""
 
-#: includes/class-pcwb-settings.php:301
+#: includes/class-pcwb-settings.php:311
 msgid ""
 "Adds a dedicated page under My Account that lists the customer's orders "
 "still within the cooling-off period, each with a withdrawal button."
 msgstr ""
 
-#: includes/class-pcwb-settings.php:306
+#: includes/class-pcwb-settings.php:316
+msgid "Refund bank account"
+msgstr ""
+
+#: includes/class-pcwb-settings.php:321
+msgid "Require the customer to enter a bank account for the refund"
+msgstr ""
+
+#: includes/class-pcwb-settings.php:323
+msgid ""
+"When enabled, the bank account field in the withdrawal form is mandatory and "
+"the form no longer offers a refund to the original payment method."
+msgstr ""
+
+#: includes/class-pcwb-settings.php:328
 msgid "Guest withdrawal form"
 msgstr ""
 
-#: includes/class-pcwb-settings.php:311
+#: includes/class-pcwb-settings.php:333
 msgid "Enable shortcode for non-logged-in customers"
 msgstr ""
 
-#: includes/class-pcwb-settings.php:317
+#. translators: %s: shortcode wrapped in <code>
+#: includes/class-pcwb-settings.php:339
 #, php-format
 msgid ""
 "Place %s on any page (e.g. a public landing page). The form will ask for an "
@@ -573,7 +606,7 @@ msgid ""
 "be installed and active."
 msgstr ""
 
-#: purchase-contract-withdrawal-button-for-woocommerce.php:274
+#: purchase-contract-withdrawal-button-for-woocommerce.php:283
 msgid "Settings"
 msgstr ""
 
@@ -584,7 +617,7 @@ msgstr ""
 
 #: templates/emails/admin-withdrawal-notification.php:37
 #: templates/emails/plain/admin-withdrawal-notification.php:25
-#: templates/withdrawal-form.php:67
+#: templates/withdrawal-form.php:68
 msgid "Email"
 msgstr ""
 
@@ -595,7 +628,7 @@ msgstr ""
 
 #: templates/emails/admin-withdrawal-notification.php:45
 #: templates/emails/plain/admin-withdrawal-notification.php:27
-#: templates/withdrawal-form.php:63
+#: templates/withdrawal-form.php:64
 msgid "Address"
 msgstr ""
 
@@ -624,6 +657,7 @@ msgstr ""
 msgid "Hello,"
 msgstr ""
 
+#. translators: 1: order number, 2: order date
 #: templates/emails/customer-withdrawal-confirmation.php:31
 #: templates/emails/plain/customer-withdrawal-confirmation.php:23
 #, php-format
@@ -648,6 +682,7 @@ msgstr ""
 msgid "We recommend shipping with tracking and insurance."
 msgstr ""
 
+#. translators: %s: total amount
 #: templates/emails/customer-withdrawal-confirmation.php:47
 #: templates/emails/plain/customer-withdrawal-confirmation.php:34
 #, php-format
@@ -669,7 +704,7 @@ msgid ""
 "continue."
 msgstr ""
 
-#: templates/guest-lookup.php:38 templates/withdrawal-form.php:51
+#: templates/guest-lookup.php:38 templates/withdrawal-form.php:52
 msgid "Order number"
 msgstr ""
 
@@ -681,52 +716,57 @@ msgstr ""
 msgid "Continue"
 msgstr ""
 
-#: templates/withdrawal-form.php:27
+#: templates/withdrawal-form.php:28
 msgid "Withdrawal from purchase contract"
 msgstr ""
 
-#: templates/withdrawal-form.php:33
+#. translators: 1: order number, 2: deadline date
+#: templates/withdrawal-form.php:34
 #, php-format
 msgid ""
 "Complete the form below to withdraw from purchase contract no. %1$s. The "
 "cooling-off period ends on %2$s."
 msgstr ""
 
-#: templates/withdrawal-form.php:55
+#: templates/withdrawal-form.php:56
 msgid "Order date"
 msgstr ""
 
-#: templates/withdrawal-form.php:78
+#: templates/withdrawal-form.php:79
 msgid "Bank account for refund"
 msgstr ""
 
-#: templates/withdrawal-form.php:79
+#: templates/withdrawal-form.php:81
+msgid "(required)"
+msgstr ""
+
+#: templates/withdrawal-form.php:83
 msgid "(optional — leave empty to refund to the original payment method)"
 msgstr ""
 
-#: templates/withdrawal-form.php:86
+#: templates/withdrawal-form.php:91
 msgid "Reason for withdrawal"
 msgstr ""
 
-#: templates/withdrawal-form.php:87
+#: templates/withdrawal-form.php:92
 msgid "(optional)"
 msgstr ""
 
-#: templates/withdrawal-form.php:95
+#: templates/withdrawal-form.php:100
 msgid "I confirm that I am withdrawing from the purchase contract"
 msgstr ""
 
-#: templates/withdrawal-form.php:96
+#: templates/withdrawal-form.php:101
 msgid ""
 "and I understand that I must return the purchased goods within 14 days of "
 "submitting this withdrawal. The refund will be issued after the returned "
 "goods are received."
 msgstr ""
 
-#: templates/withdrawal-form.php:102
+#: templates/withdrawal-form.php:107
 msgid "Confirm withdrawal"
 msgstr ""
 
-#: templates/withdrawal-form.php:105
+#: templates/withdrawal-form.php:110
 msgid "Cancel"
 msgstr ""

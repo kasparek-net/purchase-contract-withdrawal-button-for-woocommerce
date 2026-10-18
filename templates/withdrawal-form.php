@@ -6,7 +6,7 @@
  * yourtheme/purchase-contract-withdrawal-button-for-woocommerce/withdrawal-form.php
  *
  * @package PurchaseContractWithdrawalButtonForWooCommerce
- * @version 1.2.2
+ * @version 1.3.8
  *
  * @var WC_Order $order
  * @var string   $back_url
@@ -20,8 +20,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 // phpcs:disable WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound -- Template-scoped variables passed by wc_get_template(), not globals.
-$is_guest    = ! empty( $is_guest );
-$guest_token = isset( $guest_token ) ? (string) $guest_token : '';
+$is_guest         = ! empty( $is_guest );
+$guest_token      = isset( $guest_token ) ? (string) $guest_token : '';
+$account_required = pcwb_is_refund_account_required();
 // phpcs:enable WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound
 ?>
 <h2 class="pcwb-form-heading"><?php esc_html_e( 'Withdrawal from purchase contract', 'purchase-contract-withdrawal-button-for-woocommerce' ); ?></h2>
@@ -76,9 +77,13 @@ $guest_token = isset( $guest_token ) ? (string) $guest_token : '';
     <p class="pcwb-field">
         <label for="pcwb_account">
             <strong><?php esc_html_e( 'Bank account for refund', 'purchase-contract-withdrawal-button-for-woocommerce' ); ?></strong>
-            <?php esc_html_e( '(optional — leave empty to refund to the original payment method)', 'purchase-contract-withdrawal-button-for-woocommerce' ); ?>
+            <?php if ( $account_required ) : ?>
+                <?php esc_html_e( '(required)', 'purchase-contract-withdrawal-button-for-woocommerce' ); ?>
+            <?php else : ?>
+                <?php esc_html_e( '(optional — leave empty to refund to the original payment method)', 'purchase-contract-withdrawal-button-for-woocommerce' ); ?>
+            <?php endif; ?>
         </label>
-        <input type="text" id="pcwb_account" name="refund_account" class="input-text">
+        <input type="text" id="pcwb_account" name="refund_account" class="input-text"<?php echo $account_required ? ' required' : ''; ?>>
     </p>
 
     <p class="pcwb-field">

@@ -257,7 +257,11 @@ class PCWB_Frontend {
 
         $now    = current_time( 'mysql' );
         $reason = (string) $reason;
-        $account = (string) $account;
+        $account = trim( (string) $account );
+
+        if ( 'admin' !== $source && '' === $account && pcwb_is_refund_account_required() ) {
+            return new WP_Error( 'account_required', __( 'Please enter the bank account number for the refund.', 'purchase-contract-withdrawal-button-for-woocommerce' ) );
+        }
 
         $order->update_meta_data( '_pcwb_requested_at', $now );
         $order->update_meta_data( '_pcwb_reason', $reason );

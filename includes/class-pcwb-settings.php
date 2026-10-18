@@ -94,6 +94,15 @@ class PCWB_Settings {
         );
         register_setting(
             'pcwb_settings',
+            'pcwb_refund_account_required',
+            [
+                'type'              => 'string',
+                'sanitize_callback' => [ __CLASS__, 'sanitize_yes_no' ],
+                'default'           => 'no',
+            ]
+        );
+        register_setting(
+            'pcwb_settings',
             'pcwb_guest_enabled',
             [
                 'type'              => 'string',
@@ -192,6 +201,7 @@ class PCWB_Settings {
         $active_positions = self::get_active_positions();
         $menu_tab_on  = 'yes' === get_option( 'pcwb_menu_tab_enabled', 'no' );
         $guest_on     = 'yes' === get_option( 'pcwb_guest_enabled', 'no' );
+        $account_required = 'yes' === get_option( 'pcwb_refund_account_required', 'no' );
         $all_statuses = wc_get_order_statuses();
         $positions    = self::get_positions();
         ?>
@@ -299,6 +309,18 @@ class PCWB_Settings {
                                 <?php esc_html_e( 'Add a "Withdrawal" tab to the My Account navigation', 'purchase-contract-withdrawal-button-for-woocommerce' ); ?>
                             </label>
                             <p class="description"><?php esc_html_e( 'Adds a dedicated page under My Account that lists the customer\'s orders still within the cooling-off period, each with a withdrawal button.', 'purchase-contract-withdrawal-button-for-woocommerce' ); ?></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            <?php esc_html_e( 'Refund bank account', 'purchase-contract-withdrawal-button-for-woocommerce' ); ?>
+                        </th>
+                        <td>
+                            <label>
+                                <input type="checkbox" name="pcwb_refund_account_required" value="yes" <?php checked( $account_required ); ?>>
+                                <?php esc_html_e( 'Require the customer to enter a bank account for the refund', 'purchase-contract-withdrawal-button-for-woocommerce' ); ?>
+                            </label>
+                            <p class="description"><?php esc_html_e( 'When enabled, the bank account field in the withdrawal form is mandatory and the form no longer offers a refund to the original payment method.', 'purchase-contract-withdrawal-button-for-woocommerce' ); ?></p>
                         </td>
                     </tr>
                     <tr>
